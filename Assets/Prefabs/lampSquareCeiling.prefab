@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 3721764964322883468}
   - component: {fileID: 3303676049001173301}
   m_Layer: 0
-  m_Name: Spot Light
+  m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,7 +108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4591195199590782134}
   m_LocalRotation: {x: 0.7021267, y: 0.0025550143, z: -0.008509943, w: 0.7119966}
-  m_LocalPosition: {x: -0.000000184666, y: -0.000000184666, z: 0}
+  m_LocalPosition: {x: 0.67, y: 0.77, z: 0.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3087059664159303602}
@@ -123,16 +123,16 @@ Light:
   m_GameObject: {fileID: 4591195199590782134}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 0
+  m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
-  m_Range: 7
+  m_Intensity: 2
+  m_Range: 6
   m_SpotAngle: 88
   m_InnerSpotAngle: 14
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
