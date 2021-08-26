@@ -13,8 +13,9 @@ public class VisionDetection : MonoBehaviour
     public float fov = 90;
     public float distance = 20;
     public float detectionTime = 5;
+    public Transform eyePosition;
 
-    private Vector3 eyePosition;
+
     private Dictionary<Detectable, float> unitDetection = new Dictionary<Detectable, float>();
     private Memory memory;
     private Detectable currentDetected = null;
@@ -22,7 +23,7 @@ public class VisionDetection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        eyePosition = transform.position + new Vector3(0, 0.5f, 0);
+
 
         memory = GetComponent<StateMachine>().memory;
 
@@ -35,7 +36,7 @@ public class VisionDetection : MonoBehaviour
         {
             yield return new WaitForSeconds(checkFrequency);
 
-            Collider[] cols = Physics.OverlapSphere(eyePosition, distance, LayerMask.GetMask("Detectable"));
+            Collider[] cols = Physics.OverlapSphere(eyePosition.position, distance, LayerMask.GetMask("Detectable"));
 
             List<Detectable> updatedUnits = new List<Detectable>();
             foreach (Collider col in cols)
@@ -46,9 +47,9 @@ public class VisionDetection : MonoBehaviour
 
                 if(detectable.type == EntityTypes.Player)
                 {
-                    if (Vector3.Angle(col.transform.position - eyePosition, transform.forward) <= fov / 2)
+                    if (Vector3.Angle(col.transform.position - eyePosition.position, transform.forward) <= fov / 2)
                     {
-                        if (Physics.Linecast(eyePosition, col.transform.position, out RaycastHit rayHit) && rayHit.collider == col)
+                        if (Physics.Linecast(eyePosition.position, col.transform.position, out RaycastHit rayHit) && rayHit.collider == col)
                         {
                             updatedUnits.Add(detectable);
                             if (unitDetection.ContainsKey(detectable))
