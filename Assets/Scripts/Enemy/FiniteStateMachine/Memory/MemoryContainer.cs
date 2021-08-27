@@ -6,13 +6,13 @@ namespace CP.AILibrary.Storage
 {
     public class MemoryContainer
     {
-        private Dictionary<string, Data> _memory = new Dictionary<string, Data>();
-        protected Dictionary<string, Data> memory
+        private SerializableDictionary<string, Data> _memory = new SerializableDictionary<string, Data>();
+        protected SerializableDictionary<string, Data> Memory
         {
             get
             {
                 if (_memory == null)
-                    _memory = new Dictionary<string, Data>();
+                    _memory = new SerializableDictionary<string, Data>();
                 return _memory;
             }
             set => _memory = value;
@@ -24,19 +24,19 @@ namespace CP.AILibrary.Storage
 
         public object this[string dataName]
         {
-            get => memory[dataName] != null ? memory[dataName].value : null;
+            get => Memory[dataName] != null ? Memory[dataName].value : null;
             set => SetValue(dataName, value);
         }
-/*
+
         public XmlData WriteXml()
         {
-            return memory.WriteXml(memory);
+            return Memory.WriteXml(Memory);
         }
 
         public void ReadXml(MemoryContainer mem, XmlData xmlData)
         {
-            memory.ReadXml(mem, xmlData);
-        }*/
+            Memory.ReadXml(mem, xmlData);
+        }
 
         public MemoryContainer() { }
 
@@ -86,7 +86,7 @@ namespace CP.AILibrary.Storage
         {
             Type type = value;
 
-            if (memory.ContainsKey(dataName))
+            if (Memory.ContainsKey(dataName))
             {
                 Data existing = GetData(dataName);
                 
@@ -109,7 +109,7 @@ namespace CP.AILibrary.Storage
                 newData.value = System.Runtime.Serialization.FormatterServices.GetUninitializedObject(type);
             }
             
-            memory.Add(dataName, newData);
+            Memory.Add(dataName, newData);
             if(triggerInvoke)
                 onDataAdded?.Invoke(newData);
             return true;
@@ -117,7 +117,7 @@ namespace CP.AILibrary.Storage
         
         public bool RemoveData(string dataName)
         {
-            if (memory.TryGetValue(dataName, out Data data) && memory.Remove(dataName))
+            if (Memory.TryGetValue(dataName, out Data data) && Memory.Remove(dataName))
             {
                 onDataRemoved?.Invoke(data);
                 return true;
@@ -127,37 +127,37 @@ namespace CP.AILibrary.Storage
 
         public bool SetValue(string dataName, object value)
         {
-            if (!memory.ContainsKey(dataName))
+            if (!Memory.ContainsKey(dataName))
             {
                 return AddData(dataName, value);
             }
 
-            memory[dataName].value = value;
-            onDataChanged?.Invoke(memory[dataName]);
+            Memory[dataName].value = value;
+            onDataChanged?.Invoke(Memory[dataName]);
             return true;
         }
 
         public bool SetDataName(string dataName, string newDataName)
         {
-            memory.ReplaceKey(dataName, newDataName);
-            memory[newDataName].Name = newDataName;
+            Memory.ReplaceKey(dataName, newDataName);
+            Memory[newDataName].Name = newDataName;
 
-            onDataChanged?.Invoke(memory[newDataName]);
+            onDataChanged?.Invoke(Memory[newDataName]);
 
             return true;
         }
 
         public T GetValue<T>(string dataName)
         {
-            if (!memory.ContainsKey(dataName))
+            if (!Memory.ContainsKey(dataName))
             {
                 return default;
             }
 
-            T val = (memory[dataName] as Data<T>).value;
+            T val = (Memory[dataName] as Data<T>).value;
 
             if (val == null)
-                val = (T)memory[dataName].value;
+                val = (T)Memory[dataName].value;
 
             if (val == null)
             {
@@ -169,14 +169,14 @@ namespace CP.AILibrary.Storage
 
         public Data GetData(string dataName)
         {
-            if (memory.TryGetValue(dataName, out Data var))
+            if (Memory.TryGetValue(dataName, out Data var))
                 return var;
             return null;
         }
 
         public Data GetData(Guid ID)
         {
-            return memory.Where(w => w.Value.ID == ID).First().Value;
+            return Memory.Where(w => w.Value.ID == ID).First().Value;
         }
 
         public bool CheckDataExist(params string[] dataNames)
@@ -187,7 +187,7 @@ namespace CP.AILibrary.Storage
             }
             else if (dataNames.Length == 1)
             {
-                bool val = memory.ContainsKey(dataNames[0]);
+                bool val = Memory.ContainsKey(dataNames[0]);
 
                 return val;
             }
@@ -196,7 +196,7 @@ namespace CP.AILibrary.Storage
                 List<string> missingVars = new List<string>();
 
                 foreach (string dataName in dataNames)
-                    if (!memory.ContainsKey(dataName))
+                    if (!Memory.ContainsKey(dataName))
                         missingVars.Add(dataName);
 
                 if (missingVars.Count != 0)
@@ -215,17 +215,17 @@ namespace CP.AILibrary.Storage
 
         public string[] GetDataNames()
         {
-            return memory.Keys.ToArray();
+            return Memory.Keys.ToArray();
         }
 
         public string[] GetDataNames(Type ofType)
         {
-            return memory.Values.Where(v => v.dataType == ofType).Select(v => v.Name).ToArray();
+            return Memory.Values.Where(v => v.dataType == ofType).Select(v => v.Name).ToArray();
         }
 
         public Data[] Values()
         {
-            return memory.Values.ToArray();
+            return Memory.Values.ToArray();
         }
     }
 }

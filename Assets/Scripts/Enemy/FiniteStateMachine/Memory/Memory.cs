@@ -1,10 +1,29 @@
 ﻿using System;
+using UnityEngine;
 
 namespace CP.AILibrary.Storage
 {
     [Serializable]
-    public class Memory : IMemory
+    public class Memory : IMemory, ISerializationCallbackReceiver
     {
+        public XmlData serialisationData = new XmlData();
+
+        void ISerializationCallbackReceiver.OnBeforeSerialize()
+        {
+            if (serialisationData.reserialise)
+            {
+                serialisationData = MemoryContainer.WriteXml();
+                serialisationData.reserialise = false;
+            }
+        }
+
+        // load dictionary from lists
+        void ISerializationCallbackReceiver.OnAfterDeserialize()
+        {
+            _memoryContainer.Setup("Serialisation Memory");
+            MemoryContainer.ReadXml(MemoryContainer, serialisationData);
+        }
+
         private MemoryContainer _memoryContainer = new MemoryContainer();
         public MemoryContainer MemoryContainer
         {

@@ -23,8 +23,6 @@ public class VisionDetection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-
         memory = GetComponent<StateMachine>().memory;
 
         StartCoroutine(Detect());
@@ -55,11 +53,10 @@ public class VisionDetection : MonoBehaviour
                             if (unitDetection.ContainsKey(detectable))
                             {
                                 float currentDetection = unitDetection[detectable] + checkFrequency;
-                                Debug.Log(currentDetection);
                                 if (currentDetection >= detectionTime)
                                 {
-                                    Debug.Log("Detecting " + memory.SetValue("currentTarget", detectable.transform.position));
                                     currentDetected = detectable;
+                                    memory.SetValue("currentTarget", detectable.transform.position);
                                 }
                                 else
                                 {

@@ -9,8 +9,9 @@ using System.Reflection;
 [CreateAssetMenu(fileName = "MoveAction", menuName = "CP/Action/Move")]
 public class MovementAction : Action
 {
-    public List<Vector3> waypoints = new List<Vector3>();
+    public float patrolSpeed = 3.5f;
 
+    private bool calculatingPath = false;
     public override void Act(StateMachine stateMachine)
     {
         Data<int> data = stateMachine.memory.GetData<int>("waypointIndex");
@@ -21,22 +22,24 @@ public class MovementAction : Action
 
         NavMeshAgent agent = stateMachine.memory.GetData<NavMeshAgent>("navAgent").value;
 
-        Debug.Log(!agent.pathPending);
-        
-        if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        if (!agent.pathPending && agent.remainingDistance < 0.5f && !calculatingPath)
         {
             bool reverse = stateMachine.memory.GetData<bool>("waypointReverse").value;
 
             index += reverse ? -1 : 1;
-            if (index >= waypoints.Count - 1 || index <= 0)
+            WaypointGroup waypoints = stateMachine.memory.GetData<WaypointGroup>("waypointData").value;
+            if (index >= waypoints.WaypointsNumber() - 1 || index <= 0)
             {
                 reverse = !reverse;
                 stateMachine.memory.SetValue("waypointReverse", reverse);
             }
 
             stateMachine.memory.SetValue("waypointIndex", index);
-            bool t = agent.SetDestination(waypoints[index]);
-            Debug.Log("Test " + t + " " + index);
+            bool t = agent.SetDestination(waypoints.GetWaypoint(index).transform.position);
+            calculatingPath = true;
+        } else
+        {
+            calculatingPath = false;
         }
     }
 
@@ -50,7 +53,9 @@ public class MovementAction : Action
         stateMachine.memory.AddData("navAgent", agent);
         stateMachine.memory.AddData("waypointIndex", 0);
         stateMachine.memory.AddData("waypointReverse", false);
-        agent.SetDestination(waypoints[0]);
+        agent.speed = patrolSpeed;
+        WaypointGroup waypoints = stateMachine.memory.GetData<WaypointGroup>("waypointData").value;
+        agent.SetDestination(waypoints.GetWaypoint(0).transform.position);
     }
 
     public override void Exit(StateMachine stateMachine)

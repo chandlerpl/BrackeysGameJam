@@ -8,7 +8,9 @@ using System.Reflection;
 
 [CreateAssetMenu(fileName = "ChaseAction", menuName = "CP/Action/Chase")]
 public class ChaseAction : Action
-{ 
+{
+    public float chaseSpeed = 5f;
+
     public override void Act(StateMachine stateMachine)
     {
         Data<Vector3> data = stateMachine.memory.GetData<Vector3>("currentTarget");
@@ -28,6 +30,7 @@ public class ChaseAction : Action
             agent = stateMachine.gameObject.AddComponent<NavMeshAgent>();
         }
 
+        agent.speed = chaseSpeed;
         stateMachine.memory.AddData("navAgent", agent);
     }
 

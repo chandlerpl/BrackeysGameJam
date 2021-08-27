@@ -27,9 +27,8 @@ namespace CP.AILibrary.FiniteStateMachine
         private State currentState;
         private bool isActive = true;
 
-        public void Awake()
+        public void Start()
         {
-            memory = new Memory();
             currentState = startingState;
 
             currentState.EnterState(this);
