@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3087059664159303602}
   - component: {fileID: 2123636331122386967}
   - component: {fileID: 4223352479648652509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lampSquareCeiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4591195199590782134}
   m_LocalRotation: {x: 0.7021267, y: 0.0025550143, z: -0.008509943, w: 0.7119966}
-  m_LocalPosition: {x: 0.67, y: 0.77, z: 0.54}
+  m_LocalPosition: {x: 0.67, y: -0.4, z: 0.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3087059664159303602}
@@ -163,7 +163,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 247
   m_RenderingLayerMask: 1
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
@@ -171,7 +171,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: -586674700, z: 4.5904e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
