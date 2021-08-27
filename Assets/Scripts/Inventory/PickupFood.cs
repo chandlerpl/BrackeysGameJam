@@ -16,14 +16,13 @@ public class PickupFood : MonoBehaviour, IInteractable
             inventory.AddItem(item);
             ShoppingManager.Instance.CheckOffItem(item);
             
-            source.Play();    
+              
             gameObject.SetActive(false);
 
-           // source.Play();
-            // if (source != null)
-            // {
-            //     source.Play();
-            // }
+             if (source != null)
+             {
+                 source.Play();
+             }
         }
     }
 }

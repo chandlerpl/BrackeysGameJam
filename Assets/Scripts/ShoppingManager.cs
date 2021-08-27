@@ -51,7 +51,7 @@ public class ShoppingManager : MonoBehaviour
     {
         if(collectItems.ContainsKey(item))
         {
-            Debug.Log("Crossing off");
+           // Debug.Log("Crossing off");
             collectItems[item].transform.GetChild(0).gameObject.SetActive(true);
         }
     }

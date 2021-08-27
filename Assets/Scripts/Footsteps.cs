@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
+
 
 public class Footsteps : MonoBehaviour
 {
@@ -17,9 +19,9 @@ public class Footsteps : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_rigidbody.velocity.magnitude >= 1f)
+        if (_rigidbody.velocity.magnitude >= 1f && _audioSource.isPlaying == false)
         {
-            _audioSource.pitch = 0.6f;
+            _audioSource.pitch = Random.Range(0.0f, 1.1f);
             _audioSource.Play();
         }
         else
