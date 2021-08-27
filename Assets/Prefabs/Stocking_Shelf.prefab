@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 6769260430547103127}
   - component: {fileID: 7664816410573480498}
   - component: {fileID: 5600809580943759096}
+  - component: {fileID: -8450886894258491132}
   m_Layer: 0
   m_Name: Stocking_Shelf
   m_TagString: Untagged
@@ -275,6 +276,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-8450886894258491132
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6249570025090217773}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45720014, y: 0.10569584, z: 0.81280017}
+  m_Center: {x: 0, y: 0.052847907, z: 0}
 --- !u!1 &6845244367345895197
 GameObject:
   m_ObjectHideFlags: 0
