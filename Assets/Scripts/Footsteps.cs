@@ -16,13 +16,13 @@ public class Footsteps : MonoBehaviour
         _audioSource = GetComponent<AudioSource>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
 
         //if WASD pressed, then play audio source, if they're lifted, stop playing
         if ( Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
         {
-            _audioSource.pitch = 0.6f;
+            _audioSource.pitch = 0.5f;
             _audioSource.Play();
         }
         else if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))
@@ -30,11 +30,13 @@ public class Footsteps : MonoBehaviour
             _audioSource.Stop();
         }
         
+       
         
         //if shift pressed, then play audio source, if they're lifted, stop playing
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            _audioSource.pitch = 0.8f;
+            _audioSource.pitch = 1f;
+            _audioSource.Play();
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
