@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public float interactRange = 5f;
+    public float interactRange = 3f;
     public GameObject cam;
     public Text tooltipText;
 
