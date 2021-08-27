@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -11,6 +12,8 @@ public class Footsteps : MonoBehaviour
 
     private Rigidbody _rigidbody;
 
+    private bool _isMoving = false;
+
     private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
@@ -19,11 +22,13 @@ public class Footsteps : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_rigidbody.velocity.magnitude >= 1f && _audioSource.isPlaying == false)
+        if (_rigidbody.velocity.magnitude != 0 && _audioSource.isPlaying == false)
         {
-            _audioSource.pitch = Random.Range(0.0f, 1.1f);
+            _isMoving = true;
+            _audioSource.pitch = 0.35f; //Random.Range(0.0f, 1.1f);
             _audioSource.Play();
         }
+        
         else
         {
             _audioSource.Stop();
