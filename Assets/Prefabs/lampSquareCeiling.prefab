@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 3087059664159303602}
   - component: {fileID: 2123636331122386967}
   - component: {fileID: 4223352479648652509}
+  - component: {fileID: 849880154}
   m_Layer: 8
   m_Name: lampSquareCeiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &3087059664159303602
 Transform:
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &849880154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2421987463294008584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 768c4b48edf617a4588c77f5f65cf4fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_uniqueId: _eb116208-861c-4cd4-b596-b669fb30c82a
+  m_searchTags: []
 --- !u!1 &4591195199590782134
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,8 +141,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.5
-  m_Range: 6
+  m_Intensity: 2
+  m_Range: 8
   m_SpotAngle: 88
   m_InnerSpotAngle: 14
   m_CookieSize: 10
