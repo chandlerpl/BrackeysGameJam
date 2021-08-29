@@ -13,6 +13,7 @@ public class VisionDetection : MonoBehaviour
     public float fov = 90;
     public float distance = 20;
     public float detectionTime = 5;
+    public float memoryTime = 3;
     public Transform eyePosition;
 
 
@@ -57,6 +58,7 @@ public class VisionDetection : MonoBehaviour
                                 {
                                     currentDetected = detectable;
                                     memory.SetValue("currentTarget", detectable.transform.position);
+                                    unitDetection[detectable] = memoryTime;
                                 }
                                 else
                                 {
@@ -80,6 +82,8 @@ public class VisionDetection : MonoBehaviour
                     if (detection > 0)
                     {
                         unitDetection[detectable] = detection;
+                        currentDetected = detectable;
+                        memory.SetValue("currentTarget", detectable.transform.position);
                     }
                     else
                     {
