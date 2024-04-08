@@ -7,8 +7,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public static bool announcementMade = false;
 
-    public GameObject dayLights;
-    public GameObject nightLights;
+    //public GameObject dayLights;
+    //public GameObject nightLights;
 
     public float announcementTiming = 60f;
     public AudioSource announcement;
@@ -31,8 +31,5 @@ public class GameManager : MonoBehaviour
 
         announcement.time = 5;
         announcement.Play();
-
-        dayLights.SetActive(false);
-        nightLights.SetActive(true);
     }
 }
