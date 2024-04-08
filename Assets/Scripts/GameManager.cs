@@ -1,4 +1,3 @@
-using LSS;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,6 +34,5 @@ public class GameManager : MonoBehaviour
 
         dayLights.SetActive(false);
         nightLights.SetActive(true);
-        GameObject.FindObjectOfType<LSS_FrontEnd>().Load(loadFolder);
     }
 }

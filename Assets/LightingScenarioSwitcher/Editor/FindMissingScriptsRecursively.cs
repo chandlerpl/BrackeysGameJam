@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using UnityEditor;
+using System.Linq;
+using NUnit.Framework;
+using System.Collections.Generic;
 public class FindMissingScriptsRecursively : EditorWindow 
 {
 	static int go_count = 0, components_count = 0, missing_count = 0;
@@ -33,23 +36,22 @@ public class FindMissingScriptsRecursively : EditorWindow
 	private static void FindInGO(GameObject g)
 	{
 		go_count++;
-		Component[] components = g.GetComponents<Component>();
-		for (int i = 0; i < components.Length; i++)
+		List<Component> components = g.GetComponents<Component>().ToList();
+		foreach(Component co in components)
 		{
 			components_count++;
-			if (components[i] == null)
+			if (co == null)
 			{
 				missing_count++;
 				string s = g.name;
 				Transform t = g.transform;
-				DestroyImmediate(components[i]);
-
-				while (t.parent != null) 
+                GameObjectUtility.RemoveMonoBehavioursWithMissingScript(g);
+                while (t.parent != null) 
 				{
 					s = t.parent.name +"/"+s;
 					t = t.parent;
 				}
-				Debug.Log (s + " has an empty script attached in position: " + i, g);
+				Debug.Log (s + " has an empty script attached in position", g);
 			}
 		}
 		// Now recurse through each child GO (if there are any):
