@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class Selector<T> : Node<T>
 {
@@ -8,7 +9,8 @@ public class Selector<T> : Node<T>
     {
         foreach (Node<T> node in nodes)
         {
-            switch (node.Eval(data))
+            NodeState eval = node.Eval(data);
+            switch (eval)
             {
                 case NodeState.Failure:
                     continue;

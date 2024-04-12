@@ -13,6 +13,7 @@ public class VisualDetectionNode : Node<AIMovement>
     private float _timeSinceLastCheck = 0;
     private Dictionary<Detectable, float> detectingUnits = new Dictionary<Detectable, float>();
 
+    private bool spotted = false;
     List<Detectable> updatedUnits = new List<Detectable>();
     public override bool Init(BehaviourTree<AIMovement> tree)
     {
@@ -42,13 +43,14 @@ public class VisualDetectionNode : Node<AIMovement>
 
         if (++_currentTick < tickOffset)
         {
-            return NodeState.Failure;
+            return spotted ? NodeState.Success : NodeState.Failure;
         }
         _currentTick = 0;
 
         Collider[] cols = Physics.OverlapSphere(data.transform.position, detectionRange, LayerMask.GetMask("Detectable"));
 
         updatedUnits.Clear();
+        spotted = false;
         foreach (Collider col in cols)
         {
             Detectable detectable = col.gameObject.GetComponent<Detectable>();
@@ -71,8 +73,9 @@ public class VisualDetectionNode : Node<AIMovement>
                                 //memory.SetValue("currentTarget", detectable.transform.position);
                                 //unitDetection[detectable] = memoryTime;
 
+                                data.animator.SetBool("IsSprinting", true);
                                 data.Agent.SetDestination(col.transform.position);
-
+                                spotted = true;
                                 //break;
                             }
                             else
@@ -89,7 +92,12 @@ public class VisualDetectionNode : Node<AIMovement>
             }
         }
         _timeSinceLastCheck = 0;
+        if(spotted)
+        {
+            return NodeState.Success;
+        }
 
+        data.animator.SetBool("IsSprinting", false);
         return NodeState.Failure;
     }
 }

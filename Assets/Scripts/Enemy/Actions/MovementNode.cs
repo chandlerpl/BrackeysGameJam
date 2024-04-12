@@ -59,7 +59,10 @@ public class MovementNode : Node<AIMovement>
     {
         if(data.Agent.hasPath)
         {
-            if(data.Agent.remainingDistance < 0.5f)
+            data.Agent.speed = patrolSpeed;
+
+            data.animator.SetBool("IsMoving", true);
+            if (data.Agent.remainingDistance < 0.5f)
             {
                 return NodeState.Success;
             } else
@@ -67,7 +70,12 @@ public class MovementNode : Node<AIMovement>
                 return NodeState.Running;
             }
         }
+        if(data.Agent.pathPending)
+        {
+            return NodeState.Running;
+        }
 
+        data.animator.SetBool("IsMoving", false);
         return NodeState.Failure;
     }
 }

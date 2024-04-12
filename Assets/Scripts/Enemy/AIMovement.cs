@@ -15,6 +15,7 @@ public class AIMovement : MonoBehaviour
 
     //private Rigidbody _rigidbody;
     //public Rigidbody Body { get => _rigidbody; }
+    public Animator animator;
     private NavMeshAgent _agent;
     public NavMeshAgent Agent { get => _agent; }
     private BehaviourTree<AIMovement> _behaviourTree;
