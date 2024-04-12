@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public float normalHeight = 1f;
     public float crouchHeight = 0.5f;
 
+    public float crouchingSpeed = 1.5f;
     [Header("Player Speed")]
     public float crouchSpeed = 1.5f;
     public float walkSpeed = 2.5f;
@@ -64,22 +66,40 @@ public class PlayerMovement : MonoBehaviour
         if (obj.phase == InputActionPhase.Performed)
         {
             _isCrouching = true;
-            _speed = crouchSpeed;
-            //transform.localScale = new Vector3(1, crouchHeight, 1);
-            mouseMovement.cameraPivot.localPosition = new Vector3(mouseMovement.cameraPivot.localPosition.x, crouchHeight, mouseMovement.cameraPivot.transform.localPosition.z);
-            col.height = 1f;
-            col.center = new Vector3(0, .5f, 0);
             animator.SetBool("IsCrouching", true);
+            StartCoroutine(CrouchCharacter());
         }
         else
         {
             _isCrouching = false;
-            _speed = walkSpeed;
-            mouseMovement.cameraPivot.localPosition = new Vector3(mouseMovement.cameraPivot.localPosition.x, normalHeight, mouseMovement.cameraPivot.transform.localPosition.z);
-            col.height = 2f;
-            col.center = new Vector3(0, 1, 0);
-            //transform.localScale = new Vector3(1, normalHeight, 1);
             animator.SetBool("IsCrouching", false);
+            StartCoroutine(CrouchCharacter());
+        }
+    }
+
+    private IEnumerator CrouchCharacter()
+    {
+        float time = 0;
+
+        while (time < 1f)
+        {
+            yield return new WaitForEndOfFrame();
+
+            time += Time.deltaTime * crouchingSpeed;
+
+            if(_isCrouching)
+            {
+                _speed = crouchSpeed;
+                mouseMovement.cameraPivot.localPosition = new Vector3(mouseMovement.cameraPivot.localPosition.x, Mathf.Lerp(normalHeight, crouchHeight, time), mouseMovement.cameraPivot.transform.localPosition.z);
+                col.height = Mathf.Lerp(2f, 1f, time);
+                col.center = new Vector3(0, Mathf.Lerp(1f, .5f, time), 0);
+            } else
+            {
+                _speed = walkSpeed;
+                mouseMovement.cameraPivot.localPosition = new Vector3(mouseMovement.cameraPivot.localPosition.x, Mathf.Lerp(crouchHeight, normalHeight, time), mouseMovement.cameraPivot.transform.localPosition.z);
+                col.height = Mathf.Lerp(1f, 2f, time);
+                col.center = new Vector3(0, Mathf.Lerp(.5f, 1f, time), 0);
+            }
         }
     }
 
