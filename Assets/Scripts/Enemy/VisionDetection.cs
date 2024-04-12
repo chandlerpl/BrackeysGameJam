@@ -3,7 +3,6 @@ using CP.AILibrary.FiniteStateMachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.UI.CanvasScaler;
 using System.Linq;
 
 [RequireComponent(typeof(StateMachine))]
