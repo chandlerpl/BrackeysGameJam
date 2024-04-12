@@ -1,0 +1,858 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &735444332481997536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 735444332481997539}
+  m_Layer: 0
+  m_Name: Oil Bottles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &735444332481997539
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735444332481997536}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.991833, y: -13.033757, z: 24.888796}
+  m_LocalScale: {x: 2.0602229, y: 4.02856, z: 4.02856}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 990347459428005160}
+  - {fileID: 1600811544265366628}
+  - {fileID: 7877702880880383355}
+  - {fileID: 2582410693988829633}
+  - {fileID: 7064543531896012768}
+  - {fileID: 6453330851926023525}
+  - {fileID: 2921865309983355819}
+  - {fileID: 4715505632941650859}
+  - {fileID: 7133461668900414313}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &877468989874909909
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 735444332481997539}
+    m_Modifications:
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.6803424
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.344339
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.837658
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781618683891998023, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_Name
+      value: OilBottle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 96af4b7ab5b764949b42b0d93ecf9661, type: 3}
+--- !u!4 &990347459428005160 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+    type: 3}
+  m_PrefabInstance: {fileID: 877468989874909909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1703547306563378073
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 735444332481997539}
+    m_Modifications:
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.6803427
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.3443394
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.659658
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781618683891998023, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_Name
+      value: OilBottle (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36885834
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1986
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0004
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 96af4b7ab5b764949b42b0d93ecf9661, type: 3}
+--- !u!4 &1600811544265366628 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+    type: 3}
+  m_PrefabInstance: {fileID: 1703547306563378073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2469554216815775292
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 735444332481997539}
+    m_Modifications:
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.424
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.344
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.049
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781618683891998023, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_Name
+      value: OilBottle (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 96af4b7ab5b764949b42b0d93ecf9661, type: 3}
+--- !u!4 &2582410693988829633 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+    type: 3}
+  m_PrefabInstance: {fileID: 2469554216815775292}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2963231824837915734
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 735444332481997539}
+    m_Modifications:
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.206
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.344
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 781618683891998023, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_Name
+      value: OilBottle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.28963104
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1589
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0003
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 96af4b7ab5b764949b42b0d93ecf9661, type: 3}
+--- !u!4 &2921865309983355819 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+    type: 3}
+  m_PrefabInstance: {fileID: 2963231824837915734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4675820267305940054
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 735444332481997539}
+    m_Modifications:
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.206
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.344
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.682
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 781618683891998023, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_Name
+      value: OilBottle (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.24986172
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0003
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 96af4b7ab5b764949b42b0d93ecf9661, type: 3}
+--- !u!4 &4715505632941650859 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+    type: 3}
+  m_PrefabInstance: {fileID: 4675820267305940054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6349469189201074840
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 735444332481997539}
+    m_Modifications:
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.4240003
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.3440003
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.682
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781618683891998023, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_Name
+      value: OilBottle (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.33838928
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1833
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 96af4b7ab5b764949b42b0d93ecf9661, type: 3}
+--- !u!4 &6453330851926023525 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+    type: 3}
+  m_PrefabInstance: {fileID: 6349469189201074840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7164148618170737812
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 735444332481997539}
+    m_Modifications:
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.206
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.344
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.063
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 781618683891998023, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_Name
+      value: OilBottle (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3036787
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.003
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.166
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803102964166619559, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c01a43b573e11c74fa62827693621c4e, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 96af4b7ab5b764949b42b0d93ecf9661, type: 3}
+--- !u!4 &7133461668900414313 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+    type: 3}
+  m_PrefabInstance: {fileID: 7164148618170737812}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7176840360334817309
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 735444332481997539}
+    m_Modifications:
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.424
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.344
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781618683891998023, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_Name
+      value: OilBottle (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 96af4b7ab5b764949b42b0d93ecf9661, type: 3}
+--- !u!4 &7064543531896012768 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+    type: 3}
+  m_PrefabInstance: {fileID: 7176840360334817309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7836324553255211654
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 735444332481997539}
+    m_Modifications:
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.344
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.049
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00012962765
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00009255335
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.003
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.018
+      objectReference: {fileID: 0}
+    - target: {fileID: 781618683891998023, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_Name
+      value: OilBottle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.340763
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149651422630008015, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1845
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 96af4b7ab5b764949b42b0d93ecf9661, type: 3}
+--- !u!4 &7877702880880383355 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 113450503915997181, guid: 96af4b7ab5b764949b42b0d93ecf9661,
+    type: 3}
+  m_PrefabInstance: {fileID: 7836324553255211654}
+  m_PrefabAsset: {fileID: 0}
