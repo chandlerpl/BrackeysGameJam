@@ -8,6 +8,9 @@ using UnityEditor;
 
 public class StockingShelf : MonoBehaviour
 {
+    
+    
+    
     private static float MOVEMENT_TIME = 0.025f;
 
     public Vector2 frequencyMinMax;
