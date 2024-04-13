@@ -19,7 +19,7 @@ public class Inventory : MonoBehaviour
 
             if (hit.collider.TryGetComponent<IInteractable>(out var interactable))
             {
-                interactable.OnInteract(gameObject, this);
+                //interactable.OnInteract(gameObject, this);
             }
         }
         /* else
