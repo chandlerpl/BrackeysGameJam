@@ -19,7 +19,7 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: 5993056030583736524}
   m_RendererFeatureMap: ccc8f40db59c2b53
-  m_UseNativeRenderPass: 0
+  m_UseNativeRenderPass: 1
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   shaders:
@@ -82,7 +82,7 @@ MonoBehaviour:
     NormalSamples: 1
     Intensity: 3
     DirectLightingStrength: 0.25
-    Radius: 0.15
+    Radius: 0.035
     Samples: 1
     BlurQuality: 0
     Falloff: 100
