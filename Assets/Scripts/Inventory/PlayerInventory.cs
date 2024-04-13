@@ -15,14 +15,12 @@ public class PlayerInventory : MonoBehaviour
     {
         if (Physics.SphereCast(cam.transform.position, 0.25f, cam.transform.forward, out RaycastHit hit, interactRange, LayerMask.GetMask("Interactable")))
         {
-            Tooltip tooltip = hit.collider.GetComponent<Tooltip>();
-            if (tooltip != null)
+            if (hit.collider.TryGetComponent<Tooltip>(out var tooltip))
                 tooltipText.text = tooltip.tooltip;
 
             if (Input.GetButtonDown("Interact"))
             {
-                IInteractable interactable = hit.collider.GetComponent<IInteractable>();
-                if (interactable != null)
+                if (hit.collider.TryGetComponent<IInteractable>(out var interactable))
                 {
                     interactable.OnInteract(gameObject, this);
                 }

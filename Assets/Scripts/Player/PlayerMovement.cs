@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -25,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
     private MouseMovement mouseMovement;
     private CapsuleCollider col;
 
+    private Inventory _inventory;
+
     private Vector2 _playerMovement;
     private float _speed;
     private bool _isSprinting;
@@ -43,8 +46,19 @@ public class PlayerMovement : MonoBehaviour
         playerInput.currentActionMap.FindAction("Crouch").performed += Crouch_performed;
         playerInput.currentActionMap.FindAction("Crouch").canceled += Crouch_performed;
 
+        if (TryGetComponent(out _inventory))
+        {
+            playerInput.currentActionMap.FindAction("Interact").performed += Interact_performed;
+        }
+
         _speed = walkSpeed;
     }
+
+    private void Interact_performed(InputAction.CallbackContext obj)
+    {
+        
+    }
+
     private void Sprint_performed(InputAction.CallbackContext obj)
     {
         if (obj.phase == InputActionPhase.Performed)
