@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Interact_performed(InputAction.CallbackContext obj)
     {
-        
+        _inventory.Interact();
     }
 
     private void Sprint_performed(InputAction.CallbackContext obj)

@@ -8,7 +8,7 @@ public class AIMovement : MonoBehaviour
 {
     public float moveSpeed = 2;
     public float runSpeed = 4;
-    public Vector3 startPosition;
+    //public Vector3 startPosition;
     public WaypointGroup waypoints;
 
     public int CurrentWaypoint { get; set; }
@@ -61,7 +61,7 @@ public class AIMovement : MonoBehaviour
         });
 
         _agent.enabled = true;
-        _agent.Warp(startPosition);
+        _agent.Warp(transform.position);
     }
 
     // Update is called once per frame

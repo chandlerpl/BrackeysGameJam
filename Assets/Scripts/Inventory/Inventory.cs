@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Search;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
     [SerializeField]
     private float interactRange;
+    [SerializeField]
+    private int maxItems = 1;
 
     [SerializeField]
     private Transform cam;
 
+    private Item[] inventory;
     public void Interact()
     {
         if (Physics.SphereCast(cam.position, 0.25f, cam.forward, out RaycastHit hit, interactRange, LayerMask.GetMask("Interactable")))
@@ -19,7 +23,7 @@ public class Inventory : MonoBehaviour
 
             if (hit.collider.TryGetComponent<IInteractable>(out var interactable))
             {
-                //interactable.OnInteract(gameObject, this);
+                interactable.OnInteract(gameObject, this);
             }
         }
         /* else
@@ -28,14 +32,39 @@ public class Inventory : MonoBehaviour
         }*/
     }
 
-    void Start()
+    public bool AddItem(Item item)
     {
-        
+        for (int i = 0; i < inventory.Length; i++)
+        {
+            if (inventory[i] == null)
+            {
+                inventory[i] = item;
+
+                // Add item to hand?
+                item.gameObject.SetActive(false);
+
+                return true;
+            }
+        }
+
+        return false;
     }
 
-
-    void Update()
+    public bool ContainsItem(Item item)
     {
-        
+        for (int i = 0; i < inventory.Length; i++)
+        {
+            if (inventory[i] == item)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    void Start()
+    {
+        inventory = new Item[maxItems];
     }
 }

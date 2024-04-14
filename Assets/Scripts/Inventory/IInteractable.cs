@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IInteractable
 {
-    public void OnInteract(GameObject interactingObj, PlayerInventory inventory);
+    public void OnInteract(GameObject interactingObj, Inventory inventory);
 }

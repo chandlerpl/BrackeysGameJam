@@ -56,7 +56,7 @@ public class ShoppingManager : MonoBehaviour
         }
     }
 
-    public bool HasAllRequiredItems(PlayerInventory inventory)
+    public bool HasAllRequiredItems(Inventory inventory)
     {
         foreach (Item item in collectItems.Keys)
         {

@@ -8,7 +8,7 @@ public class DoorSound : MonoBehaviour, IInteractable
 {
     public AudioSource source;
 
-    public void OnInteract(GameObject interactingObj, PlayerInventory inventory)
+    public void OnInteract(GameObject interactingObj, Inventory inventory)
     {
         source.Play();
 

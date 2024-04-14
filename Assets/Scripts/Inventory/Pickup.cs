@@ -6,18 +6,23 @@ using UnityEngine;
 public class Pickup : MonoBehaviour, IInteractable
 {
     public AudioSource source;
+    private Item _item;
 
-    public void OnInteract(GameObject interactingObj, PlayerInventory inventory)
+    private void Start()
     {
-        Item item = GetComponent<Item>();
+        _item = GetComponent<Item>();
+    }
 
-        inventory.AddItem(item);
-
-        gameObject.SetActive(false);
-
-        if(source != null)
+    public void OnInteract(GameObject interactingObj, Inventory inventory)
+    {
+        if (inventory.AddItem(_item))
         {
-            source.Play();
+            //gameObject.SetActive(false);
+
+            if (source != null)
+            {
+                source.Play();
+            }
         }
     }
 }

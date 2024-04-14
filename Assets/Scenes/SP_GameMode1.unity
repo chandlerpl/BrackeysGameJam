@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.293
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.003053446, g: 0.015294938, b: 0.04196582, a: 0.293}
+  m_IndirectSpecularColor: {r: 0.0030502966, g: 0.015291685, b: 0.04196612, a: 0.293}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4982,70 +4982,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.546
       objectReference: {fileID: 0}
-    - target: {fileID: 2248168640928116287, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0019924955
-      objectReference: {fileID: 0}
-    - target: {fileID: 2248168640928116287, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.7047589
-      objectReference: {fileID: 0}
-    - target: {fileID: 2248168640928116287, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.3472285
-      objectReference: {fileID: 0}
-    - target: {fileID: 2248168640928116287, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9977971
-      objectReference: {fileID: 0}
-    - target: {fileID: 2248168640928116287, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.066340506
-      objectReference: {fileID: 0}
-    - target: {fileID: 2248168640928116287, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.000000029802326
-      objectReference: {fileID: 0}
-    - target: {fileID: 2248168640928116287, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000000037252907
-      objectReference: {fileID: 0}
-    - target: {fileID: 2248168640928116287, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 7.608
-      objectReference: {fileID: 0}
     - target: {fileID: 3092946493559358574, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6730857701872329513, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6730857701872329513, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6730857701872329513, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6730857701872329513, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
