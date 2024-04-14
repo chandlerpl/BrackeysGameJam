@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Linux" BasePlatform="Linux" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Linux</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3384B50C-48C8-6E3A-F7D7-9D86DC404CA8}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{769D238D-9BA2-89B3-E869-AACBC93E811B}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="7022271" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_05_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_05_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="13679568" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Breathing_Running_2.wav</ShortName>
+					<CachePath>SFX/Breathing_Running_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="101366574" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_07_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_07_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="128369396" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Breathing_Running_3.wav</ShortName>
+					<CachePath>SFX/Breathing_Running_3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="182624577" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_06_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_06_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="222329165" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_03_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_03_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="306056206" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_3.wav</ShortName>
+					<CachePath>SFX/Footsteps_3_474F6000.wem</CachePath>
+				</File>
+				<File Id="395879434" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_10_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_10_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="419456089" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_4.wav</ShortName>
+					<CachePath>SFX/Footsteps_4_A3763AF8.wem</CachePath>
+				</File>
+				<File Id="498026625" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_01_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_01_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="609781788" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_02_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_02_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="717945163" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_04_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_04_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="824393662" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_09_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_09_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="852890347" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_5.wav</ShortName>
+					<CachePath>SFX/Footsteps_5_636B5A22.wem</CachePath>
+				</File>
+				<File Id="922874674" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Breathing_Running_1.wav</ShortName>
+					<CachePath>SFX/Breathing_Running_1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="926433972" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_1.wav</ShortName>
+					<CachePath>SFX/Footsteps_1_4243C69A.wem</CachePath>
+				</File>
+				<File Id="947434909" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_08_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_08_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="950443640" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Breathing_Running_4.wav</ShortName>
+					<CachePath>SFX/Breathing_Running_4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1001850140" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_2.wav</ShortName>
+					<CachePath>SFX/Footsteps_2_17A6E12F.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="727334981" Name="Play_Player_Footsteps_Running" DurationType="OneShot" DurationMin="0.24598639" DurationMax="0.31777778">
+					<MediaRefs>
+						<MediaRef Id="7022271"/>
+						<MediaRef Id="101366574"/>
+						<MediaRef Id="182624577"/>
+						<MediaRef Id="222329165"/>
+						<MediaRef Id="395879434"/>
+						<MediaRef Id="498026625"/>
+						<MediaRef Id="609781788"/>
+						<MediaRef Id="717945163"/>
+						<MediaRef Id="824393662"/>
+						<MediaRef Id="947434909"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="768391258" Name="Play_Player_Footsteps_Running_Breathing" DurationType="OneShot" DurationMin="0.49845833" DurationMax="0.72435415">
+					<MediaRefs>
+						<MediaRef Id="13679568"/>
+						<MediaRef Id="128369396"/>
+						<MediaRef Id="922874674"/>
+						<MediaRef Id="950443640"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2051615781" Name="Play_Player_Footsteps_Walking" DurationType="OneShot" DurationMin="0.41644815" DurationMax="0.46600455">
+					<MediaRefs>
+						<MediaRef Id="306056206"/>
+						<MediaRef Id="419456089"/>
+						<MediaRef Id="852890347"/>
+						<MediaRef Id="926433972"/>
+						<MediaRef Id="1001850140"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{2EEB0034-AE90-54F6-086A-886FA1F5C9ED}</FileHash>
+</SoundBanksInfo>

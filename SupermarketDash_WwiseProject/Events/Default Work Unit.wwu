@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{75EAE9FE-406A-4ED1-BCF9-FECD2042BD27}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{75EAE9FE-406A-4ED1-BCF9-FECD2042BD27}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Player_Footsteps_Walking" ID="{843C6B1C-FD78-47AF-A9CE-F8FD8FE51C1B}">
+					<ChildrenList>
+						<Action Name="" ID="{18E4392C-B6DC-4583-A6D5-CB1EA363F7DD}" ShortID="467558449">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Footsteps_Walking" ID="{11C06609-9900-40C6-896C-3CD4025E85F0}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Footsteps_Running" ID="{7455486A-6CAA-4F30-B499-FE64831A9EA2}">
+					<ChildrenList>
+						<Action Name="" ID="{B68D36E4-CBF5-49EF-82F9-F64E2A24CDA4}" ShortID="413532390">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Footsteps_Running" ID="{1AC1170B-5D16-4D15-B0BB-91CC77341230}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Footsteps_Running_Breathing" ID="{0C514E94-571B-405C-856B-11A58D0F2B7D}">
+					<ChildrenList>
+						<Action Name="" ID="{DCEA73AD-ADC9-4CB5-86C8-E346873FBC22}" ShortID="147402815">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Footsteps_Running_Breathing" ID="{D78C29D7-39A0-4661-A4AE-0C3FF0FA02C6}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
