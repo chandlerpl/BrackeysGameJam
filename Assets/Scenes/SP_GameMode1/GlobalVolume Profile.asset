@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6536507669331461322
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81180773991d8724ab7f2d216912b564, type: 3}
+  m_Name: ChromaticAberration
+  m_EditorClassIdentifier: 
+  active: 1
+  intensity:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &-4463075036262637168
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
+  m_Name: DepthOfField
+  m_EditorClassIdentifier: 
+  active: 0
+  mode:
+    m_OverrideState: 1
+    m_Value: 2
+  gaussianStart:
+    m_OverrideState: 1
+    m_Value: 17
+  gaussianEnd:
+    m_OverrideState: 1
+    m_Value: 30
+  gaussianMaxRadius:
+    m_OverrideState: 1
+    m_Value: 0.55
+  highQualitySampling:
+    m_OverrideState: 0
+    m_Value: 0
+  focusDistance:
+    m_OverrideState: 1
+    m_Value: 0.3
+  aperture:
+    m_OverrideState: 0
+    m_Value: 1
+  focalLength:
+    m_OverrideState: 0
+    m_Value: 1
+  bladeCount:
+    m_OverrideState: 1
+    m_Value: 6
+  bladeCurvature:
+    m_OverrideState: 0
+    m_Value: 0.172
+  bladeRotation:
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!114 &-4009687210466411460
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -12,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   skipIterations:
     m_OverrideState: 0
     m_Value: 1
@@ -23,14 +85,14 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   scatter:
-    m_OverrideState: 0
-    m_Value: 0.779
+    m_OverrideState: 1
+    m_Value: 0.121
   clamp:
     m_OverrideState: 0
     m_Value: 65472
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.76040584, g: 0.7784643, b: 0.78867924, a: 1}
+    m_Value: {r: 0, g: 0.9411051, b: 1, a: 1}
   highQualityFiltering:
     m_OverrideState: 0
     m_Value: 1
@@ -87,10 +149,10 @@ MonoBehaviour:
   active: 1
   temperature:
     m_OverrideState: 1
-    m_Value: 46.2
+    m_Value: 63
   tint:
     m_OverrideState: 1
-    m_Value: 8.9
+    m_Value: 12
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +173,9 @@ MonoBehaviour:
   - {fileID: 4200953694453036606}
   - {fileID: -1847049649574983231}
   - {fileID: -4009687210466411460}
+  - {fileID: -4463075036262637168}
+  - {fileID: 1618911547128416370}
+  - {fileID: -6536507669331461322}
 --- !u!114 &1240291446651785557
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -126,13 +191,47 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {r: 0.103203975, g: 0.15359874, b: 0.24528301, a: 1}
+    m_Value: {r: 0.1724813, g: 0.2378359, b: 0.3584906, a: 1}
   highlights:
     m_OverrideState: 1
-    m_Value: {r: 0.83396226, g: 0.83396226, b: 0.83396226, a: 1}
+    m_Value: {r: 0.7056604, g: 0.7056604, b: 0.7056604, a: 1}
   balance:
     m_OverrideState: 1
-    m_Value: 28
+    m_Value: 22
+--- !u!114 &1618911547128416370
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
+  m_Name: ShadowsMidtonesHighlights
+  m_EditorClassIdentifier: 
+  active: 0
+  shadows:
+    m_OverrideState: 1
+    m_Value: {x: 0.9396065, y: 0.9073023, z: 1, w: 0.017112201}
+  midtones:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: -0.03422473}
+  highlights:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: -0.104812704}
+  shadowsStart:
+    m_OverrideState: 0
+    m_Value: 0
+  shadowsEnd:
+    m_OverrideState: 0
+    m_Value: 0.3
+  highlightsStart:
+    m_OverrideState: 0
+    m_Value: 0.55
+  highlightsEnd:
+    m_OverrideState: 0
+    m_Value: 1
 --- !u!114 &4038157944694055681
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -151,7 +250,7 @@ MonoBehaviour:
     m_Value: 0
   contrast:
     m_OverrideState: 0
-    m_Value: 1
+    m_Value: -7
   colorFilter:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
