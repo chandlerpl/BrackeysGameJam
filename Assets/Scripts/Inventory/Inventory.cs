@@ -9,13 +9,25 @@ public class Inventory : MonoBehaviour
     private float interactRange;
     [SerializeField]
     private int maxItems = 1;
+    [SerializeField]
+    private float throwForce = 2f;
 
     [SerializeField]
     private Transform cam;
+    [SerializeField]
+    private Transform handPosition;
 
     private Item[] inventory;
+    private int _inventorySlot = 0;
     public void Interact()
     {
+        if (inventory[_inventorySlot] != null)
+        {
+            RemoveItem(inventory[_inventorySlot], _inventorySlot);
+            return;
+        }
+
+
         if (Physics.SphereCast(cam.position, 0.25f, cam.forward, out RaycastHit hit, interactRange, LayerMask.GetMask("Interactable")))
         {
 /*            if (hit.collider.TryGetComponent<Tooltip>(out var tooltip))
@@ -40,14 +52,38 @@ public class Inventory : MonoBehaviour
             {
                 inventory[i] = item;
 
+                item.transform.SetParent(handPosition);
+                item.transform.localPosition = Vector3.zero;
+                
+                if(item.TryGetComponent(out Pickup pickup))
+                {
+                    pickup.Rigidbody.isKinematic = true;
+                }
+
                 // Add item to hand?
-                item.gameObject.SetActive(false);
+                //item.gameObject.SetActive(false);
 
                 return true;
             }
         }
 
         return false;
+    }
+
+    public bool RemoveItem(Item item, int slot)
+    {
+        inventory[slot] = null;
+
+        item.transform.parent = null;
+        item.gameObject.SetActive(true);
+
+        if (item.TryGetComponent(out Pickup pickup))
+        {
+            pickup.Rigidbody.isKinematic = false;
+            pickup.Rigidbody.AddForce(cam.forward * throwForce, ForceMode.Impulse);
+        }
+
+        return true;
     }
 
     public bool ContainsItem(Item item)
