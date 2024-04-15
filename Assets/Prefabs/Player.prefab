@@ -410,6 +410,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   detectionTime: 0
+  spottableLocations:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 1.743, z: 0}
+  - {x: 0.17, y: 0.945, z: 0}
+  - {x: -0.17, y: 0.945, z: 0}
 --- !u!114 &2372976044556668146
 MonoBehaviour:
   m_ObjectHideFlags: 0

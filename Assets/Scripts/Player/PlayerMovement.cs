@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
     private float _speed;
     private bool _isSprinting;
     private bool _isCrouching;
+
+    private Vector3 startPosition;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -52,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         _speed = walkSpeed;
+        startPosition = transform.position;
     }
 
     private void Interact_performed(InputAction.CallbackContext obj)
@@ -135,5 +138,10 @@ public class PlayerMovement : MonoBehaviour
 
         rb.velocity = dir * _speed;
         rb.rotation = mouseMovement.CharacterRotation;
+    }
+
+    public void RestartPlayer()
+    {
+        transform.position = startPosition;
     }
 }

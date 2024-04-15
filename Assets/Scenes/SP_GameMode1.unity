@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.293
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.003053446, g: 0.015294938, b: 0.04196582, a: 0.293}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0.293}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4553,12 +4553,12 @@ PrefabInstance:
     - target: {fileID: 575209325114076480, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.451
+      value: -11.083
       objectReference: {fileID: 0}
     - target: {fileID: 575209325114076480, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.875
+      value: 7.923
       objectReference: {fileID: 0}
     - target: {fileID: 575209325114076480, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
@@ -7010,7 +7010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8419cf9a4bf23c4fbdc44f955d6fc0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  announcementTiming: 60
+  announcementTiming: 0
   announcement: {fileID: 1468172071}
   loadFolder: NightLight-Data
 --- !u!114 &1468172073
@@ -7380,35 +7380,35 @@ PrefabInstance:
       propertyPath: waypoints
       value: 
       objectReference: {fileID: 769821264}
-    - target: {fileID: 37160612114184238, guid: 74fc79e0844b6cf4fa1254243238501b,
+    - target: {fileID: 3546969261975992092, guid: 74fc79e0844b6cf4fa1254243238501b,
         type: 3}
-      propertyPath: startPosition.x
-      value: -8.84
+      propertyPath: m_LocalPosition.x
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 37160612114184238, guid: 74fc79e0844b6cf4fa1254243238501b,
+    - target: {fileID: 3546969261975992092, guid: 74fc79e0844b6cf4fa1254243238501b,
         type: 3}
-      propertyPath: startPosition.y
-      value: 8.9
+      propertyPath: m_LocalPosition.y
+      value: 1.665
       objectReference: {fileID: 0}
-    - target: {fileID: 37160612114184238, guid: 74fc79e0844b6cf4fa1254243238501b,
+    - target: {fileID: 3546969261975992092, guid: 74fc79e0844b6cf4fa1254243238501b,
         type: 3}
-      propertyPath: startPosition.z
-      value: -2.17
+      propertyPath: m_LocalPosition.z
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 3833785871901992389, guid: 74fc79e0844b6cf4fa1254243238501b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.160001
+      value: -1.102
       objectReference: {fileID: 0}
     - target: {fileID: 3833785871901992389, guid: 74fc79e0844b6cf4fa1254243238501b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.9
+      value: 7.909
       objectReference: {fileID: 0}
     - target: {fileID: 3833785871901992389, guid: 74fc79e0844b6cf4fa1254243238501b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.9799991
+      value: -0.199
       objectReference: {fileID: 0}
     - target: {fileID: 3833785871901992389, guid: 74fc79e0844b6cf4fa1254243238501b,
         type: 3}
@@ -7483,7 +7483,7 @@ PrefabInstance:
     - target: {fileID: 1351504429318789093, guid: 7138ab4d34c38b249903da9f36dab9da,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.9
+      value: 7.903
       objectReference: {fileID: 0}
     - target: {fileID: 1351504429318789093, guid: 7138ab4d34c38b249903da9f36dab9da,
         type: 3}
@@ -7530,25 +7530,15 @@ PrefabInstance:
       propertyPath: waypoints
       value: 
       objectReference: {fileID: 769821264}
-    - target: {fileID: 2842282153503050254, guid: 7138ab4d34c38b249903da9f36dab9da,
-        type: 3}
-      propertyPath: startPosition.x
-      value: 40.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 2842282153503050254, guid: 7138ab4d34c38b249903da9f36dab9da,
-        type: 3}
-      propertyPath: startPosition.y
-      value: 8.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2842282153503050254, guid: 7138ab4d34c38b249903da9f36dab9da,
-        type: 3}
-      propertyPath: startPosition.z
-      value: 44.59
-      objectReference: {fileID: 0}
     - target: {fileID: 5889108910420550979, guid: 7138ab4d34c38b249903da9f36dab9da,
         type: 3}
       propertyPath: m_Name
       value: ShopAssistantFemale Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889108910420550979, guid: 7138ab4d34c38b249903da9f36dab9da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

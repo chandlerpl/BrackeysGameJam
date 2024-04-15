@@ -8,9 +8,16 @@ public class AIMovement : MonoBehaviour
 {
     public float moveSpeed = 2;
     public float runSpeed = 4;
+
+    public float fov = 160f;
+    public float detectionRange = 20f;
+    public float detectionTime = 1f;
     //public Vector3 startPosition;
     public WaypointGroup waypoints;
 
+    [SerializeField]
+    private Transform _visionLocation;
+    public Transform VisionLocation { get => _visionLocation; }
     public int CurrentWaypoint { get; set; }
 
     //private Rigidbody _rigidbody;
@@ -19,6 +26,8 @@ public class AIMovement : MonoBehaviour
     private NavMeshAgent _agent;
     public NavMeshAgent Agent { get => _agent; }
     private BehaviourTree<AIMovement> _behaviourTree;
+
+    public Transform chasedPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +44,12 @@ public class AIMovement : MonoBehaviour
                     nodes = new()
                     {
                         new AnnouncementDecisionNode(),
-                        new VisualDetectionNode(),
+                        new VisualDetectionNode()
+                        {
+                            fov = fov,
+                            detectionRange = detectionRange,
+                            detectionTime = detectionTime,
+                        },
                         new MovementNode()
                         {
                             patrolSpeed = runSpeed,

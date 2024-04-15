@@ -12,10 +12,16 @@ public class CaughtNode : Node<AIMovement>
     {
         // Caught the player! I need to do stuff here, but what?
 
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        SceneManager.LoadScene(3);
+        if(data.chasedPlayer != null && (data.transform.position - data.chasedPlayer.position).sqrMagnitude < 0.5f)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            SceneManager.LoadScene(3);
 
-        return NodeState.Success;
+            return NodeState.Success;
+        }
+
+        // Search for player?
+        return NodeState.Running;
     }
 }

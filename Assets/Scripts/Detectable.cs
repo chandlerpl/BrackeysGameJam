@@ -13,4 +13,6 @@ public class Detectable : MonoBehaviour
 {
     public EntityTypes type;
     public float detectionTime = 0;
+
+    public List<Vector3> spottableLocations;
 }
