@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 4990558922126360997}
   - component: {fileID: 8389296986371145428}
   - component: {fileID: 8523195855619046588}
-  - component: {fileID: 598331272387709412}
-  m_Layer: 0
+  - component: {fileID: 9200252807259054297}
+  - component: {fileID: 8167837147573835980}
+  - component: {fileID: 8833187604401061125}
+  m_Layer: 7
   m_Name: carrot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,8 +87,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &598331272387709412
-BoxCollider:
+--- !u!114 &9200252807259054297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458695834572785350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0803fbd2344ef8748ac89b0e711d7a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemIdentifier: Carrot
+  quantity: 1
+--- !u!114 &8167837147573835980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458695834572785350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f842bf19f4f19c44dbe47be3d071d9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 0}
+--- !u!64 &8833187604401061125
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -100,9 +129,10 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.56910944, y: 0.71630365, z: 0.5208092}
-  m_Center: {x: 0.0007431507, y: 0.35815182, z: 0.011522293}
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5167598553062015541, guid: d6a5d4b90c02a144fb226cc28d4e7a7e, type: 3}

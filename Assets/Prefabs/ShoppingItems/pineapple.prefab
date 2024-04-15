@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 1156542080809485576}
   - component: {fileID: 4537414531352831744}
   - component: {fileID: 3271341135719492431}
-  - component: {fileID: -495801679192223609}
-  m_Layer: 0
+  - component: {fileID: 5035970258595073142}
+  - component: {fileID: -1810740964256866849}
+  - component: {fileID: -3449226552266279198}
+  m_Layer: 7
   m_Name: pineapple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,8 +87,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &-495801679192223609
-BoxCollider:
+--- !u!114 &5035970258595073142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057224928070267970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0803fbd2344ef8748ac89b0e711d7a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemIdentifier: pineapple
+  quantity: 1
+--- !u!114 &-1810740964256866849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057224928070267970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f842bf19f4f19c44dbe47be3d071d9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 0}
+--- !u!64 &-3449226552266279198
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -100,9 +129,10 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.24116458, y: 0.47159126, z: 0.24476357}
-  m_Center: {x: 0, y: 0.23579563, z: 0}
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6316266800271276957, guid: 971abeff385d67847ba04de1deb8bf6b, type: 3}

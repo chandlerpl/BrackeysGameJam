@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 9177356092053866999}
   - component: {fileID: 3158344491724932208}
   - component: {fileID: 8678873896829788123}
-  - component: {fileID: 4049203144278035168}
-  m_Layer: 0
+  - component: {fileID: -957470240508720095}
+  - component: {fileID: -306024525524342090}
+  - component: {fileID: 2499743390353444052}
+  m_Layer: 7
   m_Name: sodaBottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,8 +87,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4049203144278035168
-BoxCollider:
+--- !u!114 &-957470240508720095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376278673890916129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0803fbd2344ef8748ac89b0e711d7a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemIdentifier: sodaBottle
+  quantity: 1
+--- !u!114 &-306024525524342090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376278673890916129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f842bf19f4f19c44dbe47be3d071d9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 0}
+--- !u!64 &2499743390353444052
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -100,9 +129,10 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.18049198, y: 0.56041193, z: 0.15631066}
-  m_Center: {x: 0, y: 0.28020597, z: 0}
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4698154072597918306, guid: 2c12a465272315c4db08060c30ebe9c0, type: 3}

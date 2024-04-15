@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 6671153837689392112}
   - component: {fileID: 7537947122735813766}
   - component: {fileID: 1381952969114176825}
-  - component: {fileID: 885482152939528543}
   - component: {fileID: 3448804645518905581}
   - component: {fileID: 8910075847911126510}
-  m_Layer: 0
+  - component: {fileID: 7605833485841330628}
+  m_Layer: 7
   m_Name: broccoli
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,27 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &885482152939528543
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6037435020500182408}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.6409898, y: 0.421668, z: 0.61011887}
-  m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!114 &3448804645518905581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0803fbd2344ef8748ac89b0e711d7a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemIdentifier: 
+  itemIdentifier: Broccoli
   quantity: 1
 --- !u!114 &8910075847911126510
 MonoBehaviour:
@@ -135,3 +114,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 0}
+--- !u!64 &7605833485841330628
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6037435020500182408}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5538994835381136387, guid: 20a8e5c058ac52b4fbf404ce763bf077, type: 3}

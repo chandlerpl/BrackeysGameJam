@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 1856973272403830284}
   - component: {fileID: 5621135461981186444}
   - component: {fileID: 2202674709757643554}
-  - component: {fileID: 7239250476618208036}
-  m_Layer: 0
+  - component: {fileID: -7514471269456538463}
+  - component: {fileID: 5023127565349702542}
+  - component: {fileID: 2459226574363988267}
+  m_Layer: 7
   m_Name: fish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,8 +88,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7239250476618208036
-BoxCollider:
+--- !u!114 &-7514471269456538463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788392892354722883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0803fbd2344ef8748ac89b0e711d7a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemIdentifier: fish
+  quantity: 1
+--- !u!114 &5023127565349702542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788392892354722883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f842bf19f4f19c44dbe47be3d071d9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 0}
+--- !u!64 &2459226574363988267
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -101,9 +130,10 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.4013796, y: 0.3222011, z: 0.8462677}
-  m_Center: {x: -0.020225048, y: 0.16110055, z: 0.047245026}
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1258736543099589447, guid: 52b2d7387d6330e4e80dd7ea4c4912a0, type: 3}

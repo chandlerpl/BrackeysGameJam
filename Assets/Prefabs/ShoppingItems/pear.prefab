@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 3129894747337024179}
   - component: {fileID: 3446511453241146949}
   - component: {fileID: 6020602912671984971}
-  - component: {fileID: 2399728794101698806}
-  m_Layer: 0
+  - component: {fileID: -3594157866884405820}
+  - component: {fileID: 2139728628814264780}
+  - component: {fileID: -1862843144392263247}
+  m_Layer: 7
   m_Name: pear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,8 +87,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2399728794101698806
-BoxCollider:
+--- !u!114 &-3594157866884405820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236290815065097076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0803fbd2344ef8748ac89b0e711d7a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemIdentifier: pear
+  quantity: 1
+--- !u!114 &2139728628814264780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236290815065097076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f842bf19f4f19c44dbe47be3d071d9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 0}
+--- !u!64 &-1862843144392263247
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -100,9 +129,10 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.32566738, y: 0.27075338, z: 0.3490982}
-  m_Center: {x: 0.011538029, y: 0.13537669, z: 0.006378174}
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 419726150723840679, guid: 1d64353b18a2ca44685d14343c7ceb43, type: 3}
