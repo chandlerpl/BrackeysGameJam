@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 968857859942866613}
   - component: {fileID: 6162678386836759005}
   - component: {fileID: 7896690782568390044}
+  - component: {fileID: 7806250726765181187}
   m_Layer: 0
   m_Name: cauliflower
   m_TagString: Untagged
@@ -84,3 +85,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7806250726765181187
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579747765801927352}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5168667, y: 0.3073915, z: 0.5734558}
+  m_Center: {x: 0.00076293945, y: 0.15369575, z: -0.0018501282}

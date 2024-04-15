@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4990558922126360997}
   - component: {fileID: 8389296986371145428}
   - component: {fileID: 8523195855619046588}
+  - component: {fileID: 598331272387709412}
   m_Layer: 0
   m_Name: carrot
   m_TagString: Untagged
@@ -84,3 +85,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &598331272387709412
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458695834572785350}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.56910944, y: 0.71630365, z: 0.5208092}
+  m_Center: {x: 0.0007431507, y: 0.35815182, z: 0.011522293}

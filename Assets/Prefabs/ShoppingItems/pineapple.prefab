@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1156542080809485576}
   - component: {fileID: 4537414531352831744}
   - component: {fileID: 3271341135719492431}
+  - component: {fileID: -495801679192223609}
   m_Layer: 0
   m_Name: pineapple
   m_TagString: Untagged
@@ -84,3 +85,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-495801679192223609
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057224928070267970}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.24116458, y: 0.47159126, z: 0.24476357}
+  m_Center: {x: 0, y: 0.23579563, z: 0}
