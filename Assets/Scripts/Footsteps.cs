@@ -9,9 +9,16 @@ using Random = UnityEngine.Random;
 public class Footsteps : MonoBehaviour
 {
     private Rigidbody cc;
-    public AudioSource _audioSource;
+    public AK.Wwise.Event _footstepSound;
+    public AkEvent e;
+    public void Step()
+    {
+        //Debug.Log("Tets");
+        //_footstepSound.Post(gameObject);
+        //e.HandleEvent(gameObject);
+    }
 
-    private void Start()
+/*    private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
     }
@@ -43,5 +50,5 @@ public class Footsteps : MonoBehaviour
             _audioSource.Stop();
         }
         
-    }
+    }*/
 }
