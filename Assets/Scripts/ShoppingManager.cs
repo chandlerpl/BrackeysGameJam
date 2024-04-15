@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,26 +12,26 @@ public class ShoppingManager : MonoBehaviour
     public Item[] collectibleItems;
     public int itemCount = 4;
 
-    private Dictionary<Item, GameObject> collectItems;
-
+    private Dictionary<string, GameObject> collectItems;
+    private List<string> collected = new List<string>();
     public void Awake()
     {
         Instance = this;
 
-        collectItems = new Dictionary<Item, GameObject>(itemCount);
+        collectItems = new Dictionary<string, GameObject>(itemCount);
 
         for(int i = 0; i < itemCount; ++i) {
             int chosen = Random.Range(0, collectibleItems.Length);
 
-            if (collectItems.ContainsKey(collectibleItems[chosen]))
+            if (collectItems.ContainsKey(collectibleItems[chosen].itemIdentifier))
             {
                 i--;
                 continue;
             }
 
             GameObject go = Instantiate(shoppingItem, listHolder);
-            collectItems.Add(collectibleItems[chosen], go);
-            go.GetComponent<Text>().text = collectibleItems[chosen].itemIdentifier;
+            collectItems.Add(collectibleItems[chosen].itemIdentifier, go);
+            go.GetComponent<TextMeshProUGUI>().text = collectibleItems[chosen].itemIdentifier;
         }
     }
 
@@ -44,23 +45,24 @@ public class ShoppingManager : MonoBehaviour
 
     public bool IsRequiredItem(Item item)
     {
-        return collectItems.ContainsKey(item);
+        return collectItems.ContainsKey(item.itemIdentifier);
     }
 
     public void CheckOffItem(Item item)
     {
-        if(collectItems.ContainsKey(item))
+        if(collectItems.ContainsKey(item.itemIdentifier))
         {
            // Debug.Log("Crossing off");
-            collectItems[item].transform.GetChild(0).gameObject.SetActive(true);
+            collectItems[item.itemIdentifier].transform.GetChild(0).gameObject.SetActive(true);
+            collected.Add(item.itemIdentifier);
         }
     }
 
     public bool HasAllRequiredItems(Inventory inventory)
     {
-        foreach (Item item in collectItems.Keys)
+        foreach (string item in collectItems.Keys)
         {
-            if (!inventory.ContainsItem(item))
+            if(!collected.Contains(item))
             {
                 return false;
             }
