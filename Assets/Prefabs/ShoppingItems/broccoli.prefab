@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7537947122735813766}
   - component: {fileID: 1381952969114176825}
   - component: {fileID: 885482152939528543}
+  - component: {fileID: 3448804645518905581}
+  - component: {fileID: 8910075847911126510}
   m_Layer: 0
   m_Name: broccoli
   m_TagString: Untagged
@@ -106,3 +108,30 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6409898, y: 0.421668, z: 0.61011887}
   m_Center: {x: 0, y: 0.2, z: 0}
+--- !u!114 &3448804645518905581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6037435020500182408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0803fbd2344ef8748ac89b0e711d7a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemIdentifier: 
+  quantity: 1
+--- !u!114 &8910075847911126510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6037435020500182408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f842bf19f4f19c44dbe47be3d071d9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 0}
