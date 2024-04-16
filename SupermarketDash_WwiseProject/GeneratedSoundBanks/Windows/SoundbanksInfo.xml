@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{769D238D-9BA2-89B3-E869-AACBC93E811B}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A128AD69-2346-A970-5D8A-7E5185E6FFF1}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -52,7 +52,7 @@
 				</File>
 				<File Id="306056206" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_3.wav</ShortName>
-					<CachePath>SFX/Footsteps_3_474F6000.wem</CachePath>
+					<CachePath>SFX/Footsteps_3_9906E552.wem</CachePath>
 				</File>
 				<File Id="395879434" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_10_818F3B66.wav</ShortName>
@@ -60,11 +60,19 @@
 				</File>
 				<File Id="419456089" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_4.wav</ShortName>
-					<CachePath>SFX/Footsteps_4_A3763AF8.wem</CachePath>
+					<CachePath>SFX/Footsteps_4_31BDA2A6.wem</CachePath>
+				</File>
+				<File Id="452033275" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Menu_Confirm.wav</ShortName>
+					<CachePath>SFX/UI_Menu_Confirm_3EF9D37E.wem</CachePath>
 				</File>
 				<File Id="498026625" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_01_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_01_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="562927858" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Menu_Hover.wav</ShortName>
+					<CachePath>SFX/UI_Menu_Hover_7C8E258E.wem</CachePath>
 				</File>
 				<File Id="609781788" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_02_818F3B66.wav</ShortName>
@@ -80,7 +88,7 @@
 				</File>
 				<File Id="852890347" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_5.wav</ShortName>
-					<CachePath>SFX/Footsteps_5_636B5A22.wem</CachePath>
+					<CachePath>SFX/Footsteps_5_4CD5BCCC.wem</CachePath>
 				</File>
 				<File Id="922874674" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Breathing_Running_1.wav</ShortName>
@@ -88,7 +96,7 @@
 				</File>
 				<File Id="926433972" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_1.wav</ShortName>
-					<CachePath>SFX/Footsteps_1_4243C69A.wem</CachePath>
+					<CachePath>SFX/Footsteps_1_60777841.wem</CachePath>
 				</File>
 				<File Id="947434909" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_08_818F3B66.wav</ShortName>
@@ -100,7 +108,7 @@
 				</File>
 				<File Id="1001850140" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_2.wav</ShortName>
-					<CachePath>SFX/Footsteps_2_17A6E12F.wem</CachePath>
+					<CachePath>SFX/Footsteps_2_284248C7.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -135,8 +143,18 @@
 						<MediaRef Id="1001850140"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3500366795" Name="Play_UI_Menu_Confirm" DurationType="OneShot" DurationMin="3.1332662" DurationMax="3.1332662">
+					<MediaRefs>
+						<MediaRef Id="452033275"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2880217405" Name="Play_UI_Menu_Hover" DurationType="OneShot" DurationMin="0.5327037" DurationMax="0.5327037">
+					<MediaRefs>
+						<MediaRef Id="562927858"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{71AAA184-3DB7-EED2-DF87-B2CB243D599B}</FileHash>
+	<FileHash>{FFA8D98A-D8C9-466E-F222-0DD444BFB5C2}</FileHash>
 </SoundBanksInfo>

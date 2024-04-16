@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f2e4f01eb004ba4f9cefa109c3927e52
     GuidInternal: 
-    m_lastTime: -8584884962234866828
+    m_lastTime: -8584883392287309341
     List:
     - name: Main
       guid: ee6f455bd5d043479adc441a8e49d9f1
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584884962235640908
+    m_lastTime: -8584883392939617997
     List:
     - name: Play_Player_Footsteps_Running
       guid: 6a485574aa6c304fb499fe64831a9ea2
@@ -106,10 +106,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Player
+        ObjectType: 4
+        guid: 23de7e9efab0964195e24ace4a202138
       - ElementName: Play_Player_Footsteps_Running
         ObjectType: 3
         guid: 6a485574aa6c304fb499fe64831a9ea2
-      Path: Events\Default Work Unit\Play_Player_Footsteps_Running
+      Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Running
       maxAttenuation: 0
       maxDuration: 0.31777778
       minDuration: 0.24598639
@@ -123,10 +126,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Player
+        ObjectType: 4
+        guid: 23de7e9efab0964195e24ace4a202138
       - ElementName: Play_Player_Footsteps_Running_Breathing
         ObjectType: 3
         guid: 944e510c1b575c40856b11a58d0f2b7d
-      Path: Events\Default Work Unit\Play_Player_Footsteps_Running_Breathing
+      Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Running_Breathing
       maxAttenuation: 0
       maxDuration: 0.72435415
       minDuration: 0.49845833
@@ -140,13 +146,90 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Player
+        ObjectType: 4
+        guid: 23de7e9efab0964195e24ace4a202138
       - ElementName: Play_Player_Footsteps_Walking
         ObjectType: 3
         guid: 1c6b3c8478fdaf47a9cef8fd8fe51c1b
-      Path: Events\Default Work Unit\Play_Player_Footsteps_Walking
+      Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Walking
       maxAttenuation: 0
       maxDuration: 0.46600455
       minDuration: 0.41644815
+    - name: Play_UI_Menu_Confirm
+      guid: 72ed8f51e4012749a7eac5f80a18bd7f
+      id: 3500366795
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: UI
+        ObjectType: 4
+        guid: 8e6225aef3e1ad4a8a78ab8a4850276e
+      - ElementName: Play_UI_Menu_Confirm
+        ObjectType: 3
+        guid: 72ed8f51e4012749a7eac5f80a18bd7f
+      Path: Events\Default Work Unit\UI\Play_UI_Menu_Confirm
+      maxAttenuation: 0
+      maxDuration: 3.1332662
+      minDuration: 3.1332662
+    - name: Play_UI_Menu_Hover
+      guid: 1666e6c9ec977a4f954004fc4e6cb4ba
+      id: 2880217405
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: UI
+        ObjectType: 4
+        guid: 8e6225aef3e1ad4a8a78ab8a4850276e
+      - ElementName: Play_UI_Menu_Hover
+        ObjectType: 3
+        guid: 1666e6c9ec977a4f954004fc4e6cb4ba
+      Path: Events\Default Work Unit\UI\Play_UI_Menu_Hover
+      maxAttenuation: 0
+      maxDuration: 0.5327037
+      minDuration: 0.5327037
+    - name: Player
+      guid: 23de7e9efab0964195e24ace4a202138
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Player
+        ObjectType: 4
+        guid: 23de7e9efab0964195e24ace4a202138
+      Path: Events\Default Work Unit\Player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI
+      guid: 8e6225aef3e1ad4a8a78ab8a4850276e
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: UI
+        ObjectType: 4
+        guid: 8e6225aef3e1ad4a8a78ab8a4850276e
+      Path: Events\Default Work Unit\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
