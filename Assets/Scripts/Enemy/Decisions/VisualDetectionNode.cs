@@ -62,9 +62,10 @@ public class VisualDetectionNode : Node<AIMovement>
         _currentTick = 0;
 
         // Searches the Detectable layer for any objects in range.
-        Collider[] cols = Physics.OverlapSphere(data.VisionLocation.position, detectionRange, LayerMask.GetMask("Detectable"));
+        Collider[] cols = Physics.OverlapSphere(data.VisionLocation.position, detectionRange, LayerMask.GetMask("Detectable") ^ LayerMask.GetMask("DetectableNonBlocking"));
 
         updatedUnits.Clear();
+        float clostestAgent = float.MaxValue;
         foreach (Collider col in cols)
         {
             if (!col.gameObject.TryGetComponent<Detectable>(out var detectable))
@@ -74,14 +75,18 @@ public class VisualDetectionNode : Node<AIMovement>
             {
                 if (Vector3.Angle(col.transform.position - data.VisionLocation.position, data.VisionLocation.forward) <= fov / 2)
                 {
-                    if (TryDetect(data.VisionLocation.position, detectable))
+                    float dist = TryDetect(data.VisionLocation.position, detectable);
+                    if (dist > -1000)
                     {
                         updatedUnits.Add(detectable);
                         if (detectingUnits.ContainsKey(detectable))
                         {
                             float currentDetection = detectingUnits[detectable] + _timeSinceLastCheck;
-                            if (currentDetection >= detectionTime)
+                            float detectTime = detectionTime * (dist / detectionRange);
+
+                            if (currentDetection >= detectTime && dist < clostestAgent)
                             {
+                                clostestAgent = dist;
                                 //currentDetected = detectable;
                                 //memory.SetValue("currentTarget", detectable.transform.position);
                                 //unitDetection[detectable] = memoryTime;
@@ -120,16 +125,16 @@ public class VisualDetectionNode : Node<AIMovement>
         return NodeState.Failure;
     }
 
-    private bool TryDetect(Vector3 location, Detectable detectable)
+    private float TryDetect(Vector3 location, Detectable detectable)
     {
         foreach (Vector3 vec in detectable.spottableLocations)
         {
-            if (Physics.Linecast(location, detectable.transform.position + vec, out RaycastHit rayHit) && rayHit.collider.gameObject == detectable.gameObject)
+            if (Physics.Linecast(location, detectable.transform.position + vec, out RaycastHit rayHit, ~LayerMask.GetMask("DetectableNonBlocking")) && rayHit.collider.gameObject == detectable.gameObject)
             {
-                return true;
+                return rayHit.distance;
             }
         }
 
-        return false;
+        return -1000;
     }
 }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1797099010649348719}
   - component: {fileID: -2358621850181352461}
   - component: {fileID: -3364799912933886452}
+  - component: {fileID: 1013958173887980797}
   m_Layer: 7
   m_Name: tomato
   m_TagString: Untagged
@@ -101,6 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIdentifier: tomato
   quantity: 1
+  itemIconPrefab: {fileID: 2964322666890445774, guid: e8c97b5ea3bd036449363e5a3ffcca72,
+    type: 3}
 --- !u!114 &-2358621850181352461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,3 +139,30 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5892359386350019813, guid: 93f831cc8a599174d9c290372d35c258, type: 3}
+--- !u!54 &1013958173887980797
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8578958706174819250}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

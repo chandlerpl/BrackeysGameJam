@@ -6,11 +6,22 @@ public class ShoppingCart : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Interactable"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Interactable"))
         {
-            if(other.TryGetComponent(out Item item))
+            if (other.TryGetComponent(out Item item))
             {
-                ShoppingManager.Instance.CheckOffItem(item);
+                ShoppingManager.Instance.CheckItem(item);
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Interactable"))
+        {
+            if (other.TryGetComponent(out Item item))
+            {
+                ShoppingManager.Instance.CheckItem(item);
             }
         }
     }

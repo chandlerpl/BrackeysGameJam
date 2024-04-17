@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 9031234080103792361}
   - component: {fileID: 8459650510035320066}
   - component: {fileID: 37160612114184238}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: ShopAssistantMale
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -231,8 +231,8 @@ MonoBehaviour:
   moveSpeed: 2
   runSpeed: 4
   fov: 160
-  detectionRange: 20
-  detectionTime: 1
+  detectionRange: 15
+  detectionTime: 1.25
   waypoints: {fileID: 0}
   _visionLocation: {fileID: 3546969261975992092}
   animator: {fileID: 202627352275821285}

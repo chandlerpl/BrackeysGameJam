@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9215852703167414540}
   - component: {fileID: -955678882480116494}
   - component: {fileID: 8045224755579979633}
+  - component: {fileID: 6476922976802472558}
   m_Layer: 7
   m_Name: cauliflower
   m_TagString: Untagged
@@ -101,6 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIdentifier: cauliflower
   quantity: 1
+  itemIconPrefab: {fileID: 7956286614476262515, guid: 5efcb2b52fd98744bb411741a7fe2f16,
+    type: 3}
 --- !u!114 &-955678882480116494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,3 +139,30 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8567099751650672141, guid: bcb05ddd0ded2424bb7f62dcdde8637a, type: 3}
+--- !u!54 &6476922976802472558
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579747765801927352}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

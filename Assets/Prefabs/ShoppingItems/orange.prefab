@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -4294726668405184864}
   - component: {fileID: -8186808308510127068}
   - component: {fileID: 3293691192382335833}
+  - component: {fileID: 5080539467131691477}
   m_Layer: 7
   m_Name: orange
   m_TagString: Untagged
@@ -101,6 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIdentifier: orange
   quantity: 1
+  itemIconPrefab: {fileID: 1121566072228694588, guid: 1fb83bf1f6e546742982ef279f487f9c,
+    type: 3}
 --- !u!114 &-8186808308510127068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,3 +139,30 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4542256552269943631, guid: 3d2d732dd0691b84ca0fd0b2d92c3b81, type: 3}
+--- !u!54 &5080539467131691477
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5659655121725118634}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

@@ -23,15 +23,16 @@ public class ShoppingManager : MonoBehaviour
         for(int i = 0; i < itemCount; ++i) {
             int chosen = Random.Range(0, collectibleItems.Length);
 
-            if (collectItems.ContainsKey(collectibleItems[chosen].itemIdentifier))
+            Item item = collectibleItems[chosen];
+            if (collectItems.ContainsKey(item.itemIdentifier))
             {
                 i--;
                 continue;
             }
 
-            GameObject go = Instantiate(shoppingItem, listHolder);
-            collectItems.Add(collectibleItems[chosen].itemIdentifier, go);
-            go.GetComponent<TextMeshProUGUI>().text = collectibleItems[chosen].itemIdentifier;
+            GameObject go = Instantiate(item.itemIconPrefab, listHolder);
+            collectItems.Add(item.itemIdentifier, go);
+            //go.GetComponent<TextMeshProUGUI>().text = item.itemIdentifier;
         }
     }
 
@@ -48,13 +49,19 @@ public class ShoppingManager : MonoBehaviour
         return collectItems.ContainsKey(item.itemIdentifier);
     }
 
-    public void CheckOffItem(Item item)
+    public void CheckItem(Item item)
     {
-        if(collectItems.ContainsKey(item.itemIdentifier))
+        if (collectItems.ContainsKey(item.itemIdentifier))
         {
-           // Debug.Log("Crossing off");
-            collectItems[item.itemIdentifier].transform.GetChild(0).gameObject.SetActive(true);
-            collected.Add(item.itemIdentifier);
+            if(!collected.Contains(item.itemIdentifier))
+            {
+                collectItems[item.itemIdentifier].transform.GetChild(1).gameObject.SetActive(true);
+                collected.Add(item.itemIdentifier);
+            } else
+            {
+                collectItems[item.itemIdentifier].transform.GetChild(1).gameObject.SetActive(false);
+                collected.Remove(item.itemIdentifier);
+            }
         }
     }
 
