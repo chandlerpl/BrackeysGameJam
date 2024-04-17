@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.293
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0030502966, g: 0.015291685, b: 0.04196612, a: 0.293}
+  m_IndirectSpecularColor: {r: 0.003053446, g: 0.015294938, b: 0.04196582, a: 0.293}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4600,6 +4600,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.546
       objectReference: {fileID: 0}
+    - target: {fileID: 2248168640928116287, guid: 13c238ce70cfc4e49935952fb02cc334,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248168640928116287, guid: 13c238ce70cfc4e49935952fb02cc334,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.191
+      objectReference: {fileID: 0}
     - target: {fileID: 3092946493559358574, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
       propertyPath: m_Name
@@ -6141,8 +6151,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 20, y: -80}
-  m_SizeDelta: {x: 150, y: 200}
+  m_AnchoredPosition: {x: 123, y: -80}
+  m_SizeDelta: {x: 268.344, y: 357.63}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1268424346
 MonoBehaviour:
@@ -6895,7 +6905,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
