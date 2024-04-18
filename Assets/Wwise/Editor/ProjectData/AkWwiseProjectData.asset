@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f2e4f01eb004ba4f9cefa109c3927e52
     GuidInternal: 
-    m_lastTime: -8584881520161464426
+    m_lastTime: -8584881350297105517
     List:
     - name: Main
       guid: ee6f455bd5d043479adc441a8e49d9f1
@@ -94,8 +94,65 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584881520161524585
+    m_lastTime: -8584881350860083563
     List:
+    - name: Guard
+      guid: 14112d96ebd7734f8fe1028e72ebe7cd
+      id: 740892324
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Guard
+        ObjectType: 4
+        guid: 14112d96ebd7734f8fe1028e72ebe7cd
+      Path: Events\Default Work Unit\Guard
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Guard_Footsteps_Running
+      guid: 4cabd7852814d34f9b7fab23e1ada745
+      id: 2420284597
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Guard
+        ObjectType: 4
+        guid: 14112d96ebd7734f8fe1028e72ebe7cd
+      - ElementName: Play_Guard_Footsteps_Running
+        ObjectType: 3
+        guid: 4cabd7852814d34f9b7fab23e1ada745
+      Path: Events\Default Work Unit\Guard\Play_Guard_Footsteps_Running
+      maxAttenuation: 7
+      maxDuration: 0.31777778
+      minDuration: 0.24598639
+    - name: Play_Guard_Footsteps_Walking
+      guid: 384f834aff4374419c46ceda3bff4ff0
+      id: 2271699957
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Guard
+        ObjectType: 4
+        guid: 14112d96ebd7734f8fe1028e72ebe7cd
+      - ElementName: Play_Guard_Footsteps_Walking
+        ObjectType: 3
+        guid: 384f834aff4374419c46ceda3bff4ff0
+      Path: Events\Default Work Unit\Guard\Play_Guard_Footsteps_Walking
+      maxAttenuation: 20
+      maxDuration: 0.5387107
+      minDuration: 0.39833167
     - name: Play_Player_Footsteps_Running
       guid: 6a485574aa6c304fb499fe64831a9ea2
       id: 727334981
@@ -327,7 +384,7 @@ MonoBehaviour:
     m_lastTime: -8584884962234831679
     List: []
   ExpandedFileSystemItemIds: 0f00000010000000
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000f000000100000001c0100001d0100001f010000
+  ExpandedWaapiItemIds: 050000000600000008000000090000000f000000100000001c0100001d0100001f010000e8b50100
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{9545DAFA-DF1F-B810-1D2C-50FCAF953967}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{BD8839E7-F7BD-A93D-83E9-696000CB5729}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -120,7 +120,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="727334981" Name="Play_Player_Footsteps_Running" MaxAttenuation="7" DurationType="OneShot" DurationMin="0.24598639" DurationMax="0.31777778">
+				<Event Id="2420284597" Name="Play_Guard_Footsteps_Running" MaxAttenuation="7" DurationType="OneShot" DurationMin="0.24598639" DurationMax="0.31777778">
 					<MediaRefs>
 						<MediaRef Id="7022271"/>
 						<MediaRef Id="101366574"/>
@@ -134,7 +134,30 @@
 						<MediaRef Id="947434909"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="768391258" Name="Play_Player_Footsteps_Running_Breathing" MaxAttenuation="7" DurationType="OneShot" DurationMin="0.49845833" DurationMax="0.72435415">
+				<Event Id="2271699957" Name="Play_Guard_Footsteps_Walking" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.39833167" DurationMax="0.5387107">
+					<MediaRefs>
+						<MediaRef Id="306056206"/>
+						<MediaRef Id="419456089"/>
+						<MediaRef Id="852890347"/>
+						<MediaRef Id="926433972"/>
+						<MediaRef Id="1001850140"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="727334981" Name="Play_Player_Footsteps_Running" DurationType="OneShot" DurationMin="0.24598639" DurationMax="0.31777778">
+					<MediaRefs>
+						<MediaRef Id="7022271"/>
+						<MediaRef Id="101366574"/>
+						<MediaRef Id="182624577"/>
+						<MediaRef Id="222329165"/>
+						<MediaRef Id="395879434"/>
+						<MediaRef Id="498026625"/>
+						<MediaRef Id="609781788"/>
+						<MediaRef Id="717945163"/>
+						<MediaRef Id="824393662"/>
+						<MediaRef Id="947434909"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="768391258" Name="Play_Player_Footsteps_Running_Breathing" DurationType="OneShot" DurationMin="0.49845833" DurationMax="0.72435415">
 					<MediaRefs>
 						<MediaRef Id="13679568"/>
 						<MediaRef Id="128369396"/>
@@ -142,7 +165,7 @@
 						<MediaRef Id="950443640"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2051615781" Name="Play_Player_Footsteps_Walking" MaxAttenuation="7" DurationType="OneShot" DurationMin="0.41644815" DurationMax="0.46600455">
+				<Event Id="2051615781" Name="Play_Player_Footsteps_Walking" DurationType="OneShot" DurationMin="0.41644815" DurationMax="0.46600455">
 					<MediaRefs>
 						<MediaRef Id="306056206"/>
 						<MediaRef Id="419456089"/>
@@ -174,5 +197,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1093EEF7-298F-1CCD-2859-BD54CFC02E77}</FileHash>
+	<FileHash>{E4A5FBAD-DCC3-7B79-46D3-A32D5C62F855}</FileHash>
 </SoundBanksInfo>
