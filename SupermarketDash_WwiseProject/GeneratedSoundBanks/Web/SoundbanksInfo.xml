@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{AC15BAD9-D8DB-36E0-DA9F-1CA42380170D}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{98B6BDDB-303B-265D-94C0-CE34FEDB63F9}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -112,7 +112,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="727334981" Name="Play_Player_Footsteps_Running" DurationType="OneShot" DurationMin="0.24598639" DurationMax="0.31777778">
+				<Event Id="727334981" Name="Play_Player_Footsteps_Running" MaxAttenuation="7" DurationType="OneShot" DurationMin="0.24598639" DurationMax="0.31777778">
 					<MediaRefs>
 						<MediaRef Id="7022271"/>
 						<MediaRef Id="101366574"/>
@@ -126,7 +126,7 @@
 						<MediaRef Id="947434909"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="768391258" Name="Play_Player_Footsteps_Running_Breathing" DurationType="OneShot" DurationMin="0.49845833" DurationMax="0.72435415">
+				<Event Id="768391258" Name="Play_Player_Footsteps_Running_Breathing" MaxAttenuation="7" DurationType="OneShot" DurationMin="0.49845833" DurationMax="0.72435415">
 					<MediaRefs>
 						<MediaRef Id="13679568"/>
 						<MediaRef Id="128369396"/>
@@ -134,7 +134,7 @@
 						<MediaRef Id="950443640"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2051615781" Name="Play_Player_Footsteps_Walking" MaxAttenuation="10" DurationType="OneShot" DurationMin="0.41644815" DurationMax="0.46600455">
+				<Event Id="2051615781" Name="Play_Player_Footsteps_Walking" MaxAttenuation="7" DurationType="OneShot" DurationMin="0.41644815" DurationMax="0.46600455">
 					<MediaRefs>
 						<MediaRef Id="306056206"/>
 						<MediaRef Id="419456089"/>
@@ -156,5 +156,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{80E8F3A1-F4E0-F710-D68A-3AE564806223}</FileHash>
+	<FileHash>{C409BFFB-4FD0-F8A6-517C-40D822C6CDB9}</FileHash>
 </SoundBanksInfo>
