@@ -14,7 +14,7 @@ public class Footsteps : MonoBehaviour
     public void Step()
     {
         //Debug.Log("Tets");
-        //_footstepSound.Post(gameObject);
+        _footstepSound.Post(gameObject);
         //e.HandleEvent(gameObject);
     }
 

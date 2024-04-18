@@ -8,13 +8,12 @@ using UnityEditor;
 
 public class StockingShelf : MonoBehaviour
 {
-    
-    
-    
     private static float MOVEMENT_TIME = 0.025f;
-
+    [Tooltip("Time in seconds between court movement")]
     public Vector2 frequencyMinMax;
+    [Tooltip("The position it should move to when blocking")]
     public Vector3 blockPosition = new Vector3(0, 0, 1);
+    [Tooltip("The rotation it should move to when blocking")]
     public Vector3 blockRotation = new Vector3(0, 0, 0);
 
     private Vector3 _startPos;
