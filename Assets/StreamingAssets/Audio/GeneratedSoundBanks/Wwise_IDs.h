@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_RUNNING = 727334981U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_RUNNING_BREATHING = 768391258U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_WALKING = 2051615781U;
+        static const AkUniqueID PLAY_UI_LIST_OPEN = 4243789662U;
         static const AkUniqueID PLAY_UI_MENU_CONFIRM = 3500366795U;
         static const AkUniqueID PLAY_UI_MENU_HOVER = 2880217405U;
     } // namespace EVENTS

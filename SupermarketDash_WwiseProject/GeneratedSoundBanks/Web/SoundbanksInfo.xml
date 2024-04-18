@@ -155,6 +155,24 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="4243789662" Type="Event" Language="SFX" Hash="{0D0C6302-068E-9FB4-78A1-B4A73BB45D14}">
+			<ShortName>Play_UI_List_Open</ShortName>
+			<Path>Event/Play_UI_List_Open.bnk</Path>
+			<Media>
+				<File Id="507222202" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>UI_List_Open.wav</ShortName>
+					<Path>Media/507222202.wem</Path>
+					<CachePath>SFX/UI_List_Open_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4243789662" Name="Play_UI_List_Open" DurationType="OneShot" DurationMin="0.49845833" DurationMax="0.49845833">
+					<MediaRefs>
+						<MediaRef Id="507222202"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C409BFFB-4FD0-F8A6-517C-40D822C6CDB9}</FileHash>
+	<FileHash>{45B5A4E6-98C9-4EE6-F34F-6B9321C47EAF}</FileHash>
 </SoundBanksInfo>

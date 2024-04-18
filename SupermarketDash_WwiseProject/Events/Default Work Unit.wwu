@@ -27,6 +27,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_UI_List_Open" ID="{11931FCB-E26B-4D20-87CB-31BB68B0F7FF}">
+							<ChildrenList>
+								<Action Name="" ID="{B944B41C-00CF-4F75-8C9B-1996AA591F71}" ShortID="59246224">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_List_Open" ID="{72894F1D-60B8-4584-9CD2-BD416892DFFA}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_List_Close" ID="{06903645-C096-4E28-BBFF-00FEA1959F86}">
+							<ChildrenList>
+								<Action Name="" ID="{4E99BAB2-E07E-403F-9E10-CA406DE57086}" ShortID="580431119">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_List_Close" ID="{6A691579-F04B-469D-BD8D-1597D26CA3FA}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Player" ID="{9E7EDE23-B0FA-4196-95E2-4ACE4A202138}" ShortID="446752081">

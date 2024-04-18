@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f2e4f01eb004ba4f9cefa109c3927e52
     GuidInternal: 
-    m_lastTime: -8584883159362086646
+    m_lastTime: -8584881520161464426
     List:
     - name: Main
       guid: ee6f455bd5d043479adc441a8e49d9f1
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584883159364132748
+    m_lastTime: -8584881520161524585
     List:
     - name: Play_Player_Footsteps_Running
       guid: 6a485574aa6c304fb499fe64831a9ea2
@@ -113,7 +113,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6a485574aa6c304fb499fe64831a9ea2
       Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Running
-      maxAttenuation: 0
+      maxAttenuation: 7
       maxDuration: 0.31777778
       minDuration: 0.24598639
     - name: Play_Player_Footsteps_Running_Breathing
@@ -133,7 +133,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 944e510c1b575c40856b11a58d0f2b7d
       Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Running_Breathing
-      maxAttenuation: 0
+      maxAttenuation: 7
       maxDuration: 0.72435415
       minDuration: 0.49845833
     - name: Play_Player_Footsteps_Walking
@@ -153,9 +153,49 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1c6b3c8478fdaf47a9cef8fd8fe51c1b
       Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Walking
-      maxAttenuation: 10
+      maxAttenuation: 7
       maxDuration: 0.46600455
       minDuration: 0.41644815
+    - name: Play_UI_List_Close
+      guid: 4536900696c0284ebbff00fea1959f86
+      id: 3594764378
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: UI
+        ObjectType: 4
+        guid: 8e6225aef3e1ad4a8a78ab8a4850276e
+      - ElementName: Play_UI_List_Close
+        ObjectType: 3
+        guid: 4536900696c0284ebbff00fea1959f86
+      Path: Events\Default Work Unit\UI\Play_UI_List_Close
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_UI_List_Open
+      guid: cb1f93116be2204d87cb31bb68b0f7ff
+      id: 4243789662
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: UI
+        ObjectType: 4
+        guid: 8e6225aef3e1ad4a8a78ab8a4850276e
+      - ElementName: Play_UI_List_Open
+        ObjectType: 3
+        guid: cb1f93116be2204d87cb31bb68b0f7ff
+      Path: Events\Default Work Unit\UI\Play_UI_List_Open
+      maxAttenuation: 0
+      maxDuration: 0.49845833
+      minDuration: 0.49845833
     - name: Play_UI_Menu_Confirm
       guid: 72ed8f51e4012749a7eac5f80a18bd7f
       id: 3500366795
@@ -287,7 +327,7 @@ MonoBehaviour:
     m_lastTime: -8584884962234831679
     List: []
   ExpandedFileSystemItemIds: 0f00000010000000
-  ExpandedWaapiItemIds: 0600000007000000080000000f00000010000000
+  ExpandedWaapiItemIds: 050000000600000007000000080000000f000000100000001c0100001d0100001f010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
