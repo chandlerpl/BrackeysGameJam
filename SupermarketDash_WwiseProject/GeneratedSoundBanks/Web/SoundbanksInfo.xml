@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{98B6BDDB-303B-265D-94C0-CE34FEDB63F9}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{9545DAFA-DF1F-B810-1D2C-50FCAF953967}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -64,11 +64,15 @@
 				</File>
 				<File Id="452033275" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Menu_Confirm.wav</ShortName>
-					<CachePath>SFX/UI_Menu_Confirm_FA79A9B7.wem</CachePath>
+					<CachePath>SFX/UI_Menu_Confirm_98AA7367.wem</CachePath>
 				</File>
 				<File Id="498026625" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_01_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_01_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="507222202" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_List_Open.wav</ShortName>
+					<CachePath>SFX/UI_List_Open_818F3B66.wem</CachePath>
 				</File>
 				<File Id="562927858" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Menu_Hover.wav</ShortName>
@@ -81,6 +85,10 @@
 				<File Id="717945163" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_04_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_04_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="782196691" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_List_Close.wav</ShortName>
+					<CachePath>SFX/UI_List_Close_818F3B66.wem</CachePath>
 				</File>
 				<File Id="824393662" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_09_818F3B66.wav</ShortName>
@@ -143,7 +151,17 @@
 						<MediaRef Id="1001850140"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3500366795" Name="Play_UI_Menu_Confirm" DurationType="OneShot" DurationMin="3.1332662" DurationMax="3.1332662">
+				<Event Id="3594764378" Name="Play_UI_List_Close" DurationType="OneShot" DurationMin="0.49845833" DurationMax="0.49845833">
+					<MediaRefs>
+						<MediaRef Id="782196691"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4243789662" Name="Play_UI_List_Open" DurationType="OneShot" DurationMin="0.49845833" DurationMax="0.49845833">
+					<MediaRefs>
+						<MediaRef Id="507222202"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3500366795" Name="Play_UI_Menu_Confirm" DurationType="OneShot" DurationMin="0.9051104" DurationMax="0.9051104">
 					<MediaRefs>
 						<MediaRef Id="452033275"/>
 					</MediaRefs>
@@ -155,24 +173,6 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="4243789662" Type="Event" Language="SFX" Hash="{0D0C6302-068E-9FB4-78A1-B4A73BB45D14}">
-			<ShortName>Play_UI_List_Open</ShortName>
-			<Path>Event/Play_UI_List_Open.bnk</Path>
-			<Media>
-				<File Id="507222202" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>UI_List_Open.wav</ShortName>
-					<Path>Media/507222202.wem</Path>
-					<CachePath>SFX/UI_List_Open_818F3B66.wem</CachePath>
-				</File>
-			</Media>
-			<Events>
-				<Event Id="4243789662" Name="Play_UI_List_Open" DurationType="OneShot" DurationMin="0.49845833" DurationMax="0.49845833">
-					<MediaRefs>
-						<MediaRef Id="507222202"/>
-					</MediaRefs>
-				</Event>
-			</Events>
-		</SoundBank>
 	</SoundBanks>
-	<FileHash>{45B5A4E6-98C9-4EE6-F34F-6B9321C47EAF}</FileHash>
+	<FileHash>{1093EEF7-298F-1CCD-2859-BD54CFC02E77}</FileHash>
 </SoundBanksInfo>

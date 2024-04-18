@@ -174,8 +174,8 @@ MonoBehaviour:
         guid: 4536900696c0284ebbff00fea1959f86
       Path: Events\Default Work Unit\UI\Play_UI_List_Close
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.49845833
+      minDuration: 0.49845833
     - name: Play_UI_List_Open
       guid: cb1f93116be2204d87cb31bb68b0f7ff
       id: 4243789662
@@ -214,8 +214,8 @@ MonoBehaviour:
         guid: 72ed8f51e4012749a7eac5f80a18bd7f
       Path: Events\Default Work Unit\UI\Play_UI_Menu_Confirm
       maxAttenuation: 0
-      maxDuration: 3.1332662
-      minDuration: 3.1332662
+      maxDuration: 0.9051104
+      minDuration: 0.9051104
     - name: Play_UI_Menu_Hover
       guid: 1666e6c9ec977a4f954004fc4e6cb4ba
       id: 2880217405
@@ -327,7 +327,7 @@ MonoBehaviour:
     m_lastTime: -8584884962234831679
     List: []
   ExpandedFileSystemItemIds: 0f00000010000000
-  ExpandedWaapiItemIds: 050000000600000007000000080000000f000000100000001c0100001d0100001f010000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000f000000100000001c0100001d0100001f010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
