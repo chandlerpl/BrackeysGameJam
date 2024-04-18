@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2327870}
   - component: {fileID: 5761409886496048447}
   - component: {fileID: 4511611439034019469}
+  - component: {fileID: 7391783902760891760}
   m_Layer: 0
   m_Name: SM_Prop_ShopInterior_Shelf_01
   m_TagString: Untagged
@@ -118,6 +119,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10c54ecf47cd34d4289f45892785cccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frequencyMinMax: {x: 0, y: 0}
-  blockPosition: {x: 0, y: 0, z: 1}
+  frequencyMinMax: {x: 5, y: 10}
+  blockPosition: {x: 0, y: 0, z: 3}
   blockRotation: {x: 0, y: 0, z: 0}
+--- !u!208 &7391783902760891760
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146044}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.762, y: 0.96300006, z: 0.439}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0.96300006, z: 0.004}
+  m_TimeToStationary: 0.5
