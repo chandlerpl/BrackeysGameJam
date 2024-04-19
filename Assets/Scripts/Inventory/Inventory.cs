@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Search;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -19,6 +18,10 @@ public class Inventory : MonoBehaviour
 
     private Item[] inventory;
     private int _inventorySlot = 0;
+
+    public bool PushingCart { get; set; }
+    [SerializeField]
+    private Transform cart;
     public void Interact()
     {
         if (inventory[_inventorySlot] != null)
@@ -26,7 +29,6 @@ public class Inventory : MonoBehaviour
             RemoveItem(inventory[_inventorySlot], _inventorySlot);
             return;
         }
-
 
         if (Physics.SphereCast(cam.position, 0.25f, cam.forward, out RaycastHit hit, interactRange, LayerMask.GetMask("Interactable")))
         {
@@ -50,14 +52,29 @@ public class Inventory : MonoBehaviour
         {
             if (inventory[i] == null)
             {
-                inventory[i] = item;
-
-                item.transform.SetParent(handPosition);
-                item.transform.localPosition = Vector3.zero;
-                
-                if(item.TryGetComponent(out Pickup pickup))
+                if(PushingCart)
                 {
-                    pickup.Rigidbody.isKinematic = true;
+                    //item.transform.SetParent(cart);
+                    //item.transform.localPosition = new Vector3(Random.Range(-0.6f, 0.6f), 0, Random.Range(-0.9f, 0.9f));
+
+                    if (item.Rigidbody != null)
+                    {
+                        item.Rigidbody.isKinematic = true;
+                        item.Rigidbody.position = cart.position + new Vector3(Random.Range(-0.6f, 0.6f), 0, Random.Range(-0.9f, 0.9f));
+                    }
+                    item.Collider.isTrigger = true;
+                } else
+                {
+                    inventory[i] = item;
+
+                    item.transform.SetParent(handPosition);
+                    item.transform.localPosition = Vector3.zero;
+
+                    item.Collider.isTrigger = true;
+                    if (item.Rigidbody != null)
+                    {
+                        item.Rigidbody.isKinematic = true;
+                    }
                 }
 
                 // Add item to hand?
@@ -77,10 +94,11 @@ public class Inventory : MonoBehaviour
         item.transform.parent = null;
         item.gameObject.SetActive(true);
 
-        if (item.TryGetComponent(out Pickup pickup))
+        item.Collider.isTrigger = false;
+        if (item.Rigidbody != null)
         {
-            pickup.Rigidbody.isKinematic = false;
-            pickup.Rigidbody.AddForce(cam.forward * throwForce, ForceMode.Impulse);
+            item.Rigidbody.isKinematic = false;
+            item.Rigidbody.AddForce(cam.forward * throwForce, ForceMode.Impulse);
         }
 
         return true;

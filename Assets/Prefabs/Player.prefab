@@ -158,8 +158,8 @@ MonoBehaviour:
   isEnvironmentAware: 0
   isStaticObject: 0
   m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 1
+    positionOffset: {x: 0, y: -1, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
 --- !u!114 &7088522604011688348
@@ -220,7 +220,6 @@ GameObject:
   - component: {fileID: 4494046995420100040}
   - component: {fileID: 497474520829647986}
   - component: {fileID: 3520448034334280768}
-  - component: {fileID: 2372976044556668146}
   - component: {fileID: 7443066229334648804}
   - component: {fileID: 194238342552718675}
   - component: {fileID: 7029818727519391804}
@@ -296,10 +295,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.25
+  m_Radius: 0.32
   m_Height: 1.8
   m_Direction: 1
-  m_Center: {x: 0, y: 0.9, z: 0}
+  m_Center: {x: 0, y: 0.9, z: 0.1}
 --- !u!82 &497474520829647986
 AudioSource:
   m_ObjectHideFlags: 0
@@ -415,19 +414,6 @@ MonoBehaviour:
   - {x: 0, y: 1.743, z: 0}
   - {x: 0.17, y: 0.945, z: 0}
   - {x: -0.17, y: 0.945, z: 0}
---- !u!114 &2372976044556668146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3092946493559358574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f76d179b8b328bb4b8c6f06b0d4e3440, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioSource: {fileID: 0}
 --- !u!114 &7443066229334648804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,6 +462,7 @@ MonoBehaviour:
   throwForce: 5
   cam: {fileID: 6904202991292577113}
   handPosition: {fileID: 4098389505889761088}
+  cart: {fileID: 0}
 --- !u!114 &7029818727519391804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,6 +480,8 @@ MonoBehaviour:
   _verticalSensitivity: 2
   _minPitchAngle: -70
   _maxPitchAngle: 80
+  _minYawAngle: -100
+  _maxYawAngle: 100
 --- !u!114 &2805750403424553373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,7 +526,7 @@ Transform:
   m_GameObject: {fileID: 6137866555561639597}
   serializedVersion: 2
   m_LocalRotation: {x: 0.04623484, y: 0, z: 0, w: 0.99893063}
-  m_LocalPosition: {x: 0.001, y: 1.512, z: 0.166}
+  m_LocalPosition: {x: 0.001, y: 1.51, z: 0.191}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -557,6 +546,21 @@ PrefabInstance:
       propertyPath: m_Data.m_SourceObjects.m_Item0.transform
       value: 
       objectReference: {fileID: 6773548461277541880}
+    - target: {fileID: 5727516795848661978, guid: d2dde8e9b28be4645bff035bb5496400,
+        type: 3}
+      propertyPath: m_Effectors.Array.data[6].m_Transform
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617676358828903733, guid: d2dde8e9b28be4645bff035bb5496400,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8162342135481382664, guid: d2dde8e9b28be4645bff035bb5496400,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8162342135481398852, guid: d2dde8e9b28be4645bff035bb5496400,
         type: 3}
       propertyPath: m_Name

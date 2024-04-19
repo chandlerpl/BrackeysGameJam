@@ -8,6 +8,7 @@ public class Pushable : MonoBehaviour, IInteractable
     public Transform pushParent;
 
     public List<IKHint> iKHints = new List<IKHint>();
+    public bool isCart = false;
 
     private bool _isAttached = false;
     public void OnInteract(GameObject interactingObj, Inventory inventory)
@@ -18,6 +19,8 @@ public class Pushable : MonoBehaviour, IInteractable
             pushableTransform.localPosition = Vector3.zero;
             pushableTransform.localRotation = Quaternion.identity;
             _isAttached = true;
+            if (isCart)
+                inventory.PushingCart = true;
 
             if(pushParent.parent.TryGetComponent(out IKManager manager))
             {
@@ -31,6 +34,8 @@ public class Pushable : MonoBehaviour, IInteractable
             pushableTransform.SetParent(null);
             //pushableTransform.localPosition = Vector3.zero;
             _isAttached = false;
+            if (isCart)
+                inventory.PushingCart = false;
 
             if (pushParent.parent.TryGetComponent(out IKManager manager))
             {

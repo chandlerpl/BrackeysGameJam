@@ -12,17 +12,25 @@ public class MouseMovement : MonoBehaviour
     private float _verticalSensitivity = 2.0f;
     [SerializeField]
     private float _minPitchAngle = -90.0f;
-
     [SerializeField]
     private float _maxPitchAngle = 90.0f;
+    [SerializeField]
+    private float _minYawAngle = -180.0f;
+    [SerializeField]
+    private float _maxYawAngle = 180.0f;
 
     protected Quaternion characterTargetRotation;
     protected Quaternion cameraTargetRotation;
+
+    protected Vector3 characterTargetVec;
+    protected Vector3 cameraTargetVec;
 
     public Quaternion CharacterRotation { get => characterTargetRotation; }
 
     private PlayerInput playerInput;
     private Vector2 _cameraMovement;
+
+    private bool _cameraRelease = false;
     private void Start()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -32,6 +40,8 @@ public class MouseMovement : MonoBehaviour
 
         playerInput.currentActionMap.FindAction("CameraMove").performed += CameraMove_performed;
         playerInput.currentActionMap.FindAction("CameraMove").canceled += CameraMove_canceled;
+
+        playerInput.currentActionMap.FindAction("CameraRelease").performed += CameraRelease_performed;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -47,36 +57,43 @@ public class MouseMovement : MonoBehaviour
         _cameraMovement = obj.ReadValue<Vector2>();
     }
 
+    private void CameraRelease_performed(InputAction.CallbackContext obj)
+    {
+        _cameraRelease = !_cameraRelease;
+
+        if(!_cameraRelease)
+        {
+            cameraTargetVec.y = 0;
+        }
+    }
 
     void Update()
     {
-        var yaw = _cameraMovement.x * _lateralSensitivity;
-        var pitch = _cameraMovement.y * _verticalSensitivity;
-
-        var yawRotation = Quaternion.Euler(0.0f, yaw, 0.0f);
-        var pitchRotation = Quaternion.Euler(-pitch, 0.0f, 0.0f);
-
-        characterTargetRotation *= yawRotation;
-
-        cameraTargetRotation *= pitchRotation;
-        cameraTargetRotation = ClampPitch(cameraTargetRotation);
-
-        cameraPivot.localRotation = cameraTargetRotation;
-    }
-
-    protected Quaternion ClampPitch(Quaternion q)
-    {
-        q.x /= q.w;
-        q.y /= q.w;
-        q.z /= q.w;
-        q.w = 1.0f;
-
-        var pitch = 2.0f * Mathf.Rad2Deg * Mathf.Atan(q.x);
+        var pitch = cameraTargetVec.x + (_cameraMovement.y * _verticalSensitivity);
 
         pitch = Mathf.Clamp(pitch, _minPitchAngle, _maxPitchAngle);
+        cameraTargetVec.x = pitch;
+        var pitchRotation = Quaternion.Euler(-pitch, 0.0f, 0.0f);
 
-        q.x = Mathf.Tan(0.5f * Mathf.Deg2Rad * pitch);
+        var yaw = _cameraMovement.x * _lateralSensitivity;
+        
+        if (!_cameraRelease)
+        {
+            yaw = characterTargetVec.y + yaw;
 
-        return q;
+            characterTargetVec.y = yaw;
+            characterTargetRotation = Quaternion.Euler(0.0f, yaw, 0.0f);
+            cameraTargetRotation = pitchRotation;
+        } else
+        {
+            yaw = cameraTargetVec.y + yaw;
+            yaw = Mathf.Clamp(yaw, _minYawAngle, _maxYawAngle);
+
+            cameraTargetVec.y = yaw;
+            cameraTargetRotation = Quaternion.Euler(0.0f, yaw, 0.0f);
+            cameraTargetRotation *= pitchRotation;
+        }
+
+        cameraPivot.localRotation = cameraTargetRotation;
     }
 }

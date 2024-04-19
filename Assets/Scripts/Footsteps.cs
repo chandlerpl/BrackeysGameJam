@@ -8,47 +8,41 @@ using Random = UnityEngine.Random;
 
 public class Footsteps : MonoBehaviour
 {
-    private Rigidbody cc;
     public AK.Wwise.Event _footstepSound;
-    public AkEvent e;
+    public AK.Wwise.Event _footstepRunSound;
+    public AK.Wwise.Event _footstepBreathingSound;
+
+    public float runDuration = 5f;
+
+    private bool isRunning = false;
+    private float startTime;
     public void Step()
     {
-        //Debug.Log("Tets");
         _footstepSound.Post(gameObject);
-        //e.HandleEvent(gameObject);
+
+        if(isRunning)
+        {
+            isRunning = false;
+
+            if (startTime + runDuration < Time.time)
+            {
+                
+            }
+        }
     }
-
-/*    private void Start()
+    public void StepRun()
     {
-        _audioSource = GetComponent<AudioSource>();
+        _footstepRunSound.Post(gameObject);
+
+        if(!isRunning)
+        {
+            isRunning = true;
+            startTime = Time.time;
+        }
+
+        if(startTime + runDuration < Time.time)
+        {
+            _footstepBreathingSound.Post(gameObject);
+        }
     }
-
-    private void FixedUpdate()
-    {
-
-        //if WASD pressed, then play audio source, if they're lifted, stop playing
-        if ( Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
-        {
-            _audioSource.pitch = 0.5f;
-            _audioSource.Play();
-        }
-        else if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))
-        {
-            _audioSource.Stop();
-        }
-        
-       
-        
-        //if shift pressed, then play audio source, if they're lifted, stop playing
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            _audioSource.pitch = 1f;
-            _audioSource.Play();
-        }
-        else if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            _audioSource.Stop();
-        }
-        
-    }*/
 }

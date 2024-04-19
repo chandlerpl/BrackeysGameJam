@@ -10,6 +10,13 @@ public class ShoppingCart : MonoBehaviour
         {
             if (other.TryGetComponent(out Item item))
             {
+                if (item.Rigidbody != null)
+                {
+                    item.Rigidbody.isKinematic = true;
+                }
+                item.Collider.isTrigger = true;
+                item.transform.parent = transform;
+
                 ShoppingManager.Instance.CheckItem(item);
             }
         }
@@ -21,7 +28,7 @@ public class ShoppingCart : MonoBehaviour
         {
             if (other.TryGetComponent(out Item item))
             {
-                ShoppingManager.Instance.CheckItem(item);
+                ShoppingManager.Instance.UncheckItem(item);
             }
         }
     }

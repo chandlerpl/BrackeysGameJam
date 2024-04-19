@@ -3039,7 +3039,17 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 4a0927272b5c0fa4bb527ff793c7a9e3,
       type: 2}
-  e: {fileID: 0}
+  _footstepRunSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6ff76fd17faac294584e58d0fa72ba75,
+      type: 2}
+  _footstepBreathingSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5d79e810e16baf044b217dd6860fed72,
+      type: 2}
+  runDuration: 5
 --- !u!114 &7266407510378084442
 MonoBehaviour:
   m_ObjectHideFlags: 0

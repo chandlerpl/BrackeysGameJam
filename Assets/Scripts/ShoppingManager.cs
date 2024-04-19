@@ -12,6 +12,7 @@ public class ShoppingManager : MonoBehaviour
     public Item[] collectibleItems;
     public int itemCount = 4;
 
+    public Transform cart;
     private Dictionary<string, GameObject> collectItems;
     private List<string> collected = new List<string>();
     public void Awake()
@@ -53,11 +54,18 @@ public class ShoppingManager : MonoBehaviour
     {
         if (collectItems.ContainsKey(item.itemIdentifier))
         {
-            if(!collected.Contains(item.itemIdentifier))
+            if (!collected.Contains(item.itemIdentifier))
             {
                 collectItems[item.itemIdentifier].transform.GetChild(1).gameObject.SetActive(true);
                 collected.Add(item.itemIdentifier);
-            } else
+            }
+        }
+    }
+    public void UncheckItem(Item item)
+    {
+        if (collectItems.ContainsKey(item.itemIdentifier))
+        {
+            if (collected.Contains(item.itemIdentifier))
             {
                 collectItems[item.itemIdentifier].transform.GetChild(1).gameObject.SetActive(false);
                 collected.Remove(item.itemIdentifier);
