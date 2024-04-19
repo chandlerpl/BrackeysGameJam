@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f2e4f01eb004ba4f9cefa109c3927e52
     GuidInternal: 
-    m_lastTime: -8584881350297105517
+    m_lastTime: -8584880854615082213
     List:
     - name: Main
       guid: ee6f455bd5d043479adc441a8e49d9f1
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584880926502574030
+    m_lastTime: -8584880854615377260
     List:
     - name: Guard
       guid: 14112d96ebd7734f8fe1028e72ebe7cd
@@ -170,7 +170,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6a485574aa6c304fb499fe64831a9ea2
       Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Running
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: 0.31777778
       minDuration: 0.24598639
     - name: Play_Player_Footsteps_Running_Breathing
@@ -190,7 +190,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 944e510c1b575c40856b11a58d0f2b7d
       Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Running_Breathing
-      maxAttenuation: 7
+      maxAttenuation: 0
       maxDuration: 0.72435415
       minDuration: 0.49845833
     - name: Play_Player_Footsteps_Walking
@@ -210,7 +210,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1c6b3c8478fdaf47a9cef8fd8fe51c1b
       Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Walking
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: 0.46600455
       minDuration: 0.41644815
     - name: Play_UI_List_Close
