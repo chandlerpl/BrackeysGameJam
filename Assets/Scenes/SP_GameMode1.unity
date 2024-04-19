@@ -8137,6 +8137,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: e590762a61ce72e418f973873337cddb,
         type: 2}
+    - target: {fileID: 8245797753745854134, guid: 74fc79e0844b6cf4fa1254243238501b,
+        type: 3}
+      propertyPath: _footstepSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e590762a61ce72e418f973873337cddb,
+        type: 2}
+    - target: {fileID: 8245797753745854134, guid: 74fc79e0844b6cf4fa1254243238501b,
+        type: 3}
+      propertyPath: _footstepRunSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a68b88621ddc7eb429b2d1dd5bc02a0e,
+        type: 2}
     - target: {fileID: 8525178528994203491, guid: 74fc79e0844b6cf4fa1254243238501b,
         type: 3}
       propertyPath: m_Name
@@ -8232,6 +8244,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6168560056845778070, guid: 7138ab4d34c38b249903da9f36dab9da,
+        type: 3}
+      propertyPath: _footstepSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e590762a61ce72e418f973873337cddb,
+        type: 2}
+    - target: {fileID: 6168560056845778070, guid: 7138ab4d34c38b249903da9f36dab9da,
+        type: 3}
+      propertyPath: _footstepRunSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a68b88621ddc7eb429b2d1dd5bc02a0e,
+        type: 2}
     - target: {fileID: 7822515384408906520, guid: 7138ab4d34c38b249903da9f36dab9da,
         type: 3}
       propertyPath: e

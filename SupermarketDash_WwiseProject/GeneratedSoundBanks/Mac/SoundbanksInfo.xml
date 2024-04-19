@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{62BF53E0-0064-9BCB-EA5E-8FE56BDBD012}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{F4887440-B66B-B448-F56E-F7E469409424}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -64,7 +64,7 @@
 				</File>
 				<File Id="452033275" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Menu_Confirm.wav</ShortName>
-					<CachePath>SFX/UI_Menu_Confirm_FA79A9B7.wem</CachePath>
+					<CachePath>SFX/UI_Menu_Confirm_98AA7367.wem</CachePath>
 				</File>
 				<File Id="498026625" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_01_818F3B66.wav</ShortName>
@@ -120,6 +120,29 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="2420284597" Name="Play_Guard_Footsteps_Running" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.24598639" DurationMax="0.31777778">
+					<MediaRefs>
+						<MediaRef Id="7022271"/>
+						<MediaRef Id="101366574"/>
+						<MediaRef Id="182624577"/>
+						<MediaRef Id="222329165"/>
+						<MediaRef Id="395879434"/>
+						<MediaRef Id="498026625"/>
+						<MediaRef Id="609781788"/>
+						<MediaRef Id="717945163"/>
+						<MediaRef Id="824393662"/>
+						<MediaRef Id="947434909"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2271699957" Name="Play_Guard_Footsteps_Walking" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.39833167" DurationMax="0.5387107">
+					<MediaRefs>
+						<MediaRef Id="306056206"/>
+						<MediaRef Id="419456089"/>
+						<MediaRef Id="852890347"/>
+						<MediaRef Id="926433972"/>
+						<MediaRef Id="1001850140"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="727334981" Name="Play_Player_Footsteps_Running" MaxAttenuation="10" DurationType="OneShot" DurationMin="0.24598639" DurationMax="0.31777778">
 					<MediaRefs>
 						<MediaRef Id="7022271"/>
@@ -161,7 +184,7 @@
 						<MediaRef Id="507222202"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3500366795" Name="Play_UI_Menu_Confirm" DurationType="OneShot" DurationMin="3.1332662" DurationMax="3.1332662">
+				<Event Id="3500366795" Name="Play_UI_Menu_Confirm" DurationType="OneShot" DurationMin="0.9051104" DurationMax="0.9051104">
 					<MediaRefs>
 						<MediaRef Id="452033275"/>
 					</MediaRefs>
@@ -174,5 +197,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FEE84082-6B72-F02A-FFC5-16251CBC3267}</FileHash>
+	<FileHash>{5463449B-A1BF-EA77-5A53-40FDEA5FFE26}</FileHash>
 </SoundBanksInfo>

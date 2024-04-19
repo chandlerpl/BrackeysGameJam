@@ -979,7 +979,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-7</Value>
+												<Value>-18</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -988,7 +988,7 @@
 											<Custom>
 												<Attenuation Name="Attenuation (Custom)" ID="{E181E30A-8B0C-4B6B-82B7-3AB53F68261B}" ShortID="962765457">
 													<PropertyList>
-														<Property Name="RadiusMax" Type="Real64" Value="7"/>
+														<Property Name="RadiusMax" Type="Real64" Value="20"/>
 													</PropertyList>
 													<CurveUsageInfoList>
 														<VolumeDryUsage>
@@ -1005,13 +1005,13 @@
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>1.99428</XPos>
-																			<YPos>-8.56309</YPos>
+																			<XPos>12.92832</XPos>
+																			<YPos>-17.5153</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>7</XPos>
+																			<XPos>20</XPos>
 																			<YPos>-200</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -1330,7 +1330,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-16</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
