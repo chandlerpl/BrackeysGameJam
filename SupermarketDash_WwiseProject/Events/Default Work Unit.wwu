@@ -88,6 +88,32 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Guard" ID="{962D1114-D7EB-4F73-8FE1-028E72EBE7CD}" ShortID="520508716">
+					<ChildrenList>
+						<Event Name="Play_Guard_Footsteps_Running" ID="{85D7AB4C-1428-4FD3-9B7F-AB23E1ADA745}">
+							<ChildrenList>
+								<Action Name="" ID="{93D1D2A2-EBFC-409A-BB3B-8B92DF5235F0}" ShortID="21652385">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Guard_Footsteps_Running" ID="{95A0C2F1-DE37-45D2-9AE2-ABF6EB7E1164}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Guard_Footsteps_Walking" ID="{4A834F38-43FF-4174-9C46-CEDA3BFF4FF0}">
+							<ChildrenList>
+								<Action Name="" ID="{2D4F5D15-D075-4B16-B889-DF1A0C01BE54}" ShortID="241302078">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Guard_Footsteps_Walking" ID="{48816688-59E4-47BA-9113-53069F382EE0}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

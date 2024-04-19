@@ -4,12 +4,16 @@
 		<WorkUnit Name="Default Work Unit" ID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}" PersistMode="Standalone">
 			<ChildrenList>
 				<Folder Name="Player" ID="{882E5004-5BB2-4B70-BCC0-D0BC0D549AFC}" ShortID="1025589096">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Folder Name="Footsteps" ID="{59306D69-B83C-4C27-B084-0EE498280BF8}" ShortID="124935536">
 							<ChildrenList>
 								<RandomSequenceContainer Name="Player_Footsteps_Running" ID="{1AC1170B-5D16-4D15-B0BB-91CC77341230}" ShortID="223777847">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
@@ -350,12 +354,12 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Player_Footsteps_Walking" ID="{11C06609-9900-40C6-896C-3CD4025E85F0}" ShortID="10856833">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-7</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -606,7 +610,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Player_Footsteps_Running_Breathing" ID="{D78C29D7-39A0-4661-A4AE-0C3FF0FA02C6}" ShortID="464672923">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
@@ -818,6 +822,10 @@
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{7ED283FB-9216-4390-9362-A1EFBA573AA9}" ShortID="516968755">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Folder Name="UI_Menu" ID="{3EB81949-D546-4ED4-BBF8-7DCFA3112703}" ShortID="836439836">
 							<ChildrenList>
@@ -840,9 +848,9 @@
 									<ChildrenList>
 										<AudioFileSource Name="UI_Menu_Confirm" ID="{1AEB07F4-D7A5-46A8-A720-504D658B9982}">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="1.88867671345995"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.379419954386057"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="3.13326624002202"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.905110401206232"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>UI_Menu_Confirm.wav</AudioFile>
@@ -952,6 +960,619 @@
 										<ActiveSource Name="UI_List_Close" ID="{57823E5D-C78C-455A-B180-02DFCC9E66F1}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Guard" ID="{531AF779-361E-4384-93B8-12B7051830C0}" ShortID="671707196">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Folder Name="Footsteps" ID="{1F49CEC7-E431-4BB1-A249-B3B1938F795D}" ShortID="622900793">
+							<ChildrenList>
+								<RandomSequenceContainer Name="Guard_Footsteps_Running" ID="{95A0C2F1-DE37-45D2-9AE2-ABF6EB7E1164}" ShortID="425972320">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{E181E30A-8B0C-4B6B-82B7-3AB53F68261B}" ShortID="962765457">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="7"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{1D3D2356-CACD-43A8-B8B1-E56378F2458C}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>1.99428</XPos>
+																			<YPos>-8.56309</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>7</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FOLEY_run_concrete_01_818F3B66" ID="{2189CDA5-542D-4A73-AE87-72A8E087FEED}" ShortID="458157410">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FOLEY_run_concrete_01_818F3B66" ID="{70BC0A84-9039-430D-BB4B-3849C23B8008}">
+													<Language>SFX</Language>
+													<AudioFile>FOLEY_run_concrete_01_818F3B66.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="498026625"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FOLEY_run_concrete_01_818F3B66" ID="{70BC0A84-9039-430D-BB4B-3849C23B8008}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FOLEY_run_concrete_02_818F3B66" ID="{B8111564-3268-441E-8053-078011F2C859}" ShortID="506932277">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FOLEY_run_concrete_02_818F3B66" ID="{BE159EB9-4D89-450D-BC54-45B37FB46461}">
+													<Language>SFX</Language>
+													<AudioFile>FOLEY_run_concrete_02_818F3B66.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="609781788"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FOLEY_run_concrete_02_818F3B66" ID="{BE159EB9-4D89-450D-BC54-45B37FB46461}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FOLEY_run_concrete_03_818F3B66" ID="{9C53CD88-E699-41F8-9BE0-344F5DED409B}" ShortID="819100030">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FOLEY_run_concrete_03_818F3B66" ID="{5560CF71-673E-47FB-9431-CCE191508BDC}">
+													<Language>SFX</Language>
+													<AudioFile>FOLEY_run_concrete_03_818F3B66.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="222329165"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FOLEY_run_concrete_03_818F3B66" ID="{5560CF71-673E-47FB-9431-CCE191508BDC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FOLEY_run_concrete_04_818F3B66" ID="{6AC5B25D-2403-451E-9101-2823E6101165}" ShortID="673407820">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FOLEY_run_concrete_04_818F3B66" ID="{65B4A613-57A2-4BBE-8080-BC69C9E068C6}">
+													<Language>SFX</Language>
+													<AudioFile>FOLEY_run_concrete_04_818F3B66.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="717945163"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FOLEY_run_concrete_04_818F3B66" ID="{65B4A613-57A2-4BBE-8080-BC69C9E068C6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FOLEY_run_concrete_05_818F3B66" ID="{3520F547-3012-4E51-8932-CE5967AB93D6}" ShortID="426387635">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FOLEY_run_concrete_05_818F3B66" ID="{DBA833AD-BA5E-4AA5-A1C3-80D29BB52DE0}">
+													<Language>SFX</Language>
+													<AudioFile>FOLEY_run_concrete_05_818F3B66.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="7022271"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FOLEY_run_concrete_05_818F3B66" ID="{DBA833AD-BA5E-4AA5-A1C3-80D29BB52DE0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FOLEY_run_concrete_06_818F3B66" ID="{59EA0269-8AE1-4A6B-95D1-29191AAE4497}" ShortID="347104878">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FOLEY_run_concrete_06_818F3B66" ID="{FE5EA8BA-B5BB-4F65-9774-FD6960D87E3F}">
+													<Language>SFX</Language>
+													<AudioFile>FOLEY_run_concrete_06_818F3B66.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="182624577"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FOLEY_run_concrete_06_818F3B66" ID="{FE5EA8BA-B5BB-4F65-9774-FD6960D87E3F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FOLEY_run_concrete_07_818F3B66" ID="{5D706B47-3EC2-47D8-AC2F-F78B7920EBB3}" ShortID="39392085">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FOLEY_run_concrete_07_818F3B66" ID="{43336446-2080-4F0E-92D2-825BD968C150}">
+													<Language>SFX</Language>
+													<AudioFile>FOLEY_run_concrete_07_818F3B66.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="101366574"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FOLEY_run_concrete_07_818F3B66" ID="{43336446-2080-4F0E-92D2-825BD968C150}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FOLEY_run_concrete_08_818F3B66" ID="{D6B5C6C9-51F4-422C-BB68-BF816861F3EC}" ShortID="1064773882">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FOLEY_run_concrete_08_818F3B66" ID="{C2C4F582-62C2-49E2-B945-3566AB2902F8}">
+													<Language>SFX</Language>
+													<AudioFile>FOLEY_run_concrete_08_818F3B66.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="947434909"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FOLEY_run_concrete_08_818F3B66" ID="{C2C4F582-62C2-49E2-B945-3566AB2902F8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FOLEY_run_concrete_09_818F3B66" ID="{31EAB298-DA21-450B-BB84-B9D4719AF6DF}" ShortID="258630583">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FOLEY_run_concrete_09_818F3B66" ID="{8A97FC44-A5A7-424F-B81E-A11CBD729735}">
+													<Language>SFX</Language>
+													<AudioFile>FOLEY_run_concrete_09_818F3B66.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="824393662"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FOLEY_run_concrete_09_818F3B66" ID="{8A97FC44-A5A7-424F-B81E-A11CBD729735}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FOLEY_run_concrete_10_818F3B66" ID="{2AE637D6-4528-4E23-9001-2A462F618CEC}" ShortID="901161776">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FOLEY_run_concrete_10_818F3B66" ID="{8641FFB3-6C5A-495A-BB97-FF8C2D20269E}">
+													<Language>SFX</Language>
+													<AudioFile>FOLEY_run_concrete_10_818F3B66.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="395879434"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FOLEY_run_concrete_10_818F3B66" ID="{8641FFB3-6C5A-495A-BB97-FF8C2D20269E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Guard_Footsteps_Walking" ID="{48816688-59E4-47BA-9113-53069F382EE0}" ShortID="347110518">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-150</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F835C05C-84E8-4350-9F4F-37302569D0B3}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="227"/>
+															<Property Name="Min" Type="Real64" Value="-101"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{2C3199FB-3D22-499E-B072-E276182A5EC5}" ShortID="17216030">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="20"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{56EB1638-F5C4-4667-9F90-8137C6F72A17}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>12.8022</XPos>
+																			<YPos>-26.29676</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Footsteps_1" ID="{5E3D49C4-C1B5-4487-B902-4274941EB300}" ShortID="5123826">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footsteps_1" ID="{4747F1AA-FBD8-4BEB-BF98-09087B758AEC}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0273702012025902"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.416448138297872"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Footsteps_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="926433972"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps_1" ID="{4747F1AA-FBD8-4BEB-BF98-09087B758AEC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footsteps_2" ID="{1C7E6C4A-CF7E-4FC5-BC41-6B50C6518C47}" ShortID="228106316">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footsteps_2" ID="{7267ABB7-9447-4A93-84F2-6D5AF3A2A666}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0239096901017576"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.466004548257786"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Footsteps_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1001850140"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps_2" ID="{7267ABB7-9447-4A93-84F2-6D5AF3A2A666}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footsteps_3" ID="{DDB84EE7-5232-4D6E-80A3-94280E8B1FA9}" ShortID="691595816">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footsteps_3" ID="{86878641-DCB4-4016-998A-F2DDA0EF4516}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0324619565217392"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.422696114708603"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Footsteps_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="306056206"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps_3" ID="{86878641-DCB4-4016-998A-F2DDA0EF4516}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footsteps_4" ID="{8CE09DC1-C55B-4C94-89F7-2C4D53A44626}" ShortID="1053051495">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footsteps_4" ID="{65560AEE-4F6C-43A0-9C32-68522DB0CA05}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0495029679309282"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.448842699660808"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Footsteps_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="419456089"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps_4" ID="{65560AEE-4F6C-43A0-9C32-68522DB0CA05}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footsteps_5" ID="{40FD1677-0646-453E-A401-FA9A6D654C82}" ShortID="534414910">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footsteps_5" ID="{B57F82F7-0246-47B6-97C5-2674C5534319}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0432301302806044"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.444452474560592"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Footsteps_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="852890347"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps_5" ID="{B57F82F7-0246-47B6-97C5-2674C5534319}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
