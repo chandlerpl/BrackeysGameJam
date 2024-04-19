@@ -171,6 +171,59 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Till_Sound_Beep" ID="{35DFEBE0-7B2B-4E81-B234-B1BEDEDD6803}">
+							<ChildrenList>
+								<Action Name="" ID="{DA31ED04-757D-4793-A259-A6B0B123C469}" ShortID="342800758">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Till_Sound_Beep" ID="{969A3C45-16B2-45BE-816C-CB2DA67CC8E2}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Trolley_Moving_Running_Start" ID="{2DF4BA07-1F10-4F93-B471-434462D8747B}">
+							<ChildrenList>
+								<Action Name="" ID="{6DBE7970-EBB1-4ABB-9B21-0BBF36F3ADC0}" ShortID="981196950">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Trolley_Moving_Running_Start" ID="{9095110D-3F26-42CF-821E-065C36F8D966}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5A914C6C-76B8-4436-86BB-2091EE016083}" ShortID="715507283">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Trolley_Moving_Running_Loop" ID="{B68C37F0-A79C-4977-AEFD-3FF4286EE346}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Trolley_Moving_Running_Stop" ID="{9D1F9315-0D77-478A-8757-3012E74E9716}">
+							<ChildrenList>
+								<Action Name="" ID="{BB1CA9EC-4D81-47FD-A233-3923D5214DDA}" ShortID="758392841">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Trolley_Moving_Running_Stop" ID="{610710A5-5EF6-48E1-B882-AB2600053A8E}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FA7D1009-710F-4B9D-A1E4-EE84960DBBDE}" ShortID="239775693">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Trolley_Moving_Running_Loop" ID="{B68C37F0-A79C-4977-AEFD-3FF4286EE346}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

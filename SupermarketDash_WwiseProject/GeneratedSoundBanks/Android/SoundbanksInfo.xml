@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FED45924-F914-7B2D-F747-3F789E4A01E5}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A724916E-2E3B-1D0C-CEE7-AE84CC37CAAE}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -46,6 +46,10 @@
 					<ShortName>FOLEY_run_concrete_06_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_06_818F3B66_818F3B66.wem</CachePath>
 				</File>
+				<File Id="215684142" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Till_Sound.wav</ShortName>
+					<CachePath>SFX/Till_Sound_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="222329165" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_03_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_03_818F3B66_818F3B66.wem</CachePath>
@@ -57,6 +61,10 @@
 				<File Id="306056206" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_3.wav</ShortName>
 					<CachePath>SFX/Footsteps_3_9906E552.wem</CachePath>
+				</File>
+				<File Id="379253254" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Trolly_Moving_Running.wav</ShortName>
+					<CachePath>SFX/Trolly_Moving_Running_ED753ACF.wem</CachePath>
 				</File>
 				<File Id="395879434" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_10_818F3B66.wav</ShortName>
@@ -92,7 +100,7 @@
 				</File>
 				<File Id="720213928" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Trolley_Discard.wav</ShortName>
-					<CachePath>SFX/Trolley_Discard_818F3B66.wem</CachePath>
+					<CachePath>SFX/Trolley_Discard_3DAD83E1.wem</CachePath>
 				</File>
 				<File Id="782196691" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_List_Close.wav</ShortName>
@@ -105,6 +113,10 @@
 				<File Id="852890347" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_5.wav</ShortName>
 					<CachePath>SFX/Footsteps_5_4CD5BCCC.wem</CachePath>
+				</File>
+				<File Id="916745061" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Trolly_Moving_Running.wav</ShortName>
+					<CachePath>SFX/Trolly_Moving_Running_11E73576.wem</CachePath>
 				</File>
 				<File Id="922874674" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Breathing_Running_1.wav</ShortName>
@@ -125,6 +137,10 @@
 				<File Id="1001850140" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_2.wav</ShortName>
 					<CachePath>SFX/Footsteps_2_284248C7.wem</CachePath>
+				</File>
+				<File Id="1036301920" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Trolly_Moving_Running_Stop.wav</ShortName>
+					<CachePath>SFX/Trolly_Moving_Running_Stop_6FE25BD4.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -191,9 +207,25 @@
 						<MediaRef Id="1001850140"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2154937622" Name="Play_Trolley_Discard" DurationType="OneShot" DurationMin="1.1235209" DurationMax="1.1235209">
+				<Event Id="3886534114" Name="Play_Till_Sound_Beep" MaxAttenuation="20" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="215684142"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2154937622" Name="Play_Trolley_Discard" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.72437525" DurationMax="0.72437525">
 					<MediaRefs>
 						<MediaRef Id="720213928"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3458151439" Name="Play_Trolley_Moving_Running_Start" MaxAttenuation="20" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="379253254"/>
+						<MediaRef Id="916745061"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2261347989" Name="Play_Trolley_Moving_Running_Stop" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.48928955" DurationMax="0.48928955">
+					<MediaRefs>
+						<MediaRef Id="1036301920"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1374245708" Name="Play_Trolley_Pickup" DurationType="OneShot" DurationMin="1.1235209" DurationMax="1.1235209">
@@ -224,5 +256,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{27DE20C1-6EC1-AA86-6C11-644259F09578}</FileHash>
+	<FileHash>{DA7CFA3E-5A52-CA06-20D3-BAB644A83D51}</FileHash>
 </SoundBanksInfo>

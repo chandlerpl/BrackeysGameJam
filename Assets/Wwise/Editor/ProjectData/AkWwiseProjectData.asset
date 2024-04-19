@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f2e4f01eb004ba4f9cefa109c3927e52
     GuidInternal: 
-    m_lastTime: -8584880835610538118
+    m_lastTime: -8584880790630628028
     List:
     - name: Main
       guid: ee6f455bd5d043479adc441a8e49d9f1
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584880825423487587
+    m_lastTime: -8584880775177899282
     List:
     - name: Game_Objects
       guid: 49d5bcfff3955d40ab2dfabc8374a9b1
@@ -250,6 +250,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.46600455
       minDuration: 0.41644815
+    - name: Play_Till_Sound_Beep
+      guid: e0ebdf352b7b814eb234b1bededd6803
+      id: 3886534114
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Game_Objects
+        ObjectType: 4
+        guid: 49d5bcfff3955d40ab2dfabc8374a9b1
+      - ElementName: Play_Till_Sound_Beep
+        ObjectType: 3
+        guid: e0ebdf352b7b814eb234b1bededd6803
+      Path: Events\Default Work Unit\Game_Objects\Play_Till_Sound_Beep
+      maxAttenuation: 20
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Trolley_Discard
       guid: 6af937e39082b6438e44b2d5e91b6bb9
       id: 2154937622
@@ -270,6 +290,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.1235209
       minDuration: 1.1235209
+    - name: Play_Trolley_Moving_Running_Start
+      guid: 07baf42d101f934fb471434462d8747b
+      id: 3458151439
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Game_Objects
+        ObjectType: 4
+        guid: 49d5bcfff3955d40ab2dfabc8374a9b1
+      - ElementName: Play_Trolley_Moving_Running_Start
+        ObjectType: 3
+        guid: 07baf42d101f934fb471434462d8747b
+      Path: Events\Default Work Unit\Game_Objects\Play_Trolley_Moving_Running_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Trolley_Moving_Running_Stop
+      guid: 15931f9d770d8a4787573012e74e9716
+      id: 2261347989
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Game_Objects
+        ObjectType: 4
+        guid: 49d5bcfff3955d40ab2dfabc8374a9b1
+      - ElementName: Play_Trolley_Moving_Running_Stop
+        ObjectType: 3
+        guid: 15931f9d770d8a4787573012e74e9716
+      Path: Events\Default Work Unit\Game_Objects\Play_Trolley_Moving_Running_Stop
+      maxAttenuation: 0
+      maxDuration: 0.48928955
+      minDuration: 0.48928955
     - name: Play_Trolley_Pickup
       guid: acf673f3fe8f7545856542407d0b3af9
       id: 1374245708

@@ -19,7 +19,10 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_RUNNING = 727334981U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_RUNNING_BREATHING = 768391258U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_WALKING = 2051615781U;
+        static const AkUniqueID PLAY_TILL_SOUND_BEEP = 3886534114U;
         static const AkUniqueID PLAY_TROLLEY_DISCARD = 2154937622U;
+        static const AkUniqueID PLAY_TROLLEY_MOVING_RUNNING_START = 3458151439U;
+        static const AkUniqueID PLAY_TROLLEY_MOVING_RUNNING_STOP = 2261347989U;
         static const AkUniqueID PLAY_TROLLEY_PICKUP = 1374245708U;
         static const AkUniqueID PLAY_UI_LIST_CLOSE = 3594764378U;
         static const AkUniqueID PLAY_UI_LIST_OPEN = 4243789662U;
