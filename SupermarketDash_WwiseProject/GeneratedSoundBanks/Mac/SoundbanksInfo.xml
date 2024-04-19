@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A724916E-2E3B-1D0C-CEE7-AE84CC37CAAE}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{91341143-B92E-8ED3-92EE-884279F74A95}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -64,7 +64,7 @@
 				</File>
 				<File Id="379253254" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Trolly_Moving_Running.wav</ShortName>
-					<CachePath>SFX/Trolly_Moving_Running_ED753ACF.wem</CachePath>
+					<CachePath>SFX/Trolly_Moving_Running_7CDB987F.wem</CachePath>
 				</File>
 				<File Id="395879434" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_10_818F3B66.wav</ShortName>
@@ -100,7 +100,7 @@
 				</File>
 				<File Id="720213928" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Trolley_Discard.wav</ShortName>
-					<CachePath>SFX/Trolley_Discard_3DAD83E1.wem</CachePath>
+					<CachePath>SFX/Trolley_Discard_DDFFAEEC.wem</CachePath>
 				</File>
 				<File Id="782196691" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_List_Close.wav</ShortName>
@@ -116,7 +116,7 @@
 				</File>
 				<File Id="916745061" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Trolly_Moving_Running.wav</ShortName>
-					<CachePath>SFX/Trolly_Moving_Running_11E73576.wem</CachePath>
+					<CachePath>SFX/Trolly_Moving_Running_13F88232.wem</CachePath>
 				</File>
 				<File Id="922874674" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Breathing_Running_1.wav</ShortName>
@@ -140,7 +140,7 @@
 				</File>
 				<File Id="1036301920" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Trolly_Moving_Running_Stop.wav</ShortName>
-					<CachePath>SFX/Trolly_Moving_Running_Stop_6FE25BD4.wem</CachePath>
+					<CachePath>SFX/Trolly_Moving_Running_Stop_63372FFA.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -190,7 +190,7 @@
 						<MediaRef Id="947434909"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="768391258" Name="Play_Player_Footsteps_Running_Breathing" DurationType="OneShot" DurationMin="0.49845833" DurationMax="0.72435415">
+				<Event Id="768391258" Name="Play_Player_Footsteps_Running_Breathing" DurationType="OneShot" DurationMin="3.4984584" DurationMax="3.7243543">
 					<MediaRefs>
 						<MediaRef Id="13679568"/>
 						<MediaRef Id="128369396"/>
@@ -256,5 +256,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{11DC0E0B-7C28-6FFB-7A43-EC58128FCBCB}</FileHash>
+	<FileHash>{096895C0-5380-82F9-D256-61749D14676A}</FileHash>
 </SoundBanksInfo>

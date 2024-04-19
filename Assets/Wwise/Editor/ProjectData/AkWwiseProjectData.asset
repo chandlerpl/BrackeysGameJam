@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584880775177899282
+    m_lastTime: -8584880743452097638
     List:
     - name: Game_Objects
       guid: 49d5bcfff3955d40ab2dfabc8374a9b1
@@ -228,8 +228,8 @@ MonoBehaviour:
         guid: 944e510c1b575c40856b11a58d0f2b7d
       Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Running_Breathing
       maxAttenuation: 0
-      maxDuration: 0.72435415
-      minDuration: 0.49845833
+      maxDuration: 3.7243543
+      minDuration: 3.4984584
     - name: Play_Player_Footsteps_Walking
       guid: 1c6b3c8478fdaf47a9cef8fd8fe51c1b
       id: 2051615781
@@ -287,9 +287,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6af937e39082b6438e44b2d5e91b6bb9
       Path: Events\Default Work Unit\Game_Objects\Play_Trolley_Discard
-      maxAttenuation: 0
-      maxDuration: 1.1235209
-      minDuration: 1.1235209
+      maxAttenuation: 20
+      maxDuration: 0.72437525
+      minDuration: 0.72437525
     - name: Play_Trolley_Moving_Running_Start
       guid: 07baf42d101f934fb471434462d8747b
       id: 3458151439
@@ -307,7 +307,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 07baf42d101f934fb471434462d8747b
       Path: Events\Default Work Unit\Game_Objects\Play_Trolley_Moving_Running_Start
-      maxAttenuation: 0
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: Play_Trolley_Moving_Running_Stop
@@ -327,7 +327,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 15931f9d770d8a4787573012e74e9716
       Path: Events\Default Work Unit\Game_Objects\Play_Trolley_Moving_Running_Stop
-      maxAttenuation: 0
+      maxAttenuation: 20
       maxDuration: 0.48928955
       minDuration: 0.48928955
     - name: Play_Trolley_Pickup
@@ -521,7 +521,7 @@ MonoBehaviour:
     m_lastTime: -8584884962234831679
     List: []
   ExpandedFileSystemItemIds: 0f00000010000000
-  ExpandedWaapiItemIds: 050000000600000007000000080000000f0000001000000019000000c5000000c6000000c9000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000f0000001000000019000000c5000000c6000000c9000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
