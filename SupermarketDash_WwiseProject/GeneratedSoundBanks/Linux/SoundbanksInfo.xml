@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{91341143-B92E-8ED3-92EE-884279F74A95}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{135F16A3-6860-AC13-4B57-B3613CDBD158}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -106,6 +106,10 @@
 					<ShortName>UI_List_Close.wav</ShortName>
 					<CachePath>SFX/UI_List_Close_818F3B66.wem</CachePath>
 				</File>
+				<File Id="801239346" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Atmos.wav</ShortName>
+					<CachePath>SFX/Atmos_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="824393662" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_09_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_09_818F3B66_818F3B66.wem</CachePath>
@@ -144,6 +148,11 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="26975710" Name="Play_Ambience_Outside" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="801239346"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2420284597" Name="Play_Guard_Footsteps_Running" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.24598639" DurationMax="0.31777778">
 					<MediaRefs>
 						<MediaRef Id="7022271"/>
@@ -256,5 +265,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4F5F8350-50A5-04AC-AE70-A7243AE6E6C8}</FileHash>
+	<FileHash>{B8CCED1C-B975-2A6C-B3CE-FB717B725782}</FileHash>
 </SoundBanksInfo>

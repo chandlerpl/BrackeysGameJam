@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f2e4f01eb004ba4f9cefa109c3927e52
     GuidInternal: 
-    m_lastTime: -8584880790630628028
+    m_lastTime: -8584880539899678465
     List:
     - name: Main
       guid: ee6f455bd5d043479adc441a8e49d9f1
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584880743452097638
+    m_lastTime: -8584880539899758672
     List:
+    - name: Ambience
+      guid: b0a38be53cc2ce429a59795991ca47cd
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: b0a38be53cc2ce429a59795991ca47cd
+      Path: Events\Default Work Unit\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Game_Objects
       guid: 49d5bcfff3955d40ab2dfabc8374a9b1
       id: 2987577550
@@ -127,6 +144,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: 14112d96ebd7734f8fe1028e72ebe7cd
       Path: Events\Default Work Unit\Guard
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Ambience_Outside
+      guid: 52d8bbe72d819f4dbc4c9e7253bfcbde
+      id: 26975710
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: b0a38be53cc2ce429a59795991ca47cd
+      - ElementName: Play_Ambience_Outside
+        ObjectType: 3
+        guid: 52d8bbe72d819f4dbc4c9e7253bfcbde
+      Path: Events\Default Work Unit\Ambience\Play_Ambience_Outside
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

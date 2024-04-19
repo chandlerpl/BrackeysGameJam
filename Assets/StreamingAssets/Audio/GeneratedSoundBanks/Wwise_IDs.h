@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_AMBIENCE_OUTSIDE = 26975710U;
         static const AkUniqueID PLAY_GUARD_FOOTSTEPS_RUNNING = 2420284597U;
         static const AkUniqueID PLAY_GUARD_FOOTSTEPS_WALKING = 2271699957U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_CROUCH_WALKING = 1685363710U;

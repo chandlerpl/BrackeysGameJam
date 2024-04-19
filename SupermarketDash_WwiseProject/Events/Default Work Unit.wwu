@@ -226,6 +226,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Ambience" ID="{E58BA3B0-C23C-42CE-9A59-795991CA47CD}" ShortID="102604576">
+					<ChildrenList>
+						<Event Name="Play_Ambience_Outside" ID="{E7BBD852-812D-4D9F-BC4C-9E7253BFCBDE}">
+							<ChildrenList>
+								<Action Name="" ID="{38D5168D-4647-4AFF-9192-682ADB6E25FF}" ShortID="96624889">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience_Outside" ID="{99DCDAAF-7432-47FD-85DC-4FEF43453CCA}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

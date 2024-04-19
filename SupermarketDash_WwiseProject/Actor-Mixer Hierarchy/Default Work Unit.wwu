@@ -2282,6 +2282,40 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Ambience" ID="{6AD71CD2-D79E-479B-B5B8-6F066754B650}" ShortID="311414025">
+					<ChildrenList>
+						<Sound Name="Ambience_Outside" ID="{99DCDAAF-7432-47FD-85DC-4FEF43453CCA}" ShortID="591920087">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Atmos" ID="{8293CDD4-47C0-4393-9962-03CDAA102EBA}">
+									<Language>SFX</Language>
+									<AudioFile>Atmos.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="801239346"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Atmos" ID="{8293CDD4-47C0-4393-9962-03CDAA102EBA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
