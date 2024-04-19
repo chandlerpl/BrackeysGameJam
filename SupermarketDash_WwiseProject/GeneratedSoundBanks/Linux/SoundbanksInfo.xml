@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7490DB31-4AC3-0750-55A5-5DB03C82297F}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{5D921D54-B092-4A3A-D272-F3AC152D0B90}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -49,6 +49,10 @@
 				<File Id="222329165" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_03_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_03_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="228135035" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Trolley_Pickup.wav</ShortName>
+					<CachePath>SFX/Trolley_Pickup_818F3B66.wem</CachePath>
 				</File>
 				<File Id="306056206" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_3.wav</ShortName>
@@ -143,6 +147,15 @@
 						<MediaRef Id="1001850140"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1685363710" Name="Play_Player_Footsteps_Crouch_Walking" DurationType="OneShot" DurationMin="0.41644815" DurationMax="0.46600455">
+					<MediaRefs>
+						<MediaRef Id="306056206"/>
+						<MediaRef Id="419456089"/>
+						<MediaRef Id="852890347"/>
+						<MediaRef Id="926433972"/>
+						<MediaRef Id="1001850140"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="727334981" Name="Play_Player_Footsteps_Running" DurationType="OneShot" DurationMin="0.24598639" DurationMax="0.31777778">
 					<MediaRefs>
 						<MediaRef Id="7022271"/>
@@ -174,6 +187,11 @@
 						<MediaRef Id="1001850140"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1374245708" Name="Play_Trolley_Pickup" DurationType="OneShot" DurationMin="1.1235209" DurationMax="1.1235209">
+					<MediaRefs>
+						<MediaRef Id="228135035"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3594764378" Name="Play_UI_List_Close" DurationType="OneShot" DurationMin="0.49845833" DurationMax="0.49845833">
 					<MediaRefs>
 						<MediaRef Id="782196691"/>
@@ -197,5 +215,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7695F388-7886-FB27-3299-6967E24CD70E}</FileHash>
+	<FileHash>{84765465-B4E7-9478-0ADF-60E2F096A865}</FileHash>
 </SoundBanksInfo>

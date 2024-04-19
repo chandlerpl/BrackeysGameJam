@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{5B456FEE-D0D5-4743-9ADC-441A8E49D9F1}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Player_Footsteps_Running_Breathing" ID="{0C514E94-571B-405C-856B-11A58D0F2B7D}" WorkUnitID="{75EAE9FE-406A-4ED1-BCF9-FECD2042BD27}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Game_Objects" ID="{FFBCD549-95F3-405D-AB2D-FABC8374A9B1}" WorkUnitID="{75EAE9FE-406A-4ED1-BCF9-FECD2042BD27}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player" ID="{9E7EDE23-B0FA-4196-95E2-4ACE4A202138}" WorkUnitID="{75EAE9FE-406A-4ED1-BCF9-FECD2042BD27}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_Footsteps_Walking" ID="{843C6B1C-FD78-47AF-A9CE-F8FD8FE51C1B}" WorkUnitID="{75EAE9FE-406A-4ED1-BCF9-FECD2042BD27}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_UI_Menu_Confirm" ID="{518FED72-01E4-4927-A7EA-C5F80A18BD7F}" WorkUnitID="{75EAE9FE-406A-4ED1-BCF9-FECD2042BD27}" Origin="Manual" Filter="7"/>

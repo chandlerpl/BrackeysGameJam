@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f2e4f01eb004ba4f9cefa109c3927e52
     GuidInternal: 
-    m_lastTime: -8584881350297105517
+    m_lastTime: -8584880848310291777
     List:
     - name: Main
       guid: ee6f455bd5d043479adc441a8e49d9f1
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584880926502574030
+    m_lastTime: -8584880848310392287
     List:
+    - name: Game_Objects
+      guid: 49d5bcfff3955d40ab2dfabc8374a9b1
+      id: 2987577550
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Game_Objects
+        ObjectType: 4
+        guid: 49d5bcfff3955d40ab2dfabc8374a9b1
+      Path: Events\Default Work Unit\Game_Objects
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Guard
       guid: 14112d96ebd7734f8fe1028e72ebe7cd
       id: 740892324
@@ -153,6 +170,26 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: 0.5387107
       minDuration: 0.39833167
+    - name: Play_Player_Footsteps_Crouch_Walking
+      guid: ff6573c4098fd24fbea0f7ace705a605
+      id: 1685363710
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Player
+        ObjectType: 4
+        guid: 23de7e9efab0964195e24ace4a202138
+      - ElementName: Play_Player_Footsteps_Crouch_Walking
+        ObjectType: 3
+        guid: ff6573c4098fd24fbea0f7ace705a605
+      Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Crouch_Walking
+      maxAttenuation: 0
+      maxDuration: 0.46600455
+      minDuration: 0.41644815
     - name: Play_Player_Footsteps_Running
       guid: 6a485574aa6c304fb499fe64831a9ea2
       id: 727334981
@@ -170,7 +207,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6a485574aa6c304fb499fe64831a9ea2
       Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Running
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: 0.31777778
       minDuration: 0.24598639
     - name: Play_Player_Footsteps_Running_Breathing
@@ -190,7 +227,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 944e510c1b575c40856b11a58d0f2b7d
       Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Running_Breathing
-      maxAttenuation: 7
+      maxAttenuation: 0
       maxDuration: 0.72435415
       minDuration: 0.49845833
     - name: Play_Player_Footsteps_Walking
@@ -210,9 +247,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1c6b3c8478fdaf47a9cef8fd8fe51c1b
       Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Walking
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: 0.46600455
       minDuration: 0.41644815
+    - name: Play_Trolley_Pickup
+      guid: acf673f3fe8f7545856542407d0b3af9
+      id: 1374245708
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Game_Objects
+        ObjectType: 4
+        guid: 49d5bcfff3955d40ab2dfabc8374a9b1
+      - ElementName: Play_Trolley_Pickup
+        ObjectType: 3
+        guid: acf673f3fe8f7545856542407d0b3af9
+      Path: Events\Default Work Unit\Game_Objects\Play_Trolley_Pickup
+      maxAttenuation: 0
+      maxDuration: 1.1235209
+      minDuration: 1.1235209
     - name: Play_UI_List_Close
       guid: 4536900696c0284ebbff00fea1959f86
       id: 3594764378
@@ -384,7 +441,7 @@ MonoBehaviour:
     m_lastTime: -8584884962234831679
     List: []
   ExpandedFileSystemItemIds: 0f00000010000000
-  ExpandedWaapiItemIds: 05000000060000000b0000000c0000000f00000010000000
+  ExpandedWaapiItemIds: 05000000060000000b0000000c0000000f0000001000000019000000c5000000c6000000c9000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
