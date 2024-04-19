@@ -13,7 +13,7 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Player_Footsteps_Running" ID="{1AC1170B-5D16-4D15-B0BB-91CC77341230}" ShortID="223777847">
 									<PropertyList>
-										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
@@ -51,7 +51,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>1.75</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Exp2</SegmentShape>
 																		</Point>
@@ -354,7 +354,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Player_Footsteps_Walking" ID="{11C06609-9900-40C6-896C-3CD4025E85F0}" ShortID="10856833">
 									<PropertyList>
-										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
@@ -392,7 +392,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>1.75</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Exp1</SegmentShape>
 																		</Point>
@@ -610,7 +610,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Player_Footsteps_Running_Breathing" ID="{D78C29D7-39A0-4661-A4AE-0C3FF0FA02C6}" ShortID="464672923">
 									<PropertyList>
-										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
