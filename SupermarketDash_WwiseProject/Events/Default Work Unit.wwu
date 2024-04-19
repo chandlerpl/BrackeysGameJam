@@ -160,6 +160,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Trolley_Discard" ID="{E337F96A-8290-43B6-8E44-B2D5E91B6BB9}">
+							<ChildrenList>
+								<Action Name="" ID="{6C1976BF-1F0E-475E-BF89-CAF0609330A0}" ShortID="192088287">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Trolley_Discard" ID="{035D54CB-43DF-40C7-8E0D-505A15D10EF3}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
