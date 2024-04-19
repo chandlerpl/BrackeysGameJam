@@ -73,6 +73,17 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{FF9FFF3F-91FE-46F9-9683-28F47AC1DE4A}" ShortID="393147678">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="Volume" Type="Real64" Value="-14"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Footsteps_Walking" ID="{11C06609-9900-40C6-896C-3CD4025E85F0}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_Player_Footsteps_Running_Breathing" ID="{0C514E94-571B-405C-856B-11A58D0F2B7D}">
@@ -81,6 +92,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Player_Footsteps_Running_Breathing" ID="{D78C29D7-39A0-4661-A4AE-0C3FF0FA02C6}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Player_Footsteps_Crouch_Walking" ID="{C47365FF-8F09-4FD2-BEA0-F7ACE705A605}">
+							<ChildrenList>
+								<Action Name="" ID="{2A1C6B34-A8BE-4B3A-9C1C-CF1FB2E17ED5}" ShortID="768323752">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Footsteps_Walking" ID="{11C06609-9900-40C6-896C-3CD4025E85F0}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{708FA309-433A-41E4-BCB1-E901CAA6928C}" ShortID="487972765">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="Volume" Type="Real64" Value="-22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Footsteps_Walking" ID="{11C06609-9900-40C6-896C-3CD4025E85F0}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -107,6 +140,21 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Guard_Footsteps_Walking" ID="{48816688-59E4-47BA-9113-53069F382EE0}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Game_Objects" ID="{FFBCD549-95F3-405D-AB2D-FABC8374A9B1}" ShortID="328052327">
+					<ChildrenList>
+						<Event Name="Play_Trolley_Pickup" ID="{F373F6AC-8FFE-4575-8565-42407D0B3AF9}">
+							<ChildrenList>
+								<Action Name="" ID="{EB117B4E-FA0A-45A9-96C4-CBE17B47CCC2}" ShortID="114321878">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Trolley_Pickup" ID="{57713603-5CF6-4681-B27D-86B85E584C17}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
