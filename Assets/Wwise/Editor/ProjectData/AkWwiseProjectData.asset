@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584880848310392287
+    m_lastTime: -8584880827010402179
     List:
     - name: Game_Objects
       guid: 49d5bcfff3955d40ab2dfabc8374a9b1
@@ -250,6 +250,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.46600455
       minDuration: 0.41644815
+    - name: Play_Trolley_Discard
+      guid: 6af937e39082b6438e44b2d5e91b6bb9
+      id: 2154937622
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Game_Objects
+        ObjectType: 4
+        guid: 49d5bcfff3955d40ab2dfabc8374a9b1
+      - ElementName: Play_Trolley_Discard
+        ObjectType: 3
+        guid: 6af937e39082b6438e44b2d5e91b6bb9
+      Path: Events\Default Work Unit\Game_Objects\Play_Trolley_Discard
+      maxAttenuation: 0
+      maxDuration: 1.1235209
+      minDuration: 1.1235209
     - name: Play_Trolley_Pickup
       guid: acf673f3fe8f7545856542407d0b3af9
       id: 1374245708
@@ -441,7 +461,7 @@ MonoBehaviour:
     m_lastTime: -8584884962234831679
     List: []
   ExpandedFileSystemItemIds: 0f00000010000000
-  ExpandedWaapiItemIds: 05000000060000000b0000000c0000000f0000001000000019000000c5000000c6000000c9000000
+  ExpandedWaapiItemIds: 050000000600000007000000080000000f0000001000000019000000c5000000c6000000c9000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

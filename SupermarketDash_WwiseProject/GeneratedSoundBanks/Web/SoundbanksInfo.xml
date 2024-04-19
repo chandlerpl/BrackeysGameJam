@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{5D921D54-B092-4A3A-D272-F3AC152D0B90}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FED45924-F914-7B2D-F747-3F789E4A01E5}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -89,6 +89,10 @@
 				<File Id="717945163" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_04_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_04_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="720213928" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Trolley_Discard.wav</ShortName>
+					<CachePath>SFX/Trolley_Discard_818F3B66.wem</CachePath>
 				</File>
 				<File Id="782196691" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_List_Close.wav</ShortName>
@@ -187,6 +191,11 @@
 						<MediaRef Id="1001850140"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2154937622" Name="Play_Trolley_Discard" DurationType="OneShot" DurationMin="1.1235209" DurationMax="1.1235209">
+					<MediaRefs>
+						<MediaRef Id="720213928"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1374245708" Name="Play_Trolley_Pickup" DurationType="OneShot" DurationMin="1.1235209" DurationMax="1.1235209">
 					<MediaRefs>
 						<MediaRef Id="228135035"/>
@@ -215,5 +224,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2CE4F343-25C7-BA78-6B38-1584C5E9DC0E}</FileHash>
+	<FileHash>{84B4F323-4753-9956-89F6-B885D30C086B}</FileHash>
 </SoundBanksInfo>

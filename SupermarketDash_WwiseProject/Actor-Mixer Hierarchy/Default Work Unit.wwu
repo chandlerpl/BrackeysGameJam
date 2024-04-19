@@ -1615,6 +1615,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Trolley_Discard" ID="{035D54CB-43DF-40C7-8E0D-505A15D10EF3}" ShortID="111918355">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
@@ -1623,6 +1630,18 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Trolley_Discard" ID="{771AE483-876F-4912-BD41-92313BCDC0F6}">
+											<Language>SFX</Language>
+											<AudioFile>Trolley_Discard.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="720213928"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Trolley_Discard" ID="{771AE483-876F-4912-BD41-92313BCDC0F6}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Trolley_Moving" ID="{9095110D-3F26-42CF-821E-065C36F8D966}" ShortID="249562484">
 									<ReferenceList>
