@@ -6,14 +6,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public static bool announcementMade = false;
-
-    //public GameObject dayLights;
-    //public GameObject nightLights;
-
+    
     public float announcementTiming = 60f;
     public AudioSource announcement;
-
-    public string loadFolder = "NightLight-Data";
 
     void Start()
     {

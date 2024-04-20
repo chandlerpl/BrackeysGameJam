@@ -109,13 +109,13 @@ public class PlayerMovement : MonoBehaviour
                 _speed = crouchSpeed;
                 mouseMovement.cameraPivot.localPosition = new Vector3(mouseMovement.cameraPivot.localPosition.x, Mathf.Lerp(normalHeight, crouchHeight, time), mouseMovement.cameraPivot.transform.localPosition.z);
                 col.height = Mathf.Lerp(1.8f, 1f, time);
-                col.center = new Vector3(0, Mathf.Lerp(.9f, .5f, time), 0);
+                col.center = new Vector3(0, Mathf.Lerp(.9f, .5f, time), 0.1f);
             } else
             {
                 _speed = walkSpeed;
                 mouseMovement.cameraPivot.localPosition = new Vector3(mouseMovement.cameraPivot.localPosition.x, Mathf.Lerp(crouchHeight, normalHeight, time), mouseMovement.cameraPivot.transform.localPosition.z);
                 col.height = Mathf.Lerp(1f, 1.8f, time);
-                col.center = new Vector3(0, Mathf.Lerp(.5f, .9f, time), 0);
+                col.center = new Vector3(0, Mathf.Lerp(.5f, .9f, time), 0.1f);
             }
         }
     }
