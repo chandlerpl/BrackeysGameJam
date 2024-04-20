@@ -18,7 +18,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-17</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -359,7 +359,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-17</Value>
+												<Value>-22</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -834,6 +834,7 @@
 																		<PropertyList>
 																			<Property Name="ModulatorScope" Type="int32" Value="0"/>
 																			<Property Name="TimeModDuration" Type="Real64" Value="4"/>
+																			<Property Name="TimeModPlaybackRate" Type="Real64" Value="0.4"/>
 																		</PropertyList>
 																	</ModulatorTime>
 																</Custom>
