@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &623023142538097582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5603747143913324793}
+  m_Layer: 0
+  m_Name: LittleFridge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5603747143913324793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623023142538097582}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.82161033, y: 7.9231143, z: 19.04934}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5337444176100872592}
+  - {fileID: 6346210848659096801}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1001 &5333181754964421072
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5603747143913324793}
+    m_Modifications:
+    - target: {fileID: 1950841452269330, guid: 91d64d2ab7f30814db909532778502e8, type: 3}
+      propertyPath: m_Name
+      value: SM_Prop_Market_Drinks_Fridge_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835369875404864, guid: 91d64d2ab7f30814db909532778502e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.018414795
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835369875404864, guid: 91d64d2ab7f30814db909532778502e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.023113728
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835369875404864, guid: 91d64d2ab7f30814db909532778502e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.13181114
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835369875404864, guid: 91d64d2ab7f30814db909532778502e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835369875404864, guid: 91d64d2ab7f30814db909532778502e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835369875404864, guid: 91d64d2ab7f30814db909532778502e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835369875404864, guid: 91d64d2ab7f30814db909532778502e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835369875404864, guid: 91d64d2ab7f30814db909532778502e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835369875404864, guid: 91d64d2ab7f30814db909532778502e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835369875404864, guid: 91d64d2ab7f30814db909532778502e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91d64d2ab7f30814db909532778502e8, type: 3}
+--- !u!4 &5337444176100872592 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4835369875404864, guid: 91d64d2ab7f30814db909532778502e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 5333181754964421072}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6349142487686860195
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5603747143913324793}
+    m_Modifications:
+    - target: {fileID: 1454326065011694, guid: d66702eec47a3814ca05feece2543e2d, type: 3}
+      propertyPath: m_Name
+      value: SM_Prop_Market_Drinks_Fridge_03_Insert_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198281792194882, guid: d66702eec47a3814ca05feece2543e2d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198281792194882, guid: d66702eec47a3814ca05feece2543e2d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198281792194882, guid: d66702eec47a3814ca05feece2543e2d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198281792194882, guid: d66702eec47a3814ca05feece2543e2d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198281792194882, guid: d66702eec47a3814ca05feece2543e2d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198281792194882, guid: d66702eec47a3814ca05feece2543e2d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198281792194882, guid: d66702eec47a3814ca05feece2543e2d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198281792194882, guid: d66702eec47a3814ca05feece2543e2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198281792194882, guid: d66702eec47a3814ca05feece2543e2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198281792194882, guid: d66702eec47a3814ca05feece2543e2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d66702eec47a3814ca05feece2543e2d, type: 3}
+--- !u!4 &6346210848659096801 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4198281792194882, guid: d66702eec47a3814ca05feece2543e2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 6349142487686860195}
+  m_PrefabAsset: {fileID: 0}
