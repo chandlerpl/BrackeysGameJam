@@ -458,6 +458,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 575209325114076480}
     m_Modifications:
+    - target: {fileID: 1060736709817380981, guid: d2dde8e9b28be4645bff035bb5496400,
+        type: 3}
+      propertyPath: gridObject
+      value: 
+      objectReference: {fileID: 6772492512782382622}
     - target: {fileID: 1379908765732683112, guid: d2dde8e9b28be4645bff035bb5496400,
         type: 3}
       propertyPath: m_Data.m_SourceObjects.m_Item0.transform

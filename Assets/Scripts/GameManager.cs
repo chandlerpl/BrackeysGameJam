@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public GridManager GridManager => gridManager;
     public AudioManager AudioManager => audioManager;
 
-    void Start()
+    void Awake()
     {
         Instance = this;
         announcementMade = false;

@@ -131,6 +131,8 @@ GameObject:
   - component: {fileID: 9031234080103792361}
   - component: {fileID: 8459650510035320066}
   - component: {fileID: 37160612114184238}
+  - component: {fileID: 4821757888287172436}
+  - component: {fileID: 5351089268696761189}
   m_Layer: 9
   m_Name: ShopAssistantMale
   m_TagString: Enemy
@@ -236,6 +238,31 @@ MonoBehaviour:
   _visionLocation: {fileID: 3546969261975992092}
   animator: {fileID: 977560230632087003}
   chasedPlayer: {fileID: 0}
+--- !u!114 &4821757888287172436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8525178528994203491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5164d76a9038a54783f2c155a970385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5351089268696761189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8525178528994203491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e55c8eee05a76a7479777c88f3af9531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
 --- !u!1 &9186809508560747614
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,6 +303,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3833785871901992389}
     m_Modifications:
+    - target: {fileID: 1060736709817380981, guid: d2dde8e9b28be4645bff035bb5496400,
+        type: 3}
+      propertyPath: gridObject
+      value: 
+      objectReference: {fileID: 5351089268696761189}
     - target: {fileID: 1060736709817380981, guid: d2dde8e9b28be4645bff035bb5496400,
         type: 3}
       propertyPath: _footstepSound.WwiseObjectReference

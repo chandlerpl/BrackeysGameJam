@@ -12,26 +12,53 @@ public class AudioDetectionNode : Node<AIMovement>
     private AudioData currData;
     protected override NodeState Evaluate(AIMovement data)
     {
-        while(data.AudioHear.HasSoundQueued)
+        if (currData != null && Time.time > currData.time)
+        {
+            currData = null;
+        }
+
+        while (data.AudioHear.HasSoundQueued)
         {
             AudioData audio = data.AudioHear.Next();
 
-            if(Time.time > audio.time)
-            {
-                continue;
-            }
-            if((audio.position - data.transform.position).sqrMagnitude > audio.range * audio.range)
+            if(audio.gridObject.Equals(data.GridObject))
             {
                 continue;
             }
 
-            if(currData != null)
+            if (Time.time > audio.time)
+            {
+                continue;
+            }
+
+            float sqrDist = (audio.position - data.transform.position).sqrMagnitude;
+            if (sqrDist > audio.range * audio.range)
+            {
+                continue;
+            }
+
+            if (currData != null)
             {
                 if(currData.priority > audio.priority)
                 {
                     continue;
                 }
+
+                if (sqrDist > (currData.position - data.transform.position).sqrMagnitude)
+                {
+                    continue;
+                }
             }
+
+            currData = audio;
+        }
+
+        if(currData != null)
+        {
+            //Should investigate rather than run to specific place
+            data.Agent.SetDestination(currData.position);
+
+            return NodeState.Success;
         }
 
         return NodeState.Failure;

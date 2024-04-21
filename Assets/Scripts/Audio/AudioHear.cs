@@ -39,4 +39,5 @@ public class AudioData
     public float range;
     public int priority;
     public float time;
+    public GridObject gridObject;
 }

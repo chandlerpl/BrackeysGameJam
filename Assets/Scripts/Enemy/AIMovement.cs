@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(GridObject))]
 public class AIMovement : MonoBehaviour
 {
     public float moveSpeed = 2;
@@ -27,6 +28,7 @@ public class AIMovement : MonoBehaviour
     private NavMeshAgent _agent;
     public NavMeshAgent Agent { get => _agent; }
     private BehaviourTree<AIMovement> _behaviourTree;
+    public GridObject GridObject { get; private set; }
 
     public Transform chasedPlayer;
 
@@ -36,6 +38,7 @@ public class AIMovement : MonoBehaviour
         //_rigidbody = GetComponent<Rigidbody>();
         _agent = GetComponent<NavMeshAgent>();
         AudioHear = GetComponent<AudioHear>();
+        GridObject = GetComponent<GridObject>();
 
         _behaviourTree = new(new Selector<AIMovement>()
         {
@@ -46,6 +49,7 @@ public class AIMovement : MonoBehaviour
                     nodes = new()
                     {
                         new AnnouncementDecisionNode(),
+
                         new VisualDetectionNode()
                         {
                             fov = fov,
@@ -57,6 +61,20 @@ public class AIMovement : MonoBehaviour
                             patrolSpeed = runSpeed,
                         },
                         new CaughtNode()
+                    }
+                },
+                new Sequence<AIMovement>()
+                {
+                    nodes = new()
+                    {
+                        new AnnouncementDecisionNode(),
+
+                        new AudioDetectionNode()
+                        {  },
+                        new MovementNode()
+                        {
+                            patrolSpeed = moveSpeed,
+                        }
                     }
                 },
                 new Sequence<AIMovement>()

@@ -7,6 +7,8 @@ public class Footsteps : MonoBehaviour
     public AK.Wwise.Event _footstepCrouchSound;
     public AK.Wwise.Event _footstepBreathingSound;
 
+    public GridObject gridObject;
+
     public float runDuration = 5f;
 
     private bool isRunning = false;
@@ -17,9 +19,10 @@ public class Footsteps : MonoBehaviour
         GameManager.Instance.AudioManager.PlaySound(new AudioData()
         {
             position = transform.position,
-            range = 20,
+            range = 10,
             time = Time.time + 10f,
-            priority = 1
+            priority = 1,
+            gridObject = gridObject
         });
 
         if(isRunning)
@@ -40,7 +43,8 @@ public class Footsteps : MonoBehaviour
             position = transform.position,
             range = 20,
             time = Time.time + 10f,
-            priority = 2
+            priority = 2,
+            gridObject = gridObject
         });
 
         if (!isRunning)
@@ -62,9 +66,10 @@ public class Footsteps : MonoBehaviour
         GameManager.Instance.AudioManager.PlaySound(new AudioData()
         {
             position = transform.position,
-            range = 10,
+            range = 2,
             time = Time.time + 5f,
-            priority = 0
+            priority = 0,
+            gridObject = gridObject
         });
     }
 }
