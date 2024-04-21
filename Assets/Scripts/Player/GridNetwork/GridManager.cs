@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class GridManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Dictionary<uint, Grid> grids = new Dictionary<uint, Grid>();
 
-    // Update is called once per frame
-    void Update()
+    public void AddGrid(Grid grid)
     {
-        
+        grids.Add(grid.UniqueID, grid);
     }
 }

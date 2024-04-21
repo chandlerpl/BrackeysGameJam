@@ -18,6 +18,7 @@ public class AIMovement : MonoBehaviour
     [SerializeField]
     private Transform _visionLocation;
     public Transform VisionLocation { get => _visionLocation; }
+    public AudioHear AudioHear { get; private set; }
     public int CurrentWaypoint { get; set; }
 
     //private Rigidbody _rigidbody;
@@ -34,6 +35,7 @@ public class AIMovement : MonoBehaviour
     {
         //_rigidbody = GetComponent<Rigidbody>();
         _agent = GetComponent<NavMeshAgent>();
+        AudioHear = GetComponent<AudioHear>();
 
         _behaviourTree = new(new Selector<AIMovement>()
         {

@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class ShoppingManager : MonoBehaviour
 {
-    public static ShoppingManager Instance;
     public GameObject shoppingItem;
     public Transform listHolder;
     public Item[] collectibleItems;
@@ -17,8 +16,6 @@ public class ShoppingManager : MonoBehaviour
     private List<string> collected = new List<string>();
     public void Awake()
     {
-        Instance = this;
-
         collectItems = new Dictionary<string, GameObject>(itemCount);
 
         for(int i = 0; i < itemCount; ++i) {

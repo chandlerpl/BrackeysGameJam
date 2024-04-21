@@ -12,7 +12,7 @@ public class DoorSound : MonoBehaviour, IInteractable
     {
         source.Play();
 
-        if(ShoppingManager.Instance != null && ShoppingManager.Instance.HasAllRequiredItems(inventory))
+        if(GameManager.Instance.ShoppingManager != null && GameManager.Instance.ShoppingManager.HasAllRequiredItems(inventory))
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;

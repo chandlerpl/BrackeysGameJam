@@ -1,10 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using Random = UnityEngine.Random;
-
 
 public class Footsteps : MonoBehaviour
 {
@@ -20,6 +14,13 @@ public class Footsteps : MonoBehaviour
     public void Step()
     {
         _footstepSound.Post(gameObject);
+        GameManager.Instance.AudioManager.PlaySound(new AudioData()
+        {
+            position = transform.position,
+            range = 20,
+            time = Time.time + 10f,
+            priority = 1
+        });
 
         if(isRunning)
         {
@@ -34,8 +35,15 @@ public class Footsteps : MonoBehaviour
     public void StepRun()
     {
         _footstepRunSound.Post(gameObject);
+        GameManager.Instance.AudioManager.PlaySound(new AudioData()
+        {
+            position = transform.position,
+            range = 20,
+            time = Time.time + 10f,
+            priority = 2
+        });
 
-        if(!isRunning)
+        if (!isRunning)
         {
             isRunning = true;
             previousBreath = Time.time + runDuration;
@@ -51,5 +59,12 @@ public class Footsteps : MonoBehaviour
     public void StepCrouch()
     {
         _footstepCrouchSound.Post(gameObject);
+        GameManager.Instance.AudioManager.PlaySound(new AudioData()
+        {
+            position = transform.position,
+            range = 10,
+            time = Time.time + 5f,
+            priority = 0
+        });
     }
 }

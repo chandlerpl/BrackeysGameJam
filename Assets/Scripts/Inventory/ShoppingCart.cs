@@ -17,7 +17,7 @@ public class ShoppingCart : MonoBehaviour
                 item.Collider.isTrigger = true;
                 item.transform.parent = transform;
 
-                ShoppingManager.Instance.CheckItem(item);
+                GameManager.Instance.ShoppingManager.CheckItem(item);
             }
         }
     }
@@ -28,7 +28,7 @@ public class ShoppingCart : MonoBehaviour
         {
             if (other.TryGetComponent(out Item item))
             {
-                ShoppingManager.Instance.UncheckItem(item);
+                GameManager.Instance.ShoppingManager.UncheckItem(item);
             }
         }
     }
