@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4327DF40-EDF8-502E-ED77-8CCF2F1DAC1B}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{68BB78BF-AC31-4077-4602-D1DCEA1E2C49}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -56,7 +56,7 @@
 				</File>
 				<File Id="228135035" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Trolley_Pickup.wav</ShortName>
-					<CachePath>SFX/Trolley_Pickup_818F3B66.wem</CachePath>
+					<CachePath>SFX/Trolley_Pickup_73EA19B7.wem</CachePath>
 				</File>
 				<File Id="306056206" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_3.wav</ShortName>
@@ -237,7 +237,7 @@
 						<MediaRef Id="1036301920"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1374245708" Name="Play_Trolley_Pickup" DurationType="OneShot" DurationMin="1.1235209" DurationMax="1.1235209">
+				<Event Id="1374245708" Name="Play_Trolley_Pickup" DurationType="OneShot" DurationMin="0.8224313" DurationMax="0.8224313">
 					<MediaRefs>
 						<MediaRef Id="228135035"/>
 					</MediaRefs>
@@ -265,5 +265,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FBADAF00-6806-B205-2848-6C9DFF68A438}</FileHash>
+	<FileHash>{EA28FA49-7E3B-2B93-344D-E26EE98F102F}</FileHash>
 </SoundBanksInfo>

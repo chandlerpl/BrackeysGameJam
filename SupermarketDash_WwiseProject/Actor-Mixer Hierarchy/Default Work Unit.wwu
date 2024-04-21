@@ -883,7 +883,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-7</Value>
+												<Value>-13</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1639,7 +1639,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1653,6 +1653,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Trolley_Pickup" ID="{9CAE96F7-939E-4B09-9162-E08E2141AA16}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0316319734098019"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0462764055439693"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.033389305265902"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.855820613920751"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Trolley_Pickup.wav</AudioFile>
 											<MediaIDList>
@@ -1669,7 +1676,7 @@
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-13</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1788,6 +1795,11 @@
 								<Sound Name="Trolley_Moving_Running_Start" ID="{9095110D-3F26-42CF-821E-065C36F8D966}" ShortID="249562484">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-19</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -1915,6 +1927,11 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -2031,6 +2048,11 @@
 								<Sound Name="Trolley_Moving_Running_Stop" ID="{610710A5-5EF6-48E1-B882-AB2600053A8E}" ShortID="963137125">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -2279,6 +2301,16 @@
 										</Reference>
 									</ReferenceList>
 								</Sound>
+								<Sound Name="Shelf_Stop" ID="{85AE08D6-2944-4A3A-9D85-95DF4E0EA232}" ShortID="330750337">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Item" ID="{A8124EB9-BFCD-4683-BA24-4FBA2F169A90}" ShortID="706099633">
@@ -2294,6 +2326,16 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="Item_Discard" ID="{885D88BE-120C-4ECA-9A40-E49C76F55D39}" ShortID="721809087">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<Sound Name="Item_Collision" ID="{126616D7-6A65-4C14-8745-C1273495DD81}" ShortID="699778310">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
