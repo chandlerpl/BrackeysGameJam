@@ -111,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584878235613073997
+    m_lastTime: -8584878114582430253
     List:
     - name: Ambience
       guid: b0a38be53cc2ce429a59795991ca47cd
@@ -184,6 +184,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Guard_Dialogue_Shocked_Whats_That
+      guid: 83fdc1800a331241b389464c6e9d9b40
+      id: 3946800354
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Guard
+        ObjectType: 4
+        guid: 14112d96ebd7734f8fe1028e72ebe7cd
+      - ElementName: Play_Guard_Dialogue_Shocked_Whats_That
+        ObjectType: 3
+        guid: 83fdc1800a331241b389464c6e9d9b40
+      Path: Events\Default Work Unit\Guard\Play_Guard_Dialogue_Shocked_Whats_That
+      maxAttenuation: 20
+      maxDuration: 0.9134167
+      minDuration: 0.74
+    - name: Play_Guard_Dialogue_Shocked_Whos_There
+      guid: 60f189a82e4e4b4b9d17bd8b9e6b8499
+      id: 2685188205
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Guard
+        ObjectType: 4
+        guid: 14112d96ebd7734f8fe1028e72ebe7cd
+      - ElementName: Play_Guard_Dialogue_Shocked_Whos_There
+        ObjectType: 3
+        guid: 60f189a82e4e4b4b9d17bd8b9e6b8499
+      Path: Events\Default Work Unit\Guard\Play_Guard_Dialogue_Shocked_Whos_There
+      maxAttenuation: 20
+      maxDuration: 1.1508125
+      minDuration: 0.67635417
     - name: Play_Guard_Footsteps_Running
       guid: 4cabd7852814d34f9b7fab23e1ada745
       id: 2420284597
@@ -632,7 +672,7 @@ MonoBehaviour:
     m_lastTime: -8584884966162136460
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000c0000001b000000
+  ExpandedWaapiItemIds: 0500000006000000070000000a0000000c0000000d0000001b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
