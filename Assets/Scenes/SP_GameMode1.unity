@@ -19399,11 +19399,6 @@ PrefabInstance:
       propertyPath: cart
       value: 
       objectReference: {fileID: 7551634650547738733}
-    - target: {fileID: 497474520829647986, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 575209325114076480, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19454,30 +19449,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.546
       objectReference: {fileID: 0}
-    - target: {fileID: 2248168640928116287, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2248168640928116287, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2248168640928116287, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3092946493559358574, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092946493559358574, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
