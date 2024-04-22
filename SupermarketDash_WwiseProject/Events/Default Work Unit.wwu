@@ -178,6 +178,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Guard_Dialogue_Chasing_Stop" ID="{E86513DE-4054-4288-884A-532D6A18DC1F}">
+							<ChildrenList>
+								<Action Name="" ID="{5720FD81-3A0D-454E-82D9-D3E00DF5370C}" ShortID="262775556">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Guard_Dialogue_Chasing_Stop" ID="{6FA4065A-3344-4DD4-AD0F-430F7D0A6963}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Guard_Dialogue_Chasing_Get_Back_Here" ID="{D0779098-4332-401B-ACB1-5581D195DCF5}">
+							<ChildrenList>
+								<Action Name="" ID="{762E82A9-1F86-4BDC-ACBE-286481116C27}" ShortID="133175624">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Guard_Dialogue_Chasing_Get_Back_Here" ID="{A30C3D27-E333-4CDD-8E1B-7C8F9D1678AF}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Guard_Dialogue_Chasing_YSBH" ID="{8F2346BD-9096-4AA2-B8C8-31F0BD74DCB6}">
+							<ChildrenList>
+								<Action Name="" ID="{AB454D48-00D4-4091-9E8D-A2F907351507}" ShortID="710115680">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Guard_Dialogue_Chasing_YSBH" ID="{8EB4627A-07A6-4564-8CA3-6939BB3AE13C}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Game_Objects" ID="{FFBCD549-95F3-405D-AB2D-FABC8374A9B1}" ShortID="328052327">

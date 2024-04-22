@@ -40,7 +40,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{AD2CD9C1-60B9-F4D7-C3D9-CC57E9E94BE5}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{82718CC7-10C3-F16B-B80B-819BE6DE1C09}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -51,6 +51,10 @@
 				<File Id="13679568" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Breathing_Running_2.wav</ShortName>
 					<CachePath>SFX/Breathing_Running_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="33136942" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_YSBH_2.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_YSBH_2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="43435265" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Guard_Dialogue_Whats_That_3.wav</ShortName>
@@ -84,17 +88,25 @@
 					<ShortName>Trolley_Pickup.wav</ShortName>
 					<CachePath>SFX/Trolley_Pickup_F656C56C.wem</CachePath>
 				</File>
+				<File Id="262516053" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Stop_2.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Stop_2_A60CF8E7.wem</CachePath>
+				</File>
 				<File Id="306056206" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_3.wav</ShortName>
 					<CachePath>SFX/Footsteps_3_9906E552.wem</CachePath>
 				</File>
 				<File Id="376172732" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Nearly_Closing_Time.wav</ShortName>
-					<CachePath>Voices/English(US)/Nearly_Closing_Time_F8755D84.wem</CachePath>
+					<CachePath>Voices/English(US)/Nearly_Closing_Time_08BFAFE0.wem</CachePath>
 				</File>
 				<File Id="379253254" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Trolly_Moving_Running.wav</ShortName>
 					<CachePath>SFX/Trolly_Moving_Running_7CDB987F.wem</CachePath>
+				</File>
+				<File Id="392221050" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Stop_1.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Stop_1_CF37D776.wem</CachePath>
 				</File>
 				<File Id="395879434" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_10_818F3B66.wav</ShortName>
@@ -103,6 +115,10 @@
 				<File Id="419456089" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_4.wav</ShortName>
 					<CachePath>SFX/Footsteps_4_31BDA2A6.wem</CachePath>
+				</File>
+				<File Id="435797457" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Get_Back_Here_1.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Get_Back_Here_1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="452033275" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Menu_Confirm.wav</ShortName>
@@ -132,9 +148,17 @@
 					<ShortName>FOLEY_run_concrete_02_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_02_818F3B66_818F3B66.wem</CachePath>
 				</File>
+				<File Id="624751585" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_YSBH_1.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_YSBH_1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="651627063" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Guard_Dialogue_Whos_There_2.wav</ShortName>
 					<CachePath>Voices/English(US)/Guard_Dialogue_Whos_There_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="652443012" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Get_Back_Here_2.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Get_Back_Here_2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="700697613" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Guard_Dialogue_Whats_That_1.wav</ShortName>
@@ -217,6 +241,24 @@
 				<Event Id="26975710" Name="Play_Ambience_Outside" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="801239346"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4270513678" Name="Play_Guard_Dialogue_Chasing_Get_Back_Here" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.3375208" DurationMax="1.3930833">
+					<MediaRefs>
+						<MediaRef Id="435797457"/>
+						<MediaRef Id="652443012"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3322721679" Name="Play_Guard_Dialogue_Chasing_Stop" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.65416443" DurationMax="0.6795776">
+					<MediaRefs>
+						<MediaRef Id="262516053"/>
+						<MediaRef Id="392221050"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3007557829" Name="Play_Guard_Dialogue_Chasing_YSBH" DurationType="OneShot" DurationMin="1.5312083" DurationMax="1.7">
+					<MediaRefs>
+						<MediaRef Id="33136942"/>
+						<MediaRef Id="624751585"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="90547768" Name="Play_Guard_Dialogue_Shocked_Huh" DurationType="OneShot" DurationMin="0.3565625" DurationMax="0.38914582">
@@ -364,5 +406,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C6887C95-DB89-F05F-E759-069AED3E688B}</FileHash>
+	<FileHash>{9CB0AFC3-E570-E0CC-7DE5-57FF6475615A}</FileHash>
 </SoundBanksInfo>
