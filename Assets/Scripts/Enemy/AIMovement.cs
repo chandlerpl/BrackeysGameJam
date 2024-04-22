@@ -68,7 +68,6 @@ public class AIMovement : MonoBehaviour
                     nodes = new()
                     {
                         new AnnouncementDecisionNode(),
-
                         new AudioDetectionNode()
                         {  },
                         new MovementNode()

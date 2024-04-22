@@ -21,30 +21,30 @@ public class AudioDetectionNode : Node<AIMovement>
         {
             AudioData audio = data.AudioHear.Next();
 
-            if(audio.gridObject.Equals(data.GridObject))
+            if(audio.gridObject.Equals(data.GridObject)) // If it is the same object making sound then don't listen
             {
                 continue;
             }
 
-            if (Time.time > audio.time)
+            if (Time.time > audio.time) // A max time limit incase the event is unheard for a while.
             {
                 continue;
             }
 
             float sqrDist = (audio.position - data.transform.position).sqrMagnitude;
-            if (sqrDist > audio.range * audio.range)
+            if (sqrDist > audio.range * audio.range) // Too far to hear!
             {
                 continue;
             }
 
-            if (currData != null)
+            if (currData != null) 
             {
-                if(currData.priority > audio.priority)
+                if(currData.priority > audio.priority) // The sound already being tracked was a bigger event
                 {
                     continue;
                 }
 
-                if (sqrDist > (currData.position - data.transform.position).sqrMagnitude)
+                if (sqrDist > (currData.position - data.transform.position).sqrMagnitude) // This sound is further3 than the previous sound
                 {
                     continue;
                 }
