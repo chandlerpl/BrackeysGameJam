@@ -12,13 +12,14 @@ public class CaughtNode : Node<AIMovement>
     {
         // Caught the player! I need to do stuff here, but what?
 
-        if(data.chasedPlayer != null && (data.transform.position - data.chasedPlayer.position).sqrMagnitude < 0.5f)
+        if(data.chasedPlayer != null && (data.transform.position - data.chasedPlayer.position).sqrMagnitude < 0.8f)
         {
 /*            Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             SceneManager.LoadScene(3);*/
 
             data.chasedPlayer.GetComponent<PlayerMovement>().RestartPlayer();
+            data.Agent.Warp(GameManager.Instance.GridManager.GetRandomGrid().GetRandomPosition());
             // Time to remember what just happened!
 
             return NodeState.Success;

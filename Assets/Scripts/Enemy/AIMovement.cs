@@ -61,6 +61,7 @@ public class AIMovement : MonoBehaviour
                         new MovementNode()
                         {
                             patrolSpeed = runSpeed,
+                            minDistance = 1f
                         },
                         new CaughtNode()
                     }

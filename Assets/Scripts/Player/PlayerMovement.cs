@@ -142,6 +142,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void RestartPlayer()
     {
-        transform.position = startPosition;
+        rb.position = startPosition;
     }
 }

@@ -361,12 +361,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c8fd8446809154428c7cc8ed82f8746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactRange: 5
+  interactRange: 2
   maxItems: 1
-  throwForce: 5
+  throwForce: 0.5
   cam: {fileID: 6904202991292577113}
   handPosition: {fileID: 4098389505889761088}
+  ikManager: {fileID: 3923532023684955652}
+  ikHint: {fileID: 0}
   cart: {fileID: 0}
+  crosshair: {fileID: 0}
+  defaultSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  selectedSprite: {fileID: 21300000, guid: 8066be1de6c37594387fc8c7b9a0c09f, type: 3}
+  dropSprite: {fileID: 21300000, guid: bd2bbd035bba506488799b1724958370, type: 3}
 --- !u!114 &7029818727519391804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,6 +584,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2dde8e9b28be4645bff035bb5496400, type: 3}
+--- !u!114 &3923532023684955652 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9211337820914082332, guid: d2dde8e9b28be4645bff035bb5496400,
+    type: 3}
+  m_PrefabInstance: {fileID: 5306948348088425496}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b65668982f44149a1a23901678c2b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &4098389505879981824 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8162342135471940376, guid: d2dde8e9b28be4645bff035bb5496400,

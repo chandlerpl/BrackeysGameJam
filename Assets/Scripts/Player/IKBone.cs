@@ -37,7 +37,7 @@ public class IKBone : MonoBehaviour
         this.hint = hint;
         Target.parent = hint.transform;
         Target.localPosition = hint.offset;
-        //Target.rotation = Quaternion.identity;
+        Target.localRotation = Quaternion.identity * Quaternion.Euler(hint.rotationOffset);
         Target.parent = parent;
 
         Weight = 1;

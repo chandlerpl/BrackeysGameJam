@@ -11,6 +11,8 @@ public class Pushable : MonoBehaviour, IInteractable
     public bool isCart = false;
 
     private bool _isAttached = false;
+    public Rigidbody rb;
+
     public void OnInteract(GameObject interactingObj, Inventory inventory)
     {
         if(!_isAttached)
@@ -22,7 +24,8 @@ public class Pushable : MonoBehaviour, IInteractable
             if (isCart)
                 inventory.PushingCart = true;
 
-            if(pushParent.parent.TryGetComponent(out IKManager manager))
+            rb.isKinematic = true;
+            if (pushParent.parent.TryGetComponent(out IKManager manager))
             {
                 foreach(IKHint ik in iKHints)
                 {
@@ -37,6 +40,7 @@ public class Pushable : MonoBehaviour, IInteractable
             if (isCart)
                 inventory.PushingCart = false;
 
+            rb.isKinematic = false;
             if (pushParent.parent.TryGetComponent(out IKManager manager))
             {
                 foreach (IKHint ik in iKHints)

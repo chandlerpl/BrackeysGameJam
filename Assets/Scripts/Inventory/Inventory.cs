@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class Inventory : MonoBehaviour
     private Transform cam;
     [SerializeField]
     private Transform handPosition;
+    [SerializeField]
+    private IKManager ikManager;
+    [SerializeField]
+    private IKHint ikHint;
 
     private Item[] inventory;
     private int _inventorySlot = 0;
@@ -22,6 +27,16 @@ public class Inventory : MonoBehaviour
     public bool PushingCart { get; set; }
     [SerializeField]
     private Transform cart;
+
+    [SerializeField]
+    private Image crosshair;
+    [SerializeField]
+    private Sprite defaultSprite;
+    [SerializeField]
+    private Sprite selectedSprite;
+    [SerializeField]
+    private Sprite dropSprite;
+
     public void Interact()
     {
         if (inventory[_inventorySlot] != null)
@@ -38,12 +53,25 @@ public class Inventory : MonoBehaviour
             if (hit.collider.TryGetComponent<IInteractable>(out var interactable))
             {
                 interactable.OnInteract(gameObject, this);
+
+                crosshair.sprite = dropSprite;
             }
         }
-        /* else
+    }
+
+    private void FixedUpdate()
+    {
+        if (Physics.SphereCast(cam.position, 0.25f, cam.forward, out RaycastHit hit, interactRange, LayerMask.GetMask("Interactable")))
         {
-            tooltipText.text = "";
-        }*/
+            if (hit.collider.TryGetComponent<IInteractable>(out var interactable))
+            {
+                crosshair.sprite = selectedSprite;
+            }
+        }
+        else
+        {
+            crosshair.sprite = defaultSprite;
+        }
     }
 
     public bool AddItem(Item item)
@@ -69,6 +97,8 @@ public class Inventory : MonoBehaviour
 
                     item.transform.SetParent(handPosition);
                     item.transform.localPosition = Vector3.zero;
+
+                    ikManager.UpdatePosition(ikHint);
 
                     item.Collider.isTrigger = true;
                     if (item.Rigidbody != null)
@@ -100,6 +130,8 @@ public class Inventory : MonoBehaviour
             item.Rigidbody.isKinematic = false;
             item.Rigidbody.AddForce(cam.forward * throwForce, ForceMode.Impulse);
         }
+
+        ikManager.ResetPosition(ikHint.position);
 
         return true;
     }

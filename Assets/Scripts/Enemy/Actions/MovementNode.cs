@@ -2,6 +2,7 @@
 public class MovementNode : Node<AIMovement>
 {
     public float patrolSpeed = 3.5f;
+    public float minDistance = 0.5f;
 
     private bool calculatingPath = false;
 /*    public override void Act(StateMachine stateMachine)
@@ -54,7 +55,7 @@ public class MovementNode : Node<AIMovement>
             data.Agent.speed = patrolSpeed;
 
             data.animator.SetBool("IsMoving", true);
-            if (data.Agent.remainingDistance < 0.5f)
+            if (data.Agent.remainingDistance < minDistance)
             {
                 return NodeState.Success;
             } else
