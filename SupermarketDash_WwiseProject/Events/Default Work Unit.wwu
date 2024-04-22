@@ -241,6 +241,31 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Tannoy" ID="{614A2C51-C524-48EE-9C07-2F7693FF4A54}" ShortID="329360168">
+					<ChildrenList>
+						<Event Name="Play_Tannoy_Closing_Time" ID="{2BF77BB7-81DF-428F-9564-1F20AF850B32}">
+							<ChildrenList>
+								<Action Name="" ID="{DD45032E-3591-40FC-9D4E-20E3282A9185}" ShortID="446842050">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tannoy_Sound_Effect" ID="{7C072128-D24A-483A-BDFD-E206D44AD2F0}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6E4F2F10-A5B5-4C36-A27C-8815836C1F66}" ShortID="742228182">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tannoy_Closing_Time" ID="{2421CFCC-9587-4601-8A62-FDE2EA155B23}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

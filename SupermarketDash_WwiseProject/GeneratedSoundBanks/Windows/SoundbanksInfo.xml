@@ -9,22 +9,40 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2DE6C527-26A5-B934-51A4-BD59EDD17FBF}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<Custom>
+					<Plugin Id="514528516" Name="Hard_Knee_Minus_3dB_RMS (Custom)" LibName="Wwise Compressor" LibId="7077891"/>
+					<Plugin Id="872820267" Name="Guitar Distortion (Custom)" LibName="Wwise Guitar Distortion" LibId="8257539"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="602546716" Name="Room_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="460920990" Name="Tannoy_Speaker" MaxAttenuation="20">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="514528516"/>
+							<PluginRef Id="872820267"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="602546716"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{68BB78BF-AC31-4077-4602-D1DCEA1E2C49}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{2B5F02E1-71C0-C904-3D9E-ED754E31E33F}">
 			<ShortName>Main</ShortName>
-			<Path>Main.bnk</Path>
+			<Path>English(US)/Main.bnk</Path>
 			<Media>
 				<File Id="7022271" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_05_818F3B66.wav</ShortName>
@@ -56,7 +74,7 @@
 				</File>
 				<File Id="228135035" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Trolley_Pickup.wav</ShortName>
-					<CachePath>SFX/Trolley_Pickup_73EA19B7.wem</CachePath>
+					<CachePath>SFX/Trolley_Pickup_F656C56C.wem</CachePath>
 				</File>
 				<File Id="306056206" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_3.wav</ShortName>
@@ -90,6 +108,10 @@
 					<ShortName>UI_Menu_Hover.wav</ShortName>
 					<CachePath>SFX/UI_Menu_Hover_38857BCB.wem</CachePath>
 				</File>
+				<File Id="603601656" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Tannoy_Speaker_Sound_Effect.wav</ShortName>
+					<CachePath>SFX/Tannoy_Speaker_Sound_Effect_20803AC1.wem</CachePath>
+				</File>
 				<File Id="609781788" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_02_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_02_818F3B66_818F3B66.wem</CachePath>
@@ -117,6 +139,10 @@
 				<File Id="852890347" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_5.wav</ShortName>
 					<CachePath>SFX/Footsteps_5_4CD5BCCC.wem</CachePath>
+				</File>
+				<File Id="903444544" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>ClosingTime_1.wav</ShortName>
+					<CachePath>Voices/English(US)/ClosingTime_1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="916745061" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Trolly_Moving_Running.wav</ShortName>
@@ -216,6 +242,12 @@
 						<MediaRef Id="1001850140"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3870065741" Name="Play_Tannoy_Closing_Time" DurationType="OneShot" DurationMin="9.781042" DurationMax="9.781042">
+					<MediaRefs>
+						<MediaRef Id="603601656"/>
+						<MediaRef Id="903444544"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3886534114" Name="Play_Till_Sound_Beep" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="215684142"/>
@@ -265,5 +297,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7F7E0D62-9C30-AABE-A932-173A71BC7822}</FileHash>
+	<FileHash>{8EABED20-C566-E863-1AAF-53020D00400F}</FileHash>
 </SoundBanksInfo>
