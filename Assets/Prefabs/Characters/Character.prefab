@@ -761,6 +761,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8162342135481723736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5453205058014416499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 817290308911270426}
+  m_Layer: 0
+  m_Name: Jaw
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &817290308911270426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5453205058014416499}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.00000008940696, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.004591942, y: 6.247537, z: 2.1639953}
+  m_LocalScale: {x: 100, y: 100.000015, z: 100}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8162342135481727664}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6186129818999442665
 GameObject:
   m_ObjectHideFlags: 0
@@ -2964,6 +2995,7 @@ MonoBehaviour:
   - {fileID: 8162342135481727664}
   - {fileID: 8162342135481703000}
   - {fileID: 8162342135481666072}
+  - {fileID: 817290308911270426}
   - {fileID: 8162342135481722340}
   - {fileID: 8162342135481682044}
   - {fileID: 8162342135481723736}
@@ -3536,6 +3568,7 @@ Transform:
   m_Children:
   - {fileID: 8162342135481703000}
   - {fileID: 8162342135481666072}
+  - {fileID: 817290308911270426}
   m_Father: {fileID: 8162342135481673010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8162342135481410532

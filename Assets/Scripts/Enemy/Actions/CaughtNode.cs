@@ -14,9 +14,12 @@ public class CaughtNode : Node<AIMovement>
 
         if(data.chasedPlayer != null && (data.transform.position - data.chasedPlayer.position).sqrMagnitude < 0.5f)
         {
-            Cursor.lockState = CursorLockMode.None;
+/*            Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(3);*/
+
+            data.chasedPlayer.GetComponent<PlayerMovement>().RestartPlayer();
+            // Time to remember what just happened!
 
             return NodeState.Success;
         }

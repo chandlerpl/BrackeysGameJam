@@ -11,7 +11,7 @@ public class Item : MonoBehaviour
     public Rigidbody Rigidbody { get; private set; }
     public Collider Collider { get; private set; }
 
-    private void Start()
+    private void Awake()
     {
         if(TryGetComponent(out Rigidbody rb))
         {
