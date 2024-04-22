@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33986308389966878}
   - component: {fileID: 23808648788008078}
   - component: {fileID: 64205541388951772}
+  - component: {fileID: 7670306341818398798}
   m_Layer: 0
   m_Name: SM_Prop_Market_Aisle_End_Preset_03
   m_TagString: Untagged
@@ -106,3 +107,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43336656918079120, guid: 0604ff7c98241f74180bddda3d1ed6d4, type: 2}
+--- !u!208 &7670306341818398798
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952831816971570}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.69200003, y: 1, z: 0.316}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1, z: 0.316}
+  m_TimeToStationary: 0.5

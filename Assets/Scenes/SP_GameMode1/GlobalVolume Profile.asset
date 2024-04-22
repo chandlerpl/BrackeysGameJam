@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   skipIterations:
     m_OverrideState: 0
     m_Value: 1
@@ -149,10 +149,10 @@ MonoBehaviour:
   active: 1
   temperature:
     m_OverrideState: 1
-    m_Value: 63
+    m_Value: 7
   tint:
     m_OverrideState: 1
-    m_Value: 12
+    m_Value: -3
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,13 +191,13 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {r: 0.1724813, g: 0.2378359, b: 0.3584906, a: 1}
+    m_Value: {r: 0.14716971, g: 0.14716971, b: 0.14716971, a: 1}
   highlights:
     m_OverrideState: 1
-    m_Value: {r: 0.7056604, g: 0.7056604, b: 0.7056604, a: 1}
+    m_Value: {r: 0.6301887, g: 0.6301887, b: 0.6301887, a: 1}
   balance:
     m_OverrideState: 1
-    m_Value: 22
+    m_Value: -29
 --- !u!114 &1618911547128416370
 MonoBehaviour:
   m_ObjectHideFlags: 3
