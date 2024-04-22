@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 354070fcbf727d4e8fcedb2a46edc0d2
     GuidInternal: 
-    m_lastTime: -8584884966162355008
+    m_lastTime: -8584878233552924296
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Tannoy_Speaker_Sound_Mix
+      guid: 74c758152fe2a4449042f74b6f4371b0
+      id: 1191170665
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 354070fcbf727d4e8fcedb2a46edc0d2
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Tannoy_Speaker_Sound_Mix
+        ObjectType: 2
+        guid: 74c758152fe2a4449042f74b6f4371b0
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Tannoy_Speaker_Sound_Mix
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f2e4f01eb004ba4f9cefa109c3927e52
     GuidInternal: 
-    m_lastTime: -8584880380922242716
+    m_lastTime: -8584878230400786027
     List:
     - name: Main
       guid: ee6f455bd5d043479adc441a8e49d9f1
@@ -94,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584879097328858280
+    m_lastTime: -8584878235613073997
     List:
     - name: Ambience
       guid: b0a38be53cc2ce429a59795991ca47cd
@@ -287,6 +304,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.46600455
       minDuration: 0.41644815
+    - name: Play_Tannoy_Closing_Time
+      guid: b77bf72bdf818f4295641f20af850b32
+      id: 3870065741
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Tannoy
+        ObjectType: 4
+        guid: 512c4a6124c5ee489c072f7693ff4a54
+      - ElementName: Play_Tannoy_Closing_Time
+        ObjectType: 3
+        guid: b77bf72bdf818f4295641f20af850b32
+      Path: Events\Default Work Unit\Tannoy\Play_Tannoy_Closing_Time
+      maxAttenuation: 0
+      maxDuration: 9.781042
+      minDuration: 9.781042
+    - name: Play_Tannoy_Nearly_Closing_Time
+      guid: ed9032599a7ce14ba2cfbe49928a78fd
+      id: 3534718979
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Tannoy
+        ObjectType: 4
+        guid: 512c4a6124c5ee489c072f7693ff4a54
+      - ElementName: Play_Tannoy_Nearly_Closing_Time
+        ObjectType: 3
+        guid: ed9032599a7ce14ba2cfbe49928a78fd
+      Path: Events\Default Work Unit\Tannoy\Play_Tannoy_Nearly_Closing_Time
+      maxAttenuation: 0
+      maxDuration: 10.319271
+      minDuration: 10.319271
     - name: Play_Till_Sound_Beep
       guid: e0ebdf352b7b814eb234b1bededd6803
       id: 3886534114
@@ -304,7 +361,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: e0ebdf352b7b814eb234b1bededd6803
       Path: Events\Default Work Unit\Game_Objects\Play_Till_Sound_Beep
-      maxAttenuation: 20
+      maxAttenuation: 50
       maxDuration: -1
       minDuration: -1
     - name: Play_Trolley_Discard
@@ -484,6 +541,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Tannoy
+      guid: 512c4a6124c5ee489c072f7693ff4a54
+      id: 3620977680
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Tannoy
+        ObjectType: 4
+        guid: 512c4a6124c5ee489c072f7693ff4a54
+      Path: Events\Default Work Unit\Tannoy
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: UI
       guid: 8e6225aef3e1ad4a8a78ab8a4850276e
       id: 1551306167
@@ -558,7 +632,7 @@ MonoBehaviour:
     m_lastTime: -8584884966162136460
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000070000000c0000001b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_RUNNING_BREATHING = 768391258U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_WALKING = 2051615781U;
         static const AkUniqueID PLAY_TANNOY_CLOSING_TIME = 3870065741U;
+        static const AkUniqueID PLAY_TANNOY_NEARLY_CLOSING_TIME = 3534718979U;
         static const AkUniqueID PLAY_TILL_SOUND_BEEP = 3886534114U;
         static const AkUniqueID PLAY_TROLLEY_DISCARD = 2154937622U;
         static const AkUniqueID PLAY_TROLLEY_MOVING_RUNNING_START = 3458151439U;
@@ -41,7 +42,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
-        static const AkUniqueID TANNOY_SPEAKER = 460920990U;
+        static const AkUniqueID TANNOY_SPEAKER_SOUND_MIX = 1191170665U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2DE6C527-26A5-B934-51A4-BD59EDD17FBF}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A95ECFB8-B32D-A8DA-6F81-FB563C68826F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -26,7 +26,7 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
-				<Bus Id="460920990" Name="Tannoy_Speaker" MaxAttenuation="20">
+				<Bus Id="1191170665" Name="Tannoy_Speaker_Sound_Mix" MaxAttenuation="100">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="514528516"/>
@@ -40,7 +40,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{2B5F02E1-71C0-C904-3D9E-ED754E31E33F}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{159CA2D4-5120-0CA8-EC91-C6D1F572689D}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -66,7 +66,7 @@
 				</File>
 				<File Id="215684142" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Till_Sound.wav</ShortName>
-					<CachePath>SFX/Till_Sound_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/Till_Sound_818F3B66.wem</CachePath>
 				</File>
 				<File Id="222329165" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_03_818F3B66.wav</ShortName>
@@ -79,6 +79,10 @@
 				<File Id="306056206" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_3.wav</ShortName>
 					<CachePath>SFX/Footsteps_3_9906E552.wem</CachePath>
+				</File>
+				<File Id="376172732" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Nearly_Closing_Time.wav</ShortName>
+					<CachePath>Voices/English(US)/Nearly_Closing_Time_08BFAFE0.wem</CachePath>
 				</File>
 				<File Id="379253254" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Trolly_Moving_Running.wav</ShortName>
@@ -168,6 +172,10 @@
 					<ShortName>Footsteps_2.wav</ShortName>
 					<CachePath>SFX/Footsteps_2_284248C7.wem</CachePath>
 				</File>
+				<File Id="1034181359" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Till_Sound_2.wav</ShortName>
+					<CachePath>SFX/Till_Sound_2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="1036301920" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Trolly_Moving_Running_Stop.wav</ShortName>
 					<CachePath>SFX/Trolly_Moving_Running_Stop_63372FFA.wem</CachePath>
@@ -248,9 +256,16 @@
 						<MediaRef Id="903444544"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3886534114" Name="Play_Till_Sound_Beep" MaxAttenuation="20" DurationType="Infinite">
+				<Event Id="3534718979" Name="Play_Tannoy_Nearly_Closing_Time" DurationType="OneShot" DurationMin="10.319271" DurationMax="10.319271">
+					<MediaRefs>
+						<MediaRef Id="376172732"/>
+						<MediaRef Id="603601656"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3886534114" Name="Play_Till_Sound_Beep" MaxAttenuation="50" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="215684142"/>
+						<MediaRef Id="1034181359"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2154937622" Name="Play_Trolley_Discard" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.72437525" DurationMax="0.72437525">
@@ -297,5 +312,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8EABED20-C566-E863-1AAF-53020D00400F}</FileHash>
+	<FileHash>{E5577D0D-0250-0037-F2E0-A5F7E5C8EBED}</FileHash>
 </SoundBanksInfo>

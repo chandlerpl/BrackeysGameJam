@@ -10,18 +10,20 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Tannoy_Speaker" ID="{1558C774-E22F-44A4-9042-F74B6F4371B0}">
+						<Bus Name="Tannoy_Speaker_Sound_Mix" ID="{1558C774-E22F-44A4-9042-F74B6F4371B0}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="OutputBusHighpass" Type="int16">
+									<ValueList>
+										<Value>15</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
 									<Custom>
 										<Attenuation Name="Attenuation (Custom)" ID="{2F1EBC82-A134-452F-8C48-BFB8F84CE02B}" ShortID="932850641">
-											<PropertyList>
-												<Property Name="RadiusMax" Type="Real64" Value="20"/>
-											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -36,7 +38,7 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>20</XPos>
+																	<XPos>100</XPos>
 																	<YPos>-200</YPos>
 																	<Flags>37</Flags>
 																</Point>

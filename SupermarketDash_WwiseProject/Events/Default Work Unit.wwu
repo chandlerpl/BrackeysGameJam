@@ -176,7 +176,7 @@
 								<Action Name="" ID="{DA31ED04-757D-4793-A259-A6B0B123C469}" ShortID="342800758">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Till_Sound_Beep" ID="{969A3C45-16B2-45BE-816C-CB2DA67CC8E2}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+											<ObjectRef Name="Till_Sound_Beep" ID="{413C9C8D-73AB-4708-962B-C0874050A78F}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -259,6 +259,27 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Tannoy_Closing_Time" ID="{2421CFCC-9587-4601-8A62-FDE2EA155B23}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Tannoy_Nearly_Closing_Time" ID="{593290ED-7C9A-4BE1-A2CF-BE49928A78FD}">
+							<ChildrenList>
+								<Action Name="" ID="{314E8BFA-7115-4B05-8901-6745FFA63FB4}" ShortID="297186124">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tannoy_Sound_Effect" ID="{7C072128-D24A-483A-BDFD-E206D44AD2F0}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9CC4461E-CBDD-498E-8946-33788398D9B2}" ShortID="811126392">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tannoy_Nearly_Closing_Time" ID="{1043C508-727A-4A39-B3E5-42255419E987}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
