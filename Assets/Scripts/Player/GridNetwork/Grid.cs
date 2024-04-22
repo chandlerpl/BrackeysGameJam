@@ -19,4 +19,16 @@ public class Grid : MonoBehaviour
 
         GameManager.Instance.GridManager.AddGrid(this);
     }
+
+    public Vector3 GetRandomPosition()
+    {
+        Vector3 min = col.bounds.min;
+        Vector3 max = col.bounds.max;
+
+        float x = Random.Range(min.x, max.x);
+        float y = min.y;
+        float z = Random.Range(min.z, max.z);
+
+        return new Vector3(x, y, z);
+    }
 }

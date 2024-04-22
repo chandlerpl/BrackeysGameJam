@@ -32,6 +32,8 @@ public class AIMovement : MonoBehaviour
 
     public Transform chasedPlayer;
 
+    public Grid currentGrid;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -87,7 +89,7 @@ public class AIMovement : MonoBehaviour
                                 patrolSpeed = moveSpeed,
                             },
                         },
-                        new FindWaypointNode(),                        
+                        new SearchGridNode(),                        
                     }
                 }
             }

@@ -12,9 +12,6 @@ public class GridObject : MonoBehaviour
         if(other.TryGetComponent(out Grid grid))
         {
             CurrentGrid = grid;
-
-            Debug.Log("Entering new grid: " + CurrentGrid.UniqueID);
-            
         }
     }
 }

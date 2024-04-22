@@ -398,9 +398,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f75bec06b0e15a4e943794663a3d15b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalHeight: 1.6
-  crouchHeight: 1.25
-  crouchingSpeed: 2.25
+  normalCameraPosition: {x: 0, y: 1.52, z: 0.2}
+  crouchCameraPosition: {x: 0, y: 1.05, z: 0.3}
+  crouchingSpeed: 2
   crouchSpeed: 1.5
   walkSpeed: 2.5
   runSpeed: 4.5

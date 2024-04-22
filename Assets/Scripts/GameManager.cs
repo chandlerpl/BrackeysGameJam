@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioManager audioManager;
 
     public float announcementTiming = 60f;
-    public AudioSource announcement;
+    public AK.Wwise.Event oneMinuteAnnouncement;
+    public AK.Wwise.Event closedAnnouncement;
 
     public ShoppingManager ShoppingManager => shoppingManager;
     public GridManager GridManager => gridManager;
@@ -28,11 +29,12 @@ public class GameManager : MonoBehaviour
 
     IEnumerator AnnouncementCountdown()
     {
+        yield return new WaitForSeconds(2f);
+        oneMinuteAnnouncement.Post(gameObject);
+
         yield return new WaitForSeconds(announcementTiming);
 
         announcementMade = true;
-
-        announcement.time = 5;
-        announcement.Play();
+        closedAnnouncement.Post(gameObject);
     }
 }

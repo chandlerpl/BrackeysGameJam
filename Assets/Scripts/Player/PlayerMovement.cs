@@ -10,8 +10,8 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Player Height")]
-    public float normalHeight = 1f;
-    public float crouchHeight = 0.5f;
+    public Vector3 normalCameraPosition = new Vector3(0, 1.5f, 0f);
+    public Vector3 crouchCameraPosition = new Vector3(0, 1f, 0f);
 
     public float crouchingSpeed = 1.5f;
     [Header("Player Speed")]
@@ -107,13 +107,13 @@ public class PlayerMovement : MonoBehaviour
             if(_isCrouching)
             {
                 _speed = crouchSpeed;
-                mouseMovement.cameraPivot.localPosition = new Vector3(mouseMovement.cameraPivot.localPosition.x, Mathf.Lerp(normalHeight, crouchHeight, time), mouseMovement.cameraPivot.transform.localPosition.z);
+                mouseMovement.cameraPivot.localPosition = Vector3.Lerp(normalCameraPosition, crouchCameraPosition, time);
                 col.height = Mathf.Lerp(1.8f, 1f, time);
                 col.center = new Vector3(0, Mathf.Lerp(.9f, .5f, time), 0.1f);
             } else
             {
                 _speed = walkSpeed;
-                mouseMovement.cameraPivot.localPosition = new Vector3(mouseMovement.cameraPivot.localPosition.x, Mathf.Lerp(crouchHeight, normalHeight, time), mouseMovement.cameraPivot.transform.localPosition.z);
+                mouseMovement.cameraPivot.localPosition = Vector3.Lerp(crouchCameraPosition, normalCameraPosition, time);
                 col.height = Mathf.Lerp(1f, 1.8f, time);
                 col.center = new Vector3(0, Mathf.Lerp(.5f, .9f, time), 0.1f);
             }

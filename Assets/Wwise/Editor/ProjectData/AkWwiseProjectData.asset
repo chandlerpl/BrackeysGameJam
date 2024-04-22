@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: f158a985443bf3419a2a109a356aba9c
     GuidInternal: 
-    m_lastTime: -8584884966162126456
+    m_lastTime: -8584884962234821651
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 354070fcbf727d4e8fcedb2a46edc0d2
     GuidInternal: 
-    m_lastTime: -8584878233552924296
+    m_lastTime: -8584878182448763673
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -83,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f2e4f01eb004ba4f9cefa109c3927e52
     GuidInternal: 
-    m_lastTime: -8584878230400786027
+    m_lastTime: -8584878182448319376
     List:
     - name: Main
       guid: ee6f455bd5d043479adc441a8e49d9f1
@@ -111,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584878114582430253
+    m_lastTime: -8584878047320503481
     List:
     - name: Ambience
       guid: b0a38be53cc2ce429a59795991ca47cd
@@ -184,6 +184,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Guard_Dialogue_Shocked_Huh
+      guid: 7c2cc468e49cd24885b00d6477624e37
+      id: 90547768
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Guard
+        ObjectType: 4
+        guid: 14112d96ebd7734f8fe1028e72ebe7cd
+      - ElementName: Play_Guard_Dialogue_Shocked_Huh
+        ObjectType: 3
+        guid: 7c2cc468e49cd24885b00d6477624e37
+      Path: Events\Default Work Unit\Guard\Play_Guard_Dialogue_Shocked_Huh
+      maxAttenuation: 0
+      maxDuration: 0.38914582
+      minDuration: 0.3565625
     - name: Play_Guard_Dialogue_Shocked_Whats_That
       guid: 83fdc1800a331241b389464c6e9d9b40
       id: 3946800354
@@ -627,7 +647,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 785ce9f43941e84ea66efd96b07f6beb
     GuidInternal: 
-    m_lastTime: -8584884966162701822
+    m_lastTime: -8584884962235640908
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -641,7 +661,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: e41f695dbbcd8f438cfcc09974e0c5a9
     GuidInternal: 
-    m_lastTime: -8584884966162147646
+    m_lastTime: -8584884962234856826
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -655,7 +675,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 8c8ca692caa89141a41fdcdc46bc1444
     GuidInternal: 
-    m_lastTime: -8584884966162136460
+    m_lastTime: -8584884962234831679
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -669,10 +689,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: e66da1c3aa0e09488f18973687ab6d3c
     GuidInternal: 
-    m_lastTime: -8584884966162136460
+    m_lastTime: -8584884962234831679
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000a0000000c0000000d0000001b000000
+  ExpandedWaapiItemIds: 0e0000000f00000012000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

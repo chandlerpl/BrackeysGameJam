@@ -1182,7 +1182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5466204679815189785
 Transform:
   m_ObjectHideFlags: 0
@@ -3054,6 +3054,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 5d79e810e16baf044b217dd6860fed72,
       type: 2}
+  gridObject: {fileID: 0}
   runDuration: 5
 --- !u!114 &7266407510378084442
 MonoBehaviour:

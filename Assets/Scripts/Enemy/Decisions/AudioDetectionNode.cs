@@ -25,6 +25,10 @@ public class AudioDetectionNode : Node<AIMovement>
             {
                 continue;
             }
+            if(audio.gridObject.type != GridObjectType.Player) // Temporarily only listen for sounds from the Player.
+            {
+                continue;
+            }
 
             if (Time.time > audio.time) // A max time limit incase the event is unheard for a while.
             {
@@ -51,12 +55,12 @@ public class AudioDetectionNode : Node<AIMovement>
             }
 
             currData = audio;
+            data.Agent.SetDestination(currData.gridObject.CurrentGrid.GetRandomPosition());
         }
 
         if(currData != null)
         {
             //Should investigate rather than run to specific place
-            data.Agent.SetDestination(currData.position);
 
             return NodeState.Success;
         }
