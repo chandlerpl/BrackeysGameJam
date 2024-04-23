@@ -111,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584877246430810003
+    m_lastTime: -8584877229447697721
     List:
     - name: Ambience
       guid: b0a38be53cc2ce429a59795991ca47cd
@@ -401,6 +401,26 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: 0.5387107
       minDuration: 0.39833167
+    - name: Play_Item_Collision_Glass
+      guid: 458544ffa74a3d4eb6b4aa0eee01e560
+      id: 1916685251
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Game_Objects
+        ObjectType: 4
+        guid: 49d5bcfff3955d40ab2dfabc8374a9b1
+      - ElementName: Play_Item_Collision_Glass
+        ObjectType: 3
+        guid: 458544ffa74a3d4eb6b4aa0eee01e560
+      Path: Events\Default Work Unit\Game_Objects\Play_Item_Collision_Glass
+      maxAttenuation: 0
+      maxDuration: 0.9709414
+      minDuration: 0.5647261
     - name: Play_Player_Footsteps_Crouch_Walking
       guid: ff6573c4098fd24fbea0f7ace705a605
       id: 1685363710
@@ -481,6 +501,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.46600455
       minDuration: 0.41644815
+    - name: Play_Player_Item_Discard
+      guid: d6147aa3059b1d4fa9daffacd1a4176e
+      id: 3553968270
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Player
+        ObjectType: 4
+        guid: 23de7e9efab0964195e24ace4a202138
+      - ElementName: Play_Player_Item_Discard
+        ObjectType: 3
+        guid: d6147aa3059b1d4fa9daffacd1a4176e
+      Path: Events\Default Work Unit\Player\Play_Player_Item_Discard
+      maxAttenuation: 0
+      maxDuration: 0.46258333
+      minDuration: 0.46258333
+    - name: Play_Player_Item_Pickup
+      guid: 9b2531f2ffbe2e4381f0e5244e1db291
+      id: 3258224516
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Player
+        ObjectType: 4
+        guid: 23de7e9efab0964195e24ace4a202138
+      - ElementName: Play_Player_Item_Pickup
+        ObjectType: 3
+        guid: 9b2531f2ffbe2e4381f0e5244e1db291
+      Path: Events\Default Work Unit\Player\Play_Player_Item_Pickup
+      maxAttenuation: 0
+      maxDuration: 0.46258333
+      minDuration: 0.46258333
     - name: Play_Tannoy_Closing_Time
       guid: b77bf72bdf818f4295641f20af850b32
       id: 3870065741
@@ -809,7 +869,7 @@ MonoBehaviour:
     m_lastTime: -8584885038585294849
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 06000000070000000c0000001a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
