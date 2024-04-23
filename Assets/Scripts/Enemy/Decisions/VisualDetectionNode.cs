@@ -62,7 +62,7 @@ public class VisualDetectionNode : Node<AIMovement>
         _currentTick = 0;
 
         // Searches the Detectable layer for any objects in range.
-        Collider[] cols = Physics.OverlapSphere(data.VisionLocation.position, detectionRange, LayerMask.GetMask("Detectable") ^ LayerMask.GetMask("DetectableNonBlocking"));
+        Collider[] cols = Physics.OverlapSphere(data.VisionLocation.position, detectionRange, data.DetectionMask);
 
         updatedUnits.Clear();
         float clostestAgent = float.MaxValue;
@@ -75,7 +75,7 @@ public class VisualDetectionNode : Node<AIMovement>
             {
                 if (Vector3.Angle(col.transform.position - data.VisionLocation.position, data.VisionLocation.forward) <= fov / 2)
                 {
-                    float dist = TryDetect(data.VisionLocation.position, detectable);
+                    float dist = TryDetect(data.VisionLocation.position, detectable, data);
                     if (dist > -1000)
                     {
                         updatedUnits.Add(detectable);
@@ -125,11 +125,11 @@ public class VisualDetectionNode : Node<AIMovement>
         return NodeState.Failure;
     }
 
-    private float TryDetect(Vector3 location, Detectable detectable)
+    private float TryDetect(Vector3 location, Detectable detectable, AIMovement data)
     {
         foreach (Vector3 vec in detectable.spottableLocations)
         {
-            if (Physics.Linecast(location, detectable.transform.position + vec, out RaycastHit rayHit, ~LayerMask.GetMask("DetectableNonBlocking")) && rayHit.collider.gameObject == detectable.gameObject)
+            if (Physics.Linecast(location, detectable.transform.position + vec, out RaycastHit rayHit, data.LOSMask) && rayHit.collider.gameObject == detectable.gameObject)
             {
                 return rayHit.distance;
             }

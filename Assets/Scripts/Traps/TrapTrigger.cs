@@ -7,6 +7,7 @@ using UnityEngine;
 public class TrapTrigger : MonoBehaviour
 {
     public List<Trap> traps = new List<Trap>();
+    public List<GameObject> toggle = new ();
 
     private UniqueID uniqueID;
 
@@ -24,6 +25,11 @@ public class TrapTrigger : MonoBehaviour
         foreach(Trap trap in traps)
         {
             trap.Enable();
+        }
+
+        foreach(GameObject go in toggle)
+        {
+            go.SetActive(true);
         }
     }
 }

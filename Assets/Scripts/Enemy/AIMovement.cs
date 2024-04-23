@@ -22,6 +22,14 @@ public class AIMovement : MonoBehaviour
     public AudioHear AudioHear { get; private set; }
     public int CurrentWaypoint { get; set; }
 
+    [SerializeField]
+    private LayerMask _losMask;
+    [SerializeField]
+    private LayerMask _detectionMask;
+
+    public LayerMask LOSMask => _losMask;
+    public LayerMask DetectionMask => _detectionMask;
+
     //private Rigidbody _rigidbody;
     //public Rigidbody Body { get => _rigidbody; }
     public Animator animator;

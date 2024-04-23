@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public float announcementTiming = 60f;
     public AK.Wwise.Event oneMinuteAnnouncement;
     public AK.Wwise.Event closedAnnouncement;
+    public Color closedLightsColour = new Color(0, 0.1122715f, 0.1471697f);
+    public Light directionalLight;
 
     public ShoppingManager ShoppingManager => shoppingManager;
     public GridManager GridManager => gridManager;
@@ -36,7 +38,19 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSeconds(announcementTiming);
 
-        announcementMade = true;
         closedAnnouncement.Post(gameObject);
+        yield return new WaitForSeconds(10f);
+
+        float time = 0f;
+        while(time < 1f)
+        {
+            time += 0.0125f;
+            yield return new WaitForSeconds(0.05f);
+
+            directionalLight.color = Color.Lerp(directionalLight.color, closedLightsColour, time);
+        }
+
+        announcementMade = true;
+        directionalLight.color = closedLightsColour;
     }
 }

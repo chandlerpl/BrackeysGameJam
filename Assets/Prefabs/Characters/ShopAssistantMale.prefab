@@ -237,6 +237,12 @@ MonoBehaviour:
   detectionTime: 1.25
   waypoints: {fileID: 0}
   _visionLocation: {fileID: 3546969261975992092}
+  _losMask:
+    serializedVersion: 2
+    m_Bits: 503
+  _detectionMask:
+    serializedVersion: 2
+    m_Bits: 576
   animator: {fileID: 977560230632087003}
   chasedPlayer: {fileID: 0}
   currentGrid: {fileID: 0}
