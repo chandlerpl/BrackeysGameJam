@@ -40,10 +40,14 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{079EE92C-4B90-0CCC-9163-D1A25A81DBF8}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{1230368C-70BF-6FD2-FD72-E73690E9F5E3}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
+				<File Id="1395002" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bleeps_Blops_Clicks_DDM78.wav</ShortName>
+					<CachePath>SFX/Bleeps_Blops_Clicks_DDM78_5263FAA5.wem</CachePath>
+				</File>
 				<File Id="7022271" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_05_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_05_818F3B66_818F3B66.wem</CachePath>
@@ -51,6 +55,10 @@
 				<File Id="13679568" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Breathing_Running_2.wav</ShortName>
 					<CachePath>SFX/Breathing_Running_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="16457392" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>gore - wood beating flesh wet blood splat - medium - 11.wav</ShortName>
+					<CachePath>SFX/gore - wood beating flesh wet blood splat - medium - 11_6466FABB.wem</CachePath>
 				</File>
 				<File Id="33136942" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Guard_Dialogue_YSBH_2.wav</ShortName>
@@ -132,6 +140,10 @@
 					<ShortName>UI_Menu_Confirm.wav</ShortName>
 					<CachePath>SFX/UI_Menu_Confirm_98AA7367.wem</CachePath>
 				</File>
+				<File Id="460879647" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mud_splat_heavy_03.wav</ShortName>
+					<CachePath>SFX/mud_splat_heavy_03_3D929B94.wem</CachePath>
+				</File>
 				<File Id="475031400" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>COLLISION_break_glass_small_06.wav</ShortName>
 					<CachePath>SFX/COLLISION_break_glass_small_06_73A8C45F.wem</CachePath>
@@ -139,6 +151,10 @@
 				<File Id="498026625" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_01_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_01_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="500583441" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>gore - wood beating flesh wet blood splat - soft - 4.wav</ShortName>
+					<CachePath>SFX/gore - wood beating flesh wet blood splat - soft - 4_F1025736.wem</CachePath>
 				</File>
 				<File Id="507222202" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_List_Open.wav</ShortName>
@@ -204,6 +220,10 @@
 					<ShortName>Atmos.wav</ShortName>
 					<CachePath>SFX/Atmos_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="823992362" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TV_Static_Noise.wav</ShortName>
+					<CachePath>SFX/TV_Static_Noise_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="824393662" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_09_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_09_818F3B66_818F3B66.wem</CachePath>
@@ -215,6 +235,10 @@
 				<File Id="852890347" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_5.wav</ShortName>
 					<CachePath>SFX/Footsteps_5_4CD5BCCC.wem</CachePath>
+				</File>
+				<File Id="853634274" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bleeps_Blops_Clicks_DDM77.wav</ShortName>
+					<CachePath>SFX/Bleeps_Blops_Clicks_DDM77_3EBB4A69.wem</CachePath>
 				</File>
 				<File Id="876126891" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fridge_Game_Sound_Loop.wav</ShortName>
@@ -259,6 +283,10 @@
 				<File Id="1036301920" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Trolly_Moving_Running_Stop.wav</ShortName>
 					<CachePath>SFX/Trolly_Moving_Running_Stop_63372FFA.wem</CachePath>
+				</File>
+				<File Id="1058959060" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>gore - wood beating flesh wet blood splat - soft - 14.wav</ShortName>
+					<CachePath>SFX/gore - wood beating flesh wet blood splat - soft - 14_8437766C.wem</CachePath>
 				</File>
 				<File Id="1060747195" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Guard_Dialogue_Whos_There_3.wav</ShortName>
@@ -350,6 +378,14 @@
 						<MediaRef Id="636118432"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2882871707" Name="Play_Item_Collision_Splat" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.5508579" DurationMax="0.8349381">
+					<MediaRefs>
+						<MediaRef Id="16457392"/>
+						<MediaRef Id="460879647"/>
+						<MediaRef Id="500583441"/>
+						<MediaRef Id="1058959060"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1685363710" Name="Play_Player_Footsteps_Crouch_Walking" DurationType="OneShot" DurationMin="0.41644815" DurationMax="0.46600455">
 					<MediaRefs>
 						<MediaRef Id="306056206"/>
@@ -439,6 +475,17 @@
 						<MediaRef Id="228135035"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1174402806" Name="Play_TV_Off" DurationType="OneShot" DurationMin="0.6613447" DurationMax="0.6613447">
+					<MediaRefs>
+						<MediaRef Id="853634274"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1865976120" Name="Play_TV_On" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1395002"/>
+						<MediaRef Id="823992362"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3594764378" Name="Play_UI_List_Close" DurationType="OneShot" DurationMin="0.49845833" DurationMax="0.49845833">
 					<MediaRefs>
 						<MediaRef Id="782196691"/>
@@ -462,5 +509,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2C10C4AB-8DF5-A0B2-330B-C943DE9C8D03}</FileHash>
+	<FileHash>{EE93B188-84DC-90EB-9501-B5886B33BCED}</FileHash>
 </SoundBanksInfo>

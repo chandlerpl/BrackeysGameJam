@@ -323,6 +323,56 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Item_Collision_Splat" ID="{0E2BCC43-9F46-41F2-953C-5C2D143E6ABE}">
+							<ChildrenList>
+								<Action Name="" ID="{B144337E-C852-431B-AA23-FC39C6B3F4AE}" ShortID="618835970">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Item_Collision_Splat" ID="{482AC340-7FD8-4433-AA48-C43D4B6B89B7}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_TV_Off" ID="{E71167B9-811A-41A2-B27D-A30093D8E781}">
+							<ChildrenList>
+								<Action Name="" ID="{81A7D1A6-D653-440A-A5FC-E32AE104C308}" ShortID="570667081">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TV_Off" ID="{FCDD4E77-4EFA-4D77-82E6-9AEE4E75100E}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B07B98F1-511D-4645-9798-36DF86669AF5}" ShortID="1066997831">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TV_Static" ID="{9A251A9E-26C0-4FE5-8AA7-6DEEFB52D5B0}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_TV_On" ID="{DA19BDE5-1FF2-4925-B012-C96889F2E989}">
+							<ChildrenList>
+								<Action Name="" ID="{667EBA12-408B-45F3-88C0-F50F06605084}" ShortID="579077812">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TV_On" ID="{8480DAC2-DC05-401A-8444-937DB9F9BD43}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{06691C66-334D-49FD-83E9-4454F2349458}" ShortID="148292143">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TV_Static" ID="{9A251A9E-26C0-4FE5-8AA7-6DEEFB52D5B0}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambience" ID="{E58BA3B0-C23C-42CE-9A59-795991CA47CD}" ShortID="102604576">

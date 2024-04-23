@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID PLAY_GUARD_FOOTSTEPS_RUNNING = 2420284597U;
         static const AkUniqueID PLAY_GUARD_FOOTSTEPS_WALKING = 2271699957U;
         static const AkUniqueID PLAY_ITEM_COLLISION_GLASS = 1916685251U;
+        static const AkUniqueID PLAY_ITEM_COLLISION_SPLAT = 2882871707U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_CROUCH_WALKING = 1685363710U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_RUNNING = 727334981U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_RUNNING_BREATHING = 768391258U;
@@ -38,6 +39,8 @@ namespace AK
         static const AkUniqueID PLAY_TROLLEY_MOVING_RUNNING_START = 3458151439U;
         static const AkUniqueID PLAY_TROLLEY_MOVING_RUNNING_STOP = 2261347989U;
         static const AkUniqueID PLAY_TROLLEY_PICKUP = 1374245708U;
+        static const AkUniqueID PLAY_TV_OFF = 1174402806U;
+        static const AkUniqueID PLAY_TV_ON = 1865976120U;
         static const AkUniqueID PLAY_UI_LIST_CLOSE = 3594764378U;
         static const AkUniqueID PLAY_UI_LIST_OPEN = 4243789662U;
         static const AkUniqueID PLAY_UI_MENU_CONFIRM = 3500366795U;
