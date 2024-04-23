@@ -40,7 +40,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{828E2186-F1BD-13AF-A7B4-D6C2EB66F193}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{079EE92C-4B90-0CCC-9163-D1A25A81DBF8}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -342,7 +342,7 @@
 						<MediaRef Id="1001850140"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1916685251" Name="Play_Item_Collision_Glass" DurationType="OneShot" DurationMin="0.5647261" DurationMax="0.9709414">
+				<Event Id="1916685251" Name="Play_Item_Collision_Glass" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.5647261" DurationMax="0.9709414">
 					<MediaRefs>
 						<MediaRef Id="335110854"/>
 						<MediaRef Id="475031400"/>
@@ -462,5 +462,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C84B2083-55C3-CC7B-3562-00EA54F90735}</FileHash>
+	<FileHash>{EE336E65-3137-AE7F-DD23-714F42590D5A}</FileHash>
 </SoundBanksInfo>
