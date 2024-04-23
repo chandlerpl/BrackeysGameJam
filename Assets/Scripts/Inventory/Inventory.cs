@@ -66,11 +66,12 @@ public class Inventory : MonoBehaviour
             if (hit.collider.TryGetComponent<IInteractable>(out var interactable))
             {
                 crosshair.sprite = selectedSprite;
+                crosshair.enabled = true;
             }
         }
         else
         {
-            crosshair.sprite = defaultSprite;
+            crosshair.enabled = false;
         }
     }
 

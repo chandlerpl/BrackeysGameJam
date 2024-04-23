@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: f158a985443bf3419a2a109a356aba9c
     GuidInternal: 
-    m_lastTime: -8584884966162126456
+    m_lastTime: -8584884962234821651
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -83,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f2e4f01eb004ba4f9cefa109c3927e52
     GuidInternal: 
-    m_lastTime: -8584878096006951944
+    m_lastTime: -8584877266612650077
     List:
     - name: Main
       guid: ee6f455bd5d043479adc441a8e49d9f1
@@ -111,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584877934331649365
+    m_lastTime: -8584877266624764672
     List:
     - name: Ambience
       guid: b0a38be53cc2ce429a59795991ca47cd
@@ -127,6 +127,23 @@ MonoBehaviour:
         ObjectType: 4
         guid: b0a38be53cc2ce429a59795991ca47cd
       Path: Events\Default Work Unit\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Environments
+      guid: f012479226a08448bcb1cde95b8f724d
+      id: 3761286811
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Environments
+        ObjectType: 4
+        guid: f012479226a08448bcb1cde95b8f724d
+      Path: Events\Default Work Unit\Environments
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -182,6 +199,46 @@ MonoBehaviour:
         guid: 52d8bbe72d819f4dbc4c9e7253bfcbde
       Path: Events\Default Work Unit\Ambience\Play_Ambience_Outside
       maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Butcher_Fridge_On
+      guid: 99bc672ec16f0e439705ce9a1ac10ecd
+      id: 320701227
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Environments
+        ObjectType: 4
+        guid: f012479226a08448bcb1cde95b8f724d
+      - ElementName: Play_Butcher_Fridge_On
+        ObjectType: 3
+        guid: 99bc672ec16f0e439705ce9a1ac10ecd
+      Path: Events\Default Work Unit\Environments\Play_Butcher_Fridge_On
+      maxAttenuation: 50
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Fridge_On
+      guid: 10c2b05d7a8cbd4088c44d715de737d7
+      id: 760203119
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Environments
+        ObjectType: 4
+        guid: f012479226a08448bcb1cde95b8f724d
+      - ElementName: Play_Fridge_On
+        ObjectType: 3
+        guid: 10c2b05d7a8cbd4088c44d715de737d7
+      Path: Events\Default Work Unit\Environments\Play_Fridge_On
+      maxAttenuation: 50
       maxDuration: -1
       minDuration: -1
     - name: Play_Guard_Dialogue_Chasing_Get_Back_Here
@@ -707,7 +764,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 785ce9f43941e84ea66efd96b07f6beb
     GuidInternal: 
-    m_lastTime: -8584884966162701822
+    m_lastTime: -8584884962235640908
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -721,7 +778,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: e41f695dbbcd8f438cfcc09974e0c5a9
     GuidInternal: 
-    m_lastTime: -8584884966162147646
+    m_lastTime: -8584884962234856826
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -735,7 +792,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 8c8ca692caa89141a41fdcdc46bc1444
     GuidInternal: 
-    m_lastTime: -8584884966162136460
+    m_lastTime: -8584884962234831679
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -749,7 +806,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: e66da1c3aa0e09488f18973687ab6d3c
     GuidInternal: 
-    m_lastTime: -8584884966162136460
+    m_lastTime: -8584884962234831679
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
