@@ -6,13 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class DoorSound : MonoBehaviour, IInteractable
 {
-    public AudioSource source;
-
     public void OnInteract(GameObject interactingObj, Inventory inventory)
     {
-        source.Play();
-
-        if(GameManager.Instance.ShoppingManager != null && GameManager.Instance.ShoppingManager.HasAllRequiredItems(inventory))
+        if(GameManager.Instance.ShoppingManager != null && GameManager.Instance.ShoppingManager.HasCheckedOut)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
@@ -20,5 +16,9 @@ public class DoorSound : MonoBehaviour, IInteractable
             SceneManager.LoadScene(2);
         }
     }
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        OnInteract(null, null);
+    }
 }
