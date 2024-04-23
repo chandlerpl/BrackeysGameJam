@@ -49,6 +49,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47bc2ba66d2e2bd4898091ca4ab38d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rollingSoundStart:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fd4622df3d00b5a4aaabc454ef81b91c,
+      type: 2}
+  rollingSoundStop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b6868e5019a840b469ca7b8ff53aaccb,
+      type: 2}
 --- !u!208 &7091025909974831001
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -110,7 +120,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!1 &1199551922176574501
@@ -182,12 +192,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushableTransform: {fileID: 2332196602624512655}
-  pushParent: {fileID: 0}
   iKHints:
   - {fileID: 6528888660041617712}
   - {fileID: 2901766136785198260}
   isCart: 1
-  rb: {fileID: 4820414849581501528}
 --- !u!114 &6528888660041617712
 MonoBehaviour:
   m_ObjectHideFlags: 0

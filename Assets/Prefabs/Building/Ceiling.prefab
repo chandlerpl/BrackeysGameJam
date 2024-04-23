@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6970959977677331254}
+  - component: {fileID: 7950213709636629881}
   m_Layer: 0
   m_Name: Ceiling
   m_TagString: Untagged
@@ -338,6 +339,27 @@ Transform:
   - {fileID: 1328502980043271069}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7950213709636629881
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990224046032026442}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 48.775013, y: 0.27283, z: 29.992414}
+  m_Center: {x: 22.157679, y: 0.15330648, z: 13.556685}
 --- !u!1001 &6293218395919331
 PrefabInstance:
   m_ObjectHideFlags: 0

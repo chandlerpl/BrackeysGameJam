@@ -111,13 +111,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 _speed = crouchSpeed;
                 mouseMovement.cameraPivot.localPosition = Vector3.Lerp(normalCameraPosition, crouchCameraPosition, time);
-                col.height = Mathf.Lerp(1.8f, 1f, time);
+                col.height = Mathf.Lerp(1.7f, 1f, time);
                 col.center = new Vector3(0, Mathf.Lerp(.9f, .5f, time), 0.1f);
             } else
             {
                 _speed = walkSpeed;
                 mouseMovement.cameraPivot.localPosition = Vector3.Lerp(crouchCameraPosition, normalCameraPosition, time);
-                col.height = Mathf.Lerp(1f, 1.8f, time);
+                col.height = Mathf.Lerp(1f, 1.7f, time);
                 col.center = new Vector3(0, Mathf.Lerp(.5f, .9f, time), 0.1f);
             }
         }

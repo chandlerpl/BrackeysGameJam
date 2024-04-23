@@ -4,6 +4,40 @@ using UnityEngine;
 
 public class ShoppingCart : MonoBehaviour
 {
+    public AK.Wwise.Event rollingSoundStart;
+    public AK.Wwise.Event rollingSoundStop;
+
+    private Rigidbody rb;
+    private GridObject gridObject;
+    private bool isPlaying;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+        gridObject = GetComponent<GridObject>();
+    }
+
+    private void FixedUpdate()
+    {
+        if(!isPlaying && rb.velocity.magnitude > 0.1f)
+        {
+            rollingSoundStart.Post(gameObject);
+            GameManager.Instance.AudioManager.PlaySound(new AudioData()
+            {
+                position = rb.position,
+                time = Time.time + 2f,
+                range = 10f,
+                priority = 2,
+                gridObject = gridObject
+            });
+            isPlaying = true;
+        } else if(isPlaying && rb.velocity.magnitude < 0.1f)
+        {
+            rollingSoundStop.Post(gameObject);
+            isPlaying = false;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Interactable"))

@@ -72,7 +72,9 @@ public class UniqueID : MonoBehaviour
 
     // This is called ONCE when the project is opened in the editor and ONCE when the app is started
     // See https://docs.unity3d.com/ScriptReference/InitializeOnLoadMethodAttribute.html
+#if UNITY_EDITOR
     [InitializeOnLoadMethod]
+#endif
     [RuntimeInitializeOnLoadMethod]
     private static void InitUsedIDs()
     {

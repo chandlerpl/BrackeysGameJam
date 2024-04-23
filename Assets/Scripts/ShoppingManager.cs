@@ -18,7 +18,13 @@ public class ShoppingManager : MonoBehaviour
     {
         collectItems = new Dictionary<string, GameObject>(itemCount);
 
-        for(int i = 0; i < itemCount; ++i) {
+        StartCoroutine(Test());
+    }
+
+    public IEnumerator Test()
+    {
+        for (int i = 0; i < itemCount; ++i)
+        {
             int chosen = Random.Range(0, collectibleItems.Length);
 
             Item item = collectibleItems[chosen];
@@ -28,9 +34,14 @@ public class ShoppingManager : MonoBehaviour
                 continue;
             }
 
-            GameObject go = Instantiate(item.itemIconPrefab, listHolder);
+            GameObject go = Instantiate(shoppingItem, listHolder);
+            ItemUI ui = go.GetComponent<ItemUI>();
+            ui.Setup(item);
+
             collectItems.Add(item.itemIdentifier, go);
             //go.GetComponent<TextMeshProUGUI>().text = item.itemIdentifier;
+
+            yield return new WaitForSeconds(0.05f);
         }
     }
 
