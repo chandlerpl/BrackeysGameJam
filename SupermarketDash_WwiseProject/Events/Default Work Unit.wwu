@@ -119,6 +119,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Player_Item_Discard" ID="{A37A14D6-9B05-4F1D-A9DA-FFACD1A4176E}">
+							<ChildrenList>
+								<Action Name="" ID="{22CC7A3E-4458-4F29-970E-544F1B02B1B6}" ShortID="202876579">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Item_Discard" ID="{970A9038-82F1-472A-B079-E75887A273F7}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Player_Item_Pickup" ID="{F231259B-BEFF-432E-81F0-E5244E1DB291}">
+							<ChildrenList>
+								<Action Name="" ID="{F3218BDC-BBB1-46D1-A0AC-A124C9C5BAEB}" ShortID="293000177">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Item_Pickup" ID="{045988A2-A785-4202-99CC-9107BFD899B0}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Guard" ID="{962D1114-D7EB-4F73-8FE1-028E72EBE7CD}" ShortID="520508716">
@@ -285,6 +307,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Trolley_Moving_Running_Loop" ID="{B68C37F0-A79C-4977-AEFD-3FF4286EE346}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Item_Collision_Glass" ID="{FF448545-4AA7-4E3D-B6B4-AA0EEE01E560}">
+							<ChildrenList>
+								<Action Name="" ID="{B29FB93F-BC63-451B-AB0C-F622A29204CC}" ShortID="968022027">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Item_Collision_Glass" ID="{76A6396C-97CE-48B1-9D44-6307269FC401}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
