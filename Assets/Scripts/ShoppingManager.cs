@@ -11,6 +11,7 @@ public class ShoppingManager : MonoBehaviour
     public Item[] collectibleItems;
     public int itemCount = 4;
 
+    public bool HasCheckedOut { get; private set; }
     public Transform cart;
     private Dictionary<string, GameObject> collectItems;
     private List<string> collected = new List<string>();
@@ -53,6 +54,14 @@ public class ShoppingManager : MonoBehaviour
         }
     }
 
+    public void Checkout()
+    {
+        if(HasAllRequiredItems())
+        {
+            HasCheckedOut = true;
+        }
+    }
+
     public bool IsRequiredItem(Item item)
     {
         return collectItems.ContainsKey(item.itemIdentifier);
@@ -81,7 +90,7 @@ public class ShoppingManager : MonoBehaviour
         }
     }
 
-    public bool HasAllRequiredItems(Inventory inventory)
+    public bool HasAllRequiredItems()
     {
         foreach (string item in collectItems.Keys)
         {

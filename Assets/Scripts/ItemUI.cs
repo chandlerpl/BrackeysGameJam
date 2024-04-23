@@ -12,7 +12,7 @@ public class ItemUI : MonoBehaviour
 
     public void Setup(Item item)
     {
-        text.text = item.name;
+        text.text = item.itemIdentifier;
         Render(item);
     }
     public Transform parent;
