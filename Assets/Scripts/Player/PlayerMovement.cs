@@ -1,5 +1,6 @@
-using System;
 using System.Collections;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -34,6 +35,8 @@ public class PlayerMovement : MonoBehaviour
     private bool _isCrouching;
 
     private Vector3 startPosition;
+
+    private List<uint> _trapsPlayerHit = new();
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -140,8 +143,23 @@ public class PlayerMovement : MonoBehaviour
         rb.rotation = mouseMovement.CharacterRotation;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.TryGetComponent(out TrapTrigger trap))
+        {
+            _trapsPlayerHit.Add(trap.UniqueID);
+        }
+    }
+
     public void RestartPlayer()
     {
         rb.position = startPosition;
+
+        if(_trapsPlayerHit.Count > 0)
+        {
+            GameManager.Instance.TrapManager.GetTrap(_trapsPlayerHit[Random.Range(0, _trapsPlayerHit.Count)]).Trigger();
+
+            _trapsPlayerHit.Clear();
+        }
     }
 }

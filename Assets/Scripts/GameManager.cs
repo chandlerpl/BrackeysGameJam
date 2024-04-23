@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private ShoppingManager shoppingManager;
     [SerializeField] private GridManager gridManager;
+    [SerializeField] private TrapManager trapManager;
     [SerializeField] private AudioManager audioManager;
 
     public float announcementTiming = 60f;
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     public ShoppingManager ShoppingManager => shoppingManager;
     public GridManager GridManager => gridManager;
     public AudioManager AudioManager => audioManager;
+    public TrapManager TrapManager => trapManager;
 
     void Awake()
     {

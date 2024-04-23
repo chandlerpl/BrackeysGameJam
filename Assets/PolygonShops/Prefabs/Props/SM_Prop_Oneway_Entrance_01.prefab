@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5775074541503515683}
   - component: {fileID: 1680656943772902271}
   - component: {fileID: 1785033662749998333}
+  - component: {fileID: 1142678432705845227}
   m_Layer: 9
   m_Name: SM_Prop_Oneway_Entrance_01
   m_TagString: Untagged
@@ -140,7 +141,7 @@ HingeJoint:
     targetVelocity: 0
     force: 0
     freeSpin: 0
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_ExtendedLimits: 0
   m_UseAcceleration: 0
   m_Limits:
@@ -177,6 +178,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 3ecb1ccb78b75bf4f8964a2309b4e1fe, type: 3}
+--- !u!114 &1142678432705845227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571560320724772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9201a0182f6acd04491d49ced316149a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightOn: {fileID: 4435317981877879970}
+  lightOff: {fileID: 4031413655201228650}
+  hinge: {fileID: 1680656943772902271}
+  min: 0
+  max: 90
 --- !u!1 &1984611986061528
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +456,12 @@ PrefabInstance:
 --- !u!4 &4433236120589553930 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4180835253122374, guid: 7f666adf70067f646b1315a3613151a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 4434038689182229580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4435317981877879970 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1605860265582830, guid: 7f666adf70067f646b1315a3613151a1,
     type: 3}
   m_PrefabInstance: {fileID: 4434038689182229580}
   m_PrefabAsset: {fileID: 0}

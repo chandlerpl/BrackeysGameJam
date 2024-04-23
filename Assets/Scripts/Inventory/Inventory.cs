@@ -88,7 +88,7 @@ public class Inventory : MonoBehaviour
                     if (item.Rigidbody != null)
                     {
                         item.Rigidbody.isKinematic = true;
-                        item.Rigidbody.position = cart.position + new Vector3(Random.Range(-0.6f, 0.6f), 0, Random.Range(-0.9f, 0.9f));
+                        item.Rigidbody.position = cart.position + new Vector3(Random.Range(-0.25f, 0.25f), 0.5f, Random.Range(0f, 0.95f));
                     }
                     item.Collider.isTrigger = true;
                 } else
@@ -120,18 +120,34 @@ public class Inventory : MonoBehaviour
     public bool RemoveItem(Item item, int slot)
     {
         inventory[slot] = null;
-
+        ikManager.ResetPosition(ikHint.position);
         item.transform.parent = null;
-        item.gameObject.SetActive(true);
-
         item.Collider.isTrigger = false;
+
+        if (Physics.SphereCast(cam.position, 0.25f, cam.forward, out RaycastHit hit, interactRange, ~(1 << LayerMask.NameToLayer("Interactable"))))
+        {
+            Debug.Log("Test " + hit.collider.tag + " " + hit.collider.gameObject.name);
+            if (hit.collider.CompareTag("ShoppingCart"))
+            {
+                Debug.Log("Test2");
+                if (item.Rigidbody != null)
+                {
+                    Debug.Log("Test3");
+                    item.Rigidbody.isKinematic = true;
+                    item.transform.parent = hit.transform;
+                    item.transform.localPosition = new Vector3(Random.Range(-0.25f, 0.25f), 0.5f, Random.Range(0f, 0.95f));
+                }
+                item.Collider.isTrigger = true;
+                return true;
+            }
+        }
+
         if (item.Rigidbody != null)
         {
             item.Rigidbody.isKinematic = false;
             item.Rigidbody.AddForce(cam.forward * throwForce, ForceMode.Impulse);
         }
 
-        ikManager.ResetPosition(ikHint.position);
 
         return true;
     }

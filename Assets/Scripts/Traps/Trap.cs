@@ -2,17 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trap : MonoBehaviour
+public abstract class Trap : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private bool isEnabled;
+
+    public void Enable()
     {
-        
+        if (isEnabled)
+        {
+            return;
+        }
+
+        isEnabled = true;
+        EnableTrap();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Disable()
     {
-        
+        if (!isEnabled)
+        {
+            return;
+        }
+
+        isEnabled = false;
+        DisableTrap();
     }
+
+    protected abstract void EnableTrap();
+    protected abstract void DisableTrap();
 }

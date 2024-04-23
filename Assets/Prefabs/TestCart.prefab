@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4820414849581501528}
   m_Layer: 8
   m_Name: TestCart
-  m_TagString: Untagged
+  m_TagString: ShoppingCart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,11 +59,11 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.25, y: 0.25, z: 0.5}
+  m_Extents: {x: 0.375, y: 0.5, z: 0.625}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 0
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0.475}
   m_TimeToStationary: 0.5
 --- !u!65 &8275155460091069678
 BoxCollider:
@@ -230,6 +230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShoppingCart
       objectReference: {fileID: 0}
+    - target: {fileID: 1921488544852182, guid: e850ef838f3227d479aa2f6da2b373a9, type: 3}
+      propertyPath: m_TagString
+      value: ShoppingCart
+      objectReference: {fileID: 0}
     - target: {fileID: 4876696868988380, guid: e850ef838f3227d479aa2f6da2b373a9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -326,8 +330,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.63583654, y: 0.525308, z: 1.1717887}
-  m_Center: {x: 0.0016370121, y: 0.32868797, z: 0.47920403}
+  m_Size: {x: 0.63583654, y: 0.58545303, z: 1.1717887}
+  m_Center: {x: 0.0016370123, y: 0.29861546, z: 0.47920406}
 --- !u!65 &1961398176514442498
 BoxCollider:
   m_ObjectHideFlags: 0
