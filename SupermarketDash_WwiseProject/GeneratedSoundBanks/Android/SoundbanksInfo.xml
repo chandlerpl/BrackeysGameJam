@@ -40,7 +40,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{82718CC7-10C3-F16B-B80B-819BE6DE1C09}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{3FEFAA4C-CB12-B007-696C-A3281228A21C}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -192,6 +192,10 @@
 					<ShortName>Footsteps_5.wav</ShortName>
 					<CachePath>SFX/Footsteps_5_4CD5BCCC.wem</CachePath>
 				</File>
+				<File Id="876126891" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Fridge_Game_Sound_Loop.wav</ShortName>
+					<CachePath>SFX/Fridge_Game_Sound_Loop_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="903444544" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>ClosingTime_1.wav</ShortName>
 					<CachePath>Voices/English(US)/ClosingTime_1_818F3B66.wem</CachePath>
@@ -241,6 +245,16 @@
 				<Event Id="26975710" Name="Play_Ambience_Outside" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="801239346"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="320701227" Name="Play_Butcher_Fridge_On" MaxAttenuation="50" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="876126891"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="760203119" Name="Play_Fridge_On" MaxAttenuation="50" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="876126891"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="4270513678" Name="Play_Guard_Dialogue_Chasing_Get_Back_Here" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.3375208" DurationMax="1.3930833">
@@ -406,5 +420,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E42A74BB-603A-F8CF-4959-A668538964F3}</FileHash>
+	<FileHash>{DCD36FF0-00B7-3D40-6C6E-C2E32CB44D9E}</FileHash>
 </SoundBanksInfo>

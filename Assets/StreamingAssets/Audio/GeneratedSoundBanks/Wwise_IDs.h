@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_AMBIENCE_OUTSIDE = 26975710U;
+        static const AkUniqueID PLAY_BUTCHER_FRIDGE_ON = 320701227U;
+        static const AkUniqueID PLAY_FRIDGE_ON = 760203119U;
         static const AkUniqueID PLAY_GUARD_DIALOGUE_CHASING_GET_BACK_HERE = 4270513678U;
         static const AkUniqueID PLAY_GUARD_DIALOGUE_CHASING_STOP = 3322721679U;
         static const AkUniqueID PLAY_GUARD_DIALOGUE_CHASING_YSBH = 3007557829U;

@@ -353,6 +353,32 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Environments" ID="{924712F0-A026-4884-BCB1-CDE95B8F724D}" ShortID="360298906">
+					<ChildrenList>
+						<Event Name="Play_Fridge_On" ID="{5DB0C210-8C7A-40BD-88C4-4D715DE737D7}">
+							<ChildrenList>
+								<Action Name="" ID="{98D3EE3B-07C5-42FD-BEBC-39F3DBDB8301}" ShortID="821999352">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fridge_On" ID="{BA0DE0DB-1DC5-48D6-B98E-9971D4B1975A}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Butcher_Fridge_On" ID="{2E67BC99-6FC1-430E-9705-CE9A1AC10ECD}">
+							<ChildrenList>
+								<Action Name="" ID="{A13FE602-1481-4536-BDCA-FBEE31BE4C1B}" ShortID="339543471">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Butcher_Fridge_On" ID="{06064429-5C5F-46B2-BD45-A6DBCC2FC965}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
