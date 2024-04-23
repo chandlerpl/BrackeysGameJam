@@ -111,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584877218013681141
+    m_lastTime: -8584877074552280155
     List:
     - name: Ambience
       guid: b0a38be53cc2ce429a59795991ca47cd
@@ -418,9 +418,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 458544ffa74a3d4eb6b4aa0eee01e560
       Path: Events\Default Work Unit\Game_Objects\Play_Item_Collision_Glass
-      maxAttenuation: 0
+      maxAttenuation: 20
       maxDuration: 0.9709414
       minDuration: 0.5647261
+    - name: Play_Item_Collision_Splat
+      guid: 43cc2b0e469ff241953c5c2d143e6abe
+      id: 2882871707
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Game_Objects
+        ObjectType: 4
+        guid: 49d5bcfff3955d40ab2dfabc8374a9b1
+      - ElementName: Play_Item_Collision_Splat
+        ObjectType: 3
+        guid: 43cc2b0e469ff241953c5c2d143e6abe
+      Path: Events\Default Work Unit\Game_Objects\Play_Item_Collision_Splat
+      maxAttenuation: 20
+      maxDuration: 0.8349381
+      minDuration: 0.5508579
     - name: Play_Player_Footsteps_Crouch_Walking
       guid: ff6573c4098fd24fbea0f7ace705a605
       id: 1685363710
@@ -681,6 +701,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.8224313
       minDuration: 0.8224313
+    - name: Play_TV_Off
+      guid: b96711e71a81a241b27da30093d8e781
+      id: 1174402806
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Game_Objects
+        ObjectType: 4
+        guid: 49d5bcfff3955d40ab2dfabc8374a9b1
+      - ElementName: Play_TV_Off
+        ObjectType: 3
+        guid: b96711e71a81a241b27da30093d8e781
+      Path: Events\Default Work Unit\Game_Objects\Play_TV_Off
+      maxAttenuation: 0
+      maxDuration: 0.6613447
+      minDuration: 0.6613447
+    - name: Play_TV_On
+      guid: e5bd19daf21f2549b012c96889f2e989
+      id: 1865976120
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Game_Objects
+        ObjectType: 4
+        guid: 49d5bcfff3955d40ab2dfabc8374a9b1
+      - ElementName: Play_TV_On
+        ObjectType: 3
+        guid: e5bd19daf21f2549b012c96889f2e989
+      Path: Events\Default Work Unit\Game_Objects\Play_TV_On
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_UI_List_Close
       guid: 4536900696c0284ebbff00fea1959f86
       id: 3594764378
