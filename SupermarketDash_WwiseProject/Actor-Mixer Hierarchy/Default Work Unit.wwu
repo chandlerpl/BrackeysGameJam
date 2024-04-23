@@ -3576,7 +3576,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-32</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3585,7 +3585,7 @@
 											<Custom>
 												<Attenuation Name="Attenuation (Custom)" ID="{C65883B3-C6A4-493C-8B82-393AA8C3C8F7}" ShortID="420832626">
 													<PropertyList>
-														<Property Name="RadiusMax" Type="Real64" Value="50"/>
+														<Property Name="RadiusMax" Type="Real64" Value="15"/>
 													</PropertyList>
 													<CurveUsageInfoList>
 														<VolumeDryUsage>
@@ -3601,7 +3601,7 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>50</XPos>
+																			<XPos>15</XPos>
 																			<YPos>-200</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -3698,7 +3698,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-11</Value>
+												<Value>-26</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3707,7 +3707,7 @@
 											<Custom>
 												<Attenuation Name="Attenuation (Custom)" ID="{F8A41B8B-87D5-408C-8494-AD545B3EB0FE}" ShortID="1011059716">
 													<PropertyList>
-														<Property Name="RadiusMax" Type="Real64" Value="50"/>
+														<Property Name="RadiusMax" Type="Real64" Value="15"/>
 													</PropertyList>
 													<CurveUsageInfoList>
 														<VolumeDryUsage>
@@ -3723,7 +3723,7 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>50</XPos>
+																			<XPos>15</XPos>
 																			<YPos>-200</YPos>
 																			<Flags>37</Flags>
 																		</Point>
