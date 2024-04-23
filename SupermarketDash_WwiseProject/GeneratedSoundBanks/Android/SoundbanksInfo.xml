@@ -40,7 +40,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{3FEFAA4C-CB12-B007-696C-A3281228A21C}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{7EBC4201-51DE-598C-76CE-40565C98B369}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -247,12 +247,12 @@
 						<MediaRef Id="801239346"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="320701227" Name="Play_Butcher_Fridge_On" MaxAttenuation="50" DurationType="Infinite">
+				<Event Id="320701227" Name="Play_Butcher_Fridge_On" MaxAttenuation="15" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="876126891"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="760203119" Name="Play_Fridge_On" MaxAttenuation="50" DurationType="Infinite">
+				<Event Id="760203119" Name="Play_Fridge_On" MaxAttenuation="15" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="876126891"/>
 					</MediaRefs>
@@ -420,5 +420,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DCD36FF0-00B7-3D40-6C6E-C2E32CB44D9E}</FileHash>
+	<FileHash>{85F0F6B8-8C9C-94C6-F2CA-A8D10D6B0224}</FileHash>
 </SoundBanksInfo>
