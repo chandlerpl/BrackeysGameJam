@@ -12,7 +12,10 @@ GameObject:
   - component: {fileID: 3105831008742376591}
   - component: {fileID: 3115727415930221451}
   - component: {fileID: 3137609890377681121}
-  m_Layer: 0
+  - component: {fileID: 2639635812181693561}
+  - component: {fileID: 23384111638525578}
+  - component: {fileID: 7595302795687403631}
+  m_Layer: 7
   m_Name: MilkBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,3 +109,58 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43794212634120672, guid: 5a746c1d21ecc3a4281e2fd5bec0eaf9, type: 2}
+--- !u!114 &2639635812181693561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3128669868542452811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0803fbd2344ef8748ac89b0e711d7a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemIdentifier: milk
+  quantity: 1
+  itemIconPrefab: {fileID: 0}
+--- !u!54 &23384111638525578
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3128669868542452811}
+  serializedVersion: 4
+  m_Mass: 0.25
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &7595302795687403631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3128669868542452811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f842bf19f4f19c44dbe47be3d071d9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 0}

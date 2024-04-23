@@ -24,6 +24,9 @@ public class Inventory : MonoBehaviour
     private Item[] inventory;
     private int _inventorySlot = 0;
 
+    [SerializeField]
+    private Transform pushTransform;
+    public Transform PushTransform => pushTransform;
     public bool PushingCart { get; set; }
     [SerializeField]
     private Transform cart;
@@ -98,6 +101,7 @@ public class Inventory : MonoBehaviour
 
                     item.transform.SetParent(handPosition);
                     item.transform.localPosition = Vector3.zero;
+                    item.transform.localRotation = Quaternion.identity;
 
                     ikManager.UpdatePosition(ikHint);
 

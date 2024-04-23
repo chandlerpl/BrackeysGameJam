@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A95ECFB8-B32D-A8DA-6F81-FB563C68826F}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="514528516" Name="Hard_Knee_Minus_3dB_RMS (Custom)" LibName="Wwise Compressor" LibId="7077891"/>
+					<Plugin Id="872820267" Name="Guitar Distortion (Custom)" LibName="Wwise Guitar Distortion" LibId="8257539"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="602546716" Name="Room_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="1191170665" Name="Tannoy_Speaker_Sound_Mix" MaxAttenuation="100">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="514528516"/>
+							<PluginRef Id="872820267"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="602546716"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{079EE92C-4B90-0CCC-9163-D1A25A81DBF8}">
+			<ShortName>Main</ShortName>
+			<Path>English(US)/Main.bnk</Path>
+			<Media>
+				<File Id="7022271" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_05_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_05_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="13679568" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Breathing_Running_2.wav</ShortName>
+					<CachePath>SFX/Breathing_Running_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="33136942" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_YSBH_2.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_YSBH_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="43435265" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Whats_That_3.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Whats_That_3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="86269894" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Item_Pickup.wav</ShortName>
+					<CachePath>SFX/Item_Pickup_818F3B66.wem</CachePath>
+				</File>
+				<File Id="101366574" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_07_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_07_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="128369396" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Breathing_Running_3.wav</ShortName>
+					<CachePath>SFX/Breathing_Running_3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="158524876" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Huh_2.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Huh_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="182624577" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_06_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_06_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="215684142" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Till_Sound.wav</ShortName>
+					<CachePath>SFX/Till_Sound_818F3B66.wem</CachePath>
+				</File>
+				<File Id="222329165" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_03_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_03_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="228135035" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Trolley_Pickup.wav</ShortName>
+					<CachePath>SFX/Trolley_Pickup_F656C56C.wem</CachePath>
+				</File>
+				<File Id="262516053" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Stop_2.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Stop_2_A60CF8E7.wem</CachePath>
+				</File>
+				<File Id="306056206" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_3.wav</ShortName>
+					<CachePath>SFX/Footsteps_3_9906E552.wem</CachePath>
+				</File>
+				<File Id="335110854" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>COLLISION_break_glass_small_09.wav</ShortName>
+					<CachePath>SFX/COLLISION_break_glass_small_09_4711BDCB.wem</CachePath>
+				</File>
+				<File Id="376172732" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Nearly_Closing_Time.wav</ShortName>
+					<CachePath>Voices/English(US)/Nearly_Closing_Time_08BFAFE0.wem</CachePath>
+				</File>
+				<File Id="379253254" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Trolly_Moving_Running.wav</ShortName>
+					<CachePath>SFX/Trolly_Moving_Running_7CDB987F.wem</CachePath>
+				</File>
+				<File Id="392221050" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Stop_1.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Stop_1_CF37D776.wem</CachePath>
+				</File>
+				<File Id="395879434" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_10_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_10_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="419456089" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_4.wav</ShortName>
+					<CachePath>SFX/Footsteps_4_31BDA2A6.wem</CachePath>
+				</File>
+				<File Id="435797457" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Get_Back_Here_1.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Get_Back_Here_1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="452033275" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Menu_Confirm.wav</ShortName>
+					<CachePath>SFX/UI_Menu_Confirm_98AA7367.wem</CachePath>
+				</File>
+				<File Id="475031400" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>COLLISION_break_glass_small_06.wav</ShortName>
+					<CachePath>SFX/COLLISION_break_glass_small_06_73A8C45F.wem</CachePath>
+				</File>
+				<File Id="498026625" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_01_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_01_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="507222202" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_List_Open.wav</ShortName>
+					<CachePath>SFX/UI_List_Open_818F3B66.wem</CachePath>
+				</File>
+				<File Id="539568104" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Item_Discard.wav</ShortName>
+					<CachePath>SFX/Item_Discard_818F3B66.wem</CachePath>
+				</File>
+				<File Id="562927858" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Menu_Hover.wav</ShortName>
+					<CachePath>SFX/UI_Menu_Hover_38857BCB.wem</CachePath>
+				</File>
+				<File Id="579561798" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Huh_1.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Huh_1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="603601656" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Tannoy_Speaker_Sound_Effect.wav</ShortName>
+					<CachePath>SFX/Tannoy_Speaker_Sound_Effect_20803AC1.wem</CachePath>
+				</File>
+				<File Id="609781788" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_02_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_02_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="624751585" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_YSBH_1.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_YSBH_1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="626494952" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>COLLISION_break_glass_small_01.wav</ShortName>
+					<CachePath>SFX/COLLISION_break_glass_small_01_245C3D63.wem</CachePath>
+				</File>
+				<File Id="636118432" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>COLLISION_break_glass_small_03.wav</ShortName>
+					<CachePath>SFX/COLLISION_break_glass_small_03_E1EEA044.wem</CachePath>
+				</File>
+				<File Id="651627063" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Whos_There_2.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Whos_There_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="652443012" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Get_Back_Here_2.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Get_Back_Here_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="700697613" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Whats_That_1.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Whats_That_1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="717945163" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_04_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_04_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="720213928" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Trolley_Discard.wav</ShortName>
+					<CachePath>SFX/Trolley_Discard_DDFFAEEC.wem</CachePath>
+				</File>
+				<File Id="782196691" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_List_Close.wav</ShortName>
+					<CachePath>SFX/UI_List_Close_818F3B66.wem</CachePath>
+				</File>
+				<File Id="801239346" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Atmos.wav</ShortName>
+					<CachePath>SFX/Atmos_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="824393662" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_09_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_09_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="830796817" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Whos_There_1.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Whos_There_1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="852890347" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_5.wav</ShortName>
+					<CachePath>SFX/Footsteps_5_4CD5BCCC.wem</CachePath>
+				</File>
+				<File Id="876126891" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Fridge_Game_Sound_Loop.wav</ShortName>
+					<CachePath>SFX/Fridge_Game_Sound_Loop_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="903444544" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>ClosingTime_1.wav</ShortName>
+					<CachePath>Voices/English(US)/ClosingTime_1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="916745061" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Trolly_Moving_Running.wav</ShortName>
+					<CachePath>SFX/Trolly_Moving_Running_13F88232.wem</CachePath>
+				</File>
+				<File Id="922874674" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Breathing_Running_1.wav</ShortName>
+					<CachePath>SFX/Breathing_Running_1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="926433972" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_1.wav</ShortName>
+					<CachePath>SFX/Footsteps_1_60777841.wem</CachePath>
+				</File>
+				<File Id="945864102" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Whats_That_2.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Whats_That_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="947434909" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLEY_run_concrete_08_818F3B66.wav</ShortName>
+					<CachePath>SFX/FOLEY_run_concrete_08_818F3B66_818F3B66.wem</CachePath>
+				</File>
+				<File Id="950443640" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Breathing_Running_4.wav</ShortName>
+					<CachePath>SFX/Breathing_Running_4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1001850140" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_2.wav</ShortName>
+					<CachePath>SFX/Footsteps_2_284248C7.wem</CachePath>
+				</File>
+				<File Id="1034181359" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Till_Sound_2.wav</ShortName>
+					<CachePath>SFX/Till_Sound_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1036301920" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Trolly_Moving_Running_Stop.wav</ShortName>
+					<CachePath>SFX/Trolly_Moving_Running_Stop_63372FFA.wem</CachePath>
+				</File>
+				<File Id="1060747195" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Guard_Dialogue_Whos_There_3.wav</ShortName>
+					<CachePath>Voices/English(US)/Guard_Dialogue_Whos_There_3_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="26975710" Name="Play_Ambience_Outside" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="801239346"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="320701227" Name="Play_Butcher_Fridge_On" MaxAttenuation="15" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="876126891"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="760203119" Name="Play_Fridge_On" MaxAttenuation="15" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="876126891"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4270513678" Name="Play_Guard_Dialogue_Chasing_Get_Back_Here" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.3375208" DurationMax="1.3930833">
+					<MediaRefs>
+						<MediaRef Id="435797457"/>
+						<MediaRef Id="652443012"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3322721679" Name="Play_Guard_Dialogue_Chasing_Stop" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.65416443" DurationMax="0.6795776">
+					<MediaRefs>
+						<MediaRef Id="262516053"/>
+						<MediaRef Id="392221050"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3007557829" Name="Play_Guard_Dialogue_Chasing_YSBH" DurationType="OneShot" DurationMin="1.5312083" DurationMax="1.7">
+					<MediaRefs>
+						<MediaRef Id="33136942"/>
+						<MediaRef Id="624751585"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="90547768" Name="Play_Guard_Dialogue_Shocked_Huh" DurationType="OneShot" DurationMin="0.3565625" DurationMax="0.38914582">
+					<MediaRefs>
+						<MediaRef Id="158524876"/>
+						<MediaRef Id="579561798"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3946800354" Name="Play_Guard_Dialogue_Shocked_Whats_That" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.74" DurationMax="0.9134167">
+					<MediaRefs>
+						<MediaRef Id="43435265"/>
+						<MediaRef Id="700697613"/>
+						<MediaRef Id="945864102"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2685188205" Name="Play_Guard_Dialogue_Shocked_Whos_There" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.67635417" DurationMax="1.1508125">
+					<MediaRefs>
+						<MediaRef Id="651627063"/>
+						<MediaRef Id="830796817"/>
+						<MediaRef Id="1060747195"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2420284597" Name="Play_Guard_Footsteps_Running" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.24598639" DurationMax="0.31777778">
+					<MediaRefs>
+						<MediaRef Id="7022271"/>
+						<MediaRef Id="101366574"/>
+						<MediaRef Id="182624577"/>
+						<MediaRef Id="222329165"/>
+						<MediaRef Id="395879434"/>
+						<MediaRef Id="498026625"/>
+						<MediaRef Id="609781788"/>
+						<MediaRef Id="717945163"/>
+						<MediaRef Id="824393662"/>
+						<MediaRef Id="947434909"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2271699957" Name="Play_Guard_Footsteps_Walking" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.39833167" DurationMax="0.5387107">
+					<MediaRefs>
+						<MediaRef Id="306056206"/>
+						<MediaRef Id="419456089"/>
+						<MediaRef Id="852890347"/>
+						<MediaRef Id="926433972"/>
+						<MediaRef Id="1001850140"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1916685251" Name="Play_Item_Collision_Glass" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.5647261" DurationMax="0.9709414">
+					<MediaRefs>
+						<MediaRef Id="335110854"/>
+						<MediaRef Id="475031400"/>
+						<MediaRef Id="626494952"/>
+						<MediaRef Id="636118432"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1685363710" Name="Play_Player_Footsteps_Crouch_Walking" DurationType="OneShot" DurationMin="0.41644815" DurationMax="0.46600455">
+					<MediaRefs>
+						<MediaRef Id="306056206"/>
+						<MediaRef Id="419456089"/>
+						<MediaRef Id="852890347"/>
+						<MediaRef Id="926433972"/>
+						<MediaRef Id="1001850140"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="727334981" Name="Play_Player_Footsteps_Running" DurationType="OneShot" DurationMin="0.24598639" DurationMax="0.31777778">
+					<MediaRefs>
+						<MediaRef Id="7022271"/>
+						<MediaRef Id="101366574"/>
+						<MediaRef Id="182624577"/>
+						<MediaRef Id="222329165"/>
+						<MediaRef Id="395879434"/>
+						<MediaRef Id="498026625"/>
+						<MediaRef Id="609781788"/>
+						<MediaRef Id="717945163"/>
+						<MediaRef Id="824393662"/>
+						<MediaRef Id="947434909"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="768391258" Name="Play_Player_Footsteps_Running_Breathing" DurationType="OneShot" DurationMin="3.4984584" DurationMax="3.7243543">
+					<MediaRefs>
+						<MediaRef Id="13679568"/>
+						<MediaRef Id="128369396"/>
+						<MediaRef Id="922874674"/>
+						<MediaRef Id="950443640"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2051615781" Name="Play_Player_Footsteps_Walking" DurationType="OneShot" DurationMin="0.41644815" DurationMax="0.46600455">
+					<MediaRefs>
+						<MediaRef Id="306056206"/>
+						<MediaRef Id="419456089"/>
+						<MediaRef Id="852890347"/>
+						<MediaRef Id="926433972"/>
+						<MediaRef Id="1001850140"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3553968270" Name="Play_Player_Item_Discard" DurationType="OneShot" DurationMin="0.46258333" DurationMax="0.46258333">
+					<MediaRefs>
+						<MediaRef Id="539568104"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3258224516" Name="Play_Player_Item_Pickup" DurationType="OneShot" DurationMin="0.46258333" DurationMax="0.46258333">
+					<MediaRefs>
+						<MediaRef Id="86269894"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3870065741" Name="Play_Tannoy_Closing_Time" DurationType="OneShot" DurationMin="9.781042" DurationMax="9.781042">
+					<MediaRefs>
+						<MediaRef Id="603601656"/>
+						<MediaRef Id="903444544"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3534718979" Name="Play_Tannoy_Nearly_Closing_Time" DurationType="OneShot" DurationMin="10.319271" DurationMax="10.319271">
+					<MediaRefs>
+						<MediaRef Id="376172732"/>
+						<MediaRef Id="603601656"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3886534114" Name="Play_Till_Sound_Beep" MaxAttenuation="50" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="215684142"/>
+						<MediaRef Id="1034181359"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2154937622" Name="Play_Trolley_Discard" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.72437525" DurationMax="0.72437525">
+					<MediaRefs>
+						<MediaRef Id="720213928"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3458151439" Name="Play_Trolley_Moving_Running_Start" MaxAttenuation="20" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="379253254"/>
+						<MediaRef Id="916745061"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2261347989" Name="Play_Trolley_Moving_Running_Stop" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.48928955" DurationMax="0.48928955">
+					<MediaRefs>
+						<MediaRef Id="1036301920"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1374245708" Name="Play_Trolley_Pickup" DurationType="OneShot" DurationMin="0.8224313" DurationMax="0.8224313">
+					<MediaRefs>
+						<MediaRef Id="228135035"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3594764378" Name="Play_UI_List_Close" DurationType="OneShot" DurationMin="0.49845833" DurationMax="0.49845833">
+					<MediaRefs>
+						<MediaRef Id="782196691"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4243789662" Name="Play_UI_List_Open" DurationType="OneShot" DurationMin="0.49845833" DurationMax="0.49845833">
+					<MediaRefs>
+						<MediaRef Id="507222202"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3500366795" Name="Play_UI_Menu_Confirm" DurationType="OneShot" DurationMin="0.9051104" DurationMax="0.9051104">
+					<MediaRefs>
+						<MediaRef Id="452033275"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2880217405" Name="Play_UI_Menu_Hover" DurationType="OneShot" DurationMin="0.5327037" DurationMax="0.5327037">
+					<MediaRefs>
+						<MediaRef Id="562927858"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{2C10C4AB-8DF5-A0B2-330B-C943DE9C8D03}</FileHash>
+</SoundBanksInfo>
