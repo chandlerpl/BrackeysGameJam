@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f2e4f01eb004ba4f9cefa109c3927e52
     GuidInternal: 
-    m_lastTime: -8584877263439834579
+    m_lastTime: -8584877246427222431
     List:
     - name: Main
       guid: ee6f455bd5d043479adc441a8e49d9f1
@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584877074552280155
+    m_lastTime: -8584876449958677412
     List:
     - name: Ambience
       guid: b0a38be53cc2ce429a59795991ca47cd
@@ -578,6 +578,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.46258333
       minDuration: 0.46258333
+    - name: Play_Player_Throw_Whoosh
+      guid: 77f9b2003295de4ca2b97ec796a416ed
+      id: 1400352289
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Player
+        ObjectType: 4
+        guid: 23de7e9efab0964195e24ace4a202138
+      - ElementName: Play_Player_Throw_Whoosh
+        ObjectType: 3
+        guid: 77f9b2003295de4ca2b97ec796a416ed
+      Path: Events\Default Work Unit\Player\Play_Player_Throw_Whoosh
+      maxAttenuation: 0
+      maxDuration: 0.60733855
+      minDuration: 0.35588014
     - name: Play_Tannoy_Closing_Time
       guid: b77bf72bdf818f4295641f20af850b32
       id: 3870065741
@@ -735,7 +755,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b96711e71a81a241b27da30093d8e781
       Path: Events\Default Work Unit\Game_Objects\Play_TV_Off
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0.6613447
       minDuration: 0.6613447
     - name: Play_TV_On

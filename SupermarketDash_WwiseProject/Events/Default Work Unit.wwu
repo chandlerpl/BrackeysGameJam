@@ -141,6 +141,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Player_Throw_Whoosh" ID="{00B2F977-9532-4CDE-A2B9-7EC796A416ED}">
+							<ChildrenList>
+								<Action Name="" ID="{04552E92-4C48-4A28-B949-048657BFF5FC}" ShortID="164403684">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Throw_Whoosh" ID="{EFAD0CA3-4C78-4A00-BB80-0B8F05A3DD02}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Guard" ID="{962D1114-D7EB-4F73-8FE1-028E72EBE7CD}" ShortID="520508716">

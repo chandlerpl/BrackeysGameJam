@@ -32,6 +32,7 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_WALKING = 2051615781U;
         static const AkUniqueID PLAY_PLAYER_ITEM_DISCARD = 3553968270U;
         static const AkUniqueID PLAY_PLAYER_ITEM_PICKUP = 3258224516U;
+        static const AkUniqueID PLAY_PLAYER_THROW_WHOOSH = 1400352289U;
         static const AkUniqueID PLAY_TANNOY_CLOSING_TIME = 3870065741U;
         static const AkUniqueID PLAY_TANNOY_NEARLY_CLOSING_TIME = 3534718979U;
         static const AkUniqueID PLAY_TILL_SOUND_BEEP = 3886534114U;

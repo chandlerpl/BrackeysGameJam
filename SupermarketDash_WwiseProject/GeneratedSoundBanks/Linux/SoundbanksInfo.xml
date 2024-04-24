@@ -47,7 +47,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{2C118CCC-E765-16F6-E06D-A634CA37584C}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{C1715F76-3A79-FA39-31EB-68D614831952}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -110,6 +110,10 @@
 				<File Id="262516053" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Guard_Dialogue_Stop_2.wav</ShortName>
 					<CachePath>Voices/English(US)/Guard_Dialogue_Stop_2_A60CF8E7.wem</CachePath>
+				</File>
+				<File Id="305245357" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SWSH_Bamboo_01.wav</ShortName>
+					<CachePath>SFX/SWSH_Bamboo_01_818F3B66.wem</CachePath>
 				</File>
 				<File Id="306056206" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_3.wav</ShortName>
@@ -211,6 +215,10 @@
 					<ShortName>Guard_Dialogue_Whats_That_1.wav</ShortName>
 					<CachePath>Voices/English(US)/Guard_Dialogue_Whats_That_1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="711644049" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SWSH_Bamboo_03.wav</ShortName>
+					<CachePath>SFX/SWSH_Bamboo_03_818F3B66.wem</CachePath>
+				</File>
 				<File Id="717945163" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_04_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_04_818F3B66_818F3B66.wem</CachePath>
@@ -218,6 +226,10 @@
 				<File Id="720213928" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Trolley_Discard.wav</ShortName>
 					<CachePath>SFX/Trolley_Discard_DDFFAEEC.wem</CachePath>
+				</File>
+				<File Id="771855119" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SWSH_Bamboo_02.wav</ShortName>
+					<CachePath>SFX/SWSH_Bamboo_02_818F3B66.wem</CachePath>
 				</File>
 				<File Id="782196691" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_List_Close.wav</ShortName>
@@ -448,6 +460,18 @@
 						<MediaRef Id="86269894"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1400352289" Name="Play_Player_Throw_Whoosh" DurationType="OneShot" DurationMin="0.35588014" DurationMax="0.60733855">
+					<MediaRefs>
+						<MediaRef Id="305245357"/>
+						<MediaRef Id="711644049"/>
+						<MediaRef Id="771855119"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="602546716"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="3870065741" Name="Play_Tannoy_Closing_Time" DurationType="OneShot" DurationMin="9.781042" DurationMax="9.781042">
 					<MediaRefs>
 						<MediaRef Id="603601656"/>
@@ -527,5 +551,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D3D6AB80-8442-C029-1464-CA3D2707C281}</FileHash>
+	<FileHash>{54D55287-47F5-A392-F907-1ABD74E71A1B}</FileHash>
 </SoundBanksInfo>
