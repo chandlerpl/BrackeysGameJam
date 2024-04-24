@@ -279,6 +279,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{A0177A31-CBA2-4A85-B551-0A5238248375}" ShortID="596666646">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Self_Checkout_Dialogue" ID="{B2323353-254D-4CC4-96E1-131CB1D13BAE}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_Trolley_Moving_Running_Start" ID="{2DF4BA07-1F10-4F93-B471-434462D8747B}">

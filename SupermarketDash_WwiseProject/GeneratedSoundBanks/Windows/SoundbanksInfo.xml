@@ -47,7 +47,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{C1715F76-3A79-FA39-31EB-68D614831952}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{EF89B846-1F03-D85E-A8A6-3921718A8D02}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -83,9 +83,17 @@
 					<ShortName>FOLEY_run_concrete_07_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_07_818F3B66_818F3B66.wem</CachePath>
 				</File>
+				<File Id="124266739" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Self_Checkout_Cashorcard_3.wav</ShortName>
+					<CachePath>SFX/Self_Checkout_Cashorcard_3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="128369396" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Breathing_Running_3.wav</ShortName>
 					<CachePath>SFX/Breathing_Running_3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="153533915" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Self_Checkout_Pleasemovethebagtothecheckoutpoint.wav</ShortName>
+					<CachePath>SFX/Self_Checkout_Pleasemovethebagtothecheckoutpoint_818F3B66.wem</CachePath>
 				</File>
 				<File Id="158524876" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Guard_Dialogue_Huh_2.wav</ShortName>
@@ -95,9 +103,17 @@
 					<ShortName>FOLEY_run_concrete_06_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_06_818F3B66_818F3B66.wem</CachePath>
 				</File>
+				<File Id="207201264" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Self_Checkout_callingforassistance_5.wav</ShortName>
+					<CachePath>SFX/Self_Checkout_callingforassistance_5_818F3B66.wem</CachePath>
+				</File>
 				<File Id="215684142" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Till_Sound.wav</ShortName>
 					<CachePath>SFX/Till_Sound_818F3B66.wem</CachePath>
+				</File>
+				<File Id="219512587" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Self_Checkout_Cashorcard_1.wav</ShortName>
+					<CachePath>SFX/Self_Checkout_Cashorcard_1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="222329165" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLEY_run_concrete_03_818F3B66.wav</ShortName>
@@ -111,6 +127,14 @@
 					<ShortName>Guard_Dialogue_Stop_2.wav</ShortName>
 					<CachePath>Voices/English(US)/Guard_Dialogue_Stop_2_A60CF8E7.wem</CachePath>
 				</File>
+				<File Id="264054056" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Self_Checkout_callingforassistance_2.wav</ShortName>
+					<CachePath>SFX/Self_Checkout_callingforassistance_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="282997225" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Self_Checkout_callingforassistance_3.wav</ShortName>
+					<CachePath>SFX/Self_Checkout_callingforassistance_3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="305245357" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SWSH_Bamboo_01.wav</ShortName>
 					<CachePath>SFX/SWSH_Bamboo_01_818F3B66.wem</CachePath>
@@ -122,6 +146,10 @@
 				<File Id="335110854" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>COLLISION_break_glass_small_09.wav</ShortName>
 					<CachePath>SFX/COLLISION_break_glass_small_09_4711BDCB.wem</CachePath>
+				</File>
+				<File Id="358884280" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Self_Checkout_Wouldyoulikeabagwiththat_3.wav</ShortName>
+					<CachePath>SFX/Self_Checkout_Wouldyoulikeabagwiththat_3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="376172732" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Nearly_Closing_Time.wav</ShortName>
@@ -139,9 +167,17 @@
 					<ShortName>FOLEY_run_concrete_10_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_10_818F3B66_818F3B66.wem</CachePath>
 				</File>
+				<File Id="403334684" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Self_Checkout_callingforassistance_7.wav</ShortName>
+					<CachePath>SFX/Self_Checkout_callingforassistance_7_818F3B66.wem</CachePath>
+				</File>
 				<File Id="419456089" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_4.wav</ShortName>
 					<CachePath>SFX/Footsteps_4_31BDA2A6.wem</CachePath>
+				</File>
+				<File Id="430899545" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Self_Checkout_Cashorcard_2.wav</ShortName>
+					<CachePath>SFX/Self_Checkout_Cashorcard_2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="435797457" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Guard_Dialogue_Get_Back_Here_1.wav</ShortName>
@@ -191,6 +227,10 @@
 					<ShortName>FOLEY_run_concrete_02_818F3B66.wav</ShortName>
 					<CachePath>SFX/FOLEY_run_concrete_02_818F3B66_818F3B66.wem</CachePath>
 				</File>
+				<File Id="617642269" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Self_Checkout_callingforassistance_1.wav</ShortName>
+					<CachePath>SFX/Self_Checkout_callingforassistance_1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="624751585" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Guard_Dialogue_YSBH_1.wav</ShortName>
 					<CachePath>Voices/English(US)/Guard_Dialogue_YSBH_1_818F3B66.wem</CachePath>
@@ -235,9 +275,17 @@
 					<ShortName>UI_List_Close.wav</ShortName>
 					<CachePath>SFX/UI_List_Close_818F3B66.wem</CachePath>
 				</File>
+				<File Id="792532922" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Self_Checkout_callingforassistance_6.wav</ShortName>
+					<CachePath>SFX/Self_Checkout_callingforassistance_6_818F3B66.wem</CachePath>
+				</File>
 				<File Id="801239346" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Atmos.wav</ShortName>
 					<CachePath>SFX/Atmos_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="819524374" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Self_Checkout_Wouldyoulikeabagwiththat_2.wav</ShortName>
+					<CachePath>SFX/Self_Checkout_Wouldyoulikeabagwiththat_2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="823992362" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TV_Static_Noise.wav</ShortName>
@@ -279,6 +327,10 @@
 					<ShortName>Footsteps_1.wav</ShortName>
 					<CachePath>SFX/Footsteps_1_60777841.wem</CachePath>
 				</File>
+				<File Id="927171434" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Self_Checkout_Wouldyoulikeabagwiththat_1.wav</ShortName>
+					<CachePath>SFX/Self_Checkout_Wouldyoulikeabagwiththat_1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="945864102" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Guard_Dialogue_Whats_That_2.wav</ShortName>
 					<CachePath>Voices/English(US)/Guard_Dialogue_Whats_That_2_818F3B66.wem</CachePath>
@@ -290,6 +342,10 @@
 				<File Id="950443640" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Breathing_Running_4.wav</ShortName>
 					<CachePath>SFX/Breathing_Running_4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="967959947" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Self_Checkout_callingforassistance_4.wav</ShortName>
+					<CachePath>SFX/Self_Checkout_callingforassistance_4_818F3B66.wem</CachePath>
 				</File>
 				<File Id="1001850140" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_2.wav</ShortName>
@@ -486,7 +542,21 @@
 				</Event>
 				<Event Id="3886534114" Name="Play_Till_Sound_Beep" MaxAttenuation="20" DurationType="OneShot" DurationMin="18.990728" DurationMax="18.990728">
 					<MediaRefs>
+						<MediaRef Id="124266739"/>
+						<MediaRef Id="153533915"/>
+						<MediaRef Id="207201264"/>
 						<MediaRef Id="215684142"/>
+						<MediaRef Id="219512587"/>
+						<MediaRef Id="264054056"/>
+						<MediaRef Id="282997225"/>
+						<MediaRef Id="358884280"/>
+						<MediaRef Id="403334684"/>
+						<MediaRef Id="430899545"/>
+						<MediaRef Id="617642269"/>
+						<MediaRef Id="792532922"/>
+						<MediaRef Id="819524374"/>
+						<MediaRef Id="927171434"/>
+						<MediaRef Id="967959947"/>
 						<MediaRef Id="1034181359"/>
 					</MediaRefs>
 					<PluginRefs>
@@ -551,5 +621,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D30C7C3B-A52B-76CA-4013-DB64E9022FBD}</FileHash>
+	<FileHash>{BAC65118-1522-B782-E011-E6A9316061BB}</FileHash>
 </SoundBanksInfo>
