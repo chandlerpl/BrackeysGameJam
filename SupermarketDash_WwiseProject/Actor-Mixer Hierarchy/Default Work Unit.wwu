@@ -929,6 +929,123 @@
 										<ActiveSource Name="Item_Discard" ID="{B2B81F11-F07B-4C87-AE0C-126D95A63A5E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="Player_Throw_Whoosh" ID="{EFAD0CA3-4C78-4A00-BB80-0B8F05A3DD02}" ShortID="148081857">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>11</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{DCBF2B65-A7D2-4B71-A8A8-2EB0E8FC7E03}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="253"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SWSH_Bamboo_01" ID="{0A990F32-44BD-4611-A1EC-1E7EB1130111}" ShortID="329741151">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SWSH_Bamboo_01" ID="{BBB68533-4A38-4C12-B1A5-A37A568E7518}">
+													<Language>SFX</Language>
+													<AudioFile>SWSH_Bamboo_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="305245357"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SWSH_Bamboo_01" ID="{BBB68533-4A38-4C12-B1A5-A37A568E7518}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SWSH_Bamboo_02" ID="{3E8CBAEE-56BB-4ABA-B7BB-C26722A82584}" ShortID="774960949">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SWSH_Bamboo_02" ID="{74494F7E-3216-4BDC-A98F-F2C87E00CF30}">
+													<Language>SFX</Language>
+													<AudioFile>SWSH_Bamboo_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="771855119"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SWSH_Bamboo_02" ID="{74494F7E-3216-4BDC-A98F-F2C87E00CF30}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SWSH_Bamboo_03" ID="{31835807-46D7-496A-9309-D8B7EA655488}" ShortID="969741661">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SWSH_Bamboo_03" ID="{EEDEE13E-EBB3-4C30-8F05-A6B8E529DCA1}">
+													<Language>SFX</Language>
+													<AudioFile>SWSH_Bamboo_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="711644049"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SWSH_Bamboo_03" ID="{EEDEE13E-EBB3-4C30-8F05-A6B8E529DCA1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{E35B4150-ED94-4C88-A0B3-82EEF64021C9}" ShortID="938473894">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

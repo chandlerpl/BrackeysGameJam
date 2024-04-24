@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{243D56EC-A041-9B1E-90FD-D9E47430F549}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C049D5EF-FE2C-EF51-BF12-8389DD589BF9}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -47,7 +47,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{ED6E3BAF-EFAE-8E78-29E4-D0DA53B23E82}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{2C118CCC-E765-16F6-E06D-A634CA37584C}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -492,8 +492,9 @@
 						<MediaRef Id="228135035"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1174402806" Name="Play_TV_Off" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.6613447" DurationMax="0.6613447">
+				<Event Id="1174402806" Name="Play_TV_Off" DurationType="OneShot" DurationMin="0.6613447" DurationMax="0.6613447">
 					<MediaRefs>
+						<MediaRef Id="539568104"/>
 						<MediaRef Id="853634274"/>
 					</MediaRefs>
 				</Event>
@@ -526,5 +527,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{97190871-EFC0-BD54-0D63-7B6DB6DA0E95}</FileHash>
+	<FileHash>{D3D6AB80-8442-C029-1464-CA3D2707C281}</FileHash>
 </SoundBanksInfo>
