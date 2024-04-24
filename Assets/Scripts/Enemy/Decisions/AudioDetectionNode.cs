@@ -55,14 +55,7 @@ public class AudioDetectionNode : Node<AIMovement>
             }
 
             currData = audio;
-
-            if(currData.gridObject.CurrentGrid.UniqueID == data.GridObject.CurrentGrid.UniqueID)
-            {
-                data.Agent.SetDestination(currData.position);
-            } else
-            {
-                data.Agent.SetDestination(currData.gridObject.CurrentGrid.GetRandomPosition());
-            }
+            data.Agent.SetDestination(currData.gridObject.CurrentGrid.GetRandomPosition());
         }
 
         if(currData != null)

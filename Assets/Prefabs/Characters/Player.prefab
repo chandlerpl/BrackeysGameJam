@@ -120,7 +120,7 @@ MonoBehaviour:
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
-  m_Antialiasing: 1
+  m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -458,7 +458,6 @@ MonoBehaviour:
   crouchSpeed: 1.5
   walkSpeed: 2.5
   runSpeed: 4.5
-  pauseMenu: {fileID: 0}
   animator: {fileID: 4098389505879981824}
 --- !u!114 &6772492512782382622
 MonoBehaviour:
