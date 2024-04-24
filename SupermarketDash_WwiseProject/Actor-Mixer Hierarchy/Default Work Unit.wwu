@@ -126,7 +126,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+											<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -359,7 +359,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-22</Value>
+												<Value>-17</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -467,7 +467,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+											<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -618,7 +618,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-29</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -726,7 +726,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+											<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1193,7 +1193,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+											<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1544,7 +1544,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+											<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1979,7 +1979,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+													<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -2076,7 +2076,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+													<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -2231,7 +2231,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+													<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -2392,7 +2392,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+													<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -2542,7 +2542,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+											<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2665,7 +2665,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+											<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2786,7 +2786,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+											<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2918,7 +2918,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+											<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3039,7 +3039,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+											<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3104,21 +3104,21 @@
 										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
 											<Custom>
-												<Attenuation Name="Attenuation (Custom)" ID="{D7594BE8-DE0D-463A-912C-47D54F3390A1}" ShortID="908960077">
+												<Attenuation Name="Attenuation (Custom)" ID="{B9FC34C9-7784-4253-B994-74A389E9B032}" ShortID="258925922">
 													<PropertyList>
-														<Property Name="RadiusMax" Type="Real64" Value="50"/>
+														<Property Name="RadiusMax" Type="Real64" Value="20"/>
 													</PropertyList>
 													<CurveUsageInfoList>
 														<VolumeDryUsage>
 															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																<Curve Name="VolumeDry" ID="{61E15DCC-B663-4D70-89E0-C19CF0963AFC}">
+																<Curve Name="VolumeDry" ID="{85C92D09-D416-45D1-A306-9047F554E471}">
 																	<PropertyList>
 																		<Property Name="Flags" Type="int32" Value="3"/>
 																	</PropertyList>
@@ -3129,7 +3129,7 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>50</XPos>
+																			<XPos>20</XPos>
 																			<YPos>-200</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -3337,6 +3337,21 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{82E19DB5-BF34-4808-BB19-E0C1D0A0B2F6}" ShortID="693886434">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
@@ -3374,6 +3389,11 @@
 												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-16</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3585,7 +3605,7 @@
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-15</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -3850,12 +3870,19 @@
 						<Folder Name="TV" ID="{7382FE2E-9D1B-47AC-AA8A-29486E689BE2}" ShortID="837377855">
 							<ChildrenList>
 								<Sound Name="TV_On" ID="{8480DAC2-DC05-401A-8444-937DB9F9BD43}" ShortID="434997543">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+											<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3877,12 +3904,101 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="TV_Off" ID="{FCDD4E77-4EFA-4D77-82E6-9AEE4E75100E}" ShortID="113139641">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{7BBF700C-C35F-42DB-AB41-75A4579D830D}" ShortID="165158922">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="20"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{B78E6F69-BE28-4D90-AB97-F5FCCE8E1384}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+											<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3909,7 +4025,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>11</Value>
+												<Value>6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4004,7 +4120,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+											<ObjectRef Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -4213,7 +4329,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

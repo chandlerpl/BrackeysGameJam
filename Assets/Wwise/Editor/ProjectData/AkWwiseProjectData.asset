@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 354070fcbf727d4e8fcedb2a46edc0d2
     GuidInternal: 
-    m_lastTime: -8584878096007362429
+    m_lastTime: -8584876544062468767
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Room_Reverb
+      guid: 08eceea046b650409207849413e8efb5
+      id: 206373095
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 354070fcbf727d4e8fcedb2a46edc0d2
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Room_Reverb
+        ObjectType: 2
+        guid: 08eceea046b650409207849413e8efb5
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Room_Reverb
     - name: Tannoy_Speaker_Sound_Mix
       guid: 74c758152fe2a4449042f74b6f4371b0
       id: 1191170665
@@ -83,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f2e4f01eb004ba4f9cefa109c3927e52
     GuidInternal: 
-    m_lastTime: -8584877263439834579
+    m_lastTime: -8584877246427222431
     List:
     - name: Main
       guid: ee6f455bd5d043479adc441a8e49d9f1
@@ -618,7 +635,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: e0ebdf352b7b814eb234b1bededd6803
       Path: Events\Default Work Unit\Game_Objects\Play_Till_Sound_Beep
-      maxAttenuation: 50
+      maxAttenuation: 20
       maxDuration: 18.990728
       minDuration: 18.990728
     - name: Play_Trolley_Discard
@@ -718,7 +735,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b96711e71a81a241b27da30093d8e781
       Path: Events\Default Work Unit\Game_Objects\Play_TV_Off
-      maxAttenuation: 0
+      maxAttenuation: 20
       maxDuration: 0.6613447
       minDuration: 0.6613447
     - name: Play_TV_On

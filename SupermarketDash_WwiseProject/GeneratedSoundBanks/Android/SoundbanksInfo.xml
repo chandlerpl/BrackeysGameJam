@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F622C0F7-AFFE-7AD4-41A3-7618DD80C48B}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{7266D8E9-6256-2F00-0E27-90378DD5B83F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -26,6 +26,13 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="206373095" Name="Room_Reverb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="602546716"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="1191170665" Name="Tannoy_Speaker_Sound_Mix" MaxAttenuation="100">
 					<PluginRefs>
 						<Custom>
@@ -40,7 +47,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{5362BA91-D2F8-2E16-22D1-E9EEC225B53F}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{B5B66828-4A74-EF8B-CD76-3429883552FF}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -293,6 +300,11 @@
 					<CachePath>Voices/English(US)/Guard_Dialogue_Whos_There_3_818F3B66.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="602546716" Name="Room_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="26975710" Name="Play_Ambience_Outside" DurationType="Infinite">
 					<MediaRefs>
@@ -448,11 +460,16 @@
 						<MediaRef Id="603601656"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3886534114" Name="Play_Till_Sound_Beep" MaxAttenuation="50" DurationType="OneShot" DurationMin="18.990728" DurationMax="18.990728">
+				<Event Id="3886534114" Name="Play_Till_Sound_Beep" MaxAttenuation="20" DurationType="OneShot" DurationMin="18.990728" DurationMax="18.990728">
 					<MediaRefs>
 						<MediaRef Id="215684142"/>
 						<MediaRef Id="1034181359"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="602546716"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="2154937622" Name="Play_Trolley_Discard" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.72437525" DurationMax="0.72437525">
 					<MediaRefs>
@@ -475,7 +492,7 @@
 						<MediaRef Id="228135035"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1174402806" Name="Play_TV_Off" DurationType="OneShot" DurationMin="0.6613447" DurationMax="0.6613447">
+				<Event Id="1174402806" Name="Play_TV_Off" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.6613447" DurationMax="0.6613447">
 					<MediaRefs>
 						<MediaRef Id="853634274"/>
 					</MediaRefs>
@@ -509,5 +526,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7185ABE4-BFC5-02CB-9DAD-036B2B65259C}</FileHash>
+	<FileHash>{417DD4E5-42B7-01B0-9631-AAD55BF7CD47}</FileHash>
 </SoundBanksInfo>

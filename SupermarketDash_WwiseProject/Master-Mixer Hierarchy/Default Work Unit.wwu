@@ -169,6 +169,23 @@
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
+						<Bus Name="Room_Reverb" ID="{A0EEEC08-B646-4050-9207-849413E8EFB5}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{66728777-A5A0-46F7-9573-F89F4D6B9AEB}" ShortID="1036722514">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

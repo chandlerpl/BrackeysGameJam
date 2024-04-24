@@ -56,6 +56,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID ROOM_REVERB = 206373095U;
         static const AkUniqueID TANNOY_SPEAKER_SOUND_MIX = 1191170665U;
     } // namespace BUSSES
 
