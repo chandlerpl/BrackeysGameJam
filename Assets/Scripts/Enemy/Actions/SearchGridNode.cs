@@ -12,7 +12,7 @@ public class SearchGridNode : Node<AIMovement>
 
     protected override NodeState Evaluate(AIMovement data)
     {
-        data.Agent.SetDestination(GameManager.Instance.GridManager.GetRandomGrid().GetRandomPosition());
+        data.Agent.SetDestination(GameManager.Instance.GridManager.GetRandomGrid(data.GridsPlayerCaught).GetRandomPosition());
 
         return NodeState.Success;
     }
