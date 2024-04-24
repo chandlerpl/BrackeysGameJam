@@ -9231,6 +9231,21 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 65932842179946788, guid: 028c14bab0db1f047b518e840284d345,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.11342816
+      objectReference: {fileID: 0}
+    - target: {fileID: 65932842179946788, guid: 028c14bab0db1f047b518e840284d345,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -2.4432757
+      objectReference: {fileID: 0}
+    - target: {fileID: 65932842179946788, guid: 028c14bab0db1f047b518e840284d345,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 1.4070491e-14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39187,75 +39202,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a93ef641c9fe8db4bbb89c0e96c19012, type: 3}
---- !u!1001 &2079984195
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1394972696292768, guid: 6f5b92a5e040b7343bec916eabd6ea01, type: 3}
-      propertyPath: m_Name
-      value: SM_Sign_Neon_Open_03
-      objectReference: {fileID: 0}
-    - target: {fileID: 4285102221248682, guid: 6f5b92a5e040b7343bec916eabd6ea01, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7436932
-      objectReference: {fileID: 0}
-    - target: {fileID: 4285102221248682, guid: 6f5b92a5e040b7343bec916eabd6ea01, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7436932
-      objectReference: {fileID: 0}
-    - target: {fileID: 4285102221248682, guid: 6f5b92a5e040b7343bec916eabd6ea01, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7436932
-      objectReference: {fileID: 0}
-    - target: {fileID: 4285102221248682, guid: 6f5b92a5e040b7343bec916eabd6ea01, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -11.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 4285102221248682, guid: 6f5b92a5e040b7343bec916eabd6ea01, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4285102221248682, guid: 6f5b92a5e040b7343bec916eabd6ea01, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.9299998
-      objectReference: {fileID: 0}
-    - target: {fileID: 4285102221248682, guid: 6f5b92a5e040b7343bec916eabd6ea01, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7203648
-      objectReference: {fileID: 0}
-    - target: {fileID: 4285102221248682, guid: 6f5b92a5e040b7343bec916eabd6ea01, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4285102221248682, guid: 6f5b92a5e040b7343bec916eabd6ea01, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.6935954
-      objectReference: {fileID: 0}
-    - target: {fileID: 4285102221248682, guid: 6f5b92a5e040b7343bec916eabd6ea01, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4285102221248682, guid: 6f5b92a5e040b7343bec916eabd6ea01, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4285102221248682, guid: 6f5b92a5e040b7343bec916eabd6ea01, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 87.831
-      objectReference: {fileID: 0}
-    - target: {fileID: 4285102221248682, guid: 6f5b92a5e040b7343bec916eabd6ea01, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6f5b92a5e040b7343bec916eabd6ea01, type: 3}
 --- !u!4 &2087023194 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4340147957719254, guid: 4a270121cc682434a93a0e6769567997,
@@ -42453,7 +42399,6 @@ SceneRoots:
   - {fileID: 525646769}
   - {fileID: 1367248918}
   - {fileID: 723776505}
-  - {fileID: 2079984195}
   - {fileID: 1460242421}
   - {fileID: 881106456}
   - {fileID: 1578400228}

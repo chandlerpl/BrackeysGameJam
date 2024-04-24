@@ -197,7 +197,10 @@ public class PlayerMovement : MonoBehaviour
 
         if(_trapsPlayerHit.Count > 0)
         {
-            GameManager.Instance.TrapManager.GetTrap(_trapsPlayerHit[Random.Range(0, _trapsPlayerHit.Count)]).Trigger();
+            if(Random.Range(0, 1f) < 0.1f)
+            {
+                GameManager.Instance.TrapManager.GetTrap(_trapsPlayerHit[Random.Range(0, _trapsPlayerHit.Count)]).Trigger();
+            }
 
             _trapsPlayerHit.Clear();
         }
