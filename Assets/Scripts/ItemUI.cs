@@ -21,7 +21,7 @@ public class ItemUI : MonoBehaviour
     private void Render(Item item)
     {
         GameObject go = Instantiate(item.gameObject, parent);
-        go.transform.localPosition = Vector3.zero;
+        go.transform.SetLocalPositionAndRotation(item.uiPosition, Quaternion.Euler(item.uiRotation));
         parent.parent.localPosition += new Vector3(0, Random.Range(0, 100f), 0);
         StartCoroutine(Renderr());
     }

@@ -7,6 +7,10 @@ public class Item : MonoBehaviour
     public string itemIdentifier;
     public int quantity = 1;
     public GameObject itemIconPrefab;
+
+    public Vector3 uiPosition;
+    public Vector3 uiRotation;
+
     public Rigidbody Rigidbody { get; private set; }
     public Collider Collider { get; private set; }
 
