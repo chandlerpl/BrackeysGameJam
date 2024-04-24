@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(MouseMovement))]
 [RequireComponent(typeof(Rigidbody))]
@@ -19,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
     public float crouchSpeed = 1.5f;
     public float walkSpeed = 2.5f;
     public float runSpeed = 4.5f;
+
+    [SerializeField]
+    public GameObject pauseMenu;
 
     [SerializeField]
     private Animator animator;
@@ -50,6 +54,8 @@ public class PlayerMovement : MonoBehaviour
         playerInput.currentActionMap.FindAction("Sprint").canceled += Sprint_performed;
         playerInput.currentActionMap.FindAction("Crouch").performed += Crouch_performed;
         playerInput.currentActionMap.FindAction("Crouch").canceled += Crouch_performed;
+
+        playerInput.currentActionMap.FindAction("Pause").performed += Pause_performed;
 
         if (TryGetComponent(out _inventory))
         {
@@ -95,6 +101,40 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IsCrouching", false);
             StartCoroutine(CrouchCharacter());
         }
+    }
+
+    private void Pause_performed(InputAction.CallbackContext obj)
+    {
+        if(GameManager.Instance.IsPaused)
+        {
+            pauseMenu.SetActive(false);
+            GameManager.Instance.IsPaused = false;
+            playerInput.SwitchCurrentActionMap("Main");
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        } else
+        {
+            pauseMenu.SetActive(true);
+            GameManager.Instance.IsPaused = true;
+            playerInput.SwitchCurrentActionMap("UI");
+
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+    }
+
+    public void OnPlay()
+    {
+        pauseMenu.SetActive(false);
+        GameManager.Instance.IsPaused = false;
+        playerInput.SwitchCurrentActionMap("Main");
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    public void OnMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
     private IEnumerator CrouchCharacter()

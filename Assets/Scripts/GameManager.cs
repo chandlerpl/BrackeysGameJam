@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     public AudioManager AudioManager => audioManager;
     public TrapManager TrapManager => trapManager;
 
+    public bool IsPaused { get; set; }
+
     void Awake()
     {
         Instance = this;
