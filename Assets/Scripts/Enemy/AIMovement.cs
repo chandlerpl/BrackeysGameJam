@@ -42,6 +42,8 @@ public class AIMovement : MonoBehaviour
 
     public Grid currentGrid;
 
+    public List<uint> GridsPlayerCaught { get; private set; } = new();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -111,6 +113,13 @@ public class AIMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GameManager.Instance.IsPaused)
+        {
+            Agent.enabled = false;
+            return;
+        }
+        Agent.enabled = true;
+
         _behaviourTree.Update(this);
     }
 }

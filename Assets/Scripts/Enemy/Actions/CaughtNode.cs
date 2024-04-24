@@ -19,7 +19,9 @@ public class CaughtNode : Node<AIMovement>
             SceneManager.LoadScene(3);*/
 
             data.chasedPlayer.GetComponent<PlayerMovement>().RestartPlayer();
-            data.Agent.Warp(GameManager.Instance.GridManager.GetRandomGrid().GetRandomPosition());
+            data.GridsPlayerCaught.Add(data.GridObject.CurrentGrid.UniqueID);
+
+            data.Agent.Warp(GameManager.Instance.GridManager.GetRandomGrid(data.GridsPlayerCaught).GetRandomPosition());
             // Time to remember what just happened!
 
             return NodeState.Success;
