@@ -35373,8 +35373,18 @@ PrefabInstance:
       objectReference: {fileID: 672637664}
     - target: {fileID: 5298143812911814474, guid: e2f27cc7116bf304e9f4226b7623227a,
         type: 3}
-      propertyPath: announcementTiming
-      value: 5
+      propertyPath: closedLightsColour.b
+      value: 0.2735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298143812911814474, guid: e2f27cc7116bf304e9f4226b7623227a,
+        type: 3}
+      propertyPath: closedLightsColour.g
+      value: 0.20878847
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298143812911814474, guid: e2f27cc7116bf304e9f4226b7623227a,
+        type: 3}
+      propertyPath: closedLightsColour.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9133645445698812707, guid: e2f27cc7116bf304e9f4226b7623227a,
         type: 3}

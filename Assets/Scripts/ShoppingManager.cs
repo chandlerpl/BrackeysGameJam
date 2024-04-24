@@ -24,6 +24,8 @@ public class ShoppingManager : MonoBehaviour
 
     public IEnumerator Test()
     {
+        yield return new WaitForSeconds(2);
+
         for (int i = 0; i < itemCount; ++i)
         {
             int chosen = Random.Range(0, collectibleItems.Length);
@@ -42,7 +44,7 @@ public class ShoppingManager : MonoBehaviour
             collectItems.Add(item.itemIdentifier, go);
             //go.GetComponent<TextMeshProUGUI>().text = item.itemIdentifier;
 
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.1f);
         }
     }
 
