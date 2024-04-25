@@ -47,7 +47,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{E152F6E3-B313-84D1-7265-4C7E8512EAE0}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{E5A37518-3C66-6D4C-A64C-A2920CE18B28}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -214,6 +214,10 @@
 				<File Id="562927858" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Menu_Hover.wav</ShortName>
 					<CachePath>SFX/UI_Menu_Hover_38857BCB.wem</CachePath>
+				</File>
+				<File Id="578229760" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sound_Cue_Shop_Closing.wav</ShortName>
+					<CachePath>SFX/Sound_Cue_Shop_Closing_AE9345CE.wem</CachePath>
 				</File>
 				<File Id="579561798" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Guard_Dialogue_Huh_1.wav</ShortName>
@@ -528,6 +532,11 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
+				<Event Id="2222698433" Name="Play_Sound_Cue_Closing_Time" DurationType="OneShot" DurationMin="5.5429816" DurationMax="5.5429816">
+					<MediaRefs>
+						<MediaRef Id="578229760"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3870065741" Name="Play_Tannoy_Closing_Time" DurationType="OneShot" DurationMin="9.781042" DurationMax="9.781042">
 					<MediaRefs>
 						<MediaRef Id="603601656"/>
@@ -621,5 +630,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8A7CDAF8-6688-D492-82D1-67849FB80733}</FileHash>
+	<FileHash>{5F95B873-4FF2-274D-2FE4-470623F4E2E0}</FileHash>
 </SoundBanksInfo>
