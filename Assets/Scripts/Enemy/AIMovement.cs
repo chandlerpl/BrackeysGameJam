@@ -44,6 +44,9 @@ public class AIMovement : MonoBehaviour
 
     public List<uint> GridsPlayerCaught { get; private set; } = new();
 
+    public List<AK.Wwise.Event> spottedPlayerSounds;
+    public List<AK.Wwise.Event> chasingPlayerSounds;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -21,6 +21,11 @@ public class Inventory : MonoBehaviour
     [SerializeField]
     private IKHint ikHint;
 
+    [SerializeField]
+    private AK.Wwise.Event pickupSound;
+    [SerializeField]
+    private AK.Wwise.Event dropSound;
+
     private Item[] inventory;
     private int _inventorySlot = 0;
 
@@ -132,6 +137,7 @@ public class Inventory : MonoBehaviour
 
                 // Add item to hand?
                 //item.gameObject.SetActive(false);
+                pickupSound.Post(gameObject);
 
                 return true;
             }
@@ -167,6 +173,7 @@ public class Inventory : MonoBehaviour
             item.Rigidbody.isKinematic = false;
             item.Rigidbody.AddForce(cam.forward * throwForce, ForceMode.Impulse);
         }
+        dropSound.Post(gameObject);
 
 
         return true;

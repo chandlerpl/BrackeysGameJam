@@ -73,6 +73,14 @@ public class VisualDetectionNode : Node<AIMovement>
 
             if (detectable.type == EntityTypes.Player)
             {
+                if (detectable.TryGetComponent(out GridObject grid))
+                {
+                    if (GameManager.Instance.playerSafeSpace.Contains(grid.CurrentGrid) && GameManager.Instance.SafePlayers.Contains(detectable.gameObject))
+                    {
+                        continue;
+                    }
+                }
+
                 if (Vector3.Angle(col.transform.position - data.VisionLocation.position, data.VisionLocation.forward) <= fov / 2)
                 {
                     float dist = TryDetect(data.VisionLocation.position, detectable, data);
@@ -95,6 +103,7 @@ public class VisualDetectionNode : Node<AIMovement>
                                 data.Agent.SetDestination(col.transform.position);
 
                                 data.chasedPlayer = col.transform;
+                                data.spottedPlayerSounds[Random.Range(0, data.spottedPlayerSounds.Count)].Post(data.gameObject);
 
                                 if (!detectedUnits.Contains(detectable))
                                 {
@@ -118,12 +127,18 @@ public class VisualDetectionNode : Node<AIMovement>
         _timeSinceLastCheck = 0;
         if(detectedUnits.Count > 0)
         {
+            if(Time.time > _timeSinceLastShout + 10 && Random.Range(0, 1f) > 0.8f)
+            {
+                data.chasingPlayerSounds[Random.Range(0, data.chasingPlayerSounds.Count)].Post(data.gameObject);
+            }
+
             return NodeState.Success;
         }
 
         data.animator.SetBool("IsSprinting", false);
         return NodeState.Failure;
     }
+    private float _timeSinceLastShout;
 
     private float TryDetect(Vector3 location, Detectable detectable, AIMovement data)
     {

@@ -45,6 +45,14 @@ public class VisionDetection : MonoBehaviour
 
                 if(detectable.type == EntityTypes.Player)
                 {
+                    if(detectable.TryGetComponent(out GridObject grid))
+                    {
+                        if(GameManager.Instance.playerSafeSpace.Contains(grid.CurrentGrid) && GameManager.Instance.SafePlayers.Contains(detectable.gameObject))
+                        {
+                            continue;
+                        }
+                    }
+
                     if (Vector3.Angle(col.transform.position - eyePosition.position, transform.forward) <= fov / 2)
                     {
                         if (Physics.Linecast(eyePosition.position, col.transform.position, out RaycastHit rayHit) && rayHit.collider == col)

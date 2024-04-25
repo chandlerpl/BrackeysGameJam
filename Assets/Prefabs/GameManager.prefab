@@ -322,6 +322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3479152533503595608}
   - component: {fileID: 5298143812911814474}
+  - component: {fileID: 2128977466285586348}
   - component: {fileID: 2768737543049147228}
   m_Layer: 7
   m_Name: GameManager
@@ -377,8 +378,61 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6a6b0c00ecbd9204abb4121e25123d03,
       type: 2}
-  closedLightsColour: {r: 0, g: 0.1122715, b: 0.1471697, a: 1}
+  closedLightsColour: {r: 0, g: 0.20878847, b: 0.2735849, a: 1}
   directionalLight: {fileID: 0}
+  lightsDownSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 21bf62f5229f4436fb5099de4bc5441a,
+      type: 2}
+  playerSafeSpace:
+  - {fileID: 0}
+--- !u!114 &2128977466285586348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9133645445698812707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NotificationBehavior: 0
+  m_MaxPlayerCount: -1
+  m_AllowJoining: 1
+  m_JoinBehavior: 1
+  m_PlayerJoinedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_PlayerLeftEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_JoinAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Join
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 8f77c45e-9aed-44c5-b79b-0bb5f0477be3
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -7741750034027149928, guid: 76a4d99f50129644695d1c37b1768893,
+      type: 3}
+  m_PlayerPrefab: {fileID: 3092946493559358574, guid: 13c238ce70cfc4e49935952fb02cc334,
+    type: 3}
+  m_SplitScreen: 1
+  m_MaintainAspectRatioInSplitScreen: 0
+  m_FixedNumberOfSplitScreens: -1
+  m_SplitScreenRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!114 &2768737543049147228
 MonoBehaviour:
   m_ObjectHideFlags: 0

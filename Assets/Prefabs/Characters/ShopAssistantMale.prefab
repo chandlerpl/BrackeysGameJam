@@ -128,6 +128,32 @@ MonoBehaviour:
   animator: {fileID: 977560230632087003}
   chasedPlayer: {fileID: 0}
   currentGrid: {fileID: 0}
+  spottedPlayerSounds:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 51826fd40c04d4fc396f056c29517d09,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f53ec8c5abf834e9e8981e5f1b0cb2aa,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2ba43ffb8c4c047db81aa4b3fbca61cb,
+      type: 2}
+  chasingPlayerSounds:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9833ef2a01eb4481dac277b42ca7266c,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 854123b6f5f3743348abe7dbe5c134a0,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a0b81eee3452446ae88f699647f317d5,
+      type: 2}
 --- !u!114 &4821757888287172436
 MonoBehaviour:
   m_ObjectHideFlags: 0

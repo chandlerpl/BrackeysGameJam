@@ -25,6 +25,9 @@ public class PlayerMovement : MonoBehaviour
     public GameObject pauseMenu;
 
     [SerializeField]
+    public GameObject torch;
+
+    [SerializeField]
     private Animator animator;
     private PlayerInput playerInput;
     private Rigidbody rb;
@@ -57,6 +60,8 @@ public class PlayerMovement : MonoBehaviour
 
         playerInput.currentActionMap.FindAction("Pause").performed += Pause_performed;
 
+        playerInput.currentActionMap.FindAction("Torch").performed += Torch_performed;
+
         if (TryGetComponent(out _inventory))
         {
             playerInput.currentActionMap.FindAction("Interact").performed += Interact_performed;
@@ -65,6 +70,11 @@ public class PlayerMovement : MonoBehaviour
 
         _speed = walkSpeed;
         startPosition = transform.position;
+    }
+
+    private void Torch_performed(InputAction.CallbackContext obj)
+    {
+        torch.SetActive(!torch.activeSelf);
     }
 
     private void Interact_performed(InputAction.CallbackContext obj)
@@ -205,6 +215,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
         rb.position = startPosition;
+        GameManager.Instance.SafePlayers.Add(gameObject);
+        StartCoroutine(RemoveFromSafeZone());
 
         if (_trapsPlayerHit.Count > 0)
         {
@@ -215,5 +227,12 @@ public class PlayerMovement : MonoBehaviour
 
             _trapsPlayerHit.Clear();
         }
+    }
+
+    private IEnumerator RemoveFromSafeZone()
+    {
+        yield return new WaitForSeconds(15);
+
+        GameManager.Instance.SafePlayers.Remove(gameObject);
     }
 }

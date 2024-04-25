@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour
     public AK.Wwise.Event closedAnnouncement;
     public Color closedLightsColour = new Color(0, 0.1122715f, 0.1471697f);
     public Light directionalLight;
+    public AK.Wwise.Event lightsDownSound;
+
+    public List<Grid> playerSafeSpace;
+    public List<GameObject> SafePlayers { get; } = new List<GameObject>();
 
     public ShoppingManager ShoppingManager => shoppingManager;
     public GridManager GridManager => gridManager;
@@ -43,6 +47,7 @@ public class GameManager : MonoBehaviour
         closedAnnouncement.Post(gameObject);
         yield return new WaitForSeconds(10f);
 
+        lightsDownSound.Post(gameObject);
         float time = 0f;
         while(time < 1f)
         {
