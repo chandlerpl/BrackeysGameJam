@@ -130,6 +130,7 @@ public class VisualDetectionNode : Node<AIMovement>
             if(Time.time > _timeSinceLastShout + 10 && Random.Range(0, 1f) > 0.8f)
             {
                 data.chasingPlayerSounds[Random.Range(0, data.chasingPlayerSounds.Count)].Post(data.gameObject);
+                _timeSinceLastShout = Time.time;
             }
 
             return NodeState.Success;
