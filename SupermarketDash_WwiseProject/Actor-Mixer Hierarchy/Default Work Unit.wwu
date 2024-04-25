@@ -1048,6 +1048,39 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Sound_Cue" ID="{AEE3B01D-BC4F-41FF-9773-DB3C8141B991}" ShortID="622834946">
+							<ChildrenList>
+								<Sound Name="Sound_Cue_Closing_Time" ID="{59DF9219-0B7A-444B-8B93-6D3C9BC2E5F7}" ShortID="236346295">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sound_Cue_Shop_Closing" ID="{2B2465C2-AC22-41C6-ACE9-8C5B2675B6C4}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.058759521218716"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.00544069640914"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.457018498367792"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.94776931447225"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Sound_Cue_Shop_Closing.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="578229760"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sound_Cue_Shop_Closing" ID="{2B2465C2-AC22-41C6-ACE9-8C5B2675B6C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{7ED283FB-9216-4390-9362-A1EFBA573AA9}" ShortID="516968755">
@@ -4827,6 +4860,7 @@
 								<Sound Name="Tannoy_Nearly_Closing_Time" ID="{1043C508-727A-4A39-B3E5-42255419E987}" ShortID="1054330580">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">

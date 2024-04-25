@@ -47,7 +47,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{E5A37518-3C66-6D4C-A64C-A2920CE18B28}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{EAD7A2CB-7155-B9E8-923C-76277EDD3A0D}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -217,7 +217,7 @@
 				</File>
 				<File Id="578229760" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Sound_Cue_Shop_Closing.wav</ShortName>
-					<CachePath>SFX/Sound_Cue_Shop_Closing_AE9345CE.wem</CachePath>
+					<CachePath>SFX/Sound_Cue_Shop_Closing_F9BE16F5.wem</CachePath>
 				</File>
 				<File Id="579561798" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Guard_Dialogue_Huh_1.wav</ShortName>
@@ -532,7 +532,7 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="2222698433" Name="Play_Sound_Cue_Closing_Time" DurationType="OneShot" DurationMin="5.5429816" DurationMax="5.5429816">
+				<Event Id="2222698433" Name="Play_Sound_Cue_Closing_Time" DurationType="OneShot" DurationMin="5.490751" DurationMax="5.490751">
 					<MediaRefs>
 						<MediaRef Id="578229760"/>
 					</MediaRefs>
@@ -630,5 +630,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{122ED971-3E8A-7C9E-0644-70B24D07C256}</FileHash>
+	<FileHash>{7CADFCEC-24F1-08E7-B31A-B3AE404AA6E7}</FileHash>
 </SoundBanksInfo>

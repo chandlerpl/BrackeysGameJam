@@ -500,6 +500,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="SoundCue" ID="{0E56836A-4FA4-4D29-8194-936E21BFC1B4}" ShortID="128659998">
+					<ChildrenList>
+						<Event Name="Play_Sound_Cue_Closing_Time" ID="{AF225B2D-114C-4335-9A7B-17A5FF1C9290}">
+							<ChildrenList>
+								<Action Name="" ID="{3DDA6224-D222-409D-8C94-ACF43A07F785}" ShortID="238879236">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sound_Cue_Closing_Time" ID="{59DF9219-0B7A-444B-8B93-6D3C9BC2E5F7}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

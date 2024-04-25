@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584875291664850743
+    m_lastTime: -8584875282924051422
     List:
     - name: Ambience
       guid: b0a38be53cc2ce429a59795991ca47cd
@@ -598,6 +598,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.60733855
       minDuration: 0.35588014
+    - name: Play_Sound_Cue_Closing_Time
+      guid: 2d5b22af4c1135439a7b17a5ff1c9290
+      id: 2222698433
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: SoundCue
+        ObjectType: 4
+        guid: 6a83560ea44f294d8194936e21bfc1b4
+      - ElementName: Play_Sound_Cue_Closing_Time
+        ObjectType: 3
+        guid: 2d5b22af4c1135439a7b17a5ff1c9290
+      Path: Events\Default Work Unit\SoundCue\Play_Sound_Cue_Closing_Time
+      maxAttenuation: 0
+      maxDuration: 5.5429816
+      minDuration: 5.5429816
     - name: Play_Tannoy_Closing_Time
       guid: b77bf72bdf818f4295641f20af850b32
       id: 3870065741
@@ -875,6 +895,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: SoundCue
+      guid: 6a83560ea44f294d8194936e21bfc1b4
+      id: 1665138587
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: SoundCue
+        ObjectType: 4
+        guid: 6a83560ea44f294d8194936e21bfc1b4
+      Path: Events\Default Work Unit\SoundCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Tannoy
       guid: 512c4a6124c5ee489c072f7693ff4a54
       id: 3620977680
@@ -966,8 +1003,8 @@ MonoBehaviour:
     m_lastTime: -8584885038585294849
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 06000000070000000d000000
-  AutoSyncSelection: 0
+  ExpandedWaapiItemIds: 0100000006000000070000000d0000001200000013000000
+  AutoSyncSelection: 1
   autoPopulateEnabled: 1
   currentDataSource: 0
   CurrentPluginConfig: 
