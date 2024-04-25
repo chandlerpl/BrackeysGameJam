@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584875242962395598
+    m_lastTime: -8584875234234535521
     List:
     - name: Ambience
       guid: b0a38be53cc2ce429a59795991ca47cd
@@ -458,6 +458,46 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: 0.8349381
       minDuration: 0.5508579
+    - name: Play_Player_Flashlight_Off
+      guid: cc41a6b5e6322c429e974c63bc9c6c1b
+      id: 935656016
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Player
+        ObjectType: 4
+        guid: 23de7e9efab0964195e24ace4a202138
+      - ElementName: Play_Player_Flashlight_Off
+        ObjectType: 3
+        guid: cc41a6b5e6322c429e974c63bc9c6c1b
+      Path: Events/Default Work Unit/Player/Play_Player_Flashlight_Off
+      maxAttenuation: 0
+      maxDuration: 0.561231
+      minDuration: 0.561231
+    - name: Play_Player_Flashlight_On
+      guid: 1b20d1651641894d8b6bbbaba20888e7
+      id: 3181500090
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: Player
+        ObjectType: 4
+        guid: 23de7e9efab0964195e24ace4a202138
+      - ElementName: Play_Player_Flashlight_On
+        ObjectType: 3
+        guid: 1b20d1651641894d8b6bbbaba20888e7
+      Path: Events/Default Work Unit/Player/Play_Player_Flashlight_On
+      maxAttenuation: 0
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Play_Player_Footsteps_Crouch_Walking
       guid: ff6573c4098fd24fbea0f7ace705a605
       id: 1685363710
@@ -1003,7 +1043,7 @@ MonoBehaviour:
     m_lastTime: -8584878908878431632
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 06000000070000000d000000
+  ExpandedWaapiItemIds: 0500000006000000070000000b0000000d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

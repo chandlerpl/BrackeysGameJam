@@ -835,6 +835,16 @@ MonoBehaviour:
   runSpeed: 4.5
   pauseMenu: {fileID: 9010202644729968510}
   torch: {fileID: 6497549092541009868}
+  flashlightOnSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b250de9770f49488696e99970f796f7f,
+      type: 2}
+  flashlightOffSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 24bc01334a0be40b69c16b50ef349d2e,
+      type: 2}
   animator: {fileID: 4098389505879981824}
 --- !u!114 &6772492512782382622
 MonoBehaviour:

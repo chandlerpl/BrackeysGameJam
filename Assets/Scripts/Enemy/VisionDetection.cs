@@ -25,7 +25,7 @@ public class VisionDetection : MonoBehaviour
     {
         memory = GetComponent<StateMachine>().memory;
 
-        StartCoroutine(Detect());
+        //StartCoroutine(Detect());
     }
 
     IEnumerator Detect()
@@ -45,13 +45,6 @@ public class VisionDetection : MonoBehaviour
 
                 if(detectable.type == EntityTypes.Player)
                 {
-                    if(detectable.TryGetComponent(out GridObject grid))
-                    {
-                        if(GameManager.Instance.playerSafeSpace.Contains(grid.CurrentGrid) && GameManager.Instance.SafePlayers.Contains(detectable.gameObject))
-                        {
-                            continue;
-                        }
-                    }
 
                     if (Vector3.Angle(col.transform.position - eyePosition.position, transform.forward) <= fov / 2)
                     {

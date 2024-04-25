@@ -103,10 +103,11 @@ public class VisualDetectionNode : Node<AIMovement>
                                 data.Agent.SetDestination(col.transform.position);
 
                                 data.chasedPlayer = col.transform;
-                                data.spottedPlayerSounds[Random.Range(0, data.spottedPlayerSounds.Count)].Post(data.gameObject);
 
                                 if (!detectedUnits.Contains(detectable))
                                 {
+                                    data.spottedPlayerSounds[Random.Range(0, data.spottedPlayerSounds.Count)].Post(data.gameObject);
+                                    _timeSinceLastShout = Time.time;
                                     detectedUnits.Add(detectable);
                                 }
                                 //break;

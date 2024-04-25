@@ -26,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField]
     public GameObject torch;
+    public AK.Wwise.Event flashlightOnSound;
+    public AK.Wwise.Event flashlightOffSound;
 
     [SerializeField]
     private Animator animator;
@@ -75,6 +77,14 @@ public class PlayerMovement : MonoBehaviour
     private void Torch_performed(InputAction.CallbackContext obj)
     {
         torch.SetActive(!torch.activeSelf);
+
+        if(torch.activeSelf)
+        {
+            flashlightOnSound.Post(gameObject);
+        } else
+        {
+            flashlightOffSound.Post(gameObject);
+        }
     }
 
     private void Interact_performed(InputAction.CallbackContext obj)
