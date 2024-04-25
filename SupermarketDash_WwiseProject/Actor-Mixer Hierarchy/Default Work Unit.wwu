@@ -1081,6 +1081,73 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Flashlight" ID="{E52888D4-B7AA-4E2F-9676-26CF45F0C6E6}" ShortID="21364454">
+							<ChildrenList>
+								<Sound Name="Flashlight_On" ID="{FB49F28A-4BEC-4F5E-B798-06692507B2F8}" ShortID="18165277">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Flashlight_On" ID="{CEC5D5AC-AE14-4EE7-B7AF-EED7214EAA4B}">
+											<Language>SFX</Language>
+											<AudioFile>Flashlight_On.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="980349252"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Flashlight_On" ID="{CEC5D5AC-AE14-4EE7-B7AF-EED7214EAA4B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Flashlight_Off" ID="{0BA07542-8FCD-4BDB-A116-63B7730ED238}" ShortID="593409573">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32929160-8C2C-46EA-9320-C78E9FB345D6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FC704035-72BF-4E7D-8FCE-DB2A46EDC0D2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Flashlight_Off" ID="{9C269809-1464-491C-9D78-BB970555EC4A}">
+											<Language>SFX</Language>
+											<AudioFile>Flashlight_Off.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="64972126"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Flashlight_Off" ID="{9C269809-1464-491C-9D78-BB970555EC4A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{7ED283FB-9216-4390-9362-A1EFBA573AA9}" ShortID="516968755">

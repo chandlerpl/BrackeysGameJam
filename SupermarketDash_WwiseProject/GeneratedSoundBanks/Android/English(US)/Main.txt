@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	727334981	Play_Player_Footsteps_Running			\Default Work Unit\Player\Play_Player_Footsteps_Running	
 	760203119	Play_Fridge_On			\Default Work Unit\Environments\Play_Fridge_On	
 	768391258	Play_Player_Footsteps_Running_Breathing			\Default Work Unit\Player\Play_Player_Footsteps_Running_Breathing	
+	935656016	Play_Player_Flashlight_Off			\Default Work Unit\Player\Play_Player_Flashlight_Off	
 	1174402806	Play_TV_Off			\Default Work Unit\Game_Objects\Play_TV_Off	
 	1374245708	Play_Trolley_Pickup			\Default Work Unit\Game_Objects\Play_Trolley_Pickup	
 	1400352289	Play_Player_Throw_Whoosh			\Default Work Unit\Player\Play_Player_Throw_Whoosh	
@@ -21,6 +22,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2880217405	Play_UI_Menu_Hover			\Default Work Unit\UI\Play_UI_Menu_Hover	
 	2882871707	Play_Item_Collision_Splat			\Default Work Unit\Game_Objects\Play_Item_Collision_Splat	
 	3007557829	Play_Guard_Dialogue_Chasing_YSBH			\Default Work Unit\Guard\Play_Guard_Dialogue_Chasing_YSBH	
+	3181500090	Play_Player_Flashlight_On			\Default Work Unit\Player\Play_Player_Flashlight_On	
 	3258224516	Play_Player_Item_Pickup			\Default Work Unit\Player\Play_Player_Item_Pickup	
 	3322721679	Play_Guard_Dialogue_Chasing_Stop			\Default Work Unit\Guard\Play_Guard_Dialogue_Chasing_Stop	
 	3458151439	Play_Trolley_Moving_Running_Start			\Default Work Unit\Game_Objects\Play_Trolley_Moving_Running_Start	
@@ -47,6 +49,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	16457392	gore - wood beating flesh wet blood splat - medium - 11	C:\Users\Thanh Quang Tran\Documents\Eportfolio\SupermarketDash\SupermarketDash_WwiseProject\.cache\Android\SFX\gore - wood beating flesh wet blood splat - medium - 11_CF1610EA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game_Objects\Item\Collision\Item_Collision_Splat\gore - wood beating flesh wet blood splat - medium - 11		58360
 	33136942	Guard_Dialogue_Chasing_YSBH_1	C:\Users\Thanh Quang Tran\Documents\Eportfolio\SupermarketDash\SupermarketDash_WwiseProject\.cache\Android\Voices\English(US)\Guard_Dialogue_YSBH_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guard\Dialogue\Chasing\Guard_Dialogue_Chasing_YSBH\Guard_Dialogue_Chasing_YSBH_1		147092
 	43435265	Guard_Dialogue_Shocked_Whats_That_3	C:\Users\Thanh Quang Tran\Documents\Eportfolio\SupermarketDash\SupermarketDash_WwiseProject\.cache\Android\Voices\English(US)\Guard_Dialogue_Whats_That_3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guard\Dialogue\Shocked\Guard_Dialogue_Shocked_Whats_That\Guard_Dialogue_Shocked_Whats_That_3		75936
+	64972126	Flashlight_Off	C:\Users\Thanh Quang Tran\Documents\Eportfolio\SupermarketDash\SupermarketDash_WwiseProject\.cache\Android\SFX\Flashlight_Off_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Flashlight\Flashlight_Off		48096
 	86269894	Player_Item_Pickup	C:\Users\Thanh Quang Tran\Documents\Eportfolio\SupermarketDash\SupermarketDash_WwiseProject\.cache\Android\SFX\Item_Pickup_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Item\Player_Item_Pickup		44504
 	101366574	FOLEY_run_concrete_07_818F3B66	C:\Users\Thanh Quang Tran\Documents\Eportfolio\SupermarketDash\SupermarketDash_WwiseProject\.cache\Android\SFX\FOLEY_run_concrete_07_818F3B66_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Player_Footsteps_Running\FOLEY_run_concrete_07_818F3B66		23898
 	124266739	Self_Checkout_Cashorcard_3	C:\Users\Thanh Quang Tran\Documents\Eportfolio\SupermarketDash\SupermarketDash_WwiseProject\.cache\Android\SFX\Self_Checkout_Cashorcard_3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game_Objects\Till\Dialogue\Self_Checkout_Dialogue\Self_Checkout_Cashorcard_3		158496
@@ -116,6 +119,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	947434909	FOLEY_run_concrete_08_818F3B66	C:\Users\Thanh Quang Tran\Documents\Eportfolio\SupermarketDash\SupermarketDash_WwiseProject\.cache\Android\SFX\FOLEY_run_concrete_08_818F3B66_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guard\Footsteps\Guard_Footsteps_Running\FOLEY_run_concrete_08_818F3B66		22946
 	950443640	Breathing_Running_4	C:\Users\Thanh Quang Tran\Documents\Eportfolio\SupermarketDash\SupermarketDash_WwiseProject\.cache\Android\SFX\Breathing_Running_4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Player_Footsteps_Running_Breathing\Breathing_Running_4		139172
 	967959947	Self_Checkout_callingforassistance_4	C:\Users\Thanh Quang Tran\Documents\Eportfolio\SupermarketDash\SupermarketDash_WwiseProject\.cache\Android\SFX\Self_Checkout_callingforassistance_4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game_Objects\Till\Dialogue\Self_Checkout_Dialogue\Self_Checkout_callingforassistance_4		203606
+	980349252	Flashlight_On	C:\Users\Thanh Quang Tran\Documents\Eportfolio\SupermarketDash\SupermarketDash_WwiseProject\.cache\Android\SFX\Flashlight_On_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Flashlight\Flashlight_On		48096
 	1001850140	Footsteps_2	C:\Users\Thanh Quang Tran\Documents\Eportfolio\SupermarketDash\SupermarketDash_WwiseProject\.cache\Android\SFX\Footsteps_2_284248C7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Player_Footsteps_Walking\Footsteps_2		89568
 	1034181359	Till_Sound_Beep_2	C:\Users\Thanh Quang Tran\Documents\Eportfolio\SupermarketDash\SupermarketDash_WwiseProject\.cache\Android\SFX\Till_Sound_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game_Objects\Till\Till_Sound_Beep\Till_Sound_Beep_2		1823206
 	1036301920	Trolley_Moving_Running_Stop	C:\Users\Thanh Quang Tran\Documents\Eportfolio\SupermarketDash\SupermarketDash_WwiseProject\.cache\Android\SFX\Trolly_Moving_Running_Stop_63372FFA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game_Objects\Trolley\Trolley_Moving_Running_Stop		47068
