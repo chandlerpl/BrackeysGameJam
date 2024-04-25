@@ -10,6 +10,7 @@ public class Pushable : MonoBehaviour, IInteractable
     public bool isCart = false;
 
     private bool _isAttached = false;
+    private IKManager _currentIK;
 
     public void OnInteract(GameObject interactingObj, Inventory inventory)
     {
@@ -25,30 +26,35 @@ public class Pushable : MonoBehaviour, IInteractable
             if (isCart)
                 inventory.PushingCart = true;
 
+            inventory.CurrentPushable = this;
             pushableTransform.gameObject.AddComponent<FixedJoint>().connectedBody = interactingObj.GetComponent<Rigidbody>();
-            if (interactingObj.transform.GetChild(0).TryGetComponent(out IKManager manager))
+            if (interactingObj.transform.GetChild(0).TryGetComponent(out _currentIK))
             {
                 foreach(IKHint ik in iKHints)
                 {
-                    manager.UpdatePosition(ik);
+                    _currentIK.UpdatePosition(ik);
                 }
             }
         } else
         {
-            //pushableTransform.SetParent(null);
-            //pushableTransform.localPosition = Vector3.zero;
-            _isAttached = false;
-            if (isCart)
-                inventory.PushingCart = false;
-
-            Destroy(pushableTransform.gameObject.GetComponent<FixedJoint>());
-            if (interactingObj.transform.GetChild(0).TryGetComponent(out IKManager manager))
-            {
-                foreach (IKHint ik in iKHints)
-                {
-                    manager.ResetPosition(ik.position);
-                }
-            }
+            Detach(inventory);
         }
+    }
+
+    public void Detach(Inventory inventory)
+    {
+        if (!_isAttached) return;
+
+        _isAttached = false;
+        if (isCart)
+            inventory.PushingCart = false;
+        inventory.CurrentPushable = null;
+
+        Destroy(pushableTransform.gameObject.GetComponent<FixedJoint>());
+        foreach (IKHint ik in iKHints)
+        {
+            _currentIK.ResetPosition(ik.position);
+        }
+        _currentIK = null;
     }
 }

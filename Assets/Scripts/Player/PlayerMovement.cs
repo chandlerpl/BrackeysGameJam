@@ -60,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
         if (TryGetComponent(out _inventory))
         {
             playerInput.currentActionMap.FindAction("Interact").performed += Interact_performed;
+            //playerInput.currentActionMap.FindAction("Throw").performed += Throw_performed;
         }
 
         _speed = walkSpeed;
@@ -69,6 +70,11 @@ public class PlayerMovement : MonoBehaviour
     private void Interact_performed(InputAction.CallbackContext obj)
     {
         _inventory.Interact();
+    }
+
+    private void Throw_performed(InputAction.CallbackContext obj)
+    {
+        _inventory.Throw();
     }
 
     private void Sprint_performed(InputAction.CallbackContext obj)
@@ -193,11 +199,16 @@ public class PlayerMovement : MonoBehaviour
 
     public void RestartPlayer()
     {
+        if (_inventory.CurrentPushable != null)
+        {
+            _inventory.CurrentPushable.Detach(_inventory);
+        }
+
         rb.position = startPosition;
 
-        if(_trapsPlayerHit.Count > 0)
+        if (_trapsPlayerHit.Count > 0)
         {
-            if(Random.Range(0, 1f) < 0.1f)
+            if (Random.Range(0, 1f) < 0.5f)
             {
                 GameManager.Instance.TrapManager.GetTrap(_trapsPlayerHit[Random.Range(0, _trapsPlayerHit.Count)]).Trigger();
             }

@@ -41,7 +41,7 @@ public class MouseMovement : MonoBehaviour
         playerInput.currentActionMap.FindAction("CameraMove").performed += CameraMove_performed;
         playerInput.currentActionMap.FindAction("CameraMove").canceled += CameraMove_canceled;
 
-        playerInput.currentActionMap.FindAction("CameraRelease").performed += CameraRelease_performed;
+        //playerInput.currentActionMap.FindAction("CameraRelease").performed += CameraRelease_performed;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

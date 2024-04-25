@@ -27,6 +27,19 @@ public class Inventory : MonoBehaviour
     [SerializeField]
     private Transform pushTransform;
     public Transform PushTransform => pushTransform;
+
+    private Pushable _currentPushable;
+    public Pushable CurrentPushable { get => _currentPushable;
+        set
+        {
+            if(value != null && _currentPushable != null)
+            {
+                _currentPushable.Detach(this);
+            }
+
+            _currentPushable = value;
+        }
+    }
     public bool PushingCart { get; set; }
     [SerializeField]
     private Transform cart;
@@ -60,6 +73,11 @@ public class Inventory : MonoBehaviour
                 crosshair.sprite = dropSprite;
             }
         }
+    }
+
+    public void Throw()
+    {
+
     }
 
     private void FixedUpdate()

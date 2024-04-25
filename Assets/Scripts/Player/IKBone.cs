@@ -27,7 +27,7 @@ public class IKBone : MonoBehaviour
     Transform parent;
     private IKHint hint;
 
-    private void Start()
+    private void Awake()
     {
         parent = Target.parent;
     }
