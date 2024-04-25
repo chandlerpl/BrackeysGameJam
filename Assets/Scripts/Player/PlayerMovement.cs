@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
         if (TryGetComponent(out _inventory))
         {
             playerInput.currentActionMap.FindAction("Interact").performed += Interact_performed;
-            //playerInput.currentActionMap.FindAction("Throw").performed += Throw_performed;
+            playerInput.currentActionMap.FindAction("Throw").performed += Throw_performed;
         }
 
         _speed = walkSpeed;

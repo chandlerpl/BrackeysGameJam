@@ -35345,6 +35345,11 @@ PrefabInstance:
       objectReference: {fileID: 672637664}
     - target: {fileID: 5298143812911814474, guid: e2f27cc7116bf304e9f4226b7623227a,
         type: 3}
+      propertyPath: announcementTiming
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298143812911814474, guid: e2f27cc7116bf304e9f4226b7623227a,
+        type: 3}
       propertyPath: playerSafeSpace.Array.data[0]
       value: 
       objectReference: {fileID: 30051178}

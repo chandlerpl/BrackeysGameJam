@@ -775,7 +775,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactRange: 2
   maxItems: 1
-  throwForce: 0.5
+  throwForce: 0.75
+  dropForce: 0.2
   cam: {fileID: 6904202991292577113}
   handPosition: {fileID: 8202991192480490672}
   ikManager: {fileID: 3923532023684955652}
