@@ -47,7 +47,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{EAD7A2CB-7155-B9E8-923C-76277EDD3A0D}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{A5746741-C1F8-6B2C-855C-BD6914243E54}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -74,6 +74,10 @@
 				<File Id="43435265" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Guard_Dialogue_Whats_That_3.wav</ShortName>
 					<CachePath>Voices/English(US)/Guard_Dialogue_Whats_That_3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="64972126" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Flashlight_Off.wav</ShortName>
+					<CachePath>SFX/Flashlight_Off_818F3B66.wem</CachePath>
 				</File>
 				<File Id="86269894" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Item_Pickup.wav</ShortName>
@@ -351,6 +355,10 @@
 					<ShortName>Self_Checkout_callingforassistance_4.wav</ShortName>
 					<CachePath>SFX/Self_Checkout_callingforassistance_4_818F3B66.wem</CachePath>
 				</File>
+				<File Id="980349252" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Flashlight_On.wav</ShortName>
+					<CachePath>SFX/Flashlight_On_818F3B66.wem</CachePath>
+				</File>
 				<File Id="1001850140" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_2.wav</ShortName>
 					<CachePath>SFX/Footsteps_2_284248C7.wem</CachePath>
@@ -468,6 +476,16 @@
 						<MediaRef Id="460879647"/>
 						<MediaRef Id="500583441"/>
 						<MediaRef Id="1058959060"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="935656016" Name="Play_Player_Flashlight_Off" DurationType="OneShot" DurationMin="0.561231" DurationMax="0.561231">
+					<MediaRefs>
+						<MediaRef Id="64972126"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3181500090" Name="Play_Player_Flashlight_On" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="980349252"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1685363710" Name="Play_Player_Footsteps_Crouch_Walking" DurationType="OneShot" DurationMin="0.41644815" DurationMax="0.46600455">
@@ -630,5 +648,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BA234046-A573-E675-7268-61A7DC66AFD3}</FileHash>
+	<FileHash>{3E496F05-AB6B-244A-3121-89BEB8B368E3}</FileHash>
 </SoundBanksInfo>

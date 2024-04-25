@@ -152,6 +152,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Player_Flashlight_On" ID="{65D1201B-4116-4D89-8B6B-BBABA20888E7}">
+							<ChildrenList>
+								<Action Name="" ID="{269CA134-9D85-4E82-87CF-A3BB4D661CAE}" ShortID="524832993">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Flashlight_On" ID="{FB49F28A-4BEC-4F5E-B798-06692507B2F8}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Player_Flashlight_Off" ID="{B5A641CC-32E6-422C-9E97-4C63BC9C6C1B}">
+							<ChildrenList>
+								<Action Name="" ID="{7B88856F-6A7E-4C79-9057-243B170F8200}" ShortID="389244318">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Flashlight_Off" ID="{0BA07542-8FCD-4BDB-A116-63B7730ED238}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Guard" ID="{962D1114-D7EB-4F73-8FE1-028E72EBE7CD}" ShortID="520508716">
