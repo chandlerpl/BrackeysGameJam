@@ -2713,7 +2713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &150223016
 Transform:
   m_ObjectHideFlags: 0
@@ -16972,11 +16972,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.546
       objectReference: {fileID: 0}
-    - target: {fileID: 1138382112816154766, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2805750403424553373, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
       propertyPath: pauseMenu
@@ -16987,29 +16982,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3092946493559358574, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3392989682351090829, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7046640305615833638, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8631406325103284910, guid: 13c238ce70cfc4e49935952fb02cc334,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 9010202644729968510, guid: 13c238ce70cfc4e49935952fb02cc334, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13c238ce70cfc4e49935952fb02cc334, type: 3}
