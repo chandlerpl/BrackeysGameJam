@@ -240,6 +240,17 @@
                 },
                 {
                     "name": "",
+                    "id": "f8236fb9-7c54-4d11-b191-5ab2bc9fb5d0",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "6dbabd60-f2ef-46cb-b716-d450272151de",
                     "path": "<Keyboard>/ctrl",
                     "interactions": "",
@@ -278,6 +289,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7685de96-343a-4c53-833f-6cd3c9d3b24b",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
                     "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -384,7 +406,7 @@
                 {
                     "name": "",
                     "id": "f2e954be-930f-4866-857c-12ab3381f084",
-                    "path": "<Mouse>/leftButton",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
