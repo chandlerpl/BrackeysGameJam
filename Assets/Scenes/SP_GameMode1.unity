@@ -16992,6 +16992,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3392989682351090829, guid: 13c238ce70cfc4e49935952fb02cc334,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7046640305615833638, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -35358,11 +35363,6 @@ PrefabInstance:
       propertyPath: directionalLight
       value: 
       objectReference: {fileID: 672637664}
-    - target: {fileID: 5298143812911814474, guid: e2f27cc7116bf304e9f4226b7623227a,
-        type: 3}
-      propertyPath: announcementTiming
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5298143812911814474, guid: e2f27cc7116bf304e9f4226b7623227a,
         type: 3}
       propertyPath: playerSafeSpace.Array.data[0]
