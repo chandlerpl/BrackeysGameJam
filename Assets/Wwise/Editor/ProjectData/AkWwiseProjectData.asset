@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
-  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Virtual Acoustics
       ObjectType: 5
@@ -21,13 +21,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: f158a985443bf3419a2a109a356aba9c
-    ParentPath: Virtual Acoustics/Default Work Unit
+    ParentPath: Virtual Acoustics\Default Work Unit
     guid: f158a985443bf3419a2a109a356aba9c
     GuidInternal: 
-    m_lastTime: -8584878908878430717
+    m_lastTime: -8584884966162126456
     List: []
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Master-Mixer Hierarchy
       ObjectType: 5
@@ -35,10 +35,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 354070fcbf727d4e8fcedb2a46edc0d2
-    ParentPath: Master-Mixer Hierarchy/Default Work Unit
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 354070fcbf727d4e8fcedb2a46edc0d2
     GuidInternal: 
-    m_lastTime: -8584876520924269550
+    m_lastTime: -8584876483085220107
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -53,7 +53,7 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
     - name: Room_Reverb
       guid: 08eceea046b650409207849413e8efb5
       id: 206373095
@@ -70,7 +70,7 @@ MonoBehaviour:
       - ElementName: Room_Reverb
         ObjectType: 2
         guid: 08eceea046b650409207849413e8efb5
-      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Room_Reverb
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Room_Reverb
     - name: Tannoy_Speaker_Sound_Mix
       guid: 74c758152fe2a4449042f74b6f4371b0
       id: 1191170665
@@ -87,9 +87,9 @@ MonoBehaviour:
       - ElementName: Tannoy_Speaker_Sound_Mix
         ObjectType: 2
         guid: 74c758152fe2a4449042f74b6f4371b0
-      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Tannoy_Speaker_Sound_Mix
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Tannoy_Speaker_Sound_Mix
   BankWwu:
-  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: SoundBanks
       ObjectType: 5
@@ -97,10 +97,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: f2e4f01eb004ba4f9cefa109c3927e52
-    ParentPath: SoundBanks/Default Work Unit
+    ParentPath: SoundBanks\Default Work Unit
     guid: f2e4f01eb004ba4f9cefa109c3927e52
     GuidInternal: 
-    m_lastTime: -8584875242959357702
+    m_lastTime: -8584874397515132807
     List:
     - name: Main
       guid: ee6f455bd5d043479adc441a8e49d9f1
@@ -115,9 +115,9 @@ MonoBehaviour:
       - ElementName: Main
         ObjectType: 7
         guid: ee6f455bd5d043479adc441a8e49d9f1
-      Path: SoundBanks/Default Work Unit/Main
+      Path: SoundBanks\Default Work Unit\Main
   EventWwu:
-  - PhysicalPath: Events/Default Work Unit.wwu
+  - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
       ObjectType: 5
@@ -125,10 +125,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: fee9ea756a40d14ebcf9fecd2042bd27
-    ParentPath: Events/Default Work Unit
+    ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584875234234535521
+    m_lastTime: -8584874385624330748
     List:
     - name: Ambience
       guid: b0a38be53cc2ce429a59795991ca47cd
@@ -143,7 +143,7 @@ MonoBehaviour:
       - ElementName: Ambience
         ObjectType: 4
         guid: b0a38be53cc2ce429a59795991ca47cd
-      Path: Events/Default Work Unit/Ambience
+      Path: Events\Default Work Unit\Ambience
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -160,7 +160,7 @@ MonoBehaviour:
       - ElementName: Environments
         ObjectType: 4
         guid: f012479226a08448bcb1cde95b8f724d
-      Path: Events/Default Work Unit/Environments
+      Path: Events\Default Work Unit\Environments
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -177,7 +177,7 @@ MonoBehaviour:
       - ElementName: Game_Objects
         ObjectType: 4
         guid: 49d5bcfff3955d40ab2dfabc8374a9b1
-      Path: Events/Default Work Unit/Game_Objects
+      Path: Events\Default Work Unit\Game_Objects
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -194,7 +194,7 @@ MonoBehaviour:
       - ElementName: Guard
         ObjectType: 4
         guid: 14112d96ebd7734f8fe1028e72ebe7cd
-      Path: Events/Default Work Unit/Guard
+      Path: Events\Default Work Unit\Guard
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -214,7 +214,7 @@ MonoBehaviour:
       - ElementName: Play_Ambience_Outside
         ObjectType: 3
         guid: 52d8bbe72d819f4dbc4c9e7253bfcbde
-      Path: Events/Default Work Unit/Ambience/Play_Ambience_Outside
+      Path: Events\Default Work Unit\Ambience\Play_Ambience_Outside
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -234,7 +234,7 @@ MonoBehaviour:
       - ElementName: Play_Butcher_Fridge_On
         ObjectType: 3
         guid: 99bc672ec16f0e439705ce9a1ac10ecd
-      Path: Events/Default Work Unit/Environments/Play_Butcher_Fridge_On
+      Path: Events\Default Work Unit\Environments\Play_Butcher_Fridge_On
       maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
@@ -254,7 +254,7 @@ MonoBehaviour:
       - ElementName: Play_Fridge_On
         ObjectType: 3
         guid: 10c2b05d7a8cbd4088c44d715de737d7
-      Path: Events/Default Work Unit/Environments/Play_Fridge_On
+      Path: Events\Default Work Unit\Environments\Play_Fridge_On
       maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
@@ -274,7 +274,7 @@ MonoBehaviour:
       - ElementName: Play_Guard_Dialogue_Chasing_Get_Back_Here
         ObjectType: 3
         guid: 989077d032431b40acb15581d195dcf5
-      Path: Events/Default Work Unit/Guard/Play_Guard_Dialogue_Chasing_Get_Back_Here
+      Path: Events\Default Work Unit\Guard\Play_Guard_Dialogue_Chasing_Get_Back_Here
       maxAttenuation: 20
       maxDuration: 1.3930833
       minDuration: 1.3375208
@@ -294,7 +294,7 @@ MonoBehaviour:
       - ElementName: Play_Guard_Dialogue_Chasing_Stop
         ObjectType: 3
         guid: de1365e854408842884a532d6a18dc1f
-      Path: Events/Default Work Unit/Guard/Play_Guard_Dialogue_Chasing_Stop
+      Path: Events\Default Work Unit\Guard\Play_Guard_Dialogue_Chasing_Stop
       maxAttenuation: 20
       maxDuration: 0.6795776
       minDuration: 0.65416443
@@ -314,7 +314,7 @@ MonoBehaviour:
       - ElementName: Play_Guard_Dialogue_Chasing_YSBH
         ObjectType: 3
         guid: bd46238f9690a24ab8c831f0bd74dcb6
-      Path: Events/Default Work Unit/Guard/Play_Guard_Dialogue_Chasing_YSBH
+      Path: Events\Default Work Unit\Guard\Play_Guard_Dialogue_Chasing_YSBH
       maxAttenuation: 0
       maxDuration: 1.7
       minDuration: 1.5312083
@@ -334,7 +334,7 @@ MonoBehaviour:
       - ElementName: Play_Guard_Dialogue_Shocked_Huh
         ObjectType: 3
         guid: 7c2cc468e49cd24885b00d6477624e37
-      Path: Events/Default Work Unit/Guard/Play_Guard_Dialogue_Shocked_Huh
+      Path: Events\Default Work Unit\Guard\Play_Guard_Dialogue_Shocked_Huh
       maxAttenuation: 0
       maxDuration: 0.38914582
       minDuration: 0.3565625
@@ -354,7 +354,7 @@ MonoBehaviour:
       - ElementName: Play_Guard_Dialogue_Shocked_Whats_That
         ObjectType: 3
         guid: 83fdc1800a331241b389464c6e9d9b40
-      Path: Events/Default Work Unit/Guard/Play_Guard_Dialogue_Shocked_Whats_That
+      Path: Events\Default Work Unit\Guard\Play_Guard_Dialogue_Shocked_Whats_That
       maxAttenuation: 20
       maxDuration: 0.9134167
       minDuration: 0.74
@@ -374,7 +374,7 @@ MonoBehaviour:
       - ElementName: Play_Guard_Dialogue_Shocked_Whos_There
         ObjectType: 3
         guid: 60f189a82e4e4b4b9d17bd8b9e6b8499
-      Path: Events/Default Work Unit/Guard/Play_Guard_Dialogue_Shocked_Whos_There
+      Path: Events\Default Work Unit\Guard\Play_Guard_Dialogue_Shocked_Whos_There
       maxAttenuation: 20
       maxDuration: 1.1508125
       minDuration: 0.67635417
@@ -394,7 +394,7 @@ MonoBehaviour:
       - ElementName: Play_Guard_Footsteps_Running
         ObjectType: 3
         guid: 4cabd7852814d34f9b7fab23e1ada745
-      Path: Events/Default Work Unit/Guard/Play_Guard_Footsteps_Running
+      Path: Events\Default Work Unit\Guard\Play_Guard_Footsteps_Running
       maxAttenuation: 20
       maxDuration: 0.31777778
       minDuration: 0.24598639
@@ -414,7 +414,7 @@ MonoBehaviour:
       - ElementName: Play_Guard_Footsteps_Walking
         ObjectType: 3
         guid: 384f834aff4374419c46ceda3bff4ff0
-      Path: Events/Default Work Unit/Guard/Play_Guard_Footsteps_Walking
+      Path: Events\Default Work Unit\Guard\Play_Guard_Footsteps_Walking
       maxAttenuation: 20
       maxDuration: 0.5387107
       minDuration: 0.39833167
@@ -434,7 +434,7 @@ MonoBehaviour:
       - ElementName: Play_Item_Collision_Glass
         ObjectType: 3
         guid: 458544ffa74a3d4eb6b4aa0eee01e560
-      Path: Events/Default Work Unit/Game_Objects/Play_Item_Collision_Glass
+      Path: Events\Default Work Unit\Game_Objects\Play_Item_Collision_Glass
       maxAttenuation: 20
       maxDuration: 0.9709414
       minDuration: 0.5647261
@@ -454,7 +454,7 @@ MonoBehaviour:
       - ElementName: Play_Item_Collision_Splat
         ObjectType: 3
         guid: 43cc2b0e469ff241953c5c2d143e6abe
-      Path: Events/Default Work Unit/Game_Objects/Play_Item_Collision_Splat
+      Path: Events\Default Work Unit\Game_Objects\Play_Item_Collision_Splat
       maxAttenuation: 20
       maxDuration: 0.8349381
       minDuration: 0.5508579
@@ -474,7 +474,7 @@ MonoBehaviour:
       - ElementName: Play_Player_Flashlight_Off
         ObjectType: 3
         guid: cc41a6b5e6322c429e974c63bc9c6c1b
-      Path: Events/Default Work Unit/Player/Play_Player_Flashlight_Off
+      Path: Events\Default Work Unit\Player\Play_Player_Flashlight_Off
       maxAttenuation: 0
       maxDuration: 0.561231
       minDuration: 0.561231
@@ -494,7 +494,7 @@ MonoBehaviour:
       - ElementName: Play_Player_Flashlight_On
         ObjectType: 3
         guid: 1b20d1651641894d8b6bbbaba20888e7
-      Path: Events/Default Work Unit/Player/Play_Player_Flashlight_On
+      Path: Events\Default Work Unit\Player\Play_Player_Flashlight_On
       maxAttenuation: 0
       maxDuration: 0.5
       minDuration: 0.5
@@ -514,7 +514,7 @@ MonoBehaviour:
       - ElementName: Play_Player_Footsteps_Crouch_Walking
         ObjectType: 3
         guid: ff6573c4098fd24fbea0f7ace705a605
-      Path: Events/Default Work Unit/Player/Play_Player_Footsteps_Crouch_Walking
+      Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Crouch_Walking
       maxAttenuation: 0
       maxDuration: 0.46600455
       minDuration: 0.41644815
@@ -534,7 +534,7 @@ MonoBehaviour:
       - ElementName: Play_Player_Footsteps_Running
         ObjectType: 3
         guid: 6a485574aa6c304fb499fe64831a9ea2
-      Path: Events/Default Work Unit/Player/Play_Player_Footsteps_Running
+      Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Running
       maxAttenuation: 0
       maxDuration: 0.31777778
       minDuration: 0.24598639
@@ -554,7 +554,7 @@ MonoBehaviour:
       - ElementName: Play_Player_Footsteps_Running_Breathing
         ObjectType: 3
         guid: 944e510c1b575c40856b11a58d0f2b7d
-      Path: Events/Default Work Unit/Player/Play_Player_Footsteps_Running_Breathing
+      Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Running_Breathing
       maxAttenuation: 0
       maxDuration: 3.7243543
       minDuration: 3.4984584
@@ -574,7 +574,7 @@ MonoBehaviour:
       - ElementName: Play_Player_Footsteps_Walking
         ObjectType: 3
         guid: 1c6b3c8478fdaf47a9cef8fd8fe51c1b
-      Path: Events/Default Work Unit/Player/Play_Player_Footsteps_Walking
+      Path: Events\Default Work Unit\Player\Play_Player_Footsteps_Walking
       maxAttenuation: 0
       maxDuration: 0.46600455
       minDuration: 0.41644815
@@ -594,7 +594,7 @@ MonoBehaviour:
       - ElementName: Play_Player_Item_Discard
         ObjectType: 3
         guid: d6147aa3059b1d4fa9daffacd1a4176e
-      Path: Events/Default Work Unit/Player/Play_Player_Item_Discard
+      Path: Events\Default Work Unit\Player\Play_Player_Item_Discard
       maxAttenuation: 0
       maxDuration: 0.46258333
       minDuration: 0.46258333
@@ -614,7 +614,7 @@ MonoBehaviour:
       - ElementName: Play_Player_Item_Pickup
         ObjectType: 3
         guid: 9b2531f2ffbe2e4381f0e5244e1db291
-      Path: Events/Default Work Unit/Player/Play_Player_Item_Pickup
+      Path: Events\Default Work Unit\Player\Play_Player_Item_Pickup
       maxAttenuation: 0
       maxDuration: 0.46258333
       minDuration: 0.46258333
@@ -634,7 +634,7 @@ MonoBehaviour:
       - ElementName: Play_Player_Throw_Whoosh
         ObjectType: 3
         guid: 77f9b2003295de4ca2b97ec796a416ed
-      Path: Events/Default Work Unit/Player/Play_Player_Throw_Whoosh
+      Path: Events\Default Work Unit\Player\Play_Player_Throw_Whoosh
       maxAttenuation: 0
       maxDuration: 0.60733855
       minDuration: 0.35588014
@@ -654,10 +654,30 @@ MonoBehaviour:
       - ElementName: Play_Sound_Cue_Closing_Time
         ObjectType: 3
         guid: 2d5b22af4c1135439a7b17a5ff1c9290
-      Path: Events/Default Work Unit/SoundCue/Play_Sound_Cue_Closing_Time
+      Path: Events\Default Work Unit\SoundCue\Play_Sound_Cue_Closing_Time
       maxAttenuation: 0
-      maxDuration: 5.490751
-      minDuration: 5.490751
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Sound_Cue_Closing_Time_End
+      guid: 9a6ad0c326d33b4b8f132fa773df5dd2
+      id: 112378147
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fee9ea756a40d14ebcf9fecd2042bd27
+      - ElementName: SoundCue
+        ObjectType: 4
+        guid: 6a83560ea44f294d8194936e21bfc1b4
+      - ElementName: Play_Sound_Cue_Closing_Time_End
+        ObjectType: 3
+        guid: 9a6ad0c326d33b4b8f132fa773df5dd2
+      Path: Events\Default Work Unit\SoundCue\Play_Sound_Cue_Closing_Time_End
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Tannoy_Closing_Time
       guid: b77bf72bdf818f4295641f20af850b32
       id: 3870065741
@@ -674,7 +694,7 @@ MonoBehaviour:
       - ElementName: Play_Tannoy_Closing_Time
         ObjectType: 3
         guid: b77bf72bdf818f4295641f20af850b32
-      Path: Events/Default Work Unit/Tannoy/Play_Tannoy_Closing_Time
+      Path: Events\Default Work Unit\Tannoy\Play_Tannoy_Closing_Time
       maxAttenuation: 0
       maxDuration: 9.781042
       minDuration: 9.781042
@@ -694,7 +714,7 @@ MonoBehaviour:
       - ElementName: Play_Tannoy_Nearly_Closing_Time
         ObjectType: 3
         guid: ed9032599a7ce14ba2cfbe49928a78fd
-      Path: Events/Default Work Unit/Tannoy/Play_Tannoy_Nearly_Closing_Time
+      Path: Events\Default Work Unit\Tannoy\Play_Tannoy_Nearly_Closing_Time
       maxAttenuation: 0
       maxDuration: 10.319271
       minDuration: 10.319271
@@ -714,7 +734,7 @@ MonoBehaviour:
       - ElementName: Play_Till_Sound_Beep
         ObjectType: 3
         guid: e0ebdf352b7b814eb234b1bededd6803
-      Path: Events/Default Work Unit/Game_Objects/Play_Till_Sound_Beep
+      Path: Events\Default Work Unit\Game_Objects\Play_Till_Sound_Beep
       maxAttenuation: 20
       maxDuration: 18.990728
       minDuration: 18.990728
@@ -734,7 +754,7 @@ MonoBehaviour:
       - ElementName: Play_Trolley_Discard
         ObjectType: 3
         guid: 6af937e39082b6438e44b2d5e91b6bb9
-      Path: Events/Default Work Unit/Game_Objects/Play_Trolley_Discard
+      Path: Events\Default Work Unit\Game_Objects\Play_Trolley_Discard
       maxAttenuation: 20
       maxDuration: 0.72437525
       minDuration: 0.72437525
@@ -754,7 +774,7 @@ MonoBehaviour:
       - ElementName: Play_Trolley_Moving_Running_Start
         ObjectType: 3
         guid: 07baf42d101f934fb471434462d8747b
-      Path: Events/Default Work Unit/Game_Objects/Play_Trolley_Moving_Running_Start
+      Path: Events\Default Work Unit\Game_Objects\Play_Trolley_Moving_Running_Start
       maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
@@ -774,7 +794,7 @@ MonoBehaviour:
       - ElementName: Play_Trolley_Moving_Running_Stop
         ObjectType: 3
         guid: 15931f9d770d8a4787573012e74e9716
-      Path: Events/Default Work Unit/Game_Objects/Play_Trolley_Moving_Running_Stop
+      Path: Events\Default Work Unit\Game_Objects\Play_Trolley_Moving_Running_Stop
       maxAttenuation: 20
       maxDuration: 0.48928955
       minDuration: 0.48928955
@@ -794,7 +814,7 @@ MonoBehaviour:
       - ElementName: Play_Trolley_Pickup
         ObjectType: 3
         guid: acf673f3fe8f7545856542407d0b3af9
-      Path: Events/Default Work Unit/Game_Objects/Play_Trolley_Pickup
+      Path: Events\Default Work Unit\Game_Objects\Play_Trolley_Pickup
       maxAttenuation: 0
       maxDuration: 0.8224313
       minDuration: 0.8224313
@@ -814,7 +834,7 @@ MonoBehaviour:
       - ElementName: Play_TV_Off
         ObjectType: 3
         guid: b96711e71a81a241b27da30093d8e781
-      Path: Events/Default Work Unit/Game_Objects/Play_TV_Off
+      Path: Events\Default Work Unit\Game_Objects\Play_TV_Off
       maxAttenuation: 0
       maxDuration: 0.6613447
       minDuration: 0.6613447
@@ -834,7 +854,7 @@ MonoBehaviour:
       - ElementName: Play_TV_On
         ObjectType: 3
         guid: e5bd19daf21f2549b012c96889f2e989
-      Path: Events/Default Work Unit/Game_Objects/Play_TV_On
+      Path: Events\Default Work Unit\Game_Objects\Play_TV_On
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -854,7 +874,7 @@ MonoBehaviour:
       - ElementName: Play_UI_List_Close
         ObjectType: 3
         guid: 4536900696c0284ebbff00fea1959f86
-      Path: Events/Default Work Unit/UI/Play_UI_List_Close
+      Path: Events\Default Work Unit\UI\Play_UI_List_Close
       maxAttenuation: 0
       maxDuration: 0.49845833
       minDuration: 0.49845833
@@ -874,7 +894,7 @@ MonoBehaviour:
       - ElementName: Play_UI_List_Open
         ObjectType: 3
         guid: cb1f93116be2204d87cb31bb68b0f7ff
-      Path: Events/Default Work Unit/UI/Play_UI_List_Open
+      Path: Events\Default Work Unit\UI\Play_UI_List_Open
       maxAttenuation: 0
       maxDuration: 0.49845833
       minDuration: 0.49845833
@@ -894,7 +914,7 @@ MonoBehaviour:
       - ElementName: Play_UI_Menu_Confirm
         ObjectType: 3
         guid: 72ed8f51e4012749a7eac5f80a18bd7f
-      Path: Events/Default Work Unit/UI/Play_UI_Menu_Confirm
+      Path: Events\Default Work Unit\UI\Play_UI_Menu_Confirm
       maxAttenuation: 0
       maxDuration: 0.9051104
       minDuration: 0.9051104
@@ -914,7 +934,7 @@ MonoBehaviour:
       - ElementName: Play_UI_Menu_Hover
         ObjectType: 3
         guid: 1666e6c9ec977a4f954004fc4e6cb4ba
-      Path: Events/Default Work Unit/UI/Play_UI_Menu_Hover
+      Path: Events\Default Work Unit\UI\Play_UI_Menu_Hover
       maxAttenuation: 0
       maxDuration: 0.5327037
       minDuration: 0.5327037
@@ -931,7 +951,7 @@ MonoBehaviour:
       - ElementName: Player
         ObjectType: 4
         guid: 23de7e9efab0964195e24ace4a202138
-      Path: Events/Default Work Unit/Player
+      Path: Events\Default Work Unit\Player
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -948,7 +968,7 @@ MonoBehaviour:
       - ElementName: SoundCue
         ObjectType: 4
         guid: 6a83560ea44f294d8194936e21bfc1b4
-      Path: Events/Default Work Unit/SoundCue
+      Path: Events\Default Work Unit\SoundCue
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -965,7 +985,7 @@ MonoBehaviour:
       - ElementName: Tannoy
         ObjectType: 4
         guid: 512c4a6124c5ee489c072f7693ff4a54
-      Path: Events/Default Work Unit/Tannoy
+      Path: Events\Default Work Unit\Tannoy
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -982,12 +1002,12 @@ MonoBehaviour:
       - ElementName: UI
         ObjectType: 4
         guid: 8e6225aef3e1ad4a8a78ab8a4850276e
-      Path: Events/Default Work Unit/UI
+      Path: Events\Default Work Unit\UI
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
-  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Game Parameters
       ObjectType: 5
@@ -995,13 +1015,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 785ce9f43941e84ea66efd96b07f6beb
-    ParentPath: Game Parameters/Default Work Unit
+    ParentPath: Game Parameters\Default Work Unit
     guid: 785ce9f43941e84ea66efd96b07f6beb
     GuidInternal: 
-    m_lastTime: -8584878908879360345
+    m_lastTime: -8584884966162701822
     List: []
   StateWwu:
-  - PhysicalPath: States/Default Work Unit.wwu
+  - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: States
       ObjectType: 5
@@ -1009,13 +1029,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: e41f695dbbcd8f438cfcc09974e0c5a9
-    ParentPath: States/Default Work Unit
+    ParentPath: States\Default Work Unit
     guid: e41f695dbbcd8f438cfcc09974e0c5a9
     GuidInternal: 
-    m_lastTime: -8584878908878436590
+    m_lastTime: -8584884966162147646
     List: []
   SwitchWwu:
-  - PhysicalPath: Switches/Default Work Unit.wwu
+  - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Switches
       ObjectType: 5
@@ -1023,13 +1043,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 8c8ca692caa89141a41fdcdc46bc1444
-    ParentPath: Switches/Default Work Unit
+    ParentPath: Switches\Default Work Unit
     guid: 8c8ca692caa89141a41fdcdc46bc1444
     GuidInternal: 
-    m_lastTime: -8584878908878432467
+    m_lastTime: -8584884966162136460
     List: []
   TriggerWwu:
-  - PhysicalPath: Triggers/Default Work Unit.wwu
+  - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Triggers
       ObjectType: 5
@@ -1037,13 +1057,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: e66da1c3aa0e09488f18973687ab6d3c
-    ParentPath: Triggers/Default Work Unit
+    ParentPath: Triggers\Default Work Unit
     guid: e66da1c3aa0e09488f18973687ab6d3c
     GuidInternal: 
-    m_lastTime: -8584878908878431632
+    m_lastTime: -8584884966162136460
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000b0000000d000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
