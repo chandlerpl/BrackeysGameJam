@@ -2134,6 +2134,11 @@ PrefabInstance:
       propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5318058677491464913, guid: d2dde8e9b28be4645bff035bb5496400,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5727516795848661978, guid: d2dde8e9b28be4645bff035bb5496400,
         type: 3}
       propertyPath: m_Effectors.Array.data[6].m_Transform
