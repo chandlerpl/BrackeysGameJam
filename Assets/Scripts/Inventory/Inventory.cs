@@ -11,6 +11,8 @@ public class Inventory : MonoBehaviour
     private int maxItems = 1;
     [SerializeField]
     private float throwForce = 2f;
+    [SerializeField]
+    private float dropForce = 2f;
 
     [SerializeField]
     private Transform cam;
@@ -62,7 +64,7 @@ public class Inventory : MonoBehaviour
     {
         if (inventory[_inventorySlot] != null)
         {
-            RemoveItem(inventory[_inventorySlot], _inventorySlot);
+            RemoveItem(inventory[_inventorySlot], _inventorySlot, dropForce);
             return;
         }
 
@@ -82,7 +84,11 @@ public class Inventory : MonoBehaviour
 
     public void Throw()
     {
-
+        if (inventory[_inventorySlot] != null)
+        {
+            RemoveItem(inventory[_inventorySlot], _inventorySlot, throwForce);
+            return;
+        }
     }
 
     private void FixedUpdate()
@@ -146,7 +152,7 @@ public class Inventory : MonoBehaviour
         return false;
     }
 
-    public bool RemoveItem(Item item, int slot)
+    public bool RemoveItem(Item item, int slot, float force)
     {
         inventory[slot] = null;
         ikManager.ResetPosition(ikHint.position);
@@ -171,7 +177,7 @@ public class Inventory : MonoBehaviour
         if (item.Rigidbody != null)
         {
             item.Rigidbody.isKinematic = false;
-            item.Rigidbody.AddForce(cam.forward * throwForce, ForceMode.Impulse);
+            item.Rigidbody.AddForce(cam.forward * force, ForceMode.Impulse);
         }
         dropSound.Post(gameObject);
 

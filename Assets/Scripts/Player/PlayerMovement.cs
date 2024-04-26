@@ -17,9 +17,9 @@ public class PlayerMovement : MonoBehaviour
 
     public float crouchingSpeed = 1.5f;
     [Header("Player Speed")]
-    public float crouchSpeed = 1.5f;
+    public float crouchSpeed = 1f;
     public float walkSpeed = 2.5f;
-    public float runSpeed = 4.5f;
+    public float runSpeed = 2f;
 
     [SerializeField]
     public GameObject pauseMenu;
@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
         playerInput.currentActionMap.FindAction("Sprint").performed += Sprint_performed;
         playerInput.currentActionMap.FindAction("Sprint").canceled += Sprint_performed;
         playerInput.currentActionMap.FindAction("Crouch").performed += Crouch_performed;
-        playerInput.currentActionMap.FindAction("Crouch").canceled += Crouch_performed;
+        //playerInput.currentActionMap.FindAction("Crouch").canceled += Crouch_performed;
 
         playerInput.currentActionMap.FindAction("Pause").performed += Pause_performed;
 
@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
         if (TryGetComponent(out _inventory))
         {
             playerInput.currentActionMap.FindAction("Interact").performed += Interact_performed;
-            //playerInput.currentActionMap.FindAction("Throw").performed += Throw_performed;
+            playerInput.currentActionMap.FindAction("Throw").performed += Throw_performed;
         }
 
         _speed = walkSpeed;
@@ -102,31 +102,22 @@ public class PlayerMovement : MonoBehaviour
         if (obj.phase == InputActionPhase.Performed)
         {
             _isSprinting = true;
-            _speed = runSpeed;
+            _speed += runSpeed;
             animator.SetBool("IsSprinting", true);
         }
         else
         {
             _isSprinting = false;
-            _speed = walkSpeed;
+            _speed -= runSpeed;
             animator.SetBool("IsSprinting", false);
         }
     }
 
     private void Crouch_performed(InputAction.CallbackContext obj)
     {
-        if (obj.phase == InputActionPhase.Performed)
-        {
-            _isCrouching = true;
-            animator.SetBool("IsCrouching", true);
-            StartCoroutine(CrouchCharacter());
-        }
-        else
-        {
-            _isCrouching = false;
-            animator.SetBool("IsCrouching", false);
-            StartCoroutine(CrouchCharacter());
-        }
+        _isCrouching = !_isCrouching;
+        animator.SetBool("IsCrouching", _isCrouching);
+        StartCoroutine(CrouchCharacter());
     }
 
     private void Pause_performed(InputAction.CallbackContext obj)
@@ -175,17 +166,23 @@ public class PlayerMovement : MonoBehaviour
 
             if(_isCrouching)
             {
-                _speed = crouchSpeed;
                 mouseMovement.cameraPivot.localPosition = Vector3.Lerp(normalCameraPosition, crouchCameraPosition, time);
                 col.height = Mathf.Lerp(1.7f, 1f, time);
                 col.center = new Vector3(0, Mathf.Lerp(.9f, .5f, time), 0.1f);
             } else
             {
-                _speed = walkSpeed;
                 mouseMovement.cameraPivot.localPosition = Vector3.Lerp(crouchCameraPosition, normalCameraPosition, time);
                 col.height = Mathf.Lerp(1f, 1.7f, time);
                 col.center = new Vector3(0, Mathf.Lerp(.5f, .9f, time), 0.1f);
             }
+        }
+
+        if(_isCrouching)
+        {
+            _speed -= crouchSpeed; 
+        } else
+        {
+            _speed += crouchSpeed;
         }
     }
 
