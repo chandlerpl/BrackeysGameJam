@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}" SchemaVersion="119">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Volume" ID="{02181A70-8E13-431B-A763-551416415549}" ShortID="780442138">
+					<ChildrenList>
+						<GameParameter Name="Master" ID="{75E9FA53-7327-4876-A2B3-5A64964FF5DF}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="75"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Sound" ID="{C57461DF-10CB-4309-9F1E-35F890963144}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="75"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Music" ID="{49792D1E-D429-48C8-8C9F-D32B5797A033}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="75"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

@@ -1,7 +1,13 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	623086306	Sound			\Default Work Unit\Volume\Sound	
+	3991942870	Music			\Default Work Unit\Volume\Music	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	206373095	Room_Reverb			\Default Work Unit\Master Audio Bus\Room_Reverb	
 	1191170665	Tannoy_Speaker_Sound_Mix			\Default Work Unit\Master Audio Bus\Tannoy_Speaker_Sound_Mix	
+	1973600711	Environmental			\Default Work Unit\Master Audio Bus\Environmental	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Effect plug-ins	ID	Name	Type				Notes
 	514528516	Hard_Knee_Minus_3dB_RMS (Custom)	Wwise Compressor			
