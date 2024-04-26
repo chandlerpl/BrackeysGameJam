@@ -526,10 +526,28 @@
 					<ChildrenList>
 						<Event Name="Play_Sound_Cue_Closing_Time" ID="{AF225B2D-114C-4335-9A7B-17A5FF1C9290}">
 							<ChildrenList>
-								<Action Name="" ID="{3DDA6224-D222-409D-8C94-ACF43A07F785}" ShortID="238879236">
+								<Action Name="" ID="{D81433FE-D2BF-42D8-87C9-953781C8CBBF}" ShortID="163824574">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sound_Cue_Closing_Time_Loop" ID="{2464AAD8-B483-4939-9DB8-697A5A80B12D}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Sound_Cue_Closing_Time_End" ID="{C3D06A9A-D326-4B3B-8F13-2FA773DF5DD2}">
+							<ChildrenList>
+								<Action Name="" ID="{1FBD3884-529A-4315-8ED4-99B7C618A59C}" ShortID="101467115">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Sound_Cue_Closing_Time" ID="{59DF9219-0B7A-444B-8B93-6D3C9BC2E5F7}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8E95BCB7-9D6A-46B6-968F-56B64B1216B7}" ShortID="816130786">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sound_Cue_Closing_Time_Loop" ID="{2464AAD8-B483-4939-9DB8-697A5A80B12D}" WorkUnitID="{001D225D-ADE2-41AE-868B-D19AE6FE78A5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

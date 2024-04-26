@@ -47,7 +47,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{6CA2BDCF-47CF-5351-15CC-9A6FDF0073B0}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{A4CC6EDD-DB5A-0690-9B10-1F6885628A5D}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -78,6 +78,10 @@
 				<File Id="64972126" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Flashlight_Off.wav</ShortName>
 					<CachePath>SFX/Flashlight_Off_818F3B66.wem</CachePath>
+				</File>
+				<File Id="78146222" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sound_Cue_Shop_Closing.wav</ShortName>
+					<CachePath>SFX/Sound_Cue_Shop_Closing_003EF66D.wem</CachePath>
 				</File>
 				<File Id="86269894" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Item_Pickup.wav</ShortName>
@@ -218,10 +222,6 @@
 				<File Id="562927858" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Menu_Hover.wav</ShortName>
 					<CachePath>SFX/UI_Menu_Hover_38857BCB.wem</CachePath>
-				</File>
-				<File Id="578229760" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sound_Cue_Shop_Closing.wav</ShortName>
-					<CachePath>SFX/Sound_Cue_Shop_Closing_BE4BC078.wem</CachePath>
 				</File>
 				<File Id="579561798" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Guard_Dialogue_Huh_1.wav</ShortName>
@@ -550,9 +550,14 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="2222698433" Name="Play_Sound_Cue_Closing_Time" DurationType="OneShot" DurationMin="5.490751" DurationMax="5.490751">
+				<Event Id="2222698433" Name="Play_Sound_Cue_Closing_Time" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="578229760"/>
+						<MediaRef Id="78146222"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="112378147" Name="Play_Sound_Cue_Closing_Time_End" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="78146222"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3870065741" Name="Play_Tannoy_Closing_Time" DurationType="OneShot" DurationMin="9.781042" DurationMax="9.781042">
@@ -648,5 +653,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E909F093-F1E3-4F24-B80D-7C2CB5441655}</FileHash>
+	<FileHash>{0958C244-D98D-ABFE-398E-46F488A053FC}</FileHash>
 </SoundBanksInfo>
