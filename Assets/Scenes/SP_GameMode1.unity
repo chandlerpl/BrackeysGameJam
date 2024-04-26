@@ -16972,6 +16972,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.546
       objectReference: {fileID: 0}
+    - target: {fileID: 1138382112816154766, guid: 13c238ce70cfc4e49935952fb02cc334,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2805750403424553373, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
       propertyPath: pauseMenu
@@ -16982,10 +16987,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3092946493559358574, guid: 13c238ce70cfc4e49935952fb02cc334,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7046640305615833638, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8631406325103284910, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
@@ -35288,6 +35298,11 @@ PrefabInstance:
       propertyPath: listHolder
       value: 
       objectReference: {fileID: 1271538534}
+    - target: {fileID: 2128977466285586348, guid: e2f27cc7116bf304e9f4226b7623227a,
+        type: 3}
+      propertyPath: m_JoinBehavior
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3479152533503595608, guid: e2f27cc7116bf304e9f4226b7623227a,
         type: 3}
       propertyPath: m_LocalPosition.x
