@@ -351,6 +351,45 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{7C93F6B0-2DBE-42C5-81A9-5BDEDF6A0A16}" ShortID="57749282">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="SoundVolume" ID="{C57461DF-10CB-4309-9F1E-35F890963144}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{D33B3E8C-8527-4A4D-8673-A310D7A23047}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Player_Footsteps_Walking" ID="{11C06609-9900-40C6-896C-3CD4025E85F0}" ShortID="10856833">
 									<PropertyList>
@@ -1152,6 +1191,45 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{8486DD6B-4CE1-46CC-B599-6153FF64A0E1}" ShortID="446210724">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="SoundVolume" ID="{C57461DF-10CB-4309-9F1E-35F890963144}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{3021D88E-CE4D-43C0-A9A5-EEF2A95D1E87}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="Flashlight_On" ID="{CEC5D5AC-AE14-4EE7-B7AF-EED7214EAA4B}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -1186,6 +1264,45 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{70A4032C-558A-4FFF-B889-B355065B3C18}" ShortID="745697234">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="SoundVolume" ID="{C57461DF-10CB-4309-9F1E-35F890963144}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{48DE319B-A578-443B-AD57-9DC16FB7C775}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="Flashlight_Off" ID="{9C269809-1464-491C-9D78-BB970555EC4A}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -2138,6 +2255,45 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{C0B0E3B6-B940-402E-A91E-B8FC057932C5}" ShortID="6301743">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="DialogueVolume" ID="{54430849-AF18-46E5-86A8-7757E8D3135C}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{F54B8292-D583-46DC-BEF4-EE3F5A8BC37C}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Guard_Dialogue_Shocked_Whos_There" ID="{BC8E5BE0-B30D-4287-BA02-1D7DC5B40C67}" ShortID="649811005">
 											<PropertyList>
@@ -2330,6 +2486,45 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{2DDD2BFB-C773-4F84-A095-7DAAE1C8141A}" ShortID="583285185">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="DialogueVolume" ID="{54430849-AF18-46E5-86A8-7757E8D3135C}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{5DD289AF-EBF8-4E36-96B0-1EC1AA761BF6}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Guard_Dialogue_Shocked_Huh" ID="{CBDC9915-A351-47FE-8003-7CA62C0C02E9}" ShortID="675727713">
 											<ReferenceList>
@@ -2392,6 +2587,45 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{F71FC183-6484-42FC-B620-270DF2B26E91}" ShortID="346770397">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="DialogueVolume" ID="{54430849-AF18-46E5-86A8-7757E8D3135C}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{DD591301-F290-4528-B5AB-84DB468EF3B5}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</Folder>
@@ -2557,6 +2791,45 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{DB52C0FF-9C2D-4FD7-88F9-560C2EC5F0E3}" ShortID="89574159">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="DialogueVolume" ID="{54430849-AF18-46E5-86A8-7757E8D3135C}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{FEF077ED-26C2-4FC3-A0AC-5945B2A986D5}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Guard_Dialogue_Chasing_Get_Back_Here" ID="{A30C3D27-E333-4CDD-8E1B-7C8F9D1678AF}" ShortID="887015867">
 											<PropertyList>
@@ -2713,6 +2986,45 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{C4D3DDFB-68B5-4CE7-8638-8D63A387EDB7}" ShortID="522055201">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="DialogueVolume" ID="{54430849-AF18-46E5-86A8-7757E8D3135C}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{626E209F-FB42-4224-BD4A-C97FD0CC7242}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Guard_Dialogue_Chasing_YSBH" ID="{8EB4627A-07A6-4564-8CA3-6939BB3AE13C}" ShortID="553428494">
 											<ReferenceList>
@@ -2775,6 +3087,45 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{21026099-D8FE-4F77-87CE-B3DD5147455D}" ShortID="309267913">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="DialogueVolume" ID="{54430849-AF18-46E5-86A8-7757E8D3135C}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{DCD8A8FC-1247-4AEC-ABAA-D6A1B3E76166}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</Folder>
@@ -3612,6 +3963,43 @@
 												</Local>
 											</Reference>
 										</ObjectList>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{5D5EFC00-F007-496B-91AB-856CAD0EABA8}" ShortID="926394199">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="SoundVolume" ID="{C57461DF-10CB-4309-9F1E-35F890963144}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{CA70C023-4C3B-4D4F-BF6B-B93E2101DFFA}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
 									</ObjectLists>
 								</RandomSequenceContainer>
 								<Folder Name="Dialogue" ID="{496DC86B-96EB-48F8-AA25-91F26240FCAB}" ShortID="535327174">
@@ -4027,6 +4415,45 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{45FD50BD-599B-43A0-9338-66F95D6FEF1F}" ShortID="49047475">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="SoundVolume" ID="{C57461DF-10CB-4309-9F1E-35F890963144}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{0090A151-D563-4D8F-837D-36F3DD636868}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</Folder>
@@ -4576,6 +5003,45 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{6B9074EA-7C23-4692-AF46-BB734EE4B793}" ShortID="608500424">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="SoundVolume" ID="{C57461DF-10CB-4309-9F1E-35F890963144}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{76938213-031A-493D-A63A-CB508A86FF38}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="Bleeps_Blops_Clicks_DDM78" ID="{8BF779B9-F1D6-40BF-A2A3-D2213FD500D0}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -4692,6 +5158,45 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{1A7E4D18-9B12-4B89-BD66-1F89CEA128A6}" ShortID="280146524">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="SoundVolume" ID="{C57461DF-10CB-4309-9F1E-35F890963144}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{C7784709-FDC4-40FB-AC38-72DC56EC9645}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="Bleeps_Blops_Clicks_DDM77" ID="{B7DDEE51-415F-4689-9C0F-66BB73E0AF09}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -4809,6 +5314,45 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{3789ADC5-1A50-4330-B0F8-2F51FB27C2F3}" ShortID="569834656">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="SoundVolume" ID="{C57461DF-10CB-4309-9F1E-35F890963144}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{23A7A1E9-39B2-4D58-9924-27776F7F7162}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="TV_Static_Noise" ID="{8936D6B9-2304-41C0-8943-1BFFE4CF2FB6}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -5162,6 +5706,45 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{146AC0E5-9B5C-4648-8C6D-A49A00054226}" ShortID="822118570">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="SoundVolume" ID="{C57461DF-10CB-4309-9F1E-35F890963144}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{B9674A1C-5C8D-4298-82AD-7114A441F2AE}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="Fridge_Game_Sound_Loop" ID="{AC565707-2136-4950-AA98-BDF65F24E214}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -5177,7 +5760,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-26</Value>
+												<Value>-22</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5284,6 +5867,45 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{35BB77C9-E2B2-45F3-95B7-1AA591380121}" ShortID="929543823">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="SoundVolume" ID="{C57461DF-10CB-4309-9F1E-35F890963144}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{77C404F1-9E77-49BD-A886-04857667ED00}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="Fridge_Game_Sound_Loop" ID="{0AABB7E5-7E8B-4F94-A316-267DC2217E6E}" Platform="Linked"/>
 									</ActiveSourceList>

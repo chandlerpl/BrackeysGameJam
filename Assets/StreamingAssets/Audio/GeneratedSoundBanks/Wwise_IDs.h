@@ -54,9 +54,10 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID MASTER = 4056684167U;
-        static const AkUniqueID MUSIC = 3991942870U;
-        static const AkUniqueID SOUND = 623086306U;
+        static const AkUniqueID DIALOGUEVOLUME = 1866264637U;
+        static const AkUniqueID MASTERVOLUME = 2918011349U;
+        static const AkUniqueID MUSICVOLUME = 2346531308U;
+        static const AkUniqueID SOUNDVOLUME = 3873835272U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

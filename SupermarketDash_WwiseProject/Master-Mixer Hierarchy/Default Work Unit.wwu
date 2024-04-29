@@ -197,7 +197,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="Sound" ID="{C57461DF-10CB-4309-9F1E-35F890963144}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+														<ObjectRef Name="SoundVolume" ID="{C57461DF-10CB-4309-9F1E-35F890963144}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -238,7 +238,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="Music" ID="{49792D1E-D429-48C8-8C9F-D32B5797A033}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+														<ObjectRef Name="MusicVolume" ID="{49792D1E-D429-48C8-8C9F-D32B5797A033}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -269,6 +269,45 @@
 							</ObjectLists>
 						</Bus>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{37684C73-BF8F-4360-90DB-B73A26A4BB39}" ShortID="534724432">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="MasterVolume" ID="{75E9FA53-7327-4876-A2B3-5A64964FF5DF}" WorkUnitID="{F4E95C78-4139-4EE8-A66E-FD96B07F6BEB}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{4127E6E8-BE61-4C1B-9667-9B70DA101014}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

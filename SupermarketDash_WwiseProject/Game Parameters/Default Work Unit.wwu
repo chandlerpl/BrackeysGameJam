@@ -5,17 +5,22 @@
 			<ChildrenList>
 				<Folder Name="Volume" ID="{02181A70-8E13-431B-A763-551416415549}" ShortID="780442138">
 					<ChildrenList>
-						<GameParameter Name="Master" ID="{75E9FA53-7327-4876-A2B3-5A64964FF5DF}">
+						<GameParameter Name="MasterVolume" ID="{75E9FA53-7327-4876-A2B3-5A64964FF5DF}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="75"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="Sound" ID="{C57461DF-10CB-4309-9F1E-35F890963144}">
+						<GameParameter Name="SoundVolume" ID="{C57461DF-10CB-4309-9F1E-35F890963144}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="75"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="Music" ID="{49792D1E-D429-48C8-8C9F-D32B5797A033}">
+						<GameParameter Name="MusicVolume" ID="{49792D1E-D429-48C8-8C9F-D32B5797A033}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="75"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="DialogueVolume" ID="{54430849-AF18-46E5-86A8-7757E8D3135C}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="75"/>
 							</PropertyList>
