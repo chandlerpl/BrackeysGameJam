@@ -2455,7 +2455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &118646669
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19873,6 +19873,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.546
       objectReference: {fileID: 0}
+    - target: {fileID: 1101624381960782085, guid: 13c238ce70cfc4e49935952fb02cc334,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138382112816154766, guid: 13c238ce70cfc4e49935952fb02cc334,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1983529245165683907, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
       propertyPath: m_Antialiasing
@@ -19893,10 +19903,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5450315469539866403, guid: 13c238ce70cfc4e49935952fb02cc334,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5863755803565086070, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7029818727519391804, guid: 13c238ce70cfc4e49935952fb02cc334,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7046640305615833638, guid: 13c238ce70cfc4e49935952fb02cc334,
         type: 3}
@@ -40493,11 +40513,6 @@ PrefabInstance:
       objectReference: {fileID: 672637664}
     - target: {fileID: 5298143812911814474, guid: e2f27cc7116bf304e9f4226b7623227a,
         type: 3}
-      propertyPath: announcementTiming
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5298143812911814474, guid: e2f27cc7116bf304e9f4226b7623227a,
-        type: 3}
       propertyPath: playerSafeSpace.Array.data[0]
       value: 
       objectReference: {fileID: 30051178}
@@ -41726,7 +41741,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1975044610
 RectTransform:
   m_ObjectHideFlags: 0
