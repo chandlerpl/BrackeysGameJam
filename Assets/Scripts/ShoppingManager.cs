@@ -13,11 +13,11 @@ public class ShoppingManager : MonoBehaviour
 
     public bool HasCheckedOut { get; private set; }
     public Transform cart;
-    private Dictionary<string, GameObject> collectItems;
+    private Dictionary<string, ItemUI> collectItems;
     private List<string> collected = new List<string>();
     public void Awake()
     {
-        collectItems = new Dictionary<string, GameObject>(itemCount);
+        collectItems = new (itemCount);
 
         StartCoroutine(Test());
     }
@@ -41,7 +41,7 @@ public class ShoppingManager : MonoBehaviour
             ItemUI ui = go.GetComponent<ItemUI>();
             ui.Setup(item);
 
-            collectItems.Add(item.itemIdentifier, go);
+            collectItems.Add(item.itemIdentifier, ui);
             //go.GetComponent<TextMeshProUGUI>().text = item.itemIdentifier;
 
             yield return new WaitForSeconds(0.1f);
@@ -75,7 +75,8 @@ public class ShoppingManager : MonoBehaviour
         {
             if (!collected.Contains(item.itemIdentifier))
             {
-                collectItems[item.itemIdentifier].transform.GetChild(1).gameObject.SetActive(true);
+                collectItems[item.itemIdentifier].yellowIcon.SetActive(true);
+                collectItems[item.itemIdentifier].whiteIcon.SetActive(false);
                 collected.Add(item.itemIdentifier);
             }
         }
@@ -86,7 +87,8 @@ public class ShoppingManager : MonoBehaviour
         {
             if (collected.Contains(item.itemIdentifier))
             {
-                collectItems[item.itemIdentifier].transform.GetChild(1).gameObject.SetActive(false);
+                collectItems[item.itemIdentifier].yellowIcon.SetActive(false);
+                collectItems[item.itemIdentifier].whiteIcon.SetActive(true);
                 collected.Remove(item.itemIdentifier);
             }
         }
@@ -94,14 +96,20 @@ public class ShoppingManager : MonoBehaviour
 
     public bool HasAllRequiredItems()
     {
+        bool hasAll = true;
+
         foreach (string item in collectItems.Keys)
         {
-            if(!collected.Contains(item))
+            if (!collected.Contains(item))
             {
-                return false;
+                hasAll = false;
+            } else
+            {
+                collectItems[item].greenIcon.SetActive(true);
+                collectItems[item].yellowIcon.SetActive(false);
             }
         }
 
-        return true;
+        return hasAll;
     }
 }

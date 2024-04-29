@@ -25,6 +25,9 @@ public class PlayerMovement : MonoBehaviour
     public GameObject pauseMenu;
 
     [SerializeField]
+    private GameObject caughtText;
+
+    [SerializeField]
     public GameObject torch;
     public AK.Wwise.Event flashlightOnSound;
     public AK.Wwise.Event flashlightOffSound;
@@ -113,11 +116,17 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private Coroutine _crouchCoroutine;
     private void Crouch_performed(InputAction.CallbackContext obj)
     {
         _isCrouching = !_isCrouching;
         animator.SetBool("IsCrouching", _isCrouching);
-        StartCoroutine(CrouchCharacter());
+        if(_crouchCoroutine != null)
+        {
+            StopCoroutine(_crouchCoroutine);
+        }
+
+        _crouchCoroutine = StartCoroutine(CrouchCharacter());
     }
 
     private void Pause_performed(InputAction.CallbackContext obj)
@@ -184,6 +193,7 @@ public class PlayerMovement : MonoBehaviour
         {
             _speed += crouchSpeed;
         }
+        _crouchCoroutine = null;
     }
 
     private void Move_canceled(InputAction.CallbackContext obj)
@@ -224,6 +234,7 @@ public class PlayerMovement : MonoBehaviour
         rb.position = startPosition;
         GameManager.Instance.SafePlayers.Add(gameObject);
         StartCoroutine(RemoveFromSafeZone());
+        caughtText.SetActive(true);
 
         if (_trapsPlayerHit.Count > 0)
         {

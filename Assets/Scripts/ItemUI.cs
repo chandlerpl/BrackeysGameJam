@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class ItemUI : MonoBehaviour
 {
+    public GameObject whiteIcon;
+    public GameObject yellowIcon;
+    public GameObject greenIcon;
+
     public RawImage image;
     public TextMeshProUGUI text;
     public ItemRenderer ren;
