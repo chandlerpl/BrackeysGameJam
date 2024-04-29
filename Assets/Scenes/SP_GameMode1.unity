@@ -979,7 +979,7 @@ PrefabInstance:
     - target: {fileID: 6972583479361160003, guid: 86adea5200cff8944b5b8d430a802877,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.985014
+      value: 8.954979
       objectReference: {fileID: 0}
     - target: {fileID: 6972583479361160003, guid: 86adea5200cff8944b5b8d430a802877,
         type: 3}
@@ -989,7 +989,7 @@ PrefabInstance:
     - target: {fileID: 6972583479361160003, guid: 86adea5200cff8944b5b8d430a802877,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.899216
+      value: 11.900784
       objectReference: {fileID: 0}
     - target: {fileID: 6972583479361160003, guid: 86adea5200cff8944b5b8d430a802877,
         type: 3}
@@ -17780,6 +17780,7 @@ PrefabInstance:
     - {fileID: 519479249322582111, guid: 1bc25653bd97d4c468a4eddd85158ad1, type: 3}
     - {fileID: 2395185826113783627, guid: 1bc25653bd97d4c468a4eddd85158ad1, type: 3}
     - {fileID: 1779975196237617731, guid: 1bc25653bd97d4c468a4eddd85158ad1, type: 3}
+    - {fileID: 9089955161101264297, guid: 1bc25653bd97d4c468a4eddd85158ad1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bc25653bd97d4c468a4eddd85158ad1, type: 3}
@@ -47458,6 +47459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ceiling
+      objectReference: {fileID: 0}
+    - target: {fileID: 990224046032026442, guid: b6d0c3b9d9eff83499922b0f03bd90a8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 990224046032026442, guid: b6d0c3b9d9eff83499922b0f03bd90a8,
         type: 3}
