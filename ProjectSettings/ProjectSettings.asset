@@ -158,8 +158,9 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.BrackeysGameJam
+    Android: com.DefaultCompany.OneMinuteToClose
     Standalone: com.DefaultCompany.OneMinuteToClose
+    iPhone: com.DefaultCompany.OneMinuteToClose
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -832,7 +833,8 @@ PlayerSettings:
     Android: WWISE_ADDRESSABLES_POST_2023
     Standalone: WWISE_ADDRESSABLES_POST_2023;STEAMWORKS_NET;DISABLESTEAMWORKS
     WebGL: WWISE_ADDRESSABLES_POST_2023
-  additionalCompilerArguments: {}
+  additionalCompilerArguments:
+    Standalone: []
   platformArchitecture: {}
   scriptingBackend:
     Standalone: 1
