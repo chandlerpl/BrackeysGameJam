@@ -55,7 +55,7 @@
 				<GameParameter Id="3873835272" Name="SoundVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{5E731D0F-4D45-EE69-F117-DC53F0D3E193}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{D753A7D0-36A8-B505-66E6-CA245B7C8C4B}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -626,9 +626,8 @@
 						<MediaRef Id="228135035"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1174402806" Name="Play_TV_Off" DurationType="OneShot" DurationMin="0.6613447" DurationMax="0.6613447">
+				<Event Id="1174402806" Name="Play_TV_Off" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.6613447" DurationMax="0.6613447">
 					<MediaRefs>
-						<MediaRef Id="539568104"/>
 						<MediaRef Id="853634274"/>
 					</MediaRefs>
 				</Event>
@@ -665,5 +664,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4D42C006-1BA2-BF2E-33D8-FECD4963D72E}</FileHash>
+	<FileHash>{EA1FB203-592F-289F-2D66-740C9D80E219}</FileHash>
 </SoundBanksInfo>
