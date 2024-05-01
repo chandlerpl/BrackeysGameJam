@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 354070fcbf727d4e8fcedb2a46edc0d2
     GuidInternal: 
-    m_lastTime: -8584872251309834898
+    m_lastTime: -8584870934979959417
     List:
     - name: Environmental
       guid: ffc6d25191dea640abfc160f92c1f68e
@@ -1052,11 +1052,11 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 785ce9f43941e84ea66efd96b07f6beb
     GuidInternal: 
-    m_lastTime: -8584872251315104105
+    m_lastTime: -8584870934985117580
     List:
-    - name: Master
-      guid: 53fae97527737648a2b35a64964ff5df
-      id: 4056684167
+    - name: DialogueVolume
+      guid: 4908435418afe54686a87757e8d3135c
+      id: 1866264637
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -1067,13 +1067,30 @@ MonoBehaviour:
       - ElementName: Volume
         ObjectType: 4
         guid: 701a1802138e1b43a763551416415549
-      - ElementName: Master
+      - ElementName: DialogueVolume
+        ObjectType: 13
+        guid: 4908435418afe54686a87757e8d3135c
+      Path: Game Parameters\Default Work Unit\Volume\DialogueVolume
+    - name: MasterVolume
+      guid: 53fae97527737648a2b35a64964ff5df
+      id: 2918011349
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 785ce9f43941e84ea66efd96b07f6beb
+      - ElementName: Volume
+        ObjectType: 4
+        guid: 701a1802138e1b43a763551416415549
+      - ElementName: MasterVolume
         ObjectType: 13
         guid: 53fae97527737648a2b35a64964ff5df
-      Path: Game Parameters\Default Work Unit\Volume\Master
-    - name: Music
+      Path: Game Parameters\Default Work Unit\Volume\MasterVolume
+    - name: MusicVolume
       guid: 1e2d794929d4c8488c9fd32b5797a033
-      id: 3991942870
+      id: 2346531308
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -1084,13 +1101,13 @@ MonoBehaviour:
       - ElementName: Volume
         ObjectType: 4
         guid: 701a1802138e1b43a763551416415549
-      - ElementName: Music
+      - ElementName: MusicVolume
         ObjectType: 13
         guid: 1e2d794929d4c8488c9fd32b5797a033
-      Path: Game Parameters\Default Work Unit\Volume\Music
-    - name: Sound
+      Path: Game Parameters\Default Work Unit\Volume\MusicVolume
+    - name: SoundVolume
       guid: df6174c5cb1009439f1e35f890963144
-      id: 623086306
+      id: 3873835272
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -1101,10 +1118,10 @@ MonoBehaviour:
       - ElementName: Volume
         ObjectType: 4
         guid: 701a1802138e1b43a763551416415549
-      - ElementName: Sound
+      - ElementName: SoundVolume
         ObjectType: 13
         guid: df6174c5cb1009439f1e35f890963144
-      Path: Game Parameters\Default Work Unit\Volume\Sound
+      Path: Game Parameters\Default Work Unit\Volume\SoundVolume
     - name: Volume
       guid: 701a1802138e1b43a763551416415549
       id: 2415836739
