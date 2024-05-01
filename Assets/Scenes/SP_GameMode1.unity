@@ -18706,7 +18706,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.34117648, g: 0.34117648, b: 0.24705882, a: 1}
+  m_Color: {r: 0, g: 0.20784314, b: 0.27450982, a: 1}
   m_Intensity: 40
   m_Range: 10
   m_SpotAngle: 30
@@ -52751,6 +52751,21 @@ PrefabInstance:
       propertyPath: directionalLight
       value: 
       objectReference: {fileID: 672637664}
+    - target: {fileID: 5298143812911814474, guid: e2f27cc7116bf304e9f4226b7623227a,
+        type: 3}
+      propertyPath: openLightsColour.b
+      value: 0.24705882
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298143812911814474, guid: e2f27cc7116bf304e9f4226b7623227a,
+        type: 3}
+      propertyPath: openLightsColour.g
+      value: 0.34117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298143812911814474, guid: e2f27cc7116bf304e9f4226b7623227a,
+        type: 3}
+      propertyPath: openLightsColour.r
+      value: 0.34117648
+      objectReference: {fileID: 0}
     - target: {fileID: 5298143812911814474, guid: e2f27cc7116bf304e9f4226b7623227a,
         type: 3}
       propertyPath: playerSafeSpace.Array.data[0]

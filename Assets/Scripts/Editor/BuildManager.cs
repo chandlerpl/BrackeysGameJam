@@ -97,7 +97,7 @@ public class BuildManager
         WriteBuildID(buildID, buildNumber);
 
         AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
-        return PlayerSettings.productName + "-" + buildID + "-" + buildNumber;
+        return PlayerSettings.productName;
     }
 
     private static string GetBuildInfo()

@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public AK.Wwise.Event oneMinuteAnnouncement;
     public AK.Wwise.Event closedAnnouncement;
     public Color closedLightsColour = new Color(0, 0.1122715f, 0.1471697f);
+    public Color openLightsColour = new Color(0, 0.1122715f, 0.1471697f);
     public Light directionalLight;
     public AK.Wwise.Event lightsDownSound;
 
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour
         Instance = this;
         announcementMade = false;
 
+        directionalLight.color = openLightsColour;
         StartCoroutine(AnnouncementCountdown());
     }
 
