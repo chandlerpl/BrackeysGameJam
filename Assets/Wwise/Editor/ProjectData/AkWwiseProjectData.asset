@@ -162,7 +162,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fee9ea756a40d14ebcf9fecd2042bd27
     GuidInternal: 
-    m_lastTime: -8584874385624330748
+    m_lastTime: -8584868699855667405
     List:
     - name: Ambience
       guid: b0a38be53cc2ce429a59795991ca47cd
@@ -869,7 +869,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b96711e71a81a241b27da30093d8e781
       Path: Events\Default Work Unit\Game_Objects\Play_TV_Off
-      maxAttenuation: 0
+      maxAttenuation: 20
       maxDuration: 0.6613447
       minDuration: 0.6613447
     - name: Play_TV_On
